@@ -1,0 +1,186 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 2388,
+      "link": "datacenter-locaweb-itapaiuna",
+      "name": "Locaweb Data Center Itapaiuna",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Itapaiuna, 2434",
+      "address_ref": "",
+      "address_details": null,
+      "postal": "05707-001",
+      "city": "Sao Paulo",
+      "state": "São Paulo",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.6416742,
+      "longitude": -46.7288851,
+      "description": "High level of physical and logical security, guaranteed by the world’s most modern technologies.\r\n\r\nOperating environment monitored\r\nby a trained team, 24 hours per day, seven days per week.\r\n\r\nProfessionals certified in ITIL,\r\nSAP, Oracle, Linux, Windows and other specializations.\r\n\r\n40-Gbps connectivity and CGI.Br-approved IXP.\r\n\r\nHigh level of energy efficiency , with independent power sources, generators and redundant UPSs.\r\n\r\nEcological gas-based air conditioning and refrigeration with air quality control.\r\n\r\nIntelligent HSSD system for early smoke detection and fire extinction using FM200 gas.",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "id": "L8AsbruQ8es",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "filename": "youtubeL8AsbruQ8es.jpg",
+          "reference": "Locaweb Data Center Itapaiuna",
+          "ts_uploaded": 1736184359
+        }
+      ],
+      "meta_standards": {},
+      "meta_power": {
+        "totalmw": "2.5"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "biometric": 1
+      },
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 4,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 11721
+      },
+      "meta_capacity": {
+        "mw_builtout": 2.5,
+        "mw_referenced": 2.5
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 1206,
+        "link": "locaweb-sa",
+        "priority": 1,
+        "name": "Locaweb S/A",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "São Paulo",
+            "postal": "04543-900",
+            "address": "Av. Presidente Juscelino Kubitscheck, 1830 10º Andar – Torre 1",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 2.5,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 2.5,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 50,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 50,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 3,
+          "hyperscale": 0,
+          "ts_updated": 1788655337,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

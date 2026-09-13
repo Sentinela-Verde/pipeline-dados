@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11624,
+      "link": "pix-g8-aracaju",
+      "name": "PIX G8 Aracaju",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Pacatuba, 254",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "49010-150",
+      "city": "Aracaju",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Aracaju",
+      "marketlink": "aracaju",
+      "district": null,
+      "districtlink": null,
+      "latitude": -10.9162733,
+      "longitude": -37.0493841,
+      "description": "Please visit the website of Megatelecom for further details about PIX G8 Aracaju.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 1,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "PIX G8 Aracaju",
+        "peeringdb_id": 5422
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11891,
+        "link": "megatelecom",
+        "priority": 1,
+        "name": "Megatelecom",
+        "logo": "logo.jpg",
+        "addresses": {
+          "main": {
+            "city": "Barueri",
+            "state": "Sao Paulo",
+            "postal": "06472",
+            "address": "Av. Ipanema, 165",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 5,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 5,
+          "hyperscale": 0,
+          "ts_updated": 1788567664,
+          "datacenters": 5,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

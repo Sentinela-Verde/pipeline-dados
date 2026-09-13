@@ -1,0 +1,175 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13753,
+      "link": "recife1",
+      "name": "Atlantic Data Center Recife 1",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Min. Mario Andreaza, 815 - Várzea",
+      "address_ref": null,
+      "address_details": "Parque Tecnológico de Pernambuco",
+      "postal": "50950-050",
+      "city": "Recife",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Recife",
+      "marketlink": "recife",
+      "district": null,
+      "districtlink": null,
+      "latitude": -8.0658641,
+      "longitude": -34.9880118,
+      "description": "Recife1, the flagship data center of Atlantic Data Centers, a division of Um Telecom, is located in the Parqtel technology park in Recife, Pernambuco. This Tier III-certified facility is designed to be a cornerstone of digital transformation in Northern Brazil. With a total investment of R$ 300 million, Recife1 is being developed in three phases, starting with a capacity of over 150 racks and 1 MW of power dedicated to IT equipment. Future phases will expand its capacity to 6 MW, ensuring scalability to meet growing digital demands.\n\nThe data center emphasizes sustainability, with partial power sourced from Um Telecom's solar farm in São Caetano, contributing to reduced carbon emissions. Recife1 aims to position Pernambuco as a key hub for data and connectivity, serving diverse sectors such as technology, healthcare, finance, and industry, while supporting the region's economic and technological growth.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "tier_designed": "3"
+      },
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "6",
+        "mw_pipeline": 1,
+        "buildingsize": "14000",
+        "mw_referenced": "6",
+        "mw_underconstruction": "1"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12875,
+        "link": "atlantic-data-centers",
+        "priority": 1,
+        "name": "Atlantic Data Centers",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Recife",
+            "state": "Pernambuco",
+            "postal": "51020-280",
+            "address": "Rua Padre Carapuceiro, 858, 16º andar",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 6,
+            "mw_live_pct": 0,
+            "mw_pipeline": 1,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 6,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 1,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 100,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788572988,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

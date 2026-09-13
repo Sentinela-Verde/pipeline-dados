@@ -1,0 +1,178 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18031,
+      "link": "tip-brasil-campinas",
+      "name": "TIP Brasil Campinas",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Miguel Pascoal, 104 - Jardim do Trevo",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "13041-312",
+      "city": "Campinas",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.91722523225336,
+      "longitude": -47.06369711363217,
+      "description": "TIP Brasil is investing R$500 million (approximately $94.6 million) to expand and develop its data center in Campinas, Brazil. The facility, located at R. Miguel Pascoal, 104 - Jardim do Trevo, will feature approximately 20,000 sqm of built area and is slated to open in November 2025.\n\nThe data center will offer colocation and cloud computing services, designed to serve Internet Service Providers (ISPs), security companies, and public bodies. It will have an initial capacity for up to 2,000 racks and an initial power output of 10MW, with plans for expansion and self-generation capabilities starting in 2026.\n\nThe renovation includes upgrades to UPS and air conditioning systems, and the replacement of the raised floor with fire-resistant materials. The project aims to achieve Tier III certification. The first phase is expected to open in November 2025, with a second phase of expansion planned for early 2026. TIP Brasil anticipates occupying around 500 racks by the end of 2026, with full operation of the initial area by 2030.\n\nThis initiative is part of TIP Brasil's new group company, Tropical, dedicated to data center services, and is supported by various investors and strategic partners.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "tier_designed": "3"
+      },
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2025",
+        "footprint_building": 805
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "10",
+        "buildingsize": "20000",
+        "mw_referenced": "10"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14283,
+        "link": "tip-brazil",
+        "priority": 1,
+        "name": "TIP Brasil",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 10,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 10,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2025,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788650465,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

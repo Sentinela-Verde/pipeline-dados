@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 14153,
+      "link": "master-da-web",
+      "name": "Master da Web",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Pirapetinga 196",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "30220150",
+      "city": "Belo Horizonte",
+      "state": "Minas Gerais",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Belo Horizonte",
+      "marketlink": "belo-horizonte",
+      "district": null,
+      "districtlink": null,
+      "latitude": -19.9408887,
+      "longitude": -43.9240841,
+      "description": "Master da Web is a Brazilian data center and cloud services provider offering a range of hosting and infrastructure solutions, including Virtual Private Servers (VPS), dedicated servers, colocation, and website hosting. Their infrastructure is strategically located in Belo Horizonte (Minas Gerais, Brazil) and Dallas (United States), ensuring low latency and high availability for customers across South and North America.\n\nKey Services:\n\nVirtual Private Servers (VPS): Starting from R$49.90, with support for Linux and Windows. Includes features like up to 1 Gbps bandwidth, unlimited traffic, and DDoS protection.\n\nDedicated Servers: Starting at R$599.90, hosted in Brazil. These servers include 1 Gbps connections, DDoS protection, and KVM over IP access.\n\nColocation Services: From R$499/month, with infrastructure in Belo Horizonte. Services include 1 Gbps unlimited traffic, 1 Tbps DDoS protection, and free remote hands.\n\nWebsite Hosting: Starting at R$19.90/month, featuring cPanel, free SSL certificates, and unlimited databases and email accounts.\n\nInfrastructure Highlights:\n\nRedundant power and network systems with diesel generators, UPS, and cooling redundancy.\n\nAdvanced DDoS protection capable of mitigating attacks up to 1 Tbps.\n\nHigh-performance servers with disk redundancy and dual power supplies.\n\nCustomer Support:\n\nMaster da Web provides 24/7 specialized technical support, ensuring reliability and assistance whenever needed.\n\nFor more information, visit: https://masterdaweb.com",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1200,
+          "height": 1600,
+          "filename": "masterdaweb1-64b8b907e774a[1].webp",
+          "reference": "masterdaweb1-64b8b907e774a[1].webp",
+          "ts_uploaded": 1744133921
+        }
+      ],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 31469,
+      "companies": {
+        "id": 12960,
+        "link": "master-da-web",
+        "priority": 1,
+        "name": "Master da Web",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Belo Horizonte",
+            "state": "Minas Gerais",
+            "postal": "30220-150",
+            "address": "Rua Pirapetinga 196",
+            "country": "Belo Horizonte"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788650921,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 1,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

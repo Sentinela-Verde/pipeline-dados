@@ -1,0 +1,166 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 5064,
+      "link": "cdznet-data-center",
+      "name": "CDZNet Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Independência, 2472",
+      "address_ref": "",
+      "address_details": null,
+      "postal": "15025-095",
+      "city": "Sao Jose do Rio Preto",
+      "state": "SP",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -20.8119075,
+      "longitude": -49.3886276,
+      "description": "CDZNET Data Center  is a datacenter which provides Colocation, Hosting and Managed Hosting services, Shared e-mail and Hosted Exchange accounts, Public and Private Cloud services, Firewall, Load Balancing and development of custom projects.                          \n\nCDZNET Data Center Colocation, Hosting, Managed Hosting, E-mail, Firewall, Cloud, dedicated servers",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 3804,
+        "link": "cdznet-data-center",
+        "priority": 1,
+        "name": "cdznet data center",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "São José do Rio Preto",
+            "state": "SP",
+            "postal": "15025095",
+            "address": "rua independencia, 2472",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788653543,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18944,
+      "link": "terranova-campinas",
+      "name": "Terranova Campinas",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rod. Campinas-Mogi Mirim, Km 118 - 5 - Fazenda Pau D´Alho",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "13086-902",
+      "city": "Campinas",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.813370520936104,
+      "longitude": -47.03825864636827,
+      "description": "Terranova Campinas is a significant data center development located in Campinas, Brazil, with an initial investment of R$ 5 billion (over $500 million USD). The campus is designed with a focus on Artificial Intelligence and high-demand digital services, featuring an initial IT capacity of 216 megawatts (MW), with plans for expansion to 386 MW. The site boasts a substation with an initial capacity of 300 MW, with future potential to reach 1 GW. The project occupies a substantial area of approximately 944,000 square meters, with about 115,000 square meters dedicated to the technological complex. Notably, the data center is being constructed on the grounds of the historic Fazenda Pau d'Alho, with a commitment to preserving its heritage and architectural ensemble, which is a protected cultural asset. The project incorporates innovative sustainability technologies, including liquid cooling with a closed-loop water system. Terranova is an initiative by investment firm Actis, aiming to develop a portfolio of hyperscale data center campuses across Latin America.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_plot": "944000",
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2027"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "300",
+        "mw_pipeline": "300",
+        "buildingsize": "115000",
+        "mw_referenced": "300"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 13713,
+        "link": "terranova",
+        "priority": 1,
+        "name": "TERRANOVA",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "state": "",
+            "postal": "04551-080",
+            "address": "Rua São Tomé, 86, 16º Andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 8.12,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 320,
+            "mw_live_pct": 50,
+            "mw_pipeline": 300,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 320,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 50,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2027,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788658678,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

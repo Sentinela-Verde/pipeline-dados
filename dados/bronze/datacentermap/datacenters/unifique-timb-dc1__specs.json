@@ -1,0 +1,181 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:50",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12427,
+      "link": "unifique-timb-dc1",
+      "name": "Unifique Timbó DC1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Duque de Caxias, 831 - Centro",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "89120-000",
+      "city": "Timbó",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Blumenau",
+      "marketlink": "blumenau",
+      "district": null,
+      "districtlink": null,
+      "latitude": -26.819629,
+      "longitude": -49.2729353,
+      "description": "The Unifique Timbó DC1 Data Center boasts a 685 m² facility with TIER III Certification, ensuring a robust 1.5 MVA power supply and 72 hours of fuel autonomy for its generation plant. The center's security is enhanced by biometric technology and an N+1 architecture for critical systems, including power generation and climate control.\n\nInnovative fire detection systems at the center can identify airborne particles, enabling immediate and residue-free fire suppression. This advanced technology protects the equipment and ensures operational continuity.\n\nWith a commitment to reliability, the Data Center conducts thorough, regular checks and maintenance, achieving an impressive 99.982% uptime. This performance is accredited by the Tier III certification from the Uptime Institute.\n\nThe Data Center's infrastructure is grounded in SDDC principles, offering clients autonomous management of Cloud resources. This approach ensures comprehensive support across all layers, from hardware to software, for optimal performance and resilience.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "totalmw": "1.5",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_whitespace": "685"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": 1.5,
+        "mw_referenced": 1.5,
+        "whitespace_builtout": 685,
+        "whitespace_referenced": 685
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12238,
+        "link": "unifique",
+        "priority": 1,
+        "name": "Unifique",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Timbó",
+            "state": "",
+            "postal": "89120-000",
+            "address": "R. Duque de Caxias, 831 - Centro",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 1.5,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 1.5,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 685,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 7373,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 685,
+            "ws_referenced_sqft": 7373,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788650965,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

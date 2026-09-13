@@ -1,0 +1,167 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 19035,
+      "link": "dsi-pae-a01",
+      "name": "DSI - PAE-A01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Mostardeiro, 265 - Rio Branco",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "90430001",
+      "city": "Porto Alegre",
+      "state": "Rio Grande do Sul",
+      "statelink": "rio-grande-do-sul",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Porto Alegre",
+      "marketlink": "porto-alegre",
+      "district": null,
+      "districtlink": null,
+      "latitude": -30.0290429,
+      "longitude": -51.2045037,
+      "description": "Our state-of-the-art data center delivers secure, reliable, and scalable infrastructure with multiple connectivity options, AC and DC power, telecom and server racks, precision temperature control, and 24/7 monitoring to ensure maximum availability and business continuity.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {},
+      "tags": null,
+      "metaunits": "metric",
+      "contact_sales": 32984,
+      "companies": {
+        "id": 14505,
+        "link": "dsi-internet",
+        "priority": 1,
+        "name": "DSI Internet",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Novo Hamburgo",
+            "state": "Rio Grande do Sul",
+            "postal": "93510-365",
+            "address": "R. Bento Gonçalves, 2399 - Sl 906 - Centro",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788573868,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

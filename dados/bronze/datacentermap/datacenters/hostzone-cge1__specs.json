@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8303,
+      "link": "hostzone-cge1",
+      "name": "Hostzone CGE1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Paulo de Frontin, 75 - Centro",
+      "address_ref": "R. Paulo de Frontin, Campina Grande",
+      "address_details": null,
+      "postal": "58400-310",
+      "city": "Campina Grande",
+      "state": "Paraiba",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campina Grande",
+      "marketlink": "campina-grande",
+      "district": null,
+      "districtlink": null,
+      "latitude": -7.2280191,
+      "longitude": -35.8828993,
+      "description": "This is Hostzone's own operated data center for regional, national and international customers.\n\nFull rack, half rack and per-u colocation.\n\nDedicated servers, cloud servers, DDoS protection, IP transit and transport.\n\n- 24/7 access available\n- On-site backup diesel generator\n- Double conversion online UPS\n- 220VAC and -48VDC available\n- Multiple carriers on site \n- Lan2lan, IP transit, IP transport and DDoS protection available\n- Own operated fiber backbone\n- Multiple multigigabit upstreams\n- Multiple network POPs over Campina Grande, João Pessoa and Fortaleza\n- 24/7 on-site staff\n- 24/7 video monitoring\n- 24/7 remote hands\n- Fingerprint and RFID controlled access\n",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 2,
+        "networkproviders": 1,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 14059
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 4830,
+        "link": "hostzone",
+        "priority": 1,
+        "name": "Hostzone",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "João Pessoa",
+            "state": "PB",
+            "postal": "58037000",
+            "address": "Governador Flávio Ribeiro Coutinho",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 3,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 3,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788659852,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

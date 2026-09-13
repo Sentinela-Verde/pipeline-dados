@@ -1,0 +1,194 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 2771,
+      "link": "matrix",
+      "name": "SBA Edge Sao Paulo",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Jose Abrantes, 186",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "04756-010",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.6465586,
+      "longitude": -46.7175713,
+      "description": "SBA Edge expanded its global edge computing footprint through the acquisition of Matrix, a leading Brazilian data center provider.  The São Paulo data center, a key asset in this acquisition,  offers strategic connectivity and secure colocation solutions within Brazil's business hub.\n\nThis state-of-the-art facility is located near key business districts and boasts a highly connected ecosystem, including access to IX.br, one of the world's largest internet exchanges. The data center is built to international standards and is powered by 100% renewable energy (I-REC), offering a sustainable colocation solution for businesses in the region.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "pci": "1",
+        "iso7017": "0",
+        "iso27001": "1",
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "totalmw": 2
+      },
+      "meta_security": {
+        "guards": "Yes, 24/7"
+      },
+      "meta_amenities": {
+        "meetmeroom": 1
+      },
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Retrofitted",
+        "tenancy_text": "Sole-tenant",
+        "rooftop_access": 1,
+        "year_operational": 2001,
+        "footprint_building": 515
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 26,
+        "networkproviders": 2,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Matrix",
+        "peeringdb_id": 4162
+      },
+      "meta_capacity": {
+        "mw_builtout": 2,
+        "buildingsize": 4000,
+        "mw_referenced": 2,
+        "whitespace_builtout": 1600,
+        "whitespace_referenced": 1600
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 679,
+        "link": "continuum-data-centers-llc",
+        "priority": 1,
+        "name": "SBA Edge",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "West Chicago",
+            "state": "Illinois",
+            "postal": "60185",
+            "address": "603 Discovery Drive",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 21,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 21,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 75,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 5316,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 57222,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 75,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 5316,
+            "ws_referenced_sqft": 57222,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2004,
+            "year_operational_pct": 50,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 6,
+          "colo": 6,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 6,
+          "hyperscale": 0,
+          "ts_updated": 1788565638,
+          "datacenters": 4,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

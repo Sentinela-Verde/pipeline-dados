@@ -1,0 +1,205 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 7926,
+      "link": "av-2-50-quadra-g1",
+      "name": "Ascenty - Vinhedo VIN1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 18904,
+      "address": "Av. 2, 50, Quadra G1, Distrito Industrial Benedito Storani",
+      "address_ref": null,
+      "address_details": "Bldg 1",
+      "postal": "13288-162",
+      "city": "Vinhedo",
+      "state": "",
+      "statelink": "",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.0700044,
+      "longitude": -47.0118244,
+      "description": "Av. 2, 50, Quadra G1, Distrito Industrial Benedito Storani:\n\nLocated close to the city of São Paulo, Vinhedo Data Center is ideal for companies that require security, stability and a strategic location to store their data. As the largest Latin America Data Center, this site has 430,500 square feet of raised floor space and 24 MW of total power capacity, with an owned electrical substation. Besides, this Data Center is also neutral carrier and has direct connection with the main PIX in Brazil.",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "Ascenty VIN - Data Sheet.pdf",
+          "ts_uploaded": 1709154419
+        }
+      ],
+      "meta_gallery": [],
+      "meta_standards": {
+        "pci": "1",
+        "soc1": "2",
+        "soc2": "2",
+        "soc3": "2",
+        "iso9001": "1",
+        "iso14001": "1",
+        "iso22301": "1",
+        "iso27001": "1",
+        "iso45001": "1",
+        "iso50001": "1",
+        "tier_designed": "3"
+      },
+      "meta_power": {
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+2"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "keycard": 1,
+        "biometric": 1
+      },
+      "meta_amenities": {},
+      "meta_building": {
+        "floor_load": "1526",
+        "construction": "Purpose-built"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 22,
+        "networkproviders": 1,
+        "serviceproviders": 1
+      },
+      "meta_references": {
+        "provider_id": "VIN01",
+        "peeringdb_id": 7589
+      },
+      "meta_capacity": {
+        "mw_builtout": 27,
+        "mw_referenced": 27,
+        "whitespace_builtout": 20987,
+        "whitespace_referenced": 20987
+      },
+      "tags": [
+        "Carrier Neutral"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 2821,
+        "link": "ascenty-data-centers",
+        "priority": 1,
+        "name": "Ascenty Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Vinhedo",
+            "state": "Sao Paulo",
+            "postal": "13.288-162",
+            "address": "Av. João Batista Nunes, 50 - Distrito Industrial Benedito Storani",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 552,
+            "mw_live_pct": 0,
+            "mw_pipeline": 190,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 552,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.8,
+            "mw_pipeline_pct": 24.4,
+            "ws_builtout_pct": 48.8,
+            "ws_builtout_sqm": 182869,
+            "ws_pipeline_pct": 4.9,
+            "ws_pipeline_sqm": 29984,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 1968384,
+            "ws_pipeline_sqft": 322745,
+            "mw_referenced_pct": 87.8,
+            "ws_referenced_pct": 48.8,
+            "ws_referenced_sqm": 182869,
+            "ws_referenced_sqft": 1968384,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2020,
+            "year_operational_pct": 63.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 39,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 40,
+          "hyperscale": 0,
+          "ts_updated": 1788660089,
+          "datacenters": 36,
+          "dcs_listings": {
+            "0": 2,
+            "1": 6,
+            "2": 31,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 41
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 25
+          },
+          "dcs_facilities": {
+            "0": 2,
+            "1": 6,
+            "2": 26,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 36
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

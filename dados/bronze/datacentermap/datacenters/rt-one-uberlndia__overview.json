@@ -1,0 +1,172 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 15647,
+      "link": "rt-one-uberlndia",
+      "name": "RT-One Uberlândia",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "BR-497 highway",
+      "address_ref": "Uberlândia by BR-497, towards Prata",
+      "address_details": null,
+      "postal": "38438-899",
+      "city": "Uberlândia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Uberlandia",
+      "marketlink": "uberlandia",
+      "district": null,
+      "districtlink": null,
+      "latitude": -18.94893942693562,
+      "longitude": -48.33580789389012,
+      "description": "RT-One is constructing the largest Artificial Intelligence Data Center in Latin America in Uberlândia, Brazil. The facility, situated on over 1 million m² along the BR-497 highway, represents an investment exceeding R$ 6 billion. Initially, it will feature a 100 MW capacity, with plans for expansion up to 400 MW. The data center is designed for high-performance processing, sovereign cloud services, cybersecurity, and AI workloads, adhering to international energy efficiency standards and utilizing 100% renewable energy with advanced cooling technologies. Environmental conservation is integrated into the campus design, with a significant portion dedicated to a Permanent Preservation Area. RT-One aims for a Power Usage Effectiveness (PUE) of 1.1-1.2, positioning it among the lowest in the sector. The project is expected to foster local economic development through job creation and talent training in digital transformation.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "400",
+        "mw_pipeline": 100,
+        "mw_referenced": "400",
+        "mw_underconstruction": "100"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 13532,
+        "link": "rt-one",
+        "priority": 1,
+        "name": "RT-One",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Vila Romana",
+            "state": "São Paulo",
+            "postal": "05049-000",
+            "address": "Rua Catão 988, Sala 1",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 400,
+            "mw_live_pct": 0,
+            "mw_pipeline": 100,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 400,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 100,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 100,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788747040,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 1,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

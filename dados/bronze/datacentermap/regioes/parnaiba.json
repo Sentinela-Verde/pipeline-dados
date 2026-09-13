@@ -1,0 +1,150 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:45",
+  "tentativas": 1,
+  "dados": {
+    "geodata": {
+      "link": "parnaiba",
+      "type": "market",
+      "name": "Parnaíba",
+      "localname": null,
+      "latitude": -2.9147973,
+      "longitude": -41.7668454,
+      "zoom": 11,
+      "meta_sponsor": {},
+      "meta_news": null,
+      "meta_stats": {
+        "dcs": {
+          "mw_live": 0,
+          "pue_avg": 0,
+          "pue_pct": 0,
+          "operators": 1,
+          "mw_planned": 100,
+          "mw_builtout": 100,
+          "mw_live_pct": 0,
+          "mw_pipeline": 100,
+          "ws_live_pct": 0,
+          "ws_live_sqm": 0,
+          "ws_live_sqft": 0,
+          "mw_referenced": 100,
+          "mw_planned_pct": 100,
+          "ws_planned_pct": 0,
+          "ws_planned_sqm": 0,
+          "coordinates_pct": 100,
+          "mw_builtout_pct": 100,
+          "mw_pipeline_pct": 100,
+          "ws_builtout_pct": 0,
+          "ws_builtout_sqm": 0,
+          "ws_pipeline_pct": 0,
+          "ws_pipeline_sqm": 0,
+          "ws_planned_sqft": 0,
+          "ws_builtout_sqft": 0,
+          "ws_pipeline_sqft": 0,
+          "mw_referenced_pct": 100,
+          "ws_referenced_pct": 0,
+          "ws_referenced_sqm": 0,
+          "ws_referenced_sqft": 0,
+          "mw_underconstruction": 0,
+          "year_operational_avg": 0,
+          "year_operational_pct": 0,
+          "mw_underconstruction_pct": 0,
+          "ws_underconstruction_pct": 0,
+          "ws_underconstruction_sqm": 0,
+          "ws_underconstruction_sqft": 0
+        },
+        "ixps": 0,
+        "clouds": 0,
+        "networks": 0,
+        "companies": 0,
+        "datacenters": 1,
+        "dcs_listings": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        },
+        "dcs_locations": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        },
+        "dcs_facilities": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        }
+      },
+      "parents": {
+        "country": "Brazil",
+        "countrylink": "brazil"
+      },
+      "children": null,
+      "oneliner": null,
+      "description": null
+    },
+    "dcs": [
+      {
+        "id": 16177,
+        "maptype": "dc-unmapped",
+        "parent": 0,
+        "listingtype": "Facility",
+        "capacitytype": "Enterprise",
+        "link": "enegix-piau",
+        "priority": 1,
+        "icon": "dc1",
+        "iconsize": 0.75,
+        "url": "/brazil/parnaiba/enegix-piau/",
+        "name": "Enegix Piauí",
+        "companylink": "enegix",
+        "companyname": "Enegix",
+        "companylogo": "logo.jpg",
+        "address": "within ZPE Parnaíba",
+        "address_ref": "ZPE Parnaíba",
+        "postal": "64913-901",
+        "city": "Parnaíba",
+        "state": null,
+        "country": "Brazil",
+        "oneliner": "Enegix Piauí is a planned 100MW Bitcoin mining data center in Parnaíba, Brazil, leveraging idle state grid energy and expected to cost up to $120 million with a 4-6 year completion forecast.",
+        "thumbnail": null,
+        "extra": null,
+        "latitude": -2.956195978406484,
+        "longitude": -41.76979620360595
+      },
+      {
+        "maptype": "market-unmapped",
+        "icon": "q1",
+        "iconsize": 0.75,
+        "name": "Unmapped Data Centers",
+        "dcs": [
+          {
+            "name": "Enegix Piauí",
+            "url": "/brazil/parnaiba/enegix-piau/",
+            "address_ref": "ZPE Parnaíba",
+            "companyname": "Enegix",
+            "address": "ZPE Parnaíba",
+            "postal": "64913-901",
+            "city": "Parnaíba",
+            "state": null,
+            "country": "Brazil"
+          }
+        ],
+        "latitude": -2.9147973,
+        "longitude": -41.7668454
+      }
+    ]
+  }
+}

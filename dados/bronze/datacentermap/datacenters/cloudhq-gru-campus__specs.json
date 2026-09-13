@@ -1,0 +1,168 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9267,
+      "link": "cloudhq-gru-campus",
+      "name": "CloudHQ GRU Campus",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Campus",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Parque das Indústrias",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "13140-0000",
+      "city": "Paulínia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.77138788859079,
+      "longitude": -47.10601347144599,
+      "description": "The CloudHQ GRU Campus is located within the Campinas region, featuring 3 buildings of 48 MW critical power. Power is supplied by an onsite substation connected to the Brazilian National Grid.\n\nData centers on campus:\n - GRU1: 48 MW of critical power + 566,767 square feet / 52,654 square meters\n - GRU2:  48 MW of critical power + 566,767 square feet / 52,654 square meters\n - GRU3: 48 MW of critical power + 566,767 square feet / 52,654 square meters",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "id": "805214319",
+          "type": "vimeo",
+          "width": 640,
+          "height": 360,
+          "source": null,
+          "filename": "vimeo805214319.jpg",
+          "reference": "Brazil GRU Campus - CloudHQ",
+          "ts_uploaded": 1712028017
+        }
+      ],
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "288"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Purpose-built"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 6,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": 288,
+        "mw_pipeline": 288,
+        "mw_referenced": 288
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 6253,
+        "link": "cloudhq",
+        "priority": 1,
+        "name": "CloudHQ",
+        "logo": "logo.webp",
+        "addresses": {
+          "main": {
+            "city": "Washington",
+            "state": "District of Columbia",
+            "postal": "20005",
+            "address": "1212 New York Ave NW, Suite 1000",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 170,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 200,
+            "mw_builtout": 5921.6,
+            "mw_live_pct": 2.4,
+            "mw_pipeline": 4772.8,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 5921.6,
+            "mw_planned_pct": 1.2,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 64.7,
+            "mw_pipeline_pct": 61.2,
+            "ws_builtout_pct": 8.2,
+            "ws_builtout_sqm": 186394,
+            "ws_pipeline_pct": 5.9,
+            "ws_pipeline_sqm": 150348,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 2006331,
+            "ws_pipeline_sqft": 1618331,
+            "mw_referenced_pct": 64.7,
+            "ws_referenced_pct": 8.2,
+            "ws_referenced_sqm": 186394,
+            "ws_referenced_sqft": 2006331,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2023,
+            "year_operational_pct": 9.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 49,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 110,
+          "hyperscale": 0,
+          "ts_updated": 1788648185,
+          "datacenters": 71,
+          "dcs_listings": {
+            "0": 58,
+            "1": 14,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 85
+          },
+          "dcs_locations": {
+            "0": 22,
+            "1": 7,
+            "2": 6,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 35
+          },
+          "dcs_facilities": {
+            "0": 53,
+            "1": 9,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 71
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": null
+  }
+}

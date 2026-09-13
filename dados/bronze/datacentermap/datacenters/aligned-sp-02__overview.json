@@ -1,0 +1,210 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9235,
+      "link": "aligned-sp-02",
+      "name": "ODATA SP02 Campus",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Campus",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. José Blumer, 150",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "13186-510",
+      "city": "Chácaras Assay, Hortolândia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.9008002,
+      "longitude": -47.1935167,
+      "description": "Previously part of ODATA, acquired by Aligned Data Centers.\n63.000 m2 plot, 9.6000 m2 building and 5.600 m2 of raised floor. 16 MW power. (upgradeable to 24  MW).\n\nFacts:\n - Located in Hortolândia, one hour and thirty minutes from São Paulo\n - Easy access via Bandeirantes and Anhanguera Highway\n - Ample expansion capability: adjacent land parcels can accommodate up to two new data centers\n\nCooling\n - Flexibility to host deployments up to 8 kW/rack\n\nCompliance:\n - PCI DSS, ISO 9001, ISO 27001, ISO 14001, ISAE 3402",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1080,
+          "source": "https://odatacolocation.com/en/blog/data-center/dc-sp02/",
+          "filename": "SP02-Foto-em-destaque.jpg",
+          "reference": "ODATA SP02",
+          "ts_uploaded": 1779881317
+        },
+        {
+          "id": "DXrK_-OHy1A",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "source": null,
+          "filename": "youtubeDXrK_-OHy1A.jpg",
+          "reference": "ODATA Tour DC SP02",
+          "ts_uploaded": 1710198473
+        }
+      ],
+      "meta_standards": {
+        "pci": "1",
+        "iso9001": "1",
+        "isae3402": "2",
+        "iso14001": "1",
+        "iso27001": "1"
+      },
+      "meta_power": {
+        "kw_rack": "8"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Purpose-built",
+        "year_operational": "2020"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 2,
+        "networkpresence": 1,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "ODATA DC SP02",
+        "provider_id": "SP-02",
+        "peeringdb_id": 15093
+      },
+      "meta_capacity": {
+        "mw_live": "16",
+        "mw_builtout": "24",
+        "buildingsize": "63000",
+        "mw_referenced": "24",
+        "whitespace_builtout": 5600,
+        "whitespace_referenced": 5600
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12886,
+        "link": "odata-an-aligned-data-centers-company",
+        "priority": 1,
+        "name": "ODATA, an Aligned Data Centers Company",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "",
+            "postal": "04534-013",
+            "address": "Rua Joaquim Floriano 913, 4º andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 178,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 730.6,
+            "mw_live_pct": 18.8,
+            "mw_pipeline": 144,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 730.6,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 59523,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 640700,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 87.5,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 59523,
+            "ws_referenced_sqft": 640700,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2021,
+            "year_operational_pct": 81.3,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 23,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 24,
+          "hyperscale": 0,
+          "ts_updated": 1788656981,
+          "datacenters": 15,
+          "dcs_listings": {
+            "0": 1,
+            "1": 1,
+            "2": 14,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 16
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}
