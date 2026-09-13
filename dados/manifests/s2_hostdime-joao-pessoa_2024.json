@@ -1,0 +1,63 @@
+{
+  "site_id": "hostdime-joao-pessoa",
+  "ano": 2024,
+  "sensor": "sentinel2",
+  "colecao": "COPERNICUS/S2_SR_HARMONIZED",
+  "janela": {
+    "mes_inicio": 6,
+    "mes_fim": 9,
+    "ampliada": false
+  },
+  "mascara": {
+    "metodo": "cloud_score_plus",
+    "colecao": "GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED",
+    "banda": "cs_cdf",
+    "limiar": 0.6
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "harmonizacao": {
+    "funcao": "sentinela.gee.harmonizacao.harmonizar_s2",
+    "aplicar_bandpass": true,
+    "metodo": "bandpass linear Claverie (Sentinel-2A MSI -> pseudo-OLI)",
+    "fonte": "docs/decisoes/ADR-003-harmonizacao-multissensor.md"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    1620780.0,
+    0.0,
+    -10.0,
+    9205830.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002,
+    "bandas": 6
+  },
+  "resolucao_m": 10,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "n_imagens_usadas": 24,
+  "pct_pixels_validos": 100.0,
+  "sanidade_fisica": {
+    "red_mediana_vegetacao": 0.032683281478977054,
+    "nir_mediana_vegetacao": 0.32226810835586217
+  },
+  "grade": {
+    "origin_x": 1620780.0,
+    "origin_y": 9205830.0,
+    "regra": "origem = (floor(minx/30)*30, ceil(maxy/30)*30) em EPSG:31983, a partir do buffer do site em config/sites.geojson — regra de coordenação com SV-06b, ver docs/tarefas/SV-06-ingestao-sentinel2.md"
+  },
+  "sha256": "913e77a11bb48f7980c444507fdf2fca6f4c23b3f1fa9f92b53af1cce343e602",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:34:50.787481+00:00",
+  "tamanho_mb": 6.916
+}
