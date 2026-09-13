@@ -1,14 +1,160 @@
-# Sugestão de estrutura de pastas — dados, modelos e projetos
+# Estrutura de pastas — dados, modelos e projetos
 
-Proposta v1 para o time de arquitetura, derivada direto do
-[diagrama de pipeline](diagrama.html) já revisado. Hoje o pipeline
-está espalhado em **3 repositórios** (`data-extraction`, `modelo-imagens-satelite` e o protótipo
-abandonado `datacenter-extracao-modelos`), cada um com sua própria convenção de pastas — esta
-proposta organiza tudo sob uma estrutura única, agrupando por **dados / modelos / projetos**, do
-jeito que o time pediu.
+Estrutura oficial do pipeline do Sentinela Verde, organizada por **dados / modelos / projetos**,
+substituindo os **3 repositórios** que existiam antes (`data-extraction`, `modelo-imagens-satelite`
+e o protótipo abandonado `datacenter-extracao-modelos`), cada um com sua própria convenção de
+pastas. O [diagrama de pipeline](diagrama.html) (interativo, com zoom) e a versão em Mermaid logo
+abaixo mostram o fluxo completo de ponta a ponta.
 
-> Isto é ponto de partida pra discussão, não decisão fechada — em particular, os pontos
-> marcados como "⚠ decisão em aberto" abaixo precisam de um dono antes de qualquer migração.
+> Os pontos marcados como "⚠ decisão em aberto" na seção de decisões, mais abaixo, ainda não têm
+> dono — o resto deste documento já reflete a estrutura em uso.
+
+## Diagrama do pipeline
+
+Fluxo completo — coleta → extração de imagem → rótulos → índices espectrais → Modelo 1
+(treino/inferência) → Modelo 2 (grupo de controle) → consolidação → análise estatística →
+reiteração/expansão da amostra. Versão interativa com zoom em [`diagrama.html`](diagrama.html);
+esta é a mesma fonte, renderizada direto pelo GitHub:
+
+```mermaid
+flowchart TD
+    subgraph S1["1 · Coleta"]
+        A1["Scraping<br/>datacentermap.com"]:::fonte
+        A2[["lat/lon, ano construção,<br/>specs de porte (MW/tier)"]]:::dado
+        A3["Google Geocoding API<br/>(reverse geocoding por lat/lon)"]:::fonte
+        A4[["Endereço/município/estado/país/CEP (silver)<br/>município e estado sempre atualizados;<br/>demais só complementados onde faltava"]]:::dado
+        A1 --> A2
+        A2 --> A3 --> A4
+    end
+
+    subgraph S2["2 · Extração de imagem"]
+        B1["Google Earth Engine"]:::fonte
+        B2[["GeoTIFF bandas<br/>Landsat 30m / Sentinel-2 10m"]]:::dado
+        A2 --> B1 --> B2
+    end
+
+    subgraph S3["3 · Rótulos (em paralelo)"]
+        C1["MapBiomas Coleção 9"]:::fonte
+        C2[["Label automático anual"]]:::dado
+        C3["WorldCover"]:::fonte
+        C4[["Crosscheck<br/>(só ano 2021)"]]:::dado
+        C5["Rotulagem manual<br/>211 polígonos<br/>(solo exposto/obras)"]:::manual
+        C1 --> C2
+        C3 --> C4
+        C5 -. precedência .-> C2
+    end
+
+    subgraph S4["4 · Índices espectrais"]
+        D1["Cálculo de 7 índices<br/>NDVI·EVI·NDWI·MNDWI·NDBI·BSI·NDMI"]:::processo
+        D2[["Bandas + 7 índices"]]:::dado
+        B2 --> D1 --> D2
+    end
+
+    subgraph S5T["5a · Modelo 1 — Treino (uma vez só)"]
+        E0[["Dataset amostrado<br/>bandas+índices+labels<br/>split por bloco, sem vazamento"]]:::dado
+        ET["Treino Random Forest<br/>(GroupKFold, validação)"]:::modelo
+        EJ[["models/rf_{tag}.joblib<br/>+ sha256 de conferência"]]:::dado
+        D2 --> E0
+        C2 --> E0
+        C4 -. peso do label .-> E0
+        E0 --> ET --> EJ
+    end
+
+    subgraph S5["5b · Modelo 1 — Inferência (tratamento)"]
+        E1["Predição em lote<br/>(reaplica o .joblib, não retreina)"]:::modelo
+        E2[["Mapa de classes + % confiança<br/>15 data centers (Brasil)"]]:::dado
+        EJ --> E1
+        D2 --> E1
+        E1 --> E2
+    end
+
+    subgraph S6["Temperatura (paralelo)"]
+        F1["Extração LST<br/>(Landsat)"]:::processo
+        F2[["LST média por área/ano"]]:::dado
+        B2 --> F1 --> F2
+    end
+
+    subgraph S7["Socioeconômico"]
+        G1["BigQuery · IBGE"]:::fonte
+        G2[["População, PIB, empresas<br/>por município (Brasil)"]]:::dado
+        G3["Socioeconômico US<br/>(fonte a definir)"]:::fonte
+        G4[["Equivalente por condado/cidade<br/>(EUA)"]]:::dado
+        G1 --> G2
+        G3 --> G4
+    end
+
+    subgraph S8["6 · Modelo 2 — Grupo de controle"]
+        H1["KNN cidades similares"]:::modelo
+        H2[["Município/cidade similar"]]:::dado
+        H3["6 pontos candidatos<br/>(distância/direção do DC)"]:::processo
+        H3a["Inferência (mesmo .joblib)<br/>classifica os 6 candidatos<br/>(uso comparativo)"]:::modelo
+        H3b["Comparação estatística<br/>nível/tendência pré-obra<br/>candidato vs. data center"]:::processo
+        H4["Escolha final do ponto<br/>(mapa + comparação estatística)"]:::manual
+        H5[["Grupo controle definido"]]:::dado
+        G2 --> H1
+        G4 -. "(sites EUA)" .-> H1
+        A4 -. "município/estado padronizado" .-> H1
+        H1 --> H2 --> H3 --> H3a --> H3b --> H4 --> H5
+        EJ -. "mesmo modelo, não retreina" .-> H3a
+        E2 -. "nível/tendência do data center" .-> H3b
+    end
+
+    subgraph S9["Modelo 1 — Inferência (controle, completa)"]
+        I1["Predição em lote<br/>(mesmo .joblib, AOI completo<br/>do ponto já escolhido)"]:::modelo
+        I2[["Mapa de classes<br/>área de controle"]]:::dado
+        EJ -. "mesmo modelo, não retreina" .-> I1
+        H5 --> I1 --> I2
+    end
+
+    subgraph S10["7 · Consolidação"]
+        J1["Junção manual<br/>(sem script hoje)"]:::manual
+        J2[["consolidado_impacto_modelo.csv<br/>1 linha por área x ano"]]:::dado
+        E2 --> J1
+        I2 --> J1
+        F2 --> J1
+        G2 --> J1
+        A2 --> J1
+        J1 --> J2
+    end
+
+    subgraph S11["8 · Análise estatística"]
+        K1["Event study · placebo · DiD<br/>curva de efeito líquido"]:::processo
+        K2[["Efeito líquido por variável/horizonte<br/>± erro padrão"]]:::dado
+        J2 --> K1 --> K2
+    end
+
+    subgraph S12["9 · Reiteração — expansão automática da amostra"]
+        L0["Mais pontos do scraping<br/>datacentermap (candidatos novos)"]:::dado
+        L1["Inferência (mesmo .joblib)<br/>classifica um raio menor<br/>ao redor do ponto"]:::modelo
+        L2[["Série anual de % por classe<br/>no raio menor, por site"]]:::dado
+        L3["Calibrador de obra<br/>(regras: pico de solo exposto ·<br/>recuo do solo · salto de área construída)"]:::processo
+        L4[["ano_inicio_obra / ano_fim_obra<br/>estimados automaticamente"]]:::dado
+        A2 --> L0 --> L1
+        EJ -. "mesmo modelo, não retreina" .-> L1
+        L1 --> L2 --> L3 --> L4
+    end
+    L4 -. "alimenta de volta o dataset de datacenters<br/>(define fase pré/durante/pós sem pesquisa manual do ano)<br/>→ amostra expandida: 15 → N sites (N a confirmar)" .-> A2
+
+    subgraph S13["Próximos passos — fora do escopo atual"]
+        N1["Consumo de energia<br/>(ANEEL/MME)"]:::futuro
+        N2["Uso de água<br/>(SNIS)"]:::futuro
+        N3["Ruído"]:::futuro
+        N1 ~~~ N2 ~~~ N3
+    end
+    N1 -. "entraria na análise final<br/>— ainda não integrado" .-> J2
+    N2 -. "idem" .-> J2
+    N3 -. "idem" .-> J2
+
+    classDef fonte fill:#37474F,color:#ffffff,stroke:#263238;
+    classDef processo fill:#546E7A,color:#ffffff,stroke:#37474F;
+    classDef modelo fill:#1B5E20,color:#ffffff,stroke:#0d3311,stroke-width:2px;
+    classDef dado fill:#ECEFF1,color:#222222,stroke:#90A4AE;
+    classDef manual fill:#F5A623,color:#2a1d00,stroke:#8a5a00,stroke-width:2px,stroke-dasharray: 4 3;
+    classDef futuro fill:#C62828,color:#ffffff,stroke:#7f1d1d,stroke-width:2px,stroke-dasharray: 3 3;
+```
+
+> Se editar o diagrama, mude nos dois lugares: aqui (pra renderizar no GitHub) e em
+> `diagrama.html` (pra manter zoom/legenda/tabela de etapas funcionando).
 
 ## Status da migração
 
@@ -19,11 +165,10 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
       copiado para `projetos/01_coleta_datacenter/`; dado bruto (cache JSON + CSV final) copiado
       de `data-extraction/data/raw/datacentermap/` e `outputs_extraction/datacentermap_datacenters.csv`
       para `dados/bronze/datacentermap/`. **Ainda não integrado ao resto do pipeline nesta pasta.**
-      Sub-etapa nova: `correcao_endereco/` (`step7_corrige_endereco.py`) — reverse geocoding via
-      Google Geocoding API a partir de lat/lon, gera `dados/silver/datacentermap_enderecos_corrigidos.csv`
-      com endereço/município/estado/país/CEP padronizados (colunas antigas de texto livre são
-      removidas). **Código pronto, ainda não executado** — falta confirmar `GOOGLE_MAPS_API_KEY`
-      no `.env` (ver `.env.example`).
+      Sub-etapa `correcao_endereco/` (`step7_corrige_endereco.py`) — reverse geocoding via Google
+      Geocoding API a partir de lat/lon, gera `dados/silver/datacentermap_enderecos_corrigidos.csv`.
+      `município`/`estado` sempre atualizados pela API; `endereco`/`cep`/`pais` só complementados
+      onde o scraping deixou vazio. **Executado — 242/242 linhas com `status_geocode = OK`.**
 - [x] **02 · Extração de imagem** — código de `modelo-imagens-satelite/src/sentinela/gee/`
       (`auth`, `harmonizacao`, `sentinel2`, `landsat`) para `projetos/02_extracao_imagem/`.
       Os 286 GeoTIFF (1,03 GB) foram para o **S3 bronze**, não pro git; os 286 manifests de
@@ -57,7 +202,7 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
       deste escopo); dados (`consolidado_impacto_modelo.csv`, curva de efeito líquido, event
       study, relatório HTML) copiados para `dados/gold/`
 
-## Árvore proposta
+## Árvore do repositório
 
 ```
 sentinela_verde/
@@ -76,7 +221,7 @@ sentinela_verde/
 │   │   └── socioeconomico_us/              # equivalente ao IBGE, para grupo controle nos EUA (⚠ fonte a definir)
 │   │
 │   ├── silver/                             # tratado / intermediário
-│   │   ├── datacentermap_enderecos_corrigidos.csv  # ⚙ código pronto (etapa 1 · correcao_endereco), não executado
+│   │   ├── datacentermap_enderecos_corrigidos.csv  # ✅ gerado (etapa 1 · correcao_endereco) — 242/242 OK
 │   │   ├── features/                       # ✅ código puxado — 13 bandas, .tif só no S3 silver
 │   │   ├── expansao_amostra/               # série no raio menor + calibrador de obra (etapa 9)
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
@@ -138,7 +283,7 @@ sentinela_verde/
 | `modelo-imagens-satelite` | `src/sentinela/{dataset,train}.py` | `modelos/modelo_1_classificacao_imagem/treino/` |
 | `modelo-imagens-satelite` | `src/sentinela/predict.py` | `modelos/modelo_1_classificacao_imagem/inferencia/` |
 | `data-extraction` | `modeling/modelo_classifica_imagem/{classification_obra,deteccao_fases_obra}*.py` | `projetos/07_reiteracao_expansao_amostra/` |
-| `data-extraction` | `transform/pega_endereco/` (readaptado p/ ler `datacentermap_datacenters.csv`) | ✅ `projetos/01_coleta_datacenter/correcao_endereco/` (código pronto, não executado) |
+| `data-extraction` | `transform/pega_endereco/` (readaptado p/ ler `datacentermap_datacenters.csv`) | ✅ `projetos/01_coleta_datacenter/correcao_endereco/` (executado, 242/242 OK) |
 | `data-extraction` | `transform/filtra_datacenter/` | sem pasta designada — ver decisão 7 |
 | `data-extraction` | `extract/bigquery_ibge/` | ✅ `projetos/06_extracao_socioeconomico/ibge/` |
 | — | *(não existe ainda)* | `projetos/06_extracao_socioeconomico/socioeconomico_us/` — precisa de fonte equivalente ao IBGE pros EUA |
@@ -146,7 +291,7 @@ sentinela_verde/
 | — | *(não existe ainda)* | `modelos/modelo_2_grupo_controle/comparacao_estatistica/` — reaplica o `.joblib` do modelo 1 nos 6 candidatos e compara nível/tendência com o data center |
 | `data-extraction` | `modeling/modelo_impacto/step1_*.py` (sem step2) | ✅ `projetos/09_analise_estatistica_impacto/` |
 | `data-extraction` | `data/silver/consolidado_impacto_modelo.csv` + `data/gold/modelo_impacto/{curva_efeito_liquido,efeito_liquido_por_par}.csv` etc. | ✅ `dados/gold/` |
-| `data-extraction` | `data/{bronze,silver,gold}/` | `dados/{bronze,silver,gold}/` (já usa a convenção proposta) |
+| `data-extraction` | `data/{bronze,silver,gold}/` | `dados/{bronze,silver,gold}/` (já usa essa convenção) |
 | `modelo-imagens-satelite` | `config/`, `models/*.joblib` | `modelos/modelo_1_classificacao_imagem/{config,artefatos}/` |
 | `modelo-imagens-satelite` | `data/{raw,interim,processed}/` | `dados/{bronze,silver,gold}/` (precisa migrar convenção) |
 | `modelo-imagens-satelite` | `data/labels_manual/`, `data/manifests/` | `dados/{labels_manual,manifests}/` (sem mudança) |
