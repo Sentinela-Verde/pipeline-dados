@@ -1,0 +1,101 @@
+{
+  "site_id": "ascenty-sumare",
+  "ano": 2016,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/ascenty-sumare/2016.tif",
+    "raw_manifest": "data/manifests/landsat_ascenty-sumare_2016.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    267120.0,
+    0.0,
+    -30.0,
+    7481160.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 100.0,
+  "sha256": "92d7c9c28b3c1d2544c83b4686596759cc21f3c381f0f76761ff8305fb6d075c",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:47:06.008552+00:00"
+}

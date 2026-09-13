@@ -1,0 +1,101 @@
+{
+  "site_id": "ascenty-jundiai",
+  "ano": 2019,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/ascenty-jundiai/2019.tif",
+    "raw_manifest": "data/manifests/landsat_ascenty-jundiai_2019.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    292890.0,
+    0.0,
+    -30.0,
+    7438890.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 99.9095,
+  "sha256": "066cfb270ff9fb4a91bee8c972bbf61b654fa7735e2649f655af452a27717ceb",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:48:04.560701+00:00"
+}

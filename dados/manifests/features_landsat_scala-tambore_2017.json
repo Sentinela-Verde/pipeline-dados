@@ -1,0 +1,100 @@
+{
+  "site_id": "scala-tambore",
+  "ano": 2017,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/scala-tambore/2017.tif",
+    "raw_manifest": "data/manifests/landsat_scala-tambore_2017.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    309840.0,
+    0.0,
+    -30.0,
+    7405560.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999.0,
+  "pct_pixels_validos": 99.9946,
+  "sha256": "20cb93a6ef255601baeff8d2d061065996fb29b5e123735b1e8810da33779e2b",
+  "git_sha": "f5454bfd2950874fb65411e5242db23773c87472",
+  "gerado_em": "2026-08-27T20:23:34.944971+00:00"
+}

@@ -1,0 +1,101 @@
+{
+  "site_id": "ascenty-paulinia",
+  "ano": 2019,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/ascenty-paulinia/2019.tif",
+    "raw_manifest": "data/manifests/landsat_ascenty-paulinia_2019.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    275880.0,
+    0.0,
+    -30.0,
+    7482330.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 100.0,
+  "sha256": "3a72d7f880960f107adeb7b4aa88046d858aae4290c622ef8a6e5569da3405b8",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:48:13.444075+00:00"
+}

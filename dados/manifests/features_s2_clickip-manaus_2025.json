@@ -1,0 +1,101 @@
+{
+  "site_id": "clickip-manaus",
+  "ano": 2025,
+  "sensor": "sentinel2",
+  "origem": {
+    "raw_tif": "data/raw/s2/clickip-manaus/2025.tif",
+    "raw_manifest": "data/manifests/s2_clickip-manaus_2025.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    -1190010.0,
+    0.0,
+    -10.0,
+    9655320.0
+  ],
+  "shape": {
+    "width": 1005,
+    "height": 1002,
+    "bandas": 13
+  },
+  "resolucao_m": 10,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 100.0,
+  "sha256": "c3ecdaf4910e74d3321e50a9eedbe8d1b6c1fb25e452c0a55b5637b8f12ee548",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:47:15.143160+00:00"
+}
