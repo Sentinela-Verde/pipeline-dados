@@ -3,27 +3,34 @@
 Roda DEPOIS de `run_pipeline.py` (etapa 1 principal), que gera
 `dados/bronze/datacentermap/datacentermap_datacenters.csv`. Usa `latitude`/`longitude` — sempre
 preenchidas, vêm do próprio datacentermap.com — para consultar a Google Geocoding API e obter
-endereço, município, estado, país e CEP padronizados.
+endereço, município, estado, país e CEP.
 
 **Por que isso é necessário:** os campos `endereco`, `cidade`, `estado`, `pais`, `cep` que já vêm
 do scraping são texto livre digitado por quem cadastrou o data center no datacentermap.com —
-abreviações, espaço sobrando, UF vazia (ver `estado` vazio no CSV real: várias linhas têm cidade
-mas não estado). Downstream (Modelo 2 casa `município`/`uf` com o IBGE) precisa de um valor
-padronizado, não do que veio digitado.
+abreviações, espaço sobrando, UF vazia (várias linhas têm `cidade` mas não `estado`). Downstream
+(Modelo 2 casa `município`/`uf` com o IBGE) precisa de um valor padronizado.
 
-**Limpeza aplicada** (além da correção via API):
+**Estratégia (complementar x sempre atualizar) — diferente por campo:**
+- `municipio` (`cidade`) e `estado`: **sempre atualizados** com o valor da Geocoding API quando
+  ela responde `OK`, mesmo que o scraping já tivesse um valor — é o par que o Modelo 2 usa pra
+  casar com o IBGE, então vale mais confiar sempre no geocoding do que no que foi digitado.
+- `endereco`, `cep`, `pais`: só **complementados** — o valor do scraping é mantido sempre que já
+  existe; a Geocoding API só entra pra preencher o que está vazio. (CEP e país seguem o mesmo
+  raciocínio do endereço por não terem um "valor de referência downstream" como município/UF —
+  ajustar se quiser tratamento diferente pra algum desses três.)
+
+**Limpeza aplicada:**
 - trim de espaço em branco de toda coluna de texto (ex.: `"R. da Independencia, 632 "` — reparar
   o espaço sobrando no fim);
 - linhas sem `latitude`/`longitude` não chamam a API (não dá pra geocodificar sem coordenada) —
-  ficam com `status_geocode = "LAT_LON_AUSENTE"`, não são descartadas;
-- as colunas antigas de endereço (`endereco`, `cep`, `cidade`, `estado`, `pais` — texto livre,
-  padrão inconsistente) são **removidas** do resultado final: o dado "silver" fica só com a versão
-  padronizada pela Geocoding API, nunca as duas lado a lado;
+  ficam com `status_geocode = "LAT_LON_AUSENTE"`, não são descartadas nem alteradas;
 - `status_geocode` é mantido por linha (`OK`, `ZERO_RESULTS`, `LAT_LON_AUSENTE`, `ERRO_REDE: ...`,
-  `ERRO_API: ...`) para quem for consumir esse CSV depois decidir o que fazer com o que a API não
-  resolveu — a linha em si não é descartada por falha de geocoding, só perde a coluna de endereço.
+  `ERRO_API: ...`) — falha de geocoding não descarta a linha, só deixa os campos como já
+  estavam no scraping.
 
-Saída: `dados/silver/datacentermap_enderecos_corrigidos.csv` (mesmo separador `;` do bronze).
+Saída: `dados/silver/datacentermap_enderecos_corrigidos.csv` (mesmo separador `;` do bronze,
+mesmos nomes de coluna do bronze — `endereco`/`cidade`/`estado`/`pais`/`cep` — só que
+complementados/atualizados, mais o `status_geocode`).
 
 Precisa de `GOOGLE_MAPS_API_KEY` no `.env` da raiz (Geocoding API habilitada + faturamento ativo).
 
@@ -49,9 +56,10 @@ GEOCODE_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 MAX_TENTATIVAS = 5
 PAUSA_ENTRE_CHAMADAS_SEG = 0.1
 
-# Colunas de endereço "cruas" do scraping (texto livre, padrão inconsistente) — saem do resultado
-# final, substituídas pelas colunas *_corrigido vindas da Geocoding API.
-COLUNAS_ENDERECO_ANTIGAS = ["endereco", "cep", "cidade", "estado", "pais"]
+# Campos sempre atualizados pelo geocoding (nome da coluna final -> nome da coluna geocodificada).
+CAMPOS_SEMPRE_ATUALIZA = {"cidade": "municipio_geocode", "estado": "estado_geocode"}
+# Campos só complementados onde o scraping já não tem valor.
+CAMPOS_COMPLEMENTA = {"endereco": "endereco_geocode", "cep": "cep_geocode", "pais": "pais_geocode"}
 
 
 def _extrai_componente(components: list[dict], tipo: str, campo: str = "long_name") -> str | None:
@@ -91,14 +99,18 @@ def geocodifica(lat: float, lon: float, api_key: str) -> dict:
             components, "locality"
         )
         return {
-            "endereco_corrigido": resultado.get("formatted_address"),
-            "municipio_corrigido": municipio,
-            "estado_corrigido": _extrai_componente(components, "administrative_area_level_1", "short_name"),
-            "pais_corrigido": _extrai_componente(components, "country"),
-            "cep_corrigido": _extrai_componente(components, "postal_code"),
+            "endereco_geocode": resultado.get("formatted_address"),
+            "municipio_geocode": municipio,
+            "estado_geocode": _extrai_componente(components, "administrative_area_level_1", "short_name"),
+            "pais_geocode": _extrai_componente(components, "country"),
+            "cep_geocode": _extrai_componente(components, "postal_code"),
             "status_geocode": "OK",
         }
     return {"status_geocode": "ERRO_DESCONHECIDO"}
+
+
+def _vazio(serie: pd.Series) -> pd.Series:
+    return serie.isna() | (serie.astype(str).str.strip() == "")
 
 
 def main() -> None:
@@ -111,7 +123,7 @@ def main() -> None:
     df = pd.read_csv(SETTINGS.csv_bronze, sep=";", encoding="utf-8-sig")
     print(f"{len(df)} data centers lidos de {SETTINGS.csv_bronze.name}")
 
-    # Limpeza 1: tira espaço em branco sobrando de toda coluna de texto.
+    # Limpeza: tira espaço em branco sobrando de toda coluna de texto.
     colunas_texto = df.select_dtypes(include="object").columns
     df[colunas_texto] = df[colunas_texto].apply(lambda s: s.str.strip())
 
@@ -120,7 +132,7 @@ def main() -> None:
     if n_sem_coordenada:
         print(
             f"AVISO: {n_sem_coordenada} linha(s) sem lat/lon — status_geocode=LAT_LON_AUSENTE, "
-            f"sem chamar a API pra essas."
+            f"sem chamar a API pra essas (campos ficam como vieram do scraping)."
         )
 
     api_key = SETTINGS.google_maps_api_key
@@ -139,9 +151,21 @@ def main() -> None:
 
     n_ok = int((df["status_geocode"] == "OK").sum())
     print(f"Geocoding OK em {n_ok}/{len(df)} linhas ({100 * n_ok / len(df):.1f}%).")
+    tem_ok = df["status_geocode"] == "OK"
 
-    # Limpeza 2: remove as colunas de endereço cruas — ficam só as padronizadas + status_geocode.
-    df = df.drop(columns=[c for c in COLUNAS_ENDERECO_ANTIGAS if c in df.columns])
+    # Município e estado: SEMPRE atualiza com o valor do geocoding, onde ele respondeu OK —
+    # mesmo que o scraping já tivesse um valor preenchido.
+    for coluna_final, coluna_geocode in CAMPOS_SEMPRE_ATUALIZA.items():
+        df.loc[tem_ok, coluna_final] = df.loc[tem_ok, coluna_geocode]
+
+    # Endereço, CEP e país: só COMPLEMENTA onde o scraping deixou vazio — nunca sobrescreve o que
+    # já veio preenchido.
+    for coluna_final, coluna_geocode in CAMPOS_COMPLEMENTA.items():
+        precisa_complementar = _vazio(df[coluna_final]) & tem_ok
+        df.loc[precisa_complementar, coluna_final] = df.loc[precisa_complementar, coluna_geocode]
+
+    # Descarta as colunas auxiliares (*_geocode) — já foram absorvidas nas colunas finais acima.
+    df = df.drop(columns=list(CAMPOS_SEMPRE_ATUALIZA.values()) + list(CAMPOS_COMPLEMENTA.values()))
 
     SETTINGS.csv_silver.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(SETTINGS.csv_silver, sep=";", index=False, encoding="utf-8-sig")

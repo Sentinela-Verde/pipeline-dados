@@ -4,9 +4,23 @@ Roda **depois** de `run_pipeline.py` (a coleta principal do datacentermap.com). 
 `dados/bronze/datacentermap/datacentermap_datacenters.csv` e, pra cada linha, usa
 `latitude`/`longitude` (sempre preenchidas) pra consultar a
 [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding) e obter
-**endereço, município, estado, país e CEP padronizados** — em vez do texto livre que o operador
-digitou no datacentermap.com (`endereco`, `cidade`, `estado`, `pais`, `cep` — inconsistentes,
-às vezes com `estado` vazio mesmo tendo `cidade` preenchida).
+endereço, município, estado, país e CEP — em vez do texto livre que o operador digitou no
+datacentermap.com (`endereco`, `cidade`, `estado`, `pais`, `cep` — inconsistentes, às vezes com
+`estado` vazio mesmo tendo `cidade` preenchida).
+
+## Estratégia: complementar x sempre atualizar (por campo)
+
+Não é a mesma regra pra todo campo:
+
+| Campo | Regra |
+|---|---|
+| `cidade` (município), `estado` (UF) | **Sempre atualizado** com o valor da Geocoding API (quando ela responde `OK`) — mesmo que o scraping já tivesse algo preenchido |
+| `endereco`, `cep`, `pais` | **Só complementado** — o valor do scraping é mantido sempre que já existe; a API só entra pra preencher o que está vazio |
+
+O porquê da diferença: `município`/`uf` é o que o Modelo 2 usa pra casar com o IBGE — vale mais
+confiar sempre no geocoding do que no que foi digitado. Já `endereco`/`cep`/`pais` não têm um
+consumidor downstream tão sensível a padronização, então não vale a pena perder informação que o
+scraping já trouxe certa só pra substituir pela versão do Google.
 
 ## Por que isso importa pro resto do pipeline
 
@@ -20,14 +34,13 @@ resto do pipeline.
 - Trim de espaço em branco de toda coluna de texto do CSV bruto (ex.:
   `"R. da Independencia, 632 "`, com espaço sobrando no fim).
 - Linhas sem `latitude`/`longitude` não chamam a API — ficam com `status_geocode =
-  "LAT_LON_AUSENTE"`, mas **não são descartadas**.
-- **As colunas antigas de endereço (`endereco`, `cep`, `cidade`, `estado`, `pais`) são removidas**
-  do resultado final — o CSV de saída fica só com as versões padronizadas
-  (`endereco_corrigido`, `municipio_corrigido`, `estado_corrigido`, `pais_corrigido`,
-  `cep_corrigido`) + `status_geocode`, nunca as duas versões lado a lado.
+  "LAT_LON_AUSENTE"`, e os campos de endereço continuam exatamente como vieram do scraping.
+- O CSV de saída usa **os mesmos nomes de coluna do bronze** (`endereco`, `cidade`, `estado`,
+  `pais`, `cep`) — não cria colunas `_corrigido` paralelas; `municipio`/`estado` são sobrescritos
+  in-place, os outros três são só preenchidos onde estavam vazios.
 - `status_geocode` (`OK` / `ZERO_RESULTS` / `LAT_LON_AUSENTE` / `ERRO_REDE: ...` / `ERRO_API:
   ...`) fica registrado por linha — falha de geocoding não derruba a linha do data center, só
-  deixa as colunas de endereço vazias pra essa linha específica.
+  deixa os campos como já estavam no scraping.
 
 ## Como rodar
 
