@@ -112,11 +112,9 @@ sentinela_verde/
 │   ├── tarefas/                            # 1 tarefa por arquivo
 │   └── guia_estrutura_dados.md
 │
-├── apresentacao/                           # material pra banca/stakeholders (já existe hoje)
-│
 └── proximos_passos/                        # backlog isolado, fora do pipeline ativo
-    ├── energia_aneel_mme/                  # já tem coleta pronta, não conectada
-    ├── agua_snis/                          # já tem coleta pronta, não conectada
+    ├── energia_aneel_mme/                  # ✅ código + dado puxados (aneel_energia_municipio + bigquery_mme_energia_uf), não conectado
+    ├── agua_snis/                          # ✅ código puxado (bigquery_snis_agua); sem dado — nunca foi gerado na fonte
     └── ruido/                              # sem fonte de dado ainda
 ```
 
@@ -147,7 +145,7 @@ sentinela_verde/
 | `modelo-imagens-satelite` | `data/labels_manual/`, `data/manifests/` | `dados/{labels_manual,manifests}/` (sem mudança) |
 | `modelo-imagens-satelite` | `scripts/nucleo_datacenter_por_ano.py`, `datar_obra_por_serie.py` | `projetos/07_reiteracao_expansao_amostra/` — ⚠ hoje esses scripts só reaproveitam classificação já feita (raio 500m sobre os 15 sites); o fluxo alvo (rodar o `.joblib` direto num raio menor para pontos *novos* do scraping) precisa de um caminho de inferência que ainda não existe |
 | `modelo-imagens-satelite` | `docs/decisoes/`, `docs/tarefas/` | `docs/{decisoes,tarefas}/` (sem mudança) |
-| `data-extraction` | `extract/aneel_energia_municipio/`, `bigquery_mme_energia_uf/`, `bigquery_snis_agua/` | `proximos_passos/{energia_aneel_mme,agua_snis}/` |
+| `data-extraction` | `extract/aneel_energia_municipio/`, `bigquery_mme_energia_uf/`, `bigquery_snis_agua/` | ✅ `proximos_passos/{energia_aneel_mme,agua_snis}/` |
 | `datacenter-extracao-modelos` | (protótipo abandonado, working tree já apagado) | não migra — decidir se arquiva o repo ou apaga de vez |
 
 ## Decisões em aberto (o time de arquitetura precisa bater o martelo)
