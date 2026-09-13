@@ -19,6 +19,11 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
       copiado para `projetos/01_coleta_datacenter/`; dado bruto (cache JSON + CSV final) copiado
       de `data-extraction/data/raw/datacentermap/` e `outputs_extraction/datacentermap_datacenters.csv`
       para `dados/bronze/datacentermap/`. **Ainda não integrado ao resto do pipeline nesta pasta.**
+      Sub-etapa nova: `correcao_endereco/` (`step7_corrige_endereco.py`) — reverse geocoding via
+      Google Geocoding API a partir de lat/lon, gera `dados/silver/datacentermap_enderecos_corrigidos.csv`
+      com endereço/município/estado/país/CEP padronizados (colunas antigas de texto livre são
+      removidas). **Código pronto, ainda não executado** — falta confirmar `GOOGLE_MAPS_API_KEY`
+      no `.env` (ver `.env.example`).
 - [x] **02 · Extração de imagem** — código de `modelo-imagens-satelite/src/sentinela/gee/`
       (`auth`, `harmonizacao`, `sentinel2`, `landsat`) para `projetos/02_extracao_imagem/`.
       Os 286 GeoTIFF (1,03 GB) foram para o **S3 bronze**, não pro git; os 286 manifests de
@@ -71,6 +76,7 @@ sentinela_verde/
 │   │   └── socioeconomico_us/              # equivalente ao IBGE, para grupo controle nos EUA (⚠ fonte a definir)
 │   │
 │   ├── silver/                             # tratado / intermediário
+│   │   ├── datacentermap_enderecos_corrigidos.csv  # ⚙ código pronto (etapa 1 · correcao_endereco), não executado
 │   │   ├── features/                       # ✅ código puxado — 13 bandas, .tif só no S3 silver
 │   │   ├── expansao_amostra/               # série no raio menor + calibrador de obra (etapa 9)
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
@@ -97,7 +103,7 @@ sentinela_verde/
 │       └── artefatos/
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
-│   ├── 01_coleta_datacenter/               # ✅ código já puxado
+│   ├── 01_coleta_datacenter/               # ✅ código já puxado (+ correcao_endereco/, novo)
 │   ├── 02_extracao_imagem/                 # ✅ código já puxado
 │   ├── 03_extracao_labels/                 # ✅ código já puxado
 │   ├── 04_indices_espectrais/              # ✅ código já puxado
@@ -132,7 +138,8 @@ sentinela_verde/
 | `modelo-imagens-satelite` | `src/sentinela/{dataset,train}.py` | `modelos/modelo_1_classificacao_imagem/treino/` |
 | `modelo-imagens-satelite` | `src/sentinela/predict.py` | `modelos/modelo_1_classificacao_imagem/inferencia/` |
 | `data-extraction` | `modeling/modelo_classifica_imagem/{classification_obra,deteccao_fases_obra}*.py` | `projetos/07_reiteracao_expansao_amostra/` |
-| `data-extraction` | `transform/filtra_datacenter/`, `transform/pega_endereco/` | sem pasta designada — ver decisão 7 |
+| `data-extraction` | `transform/pega_endereco/` (readaptado p/ ler `datacentermap_datacenters.csv`) | ✅ `projetos/01_coleta_datacenter/correcao_endereco/` (código pronto, não executado) |
+| `data-extraction` | `transform/filtra_datacenter/` | sem pasta designada — ver decisão 7 |
 | `data-extraction` | `extract/bigquery_ibge/` | ✅ `projetos/06_extracao_socioeconomico/ibge/` |
 | — | *(não existe ainda)* | `projetos/06_extracao_socioeconomico/socioeconomico_us/` — precisa de fonte equivalente ao IBGE pros EUA |
 | `data-extraction` | `modeling/modelo_grupo_controle/` | ✅ `modelos/modelo_2_grupo_controle/selecao_candidatos/` |
@@ -207,14 +214,17 @@ A parte de `modelo_classifica_imagem` que decide a fase de obra (`classification
 (ver De-para) — é código de detecção de fase, não do classificador de cobertura do solo em si, então
 essa exclusão não leva ele junto.
 
-### 7 · `transform/filtra_datacenter` (e `transform/pega_endereco`) não têm pasta designada
+### 7 · `transform/filtra_datacenter` — ainda sem pasta designada (`pega_endereco` ✅ resolvido)
 
-Essas duas etapas de `data-extraction/transform/` filtram/enriquecem o CSV do scraping antes dele
-alimentar o resto do pipeline — `filtra_datacenter` inclusive resolve a dependência que faltava
-pro Modelo 2 rodar (`datacenter_filtrado.csv`). Nenhuma das duas tem lugar na árvore proposta hoje;
-o candidato mais natural é uma subpasta de `projetos/01_coleta_datacenter/` (ex.:
-`filtro_elegibilidade/`), já que logicamente ficam entre a coleta bruta e tudo que consome o CSV
-filtrado — mas isso é uma mudança de estrutura, então fica registrado aqui até você confirmar.
+`transform/pega_endereco` foi resolvido: virou
+`projetos/01_coleta_datacenter/correcao_endereco/` (sub-etapa que roda depois do scraping,
+descrita no checklist acima) — readaptado pra ler `datacentermap_datacenters.csv` direto, em vez
+de `lista_mestra_campi.csv` do `modelo-imagens-satelite`.
+
+`transform/filtra_datacenter` continua sem lugar — resolve a dependência que falta pro Modelo 2
+rodar (`datacenter_filtrado.csv`), e o candidato natural é outra subpasta de
+`projetos/01_coleta_datacenter/` (ex.: `filtro_elegibilidade/`), pelo mesmo raciocínio: fica entre
+a coleta bruta e tudo que consome a lista filtrada.
 
 ### 8 · Qual extração de imagem é a boa — e o que fazer com a outra ✅ decidido
 
