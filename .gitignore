@@ -1,0 +1,19 @@
+.env
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Rasters e binários pesados do data lake não entram no git — a proveniência vai em
+# dados/manifests/*.json (esses SIM são commitados) e diz como regerar cada arquivo.
+dados/**/*.tif
+dados/**/*.tif.aux.xml
+dados/**/*.jpg
+dados/**/*.parquet
+dados/**/*.joblib
+
+# Compostos RGB de conferência visual (--inspecionar da etapa 2): reproduzíveis a partir do .tif.
+projetos/02_extracao_imagem/inspecao/
