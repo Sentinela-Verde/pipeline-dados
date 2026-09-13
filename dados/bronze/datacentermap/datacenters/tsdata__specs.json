@@ -1,0 +1,178 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18034,
+      "link": "tsdata",
+      "name": "TSData Eugênio de Melo",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "TBA - To Be Announced",
+      "address_ref": "Cidade Tecnológica",
+      "address_details": "Parque de Inovação Tecnológica São José dos Campos",
+      "postal": "12247-016",
+      "city": "São José dos Campos",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Jose dos Campos",
+      "marketlink": "sao-jose-dos-campos",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.1510828,
+      "longitude": -45.7828613,
+      "description": "TSData is developing a new data center in São José dos Campos, Brazil, located near the PIT (Technological Innovation Park). The facility will span approximately 1,000 square meters and is designed with a total capacity of 650 kW. The initial phase, featuring 100 kW of installed capacity, is slated for delivery in the first half of 2026.\n\nThe data center will provide infrastructure hosting in a controlled environment, emphasizing operational discipline and continuity. Services include application and service hosting within a Tier III data center, offering dedicated and scalable resources with assisted operation and a focus on stability. Tailored environments will be created based on criticality and growth needs, supported by operations and monitoring routines for changes, patching, and evidence. Backup and tested restoration are available, with Disaster Recovery options.\n\nColocation services will offer secure, traceable racks, U, and cages prepared for critical workloads. Access control and monitoring are key features, alongside operational routines and change windows. Capacity management and planned growth are integral to the facility's design.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2026"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "0.65",
+        "mw_pipeline": "0.65",
+        "mw_referenced": "0.65",
+        "whitespace_builtout": "1000",
+        "whitespace_pipeline": "1000",
+        "whitespace_referenced": "1000"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14284,
+        "link": "tsdata",
+        "priority": 1,
+        "name": "TSData",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0.65,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0.65,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0.65,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 1000,
+            "ws_pipeline_pct": 100,
+            "ws_pipeline_sqm": 1000,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 10764,
+            "ws_pipeline_sqft": 10764,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 1000,
+            "ws_referenced_sqft": 10764,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788572282,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

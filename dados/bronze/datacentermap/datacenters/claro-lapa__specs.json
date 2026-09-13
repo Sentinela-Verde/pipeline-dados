@@ -1,0 +1,179 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18024,
+      "link": "claro-lapa",
+      "name": "Claro Data Center LAPA",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Aldo de Azevedo, 200 - Vila Madalena",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "05453-030",
+      "city": "São Paulo",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.54195739494818,
+      "longitude": -46.70931247916715,
+      "description": "The Claro LAPA Data Center, operated by Claro (América Móvil), is a carrier-grade facility located in São Paulo, Brazil. It is situated at Rua Aldo de Azevedo, 200 - Vila Madalena. This data center is classified as Tier III by the Uptime Institute, ensuring high availability and concurrent maintenance capabilities.\n\nKey features include dual power feeds, redundant energy systems, and HVAC systems for climate control. The facility provides robust connectivity, hosting multiple carriers such as Claro and AT&T, as well as cloud providers. Claro LAPA is designed to support corporate solutions, including cloud services and colocation.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2012",
+        "footprint_building": 1645
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Embratel LAPA Data Center"
+      },
+      "meta_capacity": {
+        "buildingsize": "7000"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11778,
+        "link": "claro",
+        "priority": 1,
+        "name": "Claro",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "México"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 6.65,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 6.65,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 28.6,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 57.1,
+            "ws_builtout_sqm": 14736,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 158617,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 28.6,
+            "ws_referenced_pct": 57.1,
+            "ws_referenced_sqm": 14736,
+            "ws_referenced_sqft": 158617,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2019,
+            "year_operational_pct": 28.6,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 11,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 11,
+          "hyperscale": 0,
+          "ts_updated": 1788569480,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 7,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 7,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 7,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

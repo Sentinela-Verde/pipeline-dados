@@ -1,0 +1,167 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8249,
+      "link": "sjrp01",
+      "name": "IFTNET SJRP01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av Bady Bassit 2966",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "15025000",
+      "city": "Sao Jose do Rio Preto SP",
+      "state": "",
+      "statelink": "",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Jose do Rio Preto",
+      "marketlink": "sao-jose-do-rio-preto",
+      "district": "",
+      "districtlink": "",
+      "latitude": -20.8088639,
+      "longitude": -49.3828821,
+      "description": "The Datacenter locate in interior of Sao Paulo state Brazil, Sao Jose do Rio Preto city.\nBy Schnneider Electric and HVAC project;\nNovec by 3M protection systems;\nCo-Locations provide;\nPrivate Cloud provide;\nConnectivity MAN and WAN over optical fiber networks;\nConnectivity in all subsea cables available in Brazil;\nASN28330",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 6967,
+        "link": "iftnet",
+        "priority": 1,
+        "name": "IFTNET Telecom",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Sao Jose do Rio Preto",
+            "state": "SP",
+            "postal": "15025000",
+            "address": "Av Bady Bassit 2966",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788648803,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

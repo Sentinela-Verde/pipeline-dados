@@ -1,0 +1,178 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 6371,
+      "link": "getcard-data-center",
+      "name": "GetTI Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Advogado Horacio Racanello Filho, 5570",
+      "address_ref": "",
+      "address_details": null,
+      "postal": "87020-035",
+      "city": "Maringa",
+      "state": "Parana",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Maringa",
+      "marketlink": "maringa",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4179188,
+      "longitude": -51.9354338,
+      "description": "Data Center offering services of Cloud Computing with high performance, Colocation, Dedicated Server, TEF and consulting in secure, sizing, performance and high availability.\nThe GetCard is located in Marina, Parana\n\nAccess https://www.getcard.com.br",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "id": "6VsOrHjuTq0",
+          "type": "youtube",
+          "width": 120,
+          "height": 90,
+          "filename": "v2-6VsOrHjuTq0.jpg",
+          "reference": "GetCard Data Center",
+          "ts_uploaded": 1688057001
+        }
+      ],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 1,
+        "networkproviders": 1,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 4057
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 5157,
+        "link": "getcard-provedora-de-transacoes-eletrônicas",
+        "priority": 1,
+        "name": "GetCard Provedora de Transações Eletrônicas",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Maringá",
+            "state": "Paraná",
+            "postal": "87020-035",
+            "address": "Av. Advogado Horacio Racanello Filho, 5570",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 2,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 1,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788652112,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

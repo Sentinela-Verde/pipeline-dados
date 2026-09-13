@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8250,
+      "link": "quantico-canoas",
+      "name": "Quântico Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Eng. Homero Carlos Simon, 1100 - Guajuviras",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "92442000",
+      "city": "Canoas",
+      "state": "Rio Grande do Sul (RS)",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Porto Alegre",
+      "marketlink": "porto-alegre",
+      "district": null,
+      "districtlink": null,
+      "latitude": -29.9040072,
+      "longitude": -51.1283808,
+      "description": "Quântico Data Center offers an infrastructure focused on colocation in the South of Brazil. The site, located in Rio Grande do Sul, has 73.000 ft² of white floor space and 12 MW of total power capacity. \n\nQuântico Data Center owns an electrical substation and has connection with submarine fiber.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "tier_designed": 4
+      },
+      "meta_power": {
+        "kw_rack": 15
+      },
+      "meta_security": {
+        "guards": "Yes, 24/7"
+      },
+      "meta_amenities": {
+        "meetmeroom": 1
+      },
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "rooftop_access": 1,
+        "year_operational": 2021
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_live": "12",
+        "mw_builtout": "50",
+        "mw_referenced": "50",
+        "whitespace_builtout": 73000,
+        "whitespace_referenced": 73000
+      },
+      "tags": [],
+      "metaunits": "imperial",
+      "contact_sales": null,
+      "companies": {
+        "id": 9848,
+        "link": "quantico-data-center",
+        "priority": 1,
+        "name": "Quântico Data Center",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Porto Alegre",
+            "state": "Rio Grande do Sul (RS)",
+            "postal": "92442000",
+            "address": "Rua Eng. Homero Carlos Simon, 1100",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 12,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 50,
+            "mw_live_pct": 100,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 50,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 6782,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 73000,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 6782,
+            "ws_referenced_sqft": 73000,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2021,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788651331,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

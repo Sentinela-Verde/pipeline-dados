@@ -1,0 +1,192 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13855,
+      "link": "odata-sp04",
+      "name": "ODATA SP04",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Herman, 02 - Industrial Anhangüera",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "06276-030",
+      "city": "Osasco",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.48330711230518,
+      "longitude": -46.77617843757606,
+      "description": "ODATA SP04 is a cutting-edge data center located in Osasco, São Paulo, Brazil. With a robust IT capacity of 48MW, this facility is designed to meet the demands of high-density computing environments, supporting up to 50kW per rack. It features the innovative Delta³ cooling system, a patented technology developed by Aligned Data Centers, which enhances energy efficiency by capturing and removing heat directly at its source. This system also integrates seamlessly with liquid cooling solutions, making it ideal for AI, cloud, and high-performance computing workloads.\n\nThe SP04 data center operates with 100% renewable energy, reflecting ODATA's commitment to sustainability and responsible energy practices. Scheduled to begin operations in April 2025, SP04 is set to strengthen São Paulo's position as a leading technology hub, driving local economic growth and attracting significant investments.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 2560,
+          "height": 1920,
+          "source": "https://odatacolocation.com/en/blog/data-center/dc-sp04/",
+          "filename": "SP04-Foto-de-destaque.jpeg",
+          "reference": "ODATA SP04",
+          "ts_uploaded": 1785158095
+        }
+      ],
+      "meta_standards": null,
+      "meta_power": {
+        "kw_rack": "50"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "year_operational": "2025"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 1,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "SP-04"
+      },
+      "meta_capacity": {
+        "mw_builtout": "48",
+        "buildingsize": "36599",
+        "mw_referenced": "48",
+        "whitespace_builtout": "27422",
+        "whitespace_referenced": "27422"
+      },
+      "tags": [
+        "AI-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12886,
+        "link": "odata-an-aligned-data-centers-company",
+        "priority": 1,
+        "name": "ODATA, an Aligned Data Centers Company",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "",
+            "postal": "04534-013",
+            "address": "Rua Joaquim Floriano 913, 4º andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 178,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 730.6,
+            "mw_live_pct": 18.8,
+            "mw_pipeline": 144,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 730.6,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 59523,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 640700,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 87.5,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 59523,
+            "ws_referenced_sqft": 640700,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2021,
+            "year_operational_pct": 81.3,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 23,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 24,
+          "hyperscale": 0,
+          "ts_updated": 1788656981,
+          "datacenters": 15,
+          "dcs_listings": {
+            "0": 1,
+            "1": 1,
+            "2": 14,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 16
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

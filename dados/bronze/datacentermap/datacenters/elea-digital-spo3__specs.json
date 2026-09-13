@@ -1,0 +1,181 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11722,
+      "link": "elea-digital-spo3",
+      "name": "Elea SPO3",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Al. Rio Negro, 530",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "06454",
+      "city": "Barueri",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.5013594,
+      "longitude": -46.8473233,
+      "description": "Elea Data Centers SPO3 stands as a beacon of technological advancement in the Tamboré region, marking a pivotal expansion in São Paulo's tech landscape. This data center is engineered to support the deployment of sophisticated technologies such as Artificial Intelligence and Cloud Computing, catering to the burgeoning demands of these sectors.\n\nIn tandem with its sister facility in São Bernardo do Campo (SPO2), Elea Data Centers SPO3 is a critical component of a broader investment strategy. This strategy encompasses a formidable 120MW capacity and a $1 billion financial commitment, aimed at bolstering Brazil's data center infrastructure. The current operational capacity of these centers exceeds 10MW, ensuring they are well-positioned to serve both local and international clients in an area where data center resources are increasingly scarce.\n\nThe SPO3 facility distinguishes itself with its superior subsea cable connectivity, offering a strategic advantage in IT infrastructure solutions. This feature is in line with Elea Digital's mission to provide high-performance services. Furthermore, the entire network of Elea Digital's data centers, including SPO3, operates on 100% renewable energy. This highlights the company's pledge to sustainability while simultaneously addressing the needs of cloud services, AI applications, and global enterprise customers.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {
+        "totalmw": "5"
+      },
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2001",
+        "footprint_building": 1518
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "DXC Technology Barueri",
+        "provider_id": "SPO3",
+        "peeringdb_id": 15772
+      },
+      "meta_capacity": {
+        "mw_builtout": 5,
+        "mw_referenced": 5
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30057,
+      "companies": {
+        "id": 11506,
+        "link": "elea-digital",
+        "priority": 1,
+        "name": "Elea Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Botafogo",
+            "state": "Rio de Janeiro",
+            "postal": "4103",
+            "address": "Rua Lauro Müller, 116",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 2,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 7.5,
+            "mw_builtout": 212.2,
+            "mw_live_pct": 7.1,
+            "mw_pipeline": 87.5,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 212.2,
+            "mw_planned_pct": 7.1,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 71.4,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 71.4,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2015,
+            "year_operational_pct": 21.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 21,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788657281,
+          "datacenters": 13,
+          "dcs_listings": {
+            "0": 3,
+            "1": 1,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 14
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 11
+          },
+          "dcs_facilities": {
+            "0": 3,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 13
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

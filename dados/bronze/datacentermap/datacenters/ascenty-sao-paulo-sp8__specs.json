@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18912,
+      "link": "ascenty-sao-paulo-sp8",
+      "name": "Ascenty - Sao Paulo SP8",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Tbd",
+      "address_ref": "1 km S/SW of Osasco Campus across SP-270",
+      "address_details": null,
+      "postal": "06268-120",
+      "city": "Osasco",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.48473731725123,
+      "longitude": -46.76933685910062,
+      "description": "Ascenty – São Paulo SP8 is a planned carrier-neutral data center in Osasco, São Paulo, Brazil. It forms part of Ascenty's expansion in the region alongside São Paulo SP7.\n\nSP8 is planned to provide 18MW of total power capacity across 13,500m² of data center space. The development is located in a high-density business area and is designed to provide continuous technical support, advanced security, and flexible connectivity options.\n\nSP8 is planned for a 47,430.16m² site acquired by Ascenty in 2023, located across the Raposo Tavares Highway, approximately one kilometer from Ascenty's existing campus. Together, the planned SP7 and SP8 developments represent an investment of approximately R$1.5 billion and a combined planned capacity of 40MW, supporting Ascenty's continued expansion in the São Paulo market.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Undefined",
+        "year_operational": ""
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "18",
+        "mw_pipeline": "18",
+        "mw_referenced": "18"
+      },
+      "tags": [
+        "Carrier Neutral"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 2821,
+        "link": "ascenty-data-centers",
+        "priority": 1,
+        "name": "Ascenty Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Vinhedo",
+            "state": "Sao Paulo",
+            "postal": "13.288-162",
+            "address": "Av. João Batista Nunes, 50 - Distrito Industrial Benedito Storani",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 552,
+            "mw_live_pct": 0,
+            "mw_pipeline": 190,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 552,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.8,
+            "mw_pipeline_pct": 24.4,
+            "ws_builtout_pct": 48.8,
+            "ws_builtout_sqm": 182869,
+            "ws_pipeline_pct": 4.9,
+            "ws_pipeline_sqm": 29984,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 1968384,
+            "ws_pipeline_sqft": 322745,
+            "mw_referenced_pct": 87.8,
+            "ws_referenced_pct": 48.8,
+            "ws_referenced_sqm": 182869,
+            "ws_referenced_sqft": 1968384,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2020,
+            "year_operational_pct": 63.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 39,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 40,
+          "hyperscale": 0,
+          "ts_updated": 1788660089,
+          "datacenters": 36,
+          "dcs_listings": {
+            "0": 2,
+            "1": 6,
+            "2": 31,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 41
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 25
+          },
+          "dcs_facilities": {
+            "0": 2,
+            "1": 6,
+            "2": 26,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 36
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

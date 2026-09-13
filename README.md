@@ -7,8 +7,40 @@ abandonado `datacenter-extracao-modelos`), cada um com sua própria convenção 
 proposta organiza tudo sob uma estrutura única, agrupando por **dados / modelos / projetos**, do
 jeito que o time pediu.
 
-> Isto é ponto de partida pra discussão, não decisão fechada — em particular, os 5 pontos
+> Isto é ponto de partida pra discussão, não decisão fechada — em particular, os pontos
 > marcados como "⚠ decisão em aberto" abaixo precisam de um dono antes de qualquer migração.
+
+## Status da migração
+
+Migração incremental: o código e o dado de cada fonte estão sendo trazidos pra cá aos poucos,
+antes de reconectar o pipeline como um todo — ver `## De-para` para o destino de cada peça.
+
+- [x] **01 · Coleta datacenter** — código de `data-extraction/extract/scraping_datacentermap/`
+      copiado para `projetos/01_coleta_datacenter/`; dado bruto (cache JSON + CSV final) copiado
+      de `data-extraction/data/raw/datacentermap/` e `outputs_extraction/datacentermap_datacenters.csv`
+      para `dados/bronze/datacentermap/`. **Ainda não integrado ao resto do pipeline nesta pasta.**
+- [ ] 02 · Extração de imagem
+- [ ] 03 · Extração de labels
+- [ ] 04 · Índices espectrais
+- [ ] 05 · Extração LST
+- [x] **06 · Extração socioeconômico** — só a parte IBGE: código de `extract/bigquery_ibge/`
+      copiado para `projetos/06_extracao_socioeconomico/ibge/`; dado (`ibge_municipios.csv`)
+      copiado para `dados/bronze/ibge/`. **US ainda pendente** (`socioeconomico_us/` continua vazio).
+- [ ] Modelo 1 — treino/inferência
+- [x] **Modelo 2 — grupo de controle (só seleção de candidatos)** — código de
+      `modeling/modelo_grupo_controle/` copiado para
+      `modelos/modelo_2_grupo_controle/selecao_candidatos/`; dados (cidades similares, 6 pontos,
+      mapa) copiados para `dados/silver/grupo_controle/`. **`comparacao_estatistica/` continua
+      vazio** — esse código ainda não existe em nenhum repositório hoje (ver decisão 4).
+- [ ] 07 · Reiteração / expansão da amostra
+- [ ] 08 · Consolidação — **código continua inexistente** (ver decisão 3); só o dado final
+      (`consolidado_impacto_modelo.csv`, hoje montado manualmente) foi copiado pra
+      `dados/gold/`, junto com a migração da análise estatística abaixo
+- [x] **09 · Análise estatística de impacto** — código de `modeling/modelo_impacto/` copiado
+      para `projetos/09_analise_estatistica_impacto/`, **excluindo deliberadamente
+      `step2_estagio2_modelo_efeito.py`** (o modelo de Estágio 2/Random Forest não faz parte
+      deste escopo); dados (`consolidado_impacto_modelo.csv`, curva de efeito líquido, event
+      study, relatório HTML) copiados para `dados/gold/`
 
 ## Árvore proposta
 
@@ -17,14 +49,14 @@ sentinela_verde/
 │
 ├── dados/                                  # data lake — 1 convenção única (ver decisão 1)
 │   ├── bronze/                             # bruto, exatamente como veio da fonte
-│   │   ├── datacentermap/                  # scraping (JSON cru, cache incremental)
+│   │   ├── datacentermap/                  # ✅ scraping (JSON cru, cache incremental) — já puxado
 │   │   ├── imagens_satelite/
 │   │   │   ├── landsat/
 │   │   │   └── sentinel2/
 │   │   ├── labels/
 │   │   │   ├── mapbiomas/
 │   │   │   └── worldcover/
-│   │   ├── ibge/
+│   │   ├── ibge/                           # ✅ já puxado
 │   │   └── socioeconomico_us/              # equivalente ao IBGE, para grupo controle nos EUA (⚠ fonte a definir)
 │   │
 │   ├── silver/                             # tratado / intermediário
@@ -48,21 +80,21 @@ sentinela_verde/
 │   │   └── artefatos/                      # *.joblib + *.sha256 (binário — ver decisão 2)
 │   │
 │   └── modelo_2_grupo_controle/
-│       ├── selecao_candidatos/             # KNN cidade similar (BR ou US) + 6 pontos candidatos
-│       ├── comparacao_estatistica/         # chama a inferência do modelo 1 (dependência cruzada,
-│       │                                   # ver nota abaixo) + compara nível/tendência pré-obra
+│       ├── selecao_candidatos/             # ✅ já puxado — KNN cidade similar (BR ou US) + 6 pontos candidatos
+│       ├── comparacao_estatistica/         # chama a inferência do modelo 1 (dependência
+│       │                                   # cruzada, ver decisão 4) + compara nível/tendência pré-obra
 │       └── artefatos/
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
-│   ├── 01_coleta_datacenter/
+│   ├── 01_coleta_datacenter/               # ✅ código já puxado
 │   ├── 02_extracao_imagem/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
 │   ├── 05_extracao_lst/
-│   ├── 06_extracao_socioeconomico/         # ibge/ (Brasil) + socioeconomico_us/ (⚠ fonte a definir)
-│   ├── 07_reiteracao_expansao_amostra/     # + candidatos do scraping, joblib em raio menor, calibrador de obra
+│   ├── 06_extracao_socioeconomico/         # ibge/ (Brasil) ✅ | socioeconomico_us/ (⚠ fonte a definir)
+│   ├── 07_reiteracao_expansao_amostra/     # candidatos do scraping, joblib em raio menor, calibrador de obra
 │   ├── 08_consolidacao/                    # ⚠ não existe hoje — ver decisão 3
-│   └── 09_analise_estatistica_impacto/     # step1: event study, placebo, DiD, curva efeito líquido
+│   └── 09_analise_estatistica_impacto/     # ✅ já puxado (sem o Estágio 2/RF) — event study, placebo, DiD, curva efeito líquido
 │
 ├── docs/
 │   ├── decisoes/                           # ADRs (ex.: status de propostas como Dynamic World)
@@ -81,16 +113,23 @@ sentinela_verde/
 
 | Repositório atual | Pasta/arquivo atual | Vai para |
 |---|---|---|
-| `data-extraction` | `extract/scraping_datacentermap/` | `projetos/01_coleta_datacenter/` |
+| `data-extraction` | `extract/scraping_datacentermap/` | ✅ `projetos/01_coleta_datacenter/` |
+| `data-extraction` | `data/raw/datacentermap/` + `data/raw/outputs_extraction/datacentermap_datacenters.csv` | ✅ `dados/bronze/datacentermap/` |
 | `data-extraction` | `extract/imagens_satelite/{landsat,sentinel2}/` | `projetos/02_extracao_imagem/` |
-| `data-extraction` | `extract/bigquery_ibge/` | `projetos/06_extracao_socioeconomico/ibge/` |
-| — | *(não existe ainda)* | `projetos/06_extracao_socioeconomico/socioeconomico_us/` — precisa de fonte equivalente ao IBGE pros EUA |
-| `data-extraction` | `modeling/modelo_grupo_controle/` | `modelos/modelo_2_grupo_controle/selecao_candidatos/` |
-| — | *(não existe ainda)* | `modelos/modelo_2_grupo_controle/comparacao_estatistica/` — reaplica o `.joblib` do modelo 1 nos 6 candidatos e compara nível/tendência com o data center |
-| `data-extraction` | `modeling/modelo_impacto/step1_*.py` | `projetos/09_analise_estatistica_impacto/` |
-| `data-extraction` | `data/{bronze,silver,gold}/` | `dados/{bronze,silver,gold}/` (já usa a convenção proposta) |
-| `modelo-imagens-satelite` | `src/sentinela/dataset.py`, `train.py` | `modelos/modelo_1_classificacao_imagem/treino/` |
+| `data-extraction` | `modeling/modelo_classifica_imagem/{classification,labels_mapbiomas}.py` | `projetos/03_extracao_labels/` |
+| `data-extraction` | `modeling/modelo_classifica_imagem/indices.py` | `projetos/04_indices_espectrais/` |
+| `data-extraction` | `modeling/modelo_classifica_imagem/{classification,step2_classificacao_imagens}.py` | ❌ não será trazido — ver decisão 6 |
+| `modelo-imagens-satelite` | `src/sentinela/{dataset,train}.py` | `modelos/modelo_1_classificacao_imagem/treino/` |
 | `modelo-imagens-satelite` | `src/sentinela/predict.py` | `modelos/modelo_1_classificacao_imagem/inferencia/` |
+| `data-extraction` | `modeling/modelo_classifica_imagem/{classification_obra,deteccao_fases_obra}*.py` | `projetos/07_reiteracao_expansao_amostra/` |
+| `data-extraction` | `transform/filtra_datacenter/`, `transform/pega_endereco/` | sem pasta designada — ver decisão 7 |
+| `data-extraction` | `extract/bigquery_ibge/` | ✅ `projetos/06_extracao_socioeconomico/ibge/` |
+| — | *(não existe ainda)* | `projetos/06_extracao_socioeconomico/socioeconomico_us/` — precisa de fonte equivalente ao IBGE pros EUA |
+| `data-extraction` | `modeling/modelo_grupo_controle/` | ✅ `modelos/modelo_2_grupo_controle/selecao_candidatos/` |
+| — | *(não existe ainda)* | `modelos/modelo_2_grupo_controle/comparacao_estatistica/` — reaplica o `.joblib` do modelo 1 nos 6 candidatos e compara nível/tendência com o data center |
+| `data-extraction` | `modeling/modelo_impacto/step1_*.py` (sem step2) | ✅ `projetos/09_analise_estatistica_impacto/` |
+| `data-extraction` | `data/silver/consolidado_impacto_modelo.csv` + `data/gold/modelo_impacto/{curva_efeito_liquido,efeito_liquido_por_par}.csv` etc. | ✅ `dados/gold/` |
+| `data-extraction` | `data/{bronze,silver,gold}/` | `dados/{bronze,silver,gold}/` (já usa a convenção proposta) |
 | `modelo-imagens-satelite` | `config/`, `models/*.joblib` | `modelos/modelo_1_classificacao_imagem/{config,artefatos}/` |
 | `modelo-imagens-satelite` | `data/{raw,interim,processed}/` | `dados/{bronze,silver,gold}/` (precisa migrar convenção) |
 | `modelo-imagens-satelite` | `data/labels_manual/`, `data/manifests/` | `dados/{labels_manual,manifests}/` (sem mudança) |
@@ -144,6 +183,28 @@ municípios/condados americanos foi encontrada no código hoje. Antes de impleme
 `modelos/modelo_2_grupo_controle/` para sites nos EUA, alguém precisa decidir a fonte (Census
 Bureau ACS? BLS? outra?) — isso também é pré-requisito da expansão internacional mencionada no
 ADR-006 do `modelo-imagens-satelite` (hoje proposta, não aprovada).
+
+### 6 · Duas implementações de Modelo 1 encontradas — só uma entra na estrutura
+
+Existem duas implementações de classificação de imagem: a de `modelo-imagens-satelite/src/sentinela`
+(MapBiomas, Random Forest) e uma outra em `data-extraction/modeling/modelo_classifica_imagem`
+(WorldCover, Random Forest + rede neural Keras). **Decisão: `modelo_1_v2_worldcover` não entra
+na estrutura** — `modelos/modelo_1_classificacao_imagem/` continua sendo só a implementação de
+`modelo-imagens-satelite`.
+
+A parte de `modelo_classifica_imagem` que decide a fase de obra (`classification_obra.py` +
+`deteccao_fases_obra*.py`) continua relevante e mapeada em `projetos/07_reiteracao_expansao_amostra/`
+(ver De-para) — é código de detecção de fase, não do classificador de cobertura do solo em si, então
+essa exclusão não leva ele junto.
+
+### 7 · `transform/filtra_datacenter` (e `transform/pega_endereco`) não têm pasta designada
+
+Essas duas etapas de `data-extraction/transform/` filtram/enriquecem o CSV do scraping antes dele
+alimentar o resto do pipeline — `filtra_datacenter` inclusive resolve a dependência que faltava
+pro Modelo 2 rodar (`datacenter_filtrado.csv`). Nenhuma das duas tem lugar na árvore proposta hoje;
+o candidato mais natural é uma subpasta de `projetos/01_coleta_datacenter/` (ex.:
+`filtro_elegibilidade/`), já que logicamente ficam entre a coleta bruta e tudo que consome o CSV
+filtrado — mas isso é uma mudança de estrutura, então fica registrado aqui até você confirmar.
 
 ## Por que separar `treino/` de `inferencia/` dentro do Modelo 1
 

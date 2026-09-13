@@ -1,0 +1,212 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12470,
+      "link": "idx-data-centers-it-services",
+      "name": "IDX Data Centers & IT Services",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Q. 103 Sul Rua SO 5, 274 - Plano Diretor Sul",
+      "address_ref": null,
+      "address_details": "",
+      "postal": " 77015",
+      "city": "Palmas",
+      "state": "Tocantins",
+      "statelink": "tocantins",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Palmas",
+      "marketlink": "palmas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -10.1875328,
+      "longitude": -48.340776,
+      "description": "IDX Data Centers & IT Services, a CRP Tech Group company, connects people, businesses and technologies in an increasingly digital world.\n\nSince our founding, we have been guided by the mission of delivering IT infrastructure solutions that not only meet, but exceed expectations for security, accessibility and reliability.\n\nWith a vision focused on sustainability and innovation, we adopt the most advanced technologies and responsible environmental practices to ensure that our impact on the world is both powerful and positive.\n\nWe are committed to reducing carbon emissions by using renewable energy sources and energy-efficient equipment, which reflects our respect for the planet and future generations.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "iso7017": 1,
+        "iso7018": 1,
+        "iso9001": 1,
+        "iso27001": 1,
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "kw_rack": 5,
+        "totalmw": 1.2,
+        "ups_text": "Vertiv",
+        "cooling_text": "Vertiv",
+        "standby_text": "MWM",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "crashcarts": 1,
+        "loadingbay": 1,
+        "meetmeroom": 1,
+        "officespace": 1,
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Purpose-built",
+        "tenancy_text": "Multi-tenant (mixed use)",
+        "area_building": 1670,
+        "rooftop_access": 1,
+        "area_whitespace": 250,
+        "year_operational": 2022
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 5,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 13806
+      },
+      "meta_capacity": {
+        "mw_builtout": 1.2,
+        "buildingsize": 1670,
+        "mw_referenced": 1.2,
+        "whitespace_builtout": 250,
+        "whitespace_referenced": 250
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30776,
+      "companies": {
+        "id": 12255,
+        "link": "idx-data-centers-it-services",
+        "priority": 1,
+        "name": "IDX Data Centers & IT Services",
+        "logo": "logo.jpeg",
+        "addresses": {
+          "main": {
+            "city": "Palmas",
+            "state": "Tocantins",
+            "postal": "77015018",
+            "address": " Q. 103 Sul Rua SO 5, 274 - 77015-018 - Plano Diretor Sul, Palmas - TO",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 1.2,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 1.2,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 250,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 2691,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 250,
+            "ws_referenced_sqft": 2691,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2022,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 1,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788647751,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

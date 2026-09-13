@@ -1,0 +1,214 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9072,
+      "link": "equinix-sp5x",
+      "name": "Equinix SP5x",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Marcos Penteado de Ulhôa Rodrigues, 888",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "06543-001",
+      "city": "Santana de Parnaíba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.46393786425595,
+      "longitude": -46.8626817427955,
+      "description": "SP5x Sao Paulo xScale data center is dedicated to hyperscale deployments connecting cloud services to our São Paulo environments. Our São Paulo data centers feature a dense concentration of financial services firms, cloud service providers, digital content companies and social media platforms. Customers can also interconnect with companies colocated in Equinix’s Rio de Janeiro facilities.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1457,
+          "height": 971,
+          "source": null,
+          "filename": "© Equinix - SP5x.jpg",
+          "reference": "© Equinix - SP5x",
+          "ts_uploaded": 1714644105
+        }
+      ],
+      "meta_standards": {
+        "pci": "2",
+        "soc1": "2",
+        "soc2": "2",
+        "iso9001": "1",
+        "iso22301": "1",
+        "iso27001": "1",
+        "iso50001": "1"
+      },
+      "meta_power": {
+        "cooling_text": "Air-cooled chillers with side discharge MegaCRAHs",
+        "standby_text": "1x 3500kW LV generator dedicated to each power block",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+2",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "Double interlock pre-action"
+      },
+      "meta_amenities": {
+        "parking_text": "Adjacent to building, overflow parking shared with SP3"
+      },
+      "meta_building": {
+        "floors": "2",
+        "floor_type": "Solid Floor",
+        "year_operational": "2021"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 1,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "SP5x",
+        "peeringdb_id": 14845
+      },
+      "meta_capacity": {
+        "mw_builtout": 14.4,
+        "mw_referenced": 14.4,
+        "whitespace_builtout": 5087,
+        "whitespace_referenced": 5087
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 422,
+        "link": "equinix",
+        "priority": 1,
+        "name": "Equinix",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Redwood City",
+            "state": "California",
+            "postal": "94065",
+            "address": "One Lagoon Drive",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 66.44,
+            "pue_avg": 1.41,
+            "pue_pct": 0.3,
+            "mw_planned": 0,
+            "mw_builtout": 2280.65,
+            "mw_live_pct": 2,
+            "mw_pipeline": 1057,
+            "ws_live_pct": 4.5,
+            "ws_live_sqm": 52656,
+            "ws_live_sqft": 566785,
+            "mw_referenced": 2280.65,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 31.5,
+            "mw_pipeline_pct": 4.5,
+            "ws_builtout_pct": 78.6,
+            "ws_builtout_sqm": 1634387,
+            "ws_pipeline_pct": 3.1,
+            "ws_pipeline_sqm": 126795,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 17592377,
+            "ws_pipeline_sqft": 1364809,
+            "mw_referenced_pct": 31.5,
+            "ws_referenced_pct": 78.6,
+            "ws_referenced_sqm": 1634387,
+            "ws_referenced_sqft": 17592377,
+            "mw_underconstruction": 14,
+            "year_operational_avg": 2016,
+            "year_operational_pct": 53.5,
+            "mw_underconstruction_pct": 0.3,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 38,
+          "colo": 420,
+          "ixps": 115,
+          "cloud": 0,
+          "presence": 438,
+          "hyperscale": 0,
+          "ts_updated": 1788570226,
+          "datacenters": 328,
+          "dcs_listings": {
+            "0": 24,
+            "1": 17,
+            "2": 310,
+            "4": 1,
+            "-1": 0,
+            "-2": 3,
+            "-3": 0,
+            "total": 355
+          },
+          "dcs_locations": {
+            "0": 15,
+            "1": 12,
+            "2": 251,
+            "4": 1,
+            "-1": 0,
+            "-2": 1,
+            "-3": 0,
+            "total": 280
+          },
+          "dcs_facilities": {
+            "0": 20,
+            "1": 16,
+            "2": 254,
+            "4": 1,
+            "-1": 0,
+            "-2": 3,
+            "-3": 0,
+            "total": 294
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

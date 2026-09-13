@@ -1,0 +1,435 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T13:14:49",
+  "tentativas": 1,
+  "dados": {
+    "geodata": {
+      "link": "brazil",
+      "type": "country",
+      "name": "Brazil",
+      "localname": "Brasil",
+      "latitude": -14.235004,
+      "longitude": -51.92528,
+      "zoom": 4,
+      "meta_sponsor": null,
+      "meta_news": null,
+      "meta_stats": {
+        "dcs": {
+          "mw_live": 58.3,
+          "pue_avg": 1.51,
+          "pue_pct": 4.3,
+          "operators": 101,
+          "mw_planned": 410.5,
+          "mw_builtout": 4260,
+          "mw_live_pct": 4.7,
+          "mw_pipeline": 2091.05,
+          "ws_live_pct": 1.7,
+          "ws_live_sqm": 632,
+          "ws_live_sqft": 6803,
+          "mw_referenced": 4260,
+          "mw_planned_pct": 1.7,
+          "ws_planned_pct": 0.4,
+          "ws_planned_sqm": 45,
+          "coordinates_pct": 100,
+          "mw_builtout_pct": 46.4,
+          "mw_pipeline_pct": 18.3,
+          "ws_builtout_pct": 28.1,
+          "ws_builtout_sqm": 399141,
+          "ws_pipeline_pct": 3.4,
+          "ws_pipeline_sqm": 113954,
+          "ws_planned_sqft": 484,
+          "ws_builtout_sqft": 4296317,
+          "ws_pipeline_sqft": 1226589,
+          "mw_referenced_pct": 46.4,
+          "ws_referenced_pct": 28.1,
+          "ws_referenced_sqm": 399141,
+          "ws_referenced_sqft": 4296317,
+          "mw_underconstruction": 104.2,
+          "year_operational_avg": 2019,
+          "year_operational_pct": 43,
+          "mw_underconstruction_pct": 1.7,
+          "ws_underconstruction_pct": 0.4,
+          "ws_underconstruction_sqm": 25,
+          "ws_underconstruction_sqft": 269
+        },
+        "ixps": 46,
+        "clouds": 21,
+        "networks": 37,
+        "companies": 73,
+        "datacenters": 235,
+        "dcs_listings": {
+          "0": 27,
+          "1": 30,
+          "2": 178,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 235
+        },
+        "dcs_locations": {
+          "0": 11,
+          "1": 19,
+          "2": 155,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 185
+        },
+        "dcs_facilities": {
+          "0": 23,
+          "1": 28,
+          "2": 167,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 218
+        }
+      },
+      "parents": {
+        "region": "South America",
+        "regionlink": "south-america"
+      },
+      "children": "[]",
+      "oneliner": null,
+      "description": "<b>Brazil facts from the CIA World Factbook:</b>\n<br/>Location:\n<br/>Eastern South America, bordering the Atlantic Ocean \n<br/><br/>Natural hazards:\n<br/>recurring droughts in northeast; floods and occasional frost in south \n<br/><br/>Telecommunications:\n<br/>general assessment: good working system; fixed-line connections have remained relatively stable in recent years and stand at about 20 per 100 persons; less expensive mobile cellular technology is a major driver in expanding telephone service to the low-income segment of the population with mobile-cellular telephone density reaching nearly 65 per 100 persons\n<br/>domestic: extensive microwave radio relay system and a domestic satellite system with 64 earth stations; mobile-cellular usage has more than tripled in the past 5 years\n<br/>international: country code - 55; landing point for a number of submarine cables, including Atlantis 2, that provide direct links to South and Central America, the Caribbean, the US, Africa, and Europe; satellite earth stations - 3 Intelsat (Atlantic Ocean), 1 Inmarsat (Atlantic Ocean region east), connected by microwave relay system to Mercosur Brazilsat B3 satellite earth station (2007)\n<br/>Internet hosts: 9.573 million (2008) \n<br/>Internet users: 50 million (2007) "
+    },
+    "geos": [
+      {
+        "name": "Porto Alegre",
+        "link": "porto-alegre",
+        "localname": "",
+        "children": null,
+        "datacenters": 15,
+        "latitude": -30.027704,
+        "longitude": -51.228735
+      },
+      {
+        "name": "Sao Paulo",
+        "link": "sao-paulo",
+        "localname": "São Paulo",
+        "children": null,
+        "datacenters": 59,
+        "latitude": -23.548943,
+        "longitude": -46.638818
+      },
+      {
+        "name": "Tambore",
+        "link": "tambore",
+        "localname": "",
+        "children": null,
+        "datacenters": 10,
+        "latitude": -23.501201,
+        "longitude": -46.837394
+      },
+      {
+        "name": "Campinas",
+        "link": "campinas",
+        "localname": "",
+        "children": null,
+        "datacenters": 30,
+        "latitude": -22.907105,
+        "longitude": -47.063239
+      },
+      {
+        "name": "Rio de Janeiro",
+        "link": "rio-de-janeiro",
+        "localname": "",
+        "children": null,
+        "datacenters": 23,
+        "latitude": -22.903539,
+        "longitude": -43.209587
+      },
+      {
+        "name": "Brasilia",
+        "link": "brasilia",
+        "localname": "Brasília",
+        "children": null,
+        "datacenters": 10,
+        "latitude": -15.780148,
+        "longitude": -47.92917
+      },
+      {
+        "name": "Xaxim",
+        "link": "xaxim",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -26.9560607,
+        "longitude": -52.53600729999999
+      },
+      {
+        "name": "Videira",
+        "link": "videira",
+        "localname": null,
+        "children": null,
+        "datacenters": 2,
+        "latitude": -27.0053,
+        "longitude": -51.1543
+      },
+      {
+        "name": "Palmas",
+        "link": "palmas",
+        "localname": null,
+        "children": null,
+        "datacenters": 2,
+        "latitude": -10.2249324,
+        "longitude": -48.3309896
+      },
+      {
+        "name": "Fortaleza",
+        "link": "fortaleza",
+        "localname": "",
+        "children": null,
+        "datacenters": 11,
+        "latitude": -3.736689975030508,
+        "longitude": -38.5311412363709
+      },
+      {
+        "name": "Curitiba",
+        "link": "curitiba",
+        "localname": "",
+        "children": null,
+        "datacenters": 7,
+        "latitude": -25.428356,
+        "longitude": -49.273252
+      },
+      {
+        "name": "Belo Horizonte",
+        "link": "belo-horizonte",
+        "localname": "",
+        "children": null,
+        "datacenters": 4,
+        "latitude": -19.910824,
+        "longitude": -43.967285
+      },
+      {
+        "name": "Recife",
+        "link": "recife",
+        "localname": "",
+        "children": null,
+        "datacenters": 3,
+        "latitude": -8.0578381,
+        "longitude": -34.88289689999999
+      },
+      {
+        "name": "Maringa",
+        "link": "maringa",
+        "localname": "",
+        "children": null,
+        "datacenters": 3,
+        "latitude": -23.4209995,
+        "longitude": -51.93305580000003
+      },
+      {
+        "name": "Uberlandia",
+        "link": "uberlandia",
+        "localname": "Uberlândia",
+        "children": null,
+        "datacenters": 3,
+        "latitude": -18.919037,
+        "longitude": -48.277984
+      },
+      {
+        "name": "Blumenau",
+        "link": "blumenau",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -26.9165792,
+        "longitude": -49.07173310000002
+      },
+      {
+        "name": "Joinville",
+        "link": "joinville",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -26.305088,
+        "longitude": -48.846093
+      },
+      {
+        "name": "Vitoria",
+        "link": "vitoria",
+        "localname": "",
+        "children": null,
+        "datacenters": 3,
+        "latitude": -20.31536,
+        "longitude": -40.301767
+      },
+      {
+        "name": "Goiania",
+        "link": "goiania",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -16.677715,
+        "longitude": -49.26763
+      },
+      {
+        "name": "Manaus",
+        "link": "manaus",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -3.106409,
+        "longitude": -60.02643
+      },
+      {
+        "name": "Parnaíba",
+        "link": "parnaiba",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -2.9147973,
+        "longitude": -41.7668454
+      },
+      {
+        "name": "Belem",
+        "link": "belem",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -1.455021,
+        "longitude": -48.502368
+      },
+      {
+        "name": "Joao Pessoa",
+        "link": "joao-pessoa",
+        "localname": "João Pessoa",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -7.11532,
+        "longitude": -34.861051
+      },
+      {
+        "name": "Sao Jose dos Campos",
+        "link": "sao-jose-dos-campos",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -23.17908,
+        "longitude": -45.887248
+      },
+      {
+        "name": "Lagoa da Prata",
+        "link": "lagoa-da-prata",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -20.0232104,
+        "longitude": -45.5346127
+      },
+      {
+        "name": "Cravinhos",
+        "link": "cravinhos",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -21.3417462,
+        "longitude": -47.7352567
+      },
+      {
+        "name": "Campina Grande",
+        "link": "campina-grande",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -7.230718,
+        "longitude": -35.881666
+      },
+      {
+        "name": "Cascavel",
+        "link": "cascavel",
+        "localname": "",
+        "children": null,
+        "datacenters": 2,
+        "latitude": -24.9577771,
+        "longitude": -53.45951119999995
+      },
+      {
+        "name": "Santa Maria",
+        "link": "santa-maria",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -29.6873064,
+        "longitude": -53.81547690000002
+      },
+      {
+        "name": "Sao Jose do Rio Preto",
+        "link": "sao-jose-do-rio-preto",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -20.820181,
+        "longitude": -49.379681
+      },
+      {
+        "name": "Teresina",
+        "link": "teresina",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -5.0863441,
+        "longitude": -42.8035262
+      },
+      {
+        "name": "Campo Grande",
+        "link": "campo-grande",
+        "localname": null,
+        "children": null,
+        "datacenters": 2,
+        "latitude": -20.4642965,
+        "longitude": -54.620842
+      },
+      {
+        "name": "Aracaju",
+        "link": "aracaju",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -10.9271374,
+        "longitude": -37.0718676
+      },
+      {
+        "name": "Itaúna",
+        "link": "itauna",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -20.076081,
+        "longitude": -44.5799703
+      },
+      {
+        "name": "Araranguá",
+        "link": "ararangu",
+        "localname": null,
+        "children": null,
+        "datacenters": 1,
+        "latitude": -28.9370964,
+        "longitude": -49.4840256
+      },
+      {
+        "name": "Muriae",
+        "link": "muriae",
+        "localname": "Muriaé",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -21.126215,
+        "longitude": -42.3694516
+      },
+      {
+        "name": "Ribeirao Preto",
+        "link": "ribeirao-preto",
+        "localname": "",
+        "children": null,
+        "datacenters": 1,
+        "latitude": -21.1704008,
+        "longitude": -47.81032379999999
+      }
+    ]
+  }
+}

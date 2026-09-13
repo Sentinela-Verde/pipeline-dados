@@ -1,0 +1,216 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 15983,
+      "link": "to-host-data-centers",
+      "name": "TO HOST Data Centers",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Quadra ACSV SO 43, Av. LO 09, Lote 10, Sl 01",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "77015684",
+      "city": "Palmas",
+      "state": "Tocantins",
+      "statelink": "tocantins",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Palmas",
+      "marketlink": "palmas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -10.2048941,
+      "longitude": -48.3529666,
+      "description": "We are more than a service provider — we are the strategic partner that ensures security, performance, and scalability for your business growth.\nOur commitment to quality, technical expertise, and technological progress is shaping the future of digital infrastructure in Tocantins and throughout the Northern Region.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "iso7017": 1,
+        "iso7018": 1,
+        "iso9001": 1,
+        "iso14001": 1,
+        "iso27001": 1,
+        "tier_designed": 3,
+        "tier_certified": 3
+      },
+      "meta_power": {
+        "pue": 1.8,
+        "kw_area": 40,
+        "kw_rack": 4,
+        "ups_text": "Redundant N+N UPS setup, dual 40 kVA units providing full IT load support and 10-min runtime.",
+        "cooling_text": "24×7 cooling with automated airflow, supporting ASHRAE TC 9.9 Class A1 conditions.",
+        "standby_text": "Dual 125 kVA generators in N+N, fully redundant 24/7 standby power with auto transfer and extended runtime.",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "Yes",
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "officespace": 1,
+        "parking_text": "Yes",
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floors": 2,
+        "area_plot": 100,
+        "floor_type": "Solid Floor",
+        "construction": "Purpose-built",
+        "tenancy_text": "Multi-tenant (data centers only)",
+        "ceiling_height": 300,
+        "year_operational": 2023
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {
+        "mw_builtout": 0.075,
+        "buildingsize": 325,
+        "mw_referenced": 0.075,
+        "whitespace_live": 37,
+        "whitespace_builtout": 37,
+        "whitespace_referenced": 37
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 32160,
+      "companies": {
+        "id": 13692,
+        "link": "to-host-data-centers",
+        "priority": 1,
+        "name": "TO HOST Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Palmas",
+            "state": "Tocantins",
+            "postal": "77015684",
+            "address": "Quadra ACSV SO 43, Av. LO 09, Lote 10, Sala 01 - Plano Dir. Sul",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.8,
+            "pue_pct": 100,
+            "mw_planned": 0,
+            "mw_builtout": 0.08,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 100,
+            "ws_live_sqm": 37,
+            "ws_live_sqft": 398,
+            "mw_referenced": 0.08,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 37,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 398,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 37,
+            "ws_referenced_sqft": 398,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2023,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788649947,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

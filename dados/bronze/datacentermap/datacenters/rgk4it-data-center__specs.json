@@ -1,0 +1,183 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12624,
+      "link": "rgk4it-data-center",
+      "name": "RGK4IT Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. José Alves Nendo, 467 - Jardim São Silvestre",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "87055-000",
+      "city": "Maringá",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Maringa",
+      "marketlink": "maringa",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4554895,
+      "longitude": -51.9151828,
+      "description": "RGK4IT's data center boasts a premium structure, meticulously studied, analyzed, and planned over the years to deliver top-notch solutions. It features cutting-edge equipment from the best brands in the market, ensuring high performance and reliability. The data center offers a range of services, including colocation, disaster recovery as a service (DRaaS), infrastructure as a service (IaaS), hosting, and database as a service. With a highly qualified and certified team, RGK4IT provides 24-hour monitoring and support, ensuring end-to-end security for your data.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "id": "LfBO93js7_8",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "filename": "youtubeLfBO93js7_8.jpg",
+          "reference": "RGK4IT - Data Center",
+          "ts_uploaded": 1732233900
+        }
+      ],
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": {
+        "cctv": 1,
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1
+      },
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 8205
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12347,
+        "link": "rgk4it",
+        "priority": 1,
+        "name": "RGK4IT",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Maringá ",
+            "state": "",
+            "postal": "87055-000",
+            "address": "Av. José Alves Nendo, 467",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788661067,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

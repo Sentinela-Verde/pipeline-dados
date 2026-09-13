@@ -1,0 +1,277 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16142,
+      "link": "brdrive-sc-vda",
+      "name": "BRDrive - Santa Catarina - VDA",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Frederico Bortolaz",
+      "address_ref": "Centro",
+      "address_details": "",
+      "postal": "89566060",
+      "city": "Videira",
+      "state": "SC",
+      "statelink": "sc",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Videira",
+      "marketlink": "videira",
+      "district": null,
+      "districtlink": null,
+      "latitude": -27.0018484,
+      "longitude": -51.1675386,
+      "description": "Company Overview and Infrastructure\n\nOur data center is strategically located in the interior of the state, in Videira, Santa Catarina, with the mission of delivering enterprise-grade data center services to small and medium-sized companies outside major metropolitan areas. Our goal is to provide the same level of quality, reliability, and technological standards commonly found in capital cities, while maintaining proximity and personalized service for regional businesses.\n\nIn addition to our primary site in Videira, we operate three other strategic locations across Brazil: Curitiba, Paraná; São Paulo, São Paulo; and Florianópolis, Santa Catarina. This distributed structure allows us to ensure high availability, low latency, and geographic redundancy for our clients’ environments.\n\nConnectivity and Network Architecture\n\nOur Videira data center is equipped with a robust and redundant network infrastructure, featuring BGP connectivity with multiple providers, including ALT, Unifique, and Ultranet. Furthermore, this site is interconnected with major Internet Exchange Points (PTTs) in Santa Catarina, Paraná, Rio Grande do Sul, and Rio de Janeiro, ensuring optimal routing, resilience, and performance.\n\nAt our São Paulo site, we maintain BGP peering with ALT and Eletronet, in addition to direct connectivity with the São Paulo Internet Exchange (PTT-SP). This configuration guarantees high-capacity links, excellent national and international reach, and enhanced network stability.\n\nReliability and Physical Infrastructure\n\nOur proprietary facility in Videira was designed with high availability as a core principle. The site features full redundancy in internet connectivity, electrical power, and cooling systems, ensuring continuous operation and protection for mission-critical workloads. This infrastructure enables us to deliver reliable services even in adverse scenarios.\n\nServices Portfolio\n\nWe offer a comprehensive portfolio of infrastructure and managed services, including:\n\nVirtual Private Servers (VPS)\n\nColocation services for servers and network equipment\n\nWebsite and email hosting solutions\n\nDedicated SaaS environments, including web servers, email servers, JumpServer, and a wide range of open-source SaaS solutions deployed on dedicated infrastructure\n\nBackup and Disaster Recovery (DR) solutions\n\nNetwork and server management services for customer environments\n\nOur services are designed to support businesses of all sizes, combining flexibility, security, and scalability.\n\nHuman-Centered Support\n\nOne of the main pillars and distinguishing features of our company is our humanized support model. We provide direct and personalized assistance through WhatsApp, telephone, and email, ensuring fast response times and close communication. This approach allows us to build long-term partnerships with our clients, offering not only technology, but trust, expertise, and commitment.",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "source": null,
+          "filename": "IMG_6748.JPG",
+          "reference": "IMG_6748.JPG",
+          "ts_uploaded": 1766565588
+        },
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "source": null,
+          "filename": "IMG_6745.JPG",
+          "reference": "IMG_6745.JPG",
+          "ts_uploaded": 1766565579
+        },
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "source": null,
+          "filename": "IMG_6749.JPG",
+          "reference": "IMG_6749.JPG",
+          "ts_uploaded": 1766565598
+        },
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "source": null,
+          "filename": "IMG_6743.JPG",
+          "reference": "IMG_6743.JPG",
+          "ts_uploaded": 1766565551
+        },
+        {
+          "type": "image",
+          "width": 5712,
+          "height": 4284,
+          "source": null,
+          "filename": "IMG_6739.JPG",
+          "reference": "IMG_6739.JPG",
+          "ts_uploaded": 1766565523
+        },
+        {
+          "type": "image",
+          "width": 5712,
+          "height": 4284,
+          "source": null,
+          "filename": "IMG_6741.JPG",
+          "reference": "IMG_6741.JPG",
+          "ts_uploaded": 1766565541
+        },
+        {
+          "type": "image",
+          "width": 5712,
+          "height": 4284,
+          "source": null,
+          "filename": "IMG_6740.JPG",
+          "reference": "IMG_6740.JPG",
+          "ts_uploaded": 1766565533
+        },
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "source": null,
+          "filename": "IMG_6752.JPG",
+          "reference": "IMG_6752.JPG",
+          "ts_uploaded": 1766565609
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "kw_rack": 20,
+        "standby_text": "Gerador de Energia",
+        "ups_redundancy": "2N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, Biz-hours",
+        "guards": "No",
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "Novec 1230"
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "meetmeroom": 1,
+        "loanertools": 1,
+        "officespace": 1,
+        "parking_text": "Yes",
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floor_type": "Solid Floor",
+        "tenancy_text": "Multi-tenant (data centers only)",
+        "year_operational": 2015
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 1,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {
+        "mw_live": 0.1,
+        "mw_builtout": 0.5,
+        "mw_pipeline": 0.2,
+        "buildingsize": 150,
+        "mw_referenced": 0.5,
+        "whitespace_live": 50,
+        "whitespace_builtout": 100,
+        "mw_underconstruction": 0.2,
+        "whitespace_referenced": 100
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 32224,
+      "companies": {
+        "id": 13752,
+        "link": "brdrive1",
+        "priority": 1,
+        "name": "BRDrive",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Videira",
+            "state": "SC",
+            "postal": "89566-060",
+            "address": "Rua Frederico Bortolaz",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0.1,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0.5,
+            "mw_live_pct": 100,
+            "mw_pipeline": 0.2,
+            "ws_live_pct": 100,
+            "ws_live_sqm": 50,
+            "ws_live_sqft": 538,
+            "mw_referenced": 0.5,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 100,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 1076,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 100,
+            "ws_referenced_sqft": 1076,
+            "mw_underconstruction": 0.2,
+            "year_operational_avg": 2015,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 100,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788660901,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

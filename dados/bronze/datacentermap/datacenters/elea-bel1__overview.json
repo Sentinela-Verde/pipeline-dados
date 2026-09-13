@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18186,
+      "link": "elea-bel1",
+      "name": "Elea BEL1",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "508, Passagem Belo Horizonte, 256 - Barreiro",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "66117-130",
+      "city": "Belém",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Belem",
+      "marketlink": "belem",
+      "district": null,
+      "districtlink": null,
+      "latitude": -1.41264568658525,
+      "longitude": -48.48808399344105,
+      "description": "Elea BEL1, located in Belém, Brazil, is a new AI-ready data center developed by Elea Data Centers and AXIA Energia. Set to commence operations in Q2 2027, it will initially offer 7.5MW of capacity, with a planned expansion to 100MW. The facility is powered by 100% renewable energy, secured through a dedicated Power Purchase Agreement with AXIA Energia, and is situated near the Miramar high-voltage substation to ensure operational stability and scalability.\n\nBEL1's strategic location in Belém aims to broaden Elea's platform geographically and strengthen Brazil's digital infrastructure. It serves as an alternative to Fortaleza, Brazil's primary digital hub, by leveraging the Norte Conectado program for connectivity across the Amazon basin. This positioning is intended to reduce reliance on single coastal corridors and contribute to the economic development of the Amazon region by attracting sustainable investments and boosting regional competitiveness.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2027"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_planned": "7.5",
+        "mw_builtout": "100",
+        "mw_pipeline": 7.5,
+        "mw_referenced": "100"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11506,
+        "link": "elea-digital",
+        "priority": 1,
+        "name": "Elea Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Botafogo",
+            "state": "Rio de Janeiro",
+            "postal": "4103",
+            "address": "Rua Lauro Müller, 116",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 2,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 7.5,
+            "mw_builtout": 212.2,
+            "mw_live_pct": 7.1,
+            "mw_pipeline": 87.5,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 212.2,
+            "mw_planned_pct": 7.1,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 71.4,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 71.4,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2015,
+            "year_operational_pct": 21.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 21,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788657281,
+          "datacenters": 13,
+          "dcs_listings": {
+            "0": 3,
+            "1": 1,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 14
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 11
+          },
+          "dcs_facilities": {
+            "0": 3,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 13
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

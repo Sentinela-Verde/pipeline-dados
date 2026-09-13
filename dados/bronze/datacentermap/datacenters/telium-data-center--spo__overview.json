@@ -1,0 +1,182 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8996,
+      "link": "telium-data-center--spo",
+      "name": "Telium Data Center - SPO",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. das Nações Unidas, 13797",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "04794000",
+      "city": "São Paulo",
+      "state": "SP",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.61994685255926,
+      "longitude": -46.69968078363942,
+      "description": "We have created the perfect datacenter for you to host your servers, routers, telephone systems, and other equipment in our interconnected Data Centers with redundant infrastructure. All of this is to ensure high performance and availability for your critical applications. For budget inquiries, please contact our sales team.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {
+        "ups_redundancy": "2N+1",
+        "cooling_redundancy": "2N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "firesupression": 1,
+        "firesupression_text": "FM200"
+      },
+      "meta_amenities": {
+        "wifi": 1
+      },
+      "meta_building": {
+        "rooftop_access": 1
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 35,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 816
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30030,
+      "companies": {
+        "id": 11479,
+        "link": "telium-networks",
+        "priority": 1,
+        "name": "Telium Networks",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "SP",
+            "postal": "04794000",
+            "address": "Av. das Nações Unidas, 13797",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788651847,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

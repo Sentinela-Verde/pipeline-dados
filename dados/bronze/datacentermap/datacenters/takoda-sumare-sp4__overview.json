@@ -1,0 +1,175 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18028,
+      "link": "takoda-sumare-sp4",
+      "name": "TAKODA Sumaré - SP4",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 18026,
+      "address": "Est. M Luiz Fernandes Breda",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "13171-412",
+      "city": "Sumaré",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.86322251584453,
+      "longitude": -47.28033038868878,
+      "description": "The TAKODA Sumaré Campus, located in Sumaré, São Paulo, Brazil, is a significant data center development with a planned capacity of 96 MW. The campus spans 100,000 m² and will comprise three standalone buildings: SP03, SP04, and SP05. Phase 1, with an 18 MW capacity, is scheduled for RFS in Q1 2027. This facility is designed to support high-density computing, offering up to 150 kW per rack. Power infrastructure includes a dedicated transmission line and an on-site substation, also expected in Q1 2027. The data center is engineered for efficiency, with a design PUE ranging from 1.30 to 1.45.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "pue": "1.45",
+        "kw_rack": "150"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_plot": "100000",
+        "construction": "Purpose-built"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": null,
+      "tags": [
+        "AI-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11809,
+        "link": "takoda",
+        "priority": 1,
+        "name": "TAKODA",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "state": "",
+            "postal": "04757-000",
+            "address": "R. Bento Branco de Andrade Filho, 621",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.45,
+            "pue_pct": 50,
+            "mw_planned": 0,
+            "mw_builtout": 114,
+            "mw_live_pct": 0,
+            "mw_pipeline": 96,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 114,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 62.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 62.5,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2027,
+            "year_operational_pct": 12.5,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 12,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 12,
+          "hyperscale": 0,
+          "ts_updated": 1788656449,
+          "datacenters": 8,
+          "dcs_listings": {
+            "0": 4,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 8
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 6
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

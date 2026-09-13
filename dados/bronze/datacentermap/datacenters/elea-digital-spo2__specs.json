@@ -1,0 +1,187 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11721,
+      "link": "elea-digital-spo2",
+      "name": "Elea SPO2",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Marginal Direita Anchieta, 1241",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "09891",
+      "city": "São Bernardo do Campo",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.6774468,
+      "longitude": -46.5725548,
+      "description": "Elea Data Centers SPO2 represents a cutting-edge data center strategically situated in São Bernardo do Campo, within the dynamic São Paulo region of Brazil. This facility marks a crucial phase in Elea Data Centers' expansion plan, crafted to meet the surging demand for robust digital infrastructure in one of the most rapidly advancing data center markets globally.\n\nThe data center boasts an impressive power capacity that currently stands on 5MW. Plans are underway to significantly increase this capacity up to 100MW in the future, positioning SPO2 as a central node for cloud services and artificial intelligence applications.\n\nSPO2 stands on the grounds of a former automotive manufacturing hub, which ensures access to an abundant energy supply. This highlights Elea Digital's commitment to scalability and environmental sustainability. The data center's prime location also provides the advantage of direct subsea cable connections, facilitating superior IT infrastructure solutions.",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 597,
+          "height": 603,
+          "source": "https://eleadatacenters.com/datacenters/spo2-sao-bernardo-do-campo/",
+          "filename": "spo2.jpg",
+          "reference": "Elea SPO2",
+          "ts_uploaded": 1779820126
+        }
+      ],
+      "meta_standards": {},
+      "meta_power": {
+        "totalmw": "5"
+      },
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 1,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "SPO2",
+        "peeringdb_id": 15433
+      },
+      "meta_capacity": {
+        "mw_builtout": 5,
+        "mw_referenced": 5
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30057,
+      "companies": {
+        "id": 11506,
+        "link": "elea-digital",
+        "priority": 1,
+        "name": "Elea Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Botafogo",
+            "state": "Rio de Janeiro",
+            "postal": "4103",
+            "address": "Rua Lauro Müller, 116",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 2,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 7.5,
+            "mw_builtout": 212.2,
+            "mw_live_pct": 7.1,
+            "mw_pipeline": 87.5,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 212.2,
+            "mw_planned_pct": 7.1,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 71.4,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 71.4,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2015,
+            "year_operational_pct": 21.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 21,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788657281,
+          "datacenters": 13,
+          "dcs_listings": {
+            "0": 3,
+            "1": 1,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 14
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 11
+          },
+          "dcs_facilities": {
+            "0": 3,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 13
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}
