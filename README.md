@@ -82,7 +82,8 @@ sentinela_verde/
 | Repositório atual | Pasta/arquivo atual | Vai para |
 |---|---|---|
 | `data-extraction` | `extract/scraping_datacentermap/` | `projetos/01_coleta_datacenter/` |
-| `data-extraction` | `extract/imagens_satelite/{landsat,sentinel2}/` | `projetos/02_extracao_imagem/` |
+| `modelo-imagens-satelite` | `src/sentinela/gee/{auth,harmonizacao,sentinel2,landsat}.py` | `projetos/02_extracao_imagem/` — ✅ **migrado** |
+| `data-extraction` | `extract/imagens_satelite/{landsat,sentinel2}/` | ~~`projetos/02_extracao_imagem/`~~ — não migra, ver decisão 6 |
 | `data-extraction` | `extract/bigquery_ibge/` | `projetos/06_extracao_socioeconomico/ibge/` |
 | — | *(não existe ainda)* | `projetos/06_extracao_socioeconomico/socioeconomico_us/` — precisa de fonte equivalente ao IBGE pros EUA |
 | `data-extraction` | `modeling/modelo_grupo_controle/` | `modelos/modelo_2_grupo_controle/selecao_candidatos/` |
@@ -144,6 +145,30 @@ municípios/condados americanos foi encontrada no código hoje. Antes de impleme
 `modelos/modelo_2_grupo_controle/` para sites nos EUA, alguém precisa decidir a fonte (Census
 Bureau ACS? BLS? outra?) — isso também é pré-requisito da expansão internacional mencionada no
 ADR-006 do `modelo-imagens-satelite` (hoje proposta, não aprovada).
+
+### 6 · Qual extração de imagem é a boa — e o que fazer com a outra ✅ decidido
+
+Existiam **duas** implementações da etapa 2, e o de-para original apontava para a errada.
+`data-extraction/extract/imagens_satelite/` puxa Sentinel-2 sem harmonização multissensor, trata
+Landsat em scripts avulsos duplicados (`extraction_landsat.py` + `_300m.py`, três conversores
+tif→jpg) e não tem teste nenhum. `modelo-imagens-satelite/src/sentinela/gee/` é o que o diagrama
+descreve: Landsat 30 m e Sentinel-2 10 m harmonizados na **mesma grade** (origem determinística,
+a de 10 m é refinamento exato da de 30 m), com manifest de proveniência por arquivo.
+
+Migrada a segunda. Falta decidir o destino da primeira: ela ainda é o código que gerou parte do
+que está em `data-extraction/data/raw/` — arquivar o repo ou só marcar a pasta como morta?
+
+### 7 · Onde mora o dado pesado ⚠ parcialmente resolvido
+
+A decisão 2 (artefatos binários) continua aberta pro `.joblib`, mas para imagem já tem resposta
+em produção: **`.tif` vive só no S3**, no bucket bronze
+`plataforma-lakehouse-bronze-149465616406-us-east-1-an`, sob
+`raw/imagens_satelite/{sensor}/site_id=<id>/ano=<ano>/<ano>.tif` (particionamento Hive, pra Glue/
+Athena enxergarem as partições). O **manifest é leve e fica versionado** em `dados/manifests/`,
+além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sha256`.
+
+Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
+S3; output pesado vai só pro S3.*
 
 ## Por que separar `treino/` de `inferencia/` dentro do Modelo 1
 
