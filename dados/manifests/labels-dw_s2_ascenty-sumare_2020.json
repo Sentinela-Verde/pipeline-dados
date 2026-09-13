@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-sumare",
+  "ano": 2020,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2020,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    267120.0,
+    0.0,
+    -10.0,
+    7481160.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1005
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 163488,
+      "pct_total": 16.235,
+      "pct_validos": 16.235
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 370275,
+      "pct_total": 36.7697,
+      "pct_validos": 36.7697
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 20883,
+      "pct_total": 2.0738,
+      "pct_validos": 2.0738
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 445303,
+      "pct_total": 44.2203,
+      "pct_validos": 44.2203
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 7061,
+      "pct_total": 0.7012,
+      "pct_validos": 0.7012
+    }
+  },
+  "crosscheck": null,
+  "sha256": "719532d2a33b75cecc87920666497b64e0718d2e51c0b92646d566483d5ce247",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T19:59:54.061397+00:00"
+}

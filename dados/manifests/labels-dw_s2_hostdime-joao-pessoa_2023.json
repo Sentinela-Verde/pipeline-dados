@@ -1,0 +1,72 @@
+{
+  "site_id": "hostdime-joao-pessoa",
+  "ano": 2023,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2023,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    1620780.0,
+    0.0,
+    -10.0,
+    9205830.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 409941,
+      "pct_total": 40.8306,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 119942,
+      "pct_total": 11.9464,
+      "pct_validos": 20.1901
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 4418,
+      "pct_total": 0.44,
+      "pct_validos": 0.7437
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1880,
+      "pct_total": 0.1873,
+      "pct_validos": 0.3165
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 309323,
+      "pct_total": 30.8089,
+      "pct_validos": 52.0691
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 158500,
+      "pct_total": 15.7868,
+      "pct_validos": 26.6807
+    }
+  },
+  "crosscheck": null,
+  "sha256": "31d12f824252c7b2af59253cdb5c5562eb3adfd977dd343d6643a860ae04f567",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:23:26.722819+00:00"
+}

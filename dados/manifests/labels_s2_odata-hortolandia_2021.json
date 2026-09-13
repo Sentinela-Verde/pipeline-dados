@@ -1,0 +1,80 @@
+{
+  "site_id": "odata-hortolandia",
+  "ano": 2021,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal+worldcover_crosscheck",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": "ESA/WorldCover/v200"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2021,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas",
+    "worldcover"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    269820.0,
+    0.0,
+    -10.0,
+    7470930.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 27408,
+      "pct_total": 2.7299,
+      "pct_validos": 2.7299
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 419962,
+      "pct_total": 41.8287,
+      "pct_validos": 41.8287
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 9409,
+      "pct_total": 0.9371,
+      "pct_validos": 0.9371
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 544119,
+      "pct_total": 54.1949,
+      "pct_validos": 54.1949
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 3106,
+      "pct_total": 0.3094,
+      "pct_validos": 0.3094
+    }
+  },
+  "crosscheck": {
+    "ano": 2021,
+    "colecao_worldcover": "ESA/WorldCover/v200",
+    "n_pixels_validos_ambas_fontes": 1003947,
+    "pct_concordancia_global": 70.435,
+    "concordancia_tif": "data/raw/labels/s2/odata-hortolandia/concordancia_2021.tif"
+  },
+  "sha256": "aa438b56633868fa717ad4be87bc68fb13e4ac6967ccf5f0600cfa296b21073c",
+  "git_sha": "086d36efa361bcdc7e24709808279af7c56eff13",
+  "gerado_em": "2026-08-27T19:42:02.162110+00:00"
+}

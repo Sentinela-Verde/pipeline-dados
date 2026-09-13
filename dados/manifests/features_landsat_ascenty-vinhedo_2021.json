@@ -1,0 +1,100 @@
+{
+  "site_id": "ascenty-vinhedo",
+  "ano": 2021,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/ascenty-vinhedo/2021.tif",
+    "raw_manifest": "data/manifests/landsat_ascenty-vinhedo_2021.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    288870.0,
+    0.0,
+    -30.0,
+    7452330.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 334,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999.0,
+  "pct_pixels_validos": 99.9964,
+  "sha256": "8c26b04ab49df1cce65afbbaaf226c8c158de4403d8630c3702babc037b20ea5",
+  "git_sha": "f5454bfd2950874fb65411e5242db23773c87472",
+  "gerado_em": "2026-08-27T20:23:32.453298+00:00"
+}

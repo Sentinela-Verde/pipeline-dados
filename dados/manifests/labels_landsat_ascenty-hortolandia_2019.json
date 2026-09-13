@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-hortolandia",
+  "ano": 2019,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2019,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    271440.0,
+    0.0,
+    -30.0,
+    7471350.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 3259,
+      "pct_total": 2.9214,
+      "pct_validos": 2.9214
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 47578,
+      "pct_total": 42.6494,
+      "pct_validos": 42.6494
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1117,
+      "pct_total": 1.0013,
+      "pct_validos": 1.0013
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 59398,
+      "pct_total": 53.245,
+      "pct_validos": 53.245
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 204,
+      "pct_total": 0.1829,
+      "pct_validos": 0.1829
+    }
+  },
+  "crosscheck": null,
+  "sha256": "2fd031669cc02d86ad0efeeb6751ec171db488e47ab3db1ac2c2ef8c9193636b",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:38:34.974131+00:00"
+}

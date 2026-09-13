@@ -19,9 +19,19 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
       copiado para `projetos/01_coleta_datacenter/`; dado bruto (cache JSON + CSV final) copiado
       de `data-extraction/data/raw/datacentermap/` e `outputs_extraction/datacentermap_datacenters.csv`
       para `dados/bronze/datacentermap/`. **Ainda não integrado ao resto do pipeline nesta pasta.**
-- [ ] 02 · Extração de imagem
-- [ ] 03 · Extração de labels
-- [ ] 04 · Índices espectrais
+- [x] **02 · Extração de imagem** — código de `modelo-imagens-satelite/src/sentinela/gee/`
+      (`auth`, `harmonizacao`, `sentinel2`, `landsat`) para `projetos/02_extracao_imagem/`.
+      Os 286 GeoTIFF (1,03 GB) foram para o **S3 bronze**, não pro git; os 286 manifests de
+      proveniência (sha256 + grade) estão versionados em `dados/manifests/`. Ver decisões 8 e 9.
+- [x] **03 · Extração de labels** — código de `src/sentinela/gee/labels.py` + `classes.py` para
+      `projetos/03_extracao_labels/`, com **Dynamic World como fonte principal** e MapBiomas
+      mantido como alternativa (trocar é editar uma chave em `parametros/params.yml`). Os 494 tifs
+      de rótulo são leves (13 MB) e estão versionados em `dados/bronze/labels/`. O WorldCover
+      **não veio** — ver decisão 10.
+- [x] **04 · Índices espectrais** — código de `src/sentinela/features/indices.py` para
+      `projetos/04_indices_espectrais/`. Roda 100% local (sem Earth Engine) e gera 13 bandas
+      (6 harmonizadas + 7 índices). Saída vai para **silver**, não bronze — é dado derivado:
+      2,9 GB só no S3 silver, com os 286 manifests versionados aqui.
 - [ ] 05 · Extração LST
 - [x] **06 · Extração socioeconômico** — só a parte IBGE: código de `extract/bigquery_ibge/`
       copiado para `projetos/06_extracao_socioeconomico/ibge/`; dado (`ibge_municipios.csv`)
@@ -50,17 +60,18 @@ sentinela_verde/
 ├── dados/                                  # data lake — 1 convenção única (ver decisão 1)
 │   ├── bronze/                             # bruto, exatamente como veio da fonte
 │   │   ├── datacentermap/                  # ✅ scraping (JSON cru, cache incremental) — já puxado
-│   │   ├── imagens_satelite/
+│   │   ├── imagens_satelite/               # ✅ código puxado — .tif só no S3 (ver decisão 9)
 │   │   │   ├── landsat/
 │   │   │   └── sentinel2/
-│   │   ├── labels/
-│   │   │   ├── mapbiomas/
-│   │   │   └── worldcover/
+│   │   ├── labels/                          # ✅ já puxado (tifs leves, versionados aqui)
+│   │   │   ├── dynamic_world/               # fonte principal desde 2026-09-11
+│   │   │   └── mapbiomas/                   # mantido como alternativa
+│   │   │                                    # (worldcover removido — ver decisão 10)
 │   │   ├── ibge/                           # ✅ já puxado
 │   │   └── socioeconomico_us/              # equivalente ao IBGE, para grupo controle nos EUA (⚠ fonte a definir)
 │   │
 │   ├── silver/                             # tratado / intermediário
-│   │   ├── features/                       # bandas + 7 índices, por sensor x site x ano
+│   │   ├── features/                       # ✅ código puxado — 13 bandas, .tif só no S3 silver
 │   │   ├── expansao_amostra/               # série no raio menor + calibrador de obra (etapa 9)
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
 │   │
@@ -70,7 +81,7 @@ sentinela_verde/
 │   │   └── efeito_liquido/                 # saídas do step1: curvas, event study, CSVs
 │   │
 │   ├── labels_manual/                      # 211 polígonos humanos — é INSUMO versionado, não saída
-│   └── manifests/                          # proveniência (sha256, parâmetros) — sempre commitado
+│   └── manifests/                          # ✅ 1.066 manifests — proveniência (sha256), commitado
 │
 ├── modelos/
 │   ├── modelo_1_classificacao_imagem/
@@ -87,9 +98,9 @@ sentinela_verde/
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
 │   ├── 01_coleta_datacenter/               # ✅ código já puxado
-│   ├── 02_extracao_imagem/
-│   ├── 03_extracao_labels/
-│   ├── 04_indices_espectrais/
+│   ├── 02_extracao_imagem/                 # ✅ código já puxado
+│   ├── 03_extracao_labels/                 # ✅ código já puxado
+│   ├── 04_indices_espectrais/              # ✅ código já puxado
 │   ├── 05_extracao_lst/
 │   ├── 06_extracao_socioeconomico/         # ibge/ (Brasil) ✅ | socioeconomico_us/ (⚠ fonte a definir)
 │   ├── 07_reiteracao_expansao_amostra/     # candidatos do scraping, joblib em raio menor, calibrador de obra
@@ -115,9 +126,10 @@ sentinela_verde/
 |---|---|---|
 | `data-extraction` | `extract/scraping_datacentermap/` | ✅ `projetos/01_coleta_datacenter/` |
 | `data-extraction` | `data/raw/datacentermap/` + `data/raw/outputs_extraction/datacentermap_datacenters.csv` | ✅ `dados/bronze/datacentermap/` |
-| `data-extraction` | `extract/imagens_satelite/{landsat,sentinel2}/` | `projetos/02_extracao_imagem/` |
-| `data-extraction` | `modeling/modelo_classifica_imagem/{classification,labels_mapbiomas}.py` | `projetos/03_extracao_labels/` |
-| `data-extraction` | `modeling/modelo_classifica_imagem/indices.py` | `projetos/04_indices_espectrais/` |
+| `modelo-imagens-satelite` | `src/sentinela/gee/{auth,harmonizacao,sentinel2,landsat}.py` | ✅ `projetos/02_extracao_imagem/` |
+| `modelo-imagens-satelite` | `src/sentinela/gee/labels.py` + `classes.py` | ✅ `projetos/03_extracao_labels/` |
+| `modelo-imagens-satelite` | `src/sentinela/features/indices.py` | ✅ `projetos/04_indices_espectrais/` |
+| `data-extraction` | `extract/imagens_satelite/`, `modeling/modelo_classifica_imagem/{labels_mapbiomas,indices}.py` | ~~02 / 03 / 04~~ — não migra, ver decisão 8 |
 | `data-extraction` | `modeling/modelo_classifica_imagem/{classification,step2_classificacao_imagens}.py` | ❌ não será trazido — ver decisão 6 |
 | `modelo-imagens-satelite` | `src/sentinela/{dataset,train}.py` | `modelos/modelo_1_classificacao_imagem/treino/` |
 | `modelo-imagens-satelite` | `src/sentinela/predict.py` | `modelos/modelo_1_classificacao_imagem/inferencia/` |
@@ -205,6 +217,50 @@ pro Modelo 2 rodar (`datacenter_filtrado.csv`). Nenhuma das duas tem lugar na á
 o candidato mais natural é uma subpasta de `projetos/01_coleta_datacenter/` (ex.:
 `filtro_elegibilidade/`), já que logicamente ficam entre a coleta bruta e tudo que consome o CSV
 filtrado — mas isso é uma mudança de estrutura, então fica registrado aqui até você confirmar.
+
+### 8 · Qual extração de imagem é a boa — e o que fazer com a outra ✅ decidido
+
+Existiam **duas** implementações da etapa 2, e o de-para original apontava para a errada.
+`data-extraction/extract/imagens_satelite/` puxa Sentinel-2 sem harmonização multissensor, trata
+Landsat em scripts avulsos duplicados (`extraction_landsat.py` + `_300m.py`, três conversores
+tif→jpg) e não tem teste nenhum. `modelo-imagens-satelite/src/sentinela/gee/` é o que o diagrama
+descreve: Landsat 30 m e Sentinel-2 10 m harmonizados na **mesma grade** (origem determinística,
+a de 10 m é refinamento exato da de 30 m), com manifest de proveniência por arquivo.
+
+Migrada a segunda. Falta decidir o destino da primeira: ela ainda é o código que gerou parte do
+que está em `data-extraction/data/raw/` — arquivar o repo ou só marcar a pasta como morta?
+
+### 9 · Onde mora o dado pesado ⚠ parcialmente resolvido
+
+A decisão 2 (artefatos binários) continua aberta pro `.joblib`, mas para imagem já tem resposta
+em produção: **`.tif` vive só no S3**, no bucket bronze
+`plataforma-lakehouse-bronze-149465616406-us-east-1-an`, sob
+`raw/imagens_satelite/{sensor}/site_id=<id>/ano=<ano>/<ano>.tif` (particionamento Hive, pra Glue/
+Athena enxergarem as partições). O **manifest é leve e fica versionado** em `dados/manifests/`,
+além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sha256`.
+
+Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
+S3; output pesado vai só pro S3.*
+
+### 10 · O WorldCover saiu do pipeline ✅ decidido
+
+O ESA WorldCover entrou no desenho como **verificação cruzada** do MapBiomas: só em 2021 (único
+ano de sobreposição real), gerando um raster de concordância que a etapa de dataset usava para
+ponderar amostra (`peso_label = 1/(1+distancia_safra) × (1,0 se concorda, senão 0,5)`).
+
+Na migração da etapa 3 descobrimos que ele **já estava inerte**. O bloco que gera a concordância é
+guardado por `if fonte_principal != "dynamic_world"` — e a fonte principal virou Dynamic World em
+2026-09-11. Os números confirmam: dos 494 manifests de rótulo, só **32** têm `crosscheck`
+preenchido, todos da era MapBiomas; sob o DW são zero. O DW é anual nativo, não tem safra
+defasada, então nem `distancia_safra` nem crosscheck têm o que fazer — os dois fatores do peso
+valem 1.
+
+Por isso o WorldCover não foi migrado: nem o código, nem as chaves de `params.yml`, nem o remap em
+`classes.yml`, nem os 32 rasters de concordância. Trazer de volta só faz sentido junto com uma
+volta para o MapBiomas — e nesse caso a etapa 3 seria reexecutada de qualquer forma, regerando os
+manifests. Os 32 manifests antigos ficam versionados como estão, com o campo `crosscheck`
+apontando para um `.tif` que não existe neste repo: são registro do que rodou lá atrás, não
+entrada de nada aqui.
 
 ## Por que separar `treino/` de `inferencia/` dentro do Modelo 1
 

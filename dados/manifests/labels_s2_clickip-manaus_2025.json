@@ -1,0 +1,73 @@
+{
+  "site_id": "clickip-manaus",
+  "ano": 2025,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2023,
+  "distancia_safra": 2,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    -1190010.0,
+    0.0,
+    -10.0,
+    9655320.0
+  ],
+  "shape": {
+    "width": 1005,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 132636,
+      "pct_total": 13.1713,
+      "pct_validos": 13.1713
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 15151,
+      "pct_total": 1.5046,
+      "pct_validos": 1.5046
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 3087,
+      "pct_total": 0.3066,
+      "pct_validos": 0.3066
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 855662,
+      "pct_total": 84.9706,
+      "pct_validos": 84.9706
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 474,
+      "pct_total": 0.0471,
+      "pct_validos": 0.0471
+    }
+  },
+  "crosscheck": null,
+  "sha256": "1203c1a305fc846511482a80688ec50877cada3e92421763420d7b64600f2d5c",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:41:41.002304+00:00"
+}

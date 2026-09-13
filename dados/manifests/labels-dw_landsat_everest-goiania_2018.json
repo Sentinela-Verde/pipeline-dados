@@ -1,0 +1,72 @@
+{
+  "site_id": "everest-goiania",
+  "ano": 2018,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2018,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    42900.0,
+    0.0,
+    -30.0,
+    8154780.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 12896,
+      "pct_total": 11.5601,
+      "pct_validos": 11.5601
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 7851,
+      "pct_total": 7.0377,
+      "pct_validos": 7.0377
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 252,
+      "pct_total": 0.2259,
+      "pct_validos": 0.2259
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 90026,
+      "pct_total": 80.7003,
+      "pct_validos": 80.7003
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 531,
+      "pct_total": 0.476,
+      "pct_validos": 0.476
+    }
+  },
+  "crosscheck": null,
+  "sha256": "bcd65334e2e27367a1b71232c0ee566fe4acd05f0208ba056c0ad206c62e0e84",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:08:21.320760+00:00"
+}

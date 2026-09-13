@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-vinhedo",
+  "ano": 2016,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2016,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    288870.0,
+    0.0,
+    -30.0,
+    7452330.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 41830,
+      "pct_total": 37.3849,
+      "pct_validos": 37.3849
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 34616,
+      "pct_total": 30.9375,
+      "pct_validos": 30.9375
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 953,
+      "pct_total": 0.8517,
+      "pct_validos": 0.8517
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 32429,
+      "pct_total": 28.9829,
+      "pct_validos": 28.9829
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 2062,
+      "pct_total": 1.8429,
+      "pct_validos": 1.8429
+    }
+  },
+  "crosscheck": null,
+  "sha256": "2c5cee6fc6727b58e529aa8def69c624fc6829a34709432db29f311ebc4850e9",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:03:49.174457+00:00"
+}

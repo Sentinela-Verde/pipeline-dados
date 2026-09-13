@@ -1,0 +1,16 @@
+# Etapa 2 — extração de imagem. Só o que sentinel2.py / landsat.py / auth.py / harmonizacao.py
+# importam. Versões travadas em == porque foram testadas juntas nesta combinação exata
+# (Python 3.13, Windows 11).
+earthengine-api==1.7.41
+rasterio==1.5.1
+geopandas==1.1.4
+pyproj==3.7.2
+numpy==2.5.2
+pyyaml==6.0.3
+python-dotenv==1.2.3
+requests==2.34.2
+# Faz o Python validar TLS pela store de certificados do Windows. Sem isso, em máquina com
+# antivírus/VPN que inspeciona HTTPS, ee.Authenticate() falha no CERTIFICATE_VERIFY_FAILED.
+truststore==0.10.4
+# Só para o --inspecionar (composto RGB de conferência visual) do landsat.py.
+matplotlib==3.11.1

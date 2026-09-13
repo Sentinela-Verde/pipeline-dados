@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-sumare",
+  "ano": 2022,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2022,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    267120.0,
+    0.0,
+    -10.0,
+    7481160.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1005
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 22427,
+      "pct_total": 2.2271,
+      "pct_validos": 2.2271
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 523489,
+      "pct_total": 51.9845,
+      "pct_validos": 51.9845
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 18874,
+      "pct_total": 1.8743,
+      "pct_validos": 1.8743
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 437026,
+      "pct_total": 43.3984,
+      "pct_validos": 43.3984
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 5194,
+      "pct_total": 0.5158,
+      "pct_validos": 0.5158
+    }
+  },
+  "crosscheck": null,
+  "sha256": "cf318fd0290b32083335d7374225e65f66c1aa6d1c4492ff9a6fab3e6cc19f6d",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:40:56.326844+00:00"
+}

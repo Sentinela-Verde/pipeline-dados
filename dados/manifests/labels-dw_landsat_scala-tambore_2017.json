@@ -1,0 +1,72 @@
+{
+  "site_id": "scala-tambore",
+  "ano": 2017,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2017,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    309840.0,
+    0.0,
+    -30.0,
+    7405560.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 35715,
+      "pct_total": 31.9197,
+      "pct_validos": 31.9197
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 4019,
+      "pct_total": 3.5919,
+      "pct_validos": 3.5919
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1137,
+      "pct_total": 1.0162,
+      "pct_validos": 1.0162
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 69683,
+      "pct_total": 62.2781,
+      "pct_validos": 62.2781
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1336,
+      "pct_total": 1.194,
+      "pct_validos": 1.194
+    }
+  },
+  "crosscheck": null,
+  "sha256": "98208cda4b7e09832a17ad05c33d7329f277131bf7f1475f59cb953d88e1b352",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:14:11.707782+00:00"
+}

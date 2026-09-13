@@ -1,0 +1,100 @@
+{
+  "site_id": "odata-hortolandia",
+  "ano": 2017,
+  "sensor": "landsat",
+  "origem": {
+    "raw_tif": "data/raw/landsat/odata-hortolandia/2017.tif",
+    "raw_manifest": "data/manifests/landsat_odata-hortolandia_2017.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    269820.0,
+    0.0,
+    -30.0,
+    7470930.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334,
+    "bandas": 13
+  },
+  "resolucao_m": 30,
+  "nodata": -9999.0,
+  "pct_pixels_validos": 100.0,
+  "sha256": "cf166d1ab47c1fa805442e54e8a865c8dc12e43058f7d87c59771139c41999cd",
+  "git_sha": "f5454bfd2950874fb65411e5242db23773c87472",
+  "gerado_em": "2026-08-27T20:23:33.326515+00:00"
+}

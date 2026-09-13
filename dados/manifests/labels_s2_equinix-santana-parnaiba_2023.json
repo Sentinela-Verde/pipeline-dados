@@ -1,0 +1,73 @@
+{
+  "site_id": "equinix-santana-parnaiba",
+  "ano": 2023,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2023,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    305010.0,
+    0.0,
+    -10.0,
+    7409310.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1005
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 323434,
+      "pct_total": 32.1183,
+      "pct_validos": 32.1183
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 221050,
+      "pct_total": 21.9511,
+      "pct_validos": 21.9511
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 12675,
+      "pct_total": 1.2587,
+      "pct_validos": 1.2587
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 438670,
+      "pct_total": 43.5616,
+      "pct_validos": 43.5616
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 11181,
+      "pct_total": 1.1103,
+      "pct_validos": 1.1103
+    }
+  },
+  "crosscheck": null,
+  "sha256": "32e18ab2b9e008d6d95ab740fe7c60a9ba64906706460f93837f69e372b0099b",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:42:15.899898+00:00"
+}

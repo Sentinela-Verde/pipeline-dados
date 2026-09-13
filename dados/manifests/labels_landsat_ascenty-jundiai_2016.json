@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-jundiai",
+  "ano": 2016,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2016,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    292890.0,
+    0.0,
+    -30.0,
+    7438890.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 31702,
+      "pct_total": 28.418,
+      "pct_validos": 28.418
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 47798,
+      "pct_total": 42.8466,
+      "pct_validos": 42.8466
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 854,
+      "pct_total": 0.7655,
+      "pct_validos": 0.7655
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 30588,
+      "pct_total": 27.4194,
+      "pct_validos": 27.4194
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 614,
+      "pct_total": 0.5504,
+      "pct_validos": 0.5504
+    }
+  },
+  "crosscheck": null,
+  "sha256": "9e7395a08c37f14e66e7f47ab1fb2382216ae8db05c4280aa25c9e1e232510f4",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:44:19.684953+00:00"
+}

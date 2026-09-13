@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-vinhedo",
+  "ano": 2013,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2013,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    288870.0,
+    0.0,
+    -30.0,
+    7452330.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 15269,
+      "pct_total": 13.6464,
+      "pct_validos": 13.6464
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 67801,
+      "pct_total": 60.5961,
+      "pct_validos": 60.5961
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 345,
+      "pct_total": 0.3083,
+      "pct_validos": 0.3083
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 27186,
+      "pct_total": 24.2971,
+      "pct_validos": 24.2971
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1289,
+      "pct_total": 1.152,
+      "pct_validos": 1.152
+    }
+  },
+  "crosscheck": null,
+  "sha256": "1285f521efcd7e2db7e54cbba78131d7c7bc2e7da724ae031ae42a508d3e7ff9",
+  "git_sha": "086d36efa361bcdc7e24709808279af7c56eff13",
+  "gerado_em": "2026-08-27T19:41:15.035563+00:00"
+}

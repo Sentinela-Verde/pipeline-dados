@@ -1,0 +1,58 @@
+{
+  "site_id": "hostdime-joao-pessoa",
+  "ano": 2014,
+  "sensor": "landsat",
+  "colecoes": [
+    "LANDSAT/LC08/C02/T1_L2",
+    "LANDSAT/LC09/C02/T1_L2"
+  ],
+  "satelites_usados": [
+    "LC08"
+  ],
+  "janela_padrao": "06-09",
+  "janela_efetiva": "06-09",
+  "janela_ampliada": false,
+  "mascara": {
+    "metodo": "QA_PIXEL bitmask + QA_RADSAT",
+    "qa_pixel_bits": {
+      "dilated_cloud": 1,
+      "cirrus": 2,
+      "cloud": 3,
+      "cloud_shadow": 4
+    },
+    "qa_radsat": "pixel removido se qualquer banda saturada (QA_RADSAT != 0)"
+  },
+  "harmonizacao": {
+    "metodo": "sentinela.gee.harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
+    "versao": "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    1620780.0,
+    0.0,
+    -30.0,
+    9205830.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "n_imagens_usadas": 4,
+  "pct_pixels_validos": 95.0787,
+  "sha256": "a5c085280b962933465df5436e4ad4df466686a260dc30263c8c0375a965c725",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T08:39:36.470287+00:00"
+}
