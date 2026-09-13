@@ -1,0 +1,139 @@
+# Fonte única de verdade das classes de cobertura do solo. Decisão fechada do time — ver
+# CLAUDE.md. Não redecide nada aqui; só transforma a decisão em dado consumível por código.
+#
+# Para adicionar uma nova fonte de remap (ex: mapbiomas em SV-05b), edite só a seção `remaps`
+# abaixo — src/sentinela/classes.py não precisa mudar.
+
+classes:
+  0:
+    slug: nodata
+    nome_exibicao: "Sem dado"
+    cor_hex: "#000000"
+    descricao: >
+      Pixel sem classificação válida: fora da área de interesse, mascarado por nuvem, ou código
+      de origem sem mapeamento definido para nenhuma das 5 classes.
+  1:
+    slug: vegetacao_densa
+    nome_exibicao: "Vegetação densa"
+    cor_hex: "#1B5E20"
+    descricao: >
+      Cobertura arbórea nativa ou cultivo denso. Estado "antes" — linha de base do território
+      antes de qualquer transformação.
+  2:
+    slug: vegetacao_rala
+    nome_exibicao: "Vegetação rala / pasto / agricultura leve"
+    cor_hex: "#8BC34A"
+    descricao: >
+      Pastagem, arbusto, campo ou agricultura leve. Intermediário — já degradado em relação à
+      vegetação densa, mas ainda não é obra.
+  3:
+    slug: solo_exposto_obras
+    nome_exibicao: "Solo exposto / em obras"
+    cor_hex: "#F5A623"
+    descricao: >
+      Classe crítica — sinal mais forte de início de construção. Cor trocada em 2026-09-05
+      (era #C87137) por ficar visualmente perto demais do vermelho da classe 4 (18.5° de
+      distância de matiz numa roda de 360°, difícil de distinguir sobretudo pra quem tem
+      dificuldade de ver vermelho/laranja) — #F5A623 fica a ~32° de distância. ATENÇÃO: quando vem do
+      remap do WorldCover, esse código representa solo natural exposto, não necessariamente
+      canteiro de obra — por isso existe a rotulagem manual complementar (SV-09/SV-10).
+  4:
+    slug: construida_urbana
+    nome_exibicao: "Área construída / urbana"
+    cor_hex: "#B03A2E"
+    descricao: >
+      Estado "depois" — inclui o data center e infraestrutura associada. Infraestrutura viária
+      não é classe separada na V1: entra aqui.
+  5:
+    slug: agua
+    nome_exibicao: "Água"
+    cor_hex: "#1565C0"
+    descricao: >
+      Corpos d'água permanentes. Existe como classe própria para evitar confusão com solo
+      exposto em alguns índices espectrais (ex.: BSI).
+
+# codigo_da_fonte -> nosso id de classe. Código ausente na tabela vira 0 (nodata) automaticamente.
+remaps:
+  # Google Dynamic World V1 (`GOOGLE/DYNAMICWORLD/V1`, banda `label`), 10 m, global,
+  # junho/2015 em diante. Adotado como fonte principal em 2026-09-11 (ADR-006 §2).
+  #
+  # A razão de existir deste remap: o MapBiomas **não tem** classe de canteiro de obras,
+  # e por isso a nossa classe 3 é a pior do classificador (F1 0,579 — ADR-004). O DW tem
+  # uma classe `bare` NATIVA, que é o defeito de origem corrigido.
+  #
+  # ATENÇÃO, e isto precisa acompanhar qualquer número que saia daqui: `bare` do DW também
+  # não é "canteiro de obras". É solo nu — inclui deserto, praia e lavoura arada. No Brasil
+  # é gerenciável; a rotulagem manual complementar da classe 3 (SV-09/SV-10) continua
+  # obrigatória.
+  dynamic_world:
+    0: 5    # water
+    1: 1    # trees
+    2: 2    # grass
+    3: 5    # flooded_vegetation — agrupado em água, mesmo critério do wetland do MapBiomas
+    4: 2    # crops (agricultura leve, conforme CLAUDE.md)
+    5: 2    # shrub_and_scrub
+    6: 4    # built
+    7: 3    # bare — a classe que motiva a troca de fonte
+    8: 5    # snow_and_ice — não ocorre na AOI
+
+  worldcover:
+    10: 1   # Tree cover
+    20: 2   # Shrubland
+    30: 2   # Grassland
+    40: 2   # Cropland (agricultura leve, conforme CLAUDE.md)
+    50: 4   # Built-up
+    60: 3   # Bare / sparse vegetation — label fraco, ver descrição da classe 3
+    70: 0   # Snow and ice — não ocorre na AOI
+    80: 5   # Permanent water bodies
+    90: 0   # Herbaceous wetland — ambíguo entre água e vegetação rala, descartar é mais seguro
+    95: 0   # Mangroves — não ocorre na AOI
+    100: 0  # Moss and lichen — não ocorre na AOI
+
+  # MapBiomas Coleção 9 (`projects/mapbiomas-public/assets/brazil/lulc/collection9/...`).
+  # Conferido código a código contra a legenda oficial (SV-05b):
+  # https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2024/08/Legenda-Colecao-9-LEGEND-CODE.pdf
+  # Ver docs/decisoes/ADR-004-fonte-de-labels.md para o raciocínio completo, inclusive as decisões
+  # de julgamento (mineração, afloramento rochoso, wetland) que não estavam explícitas no pedido.
+  mapbiomas:
+    1: 1    # Floresta (Forest) — nó agregador, usado quando o pixel não resolve ao nível de folha
+    3: 1    # Formação Florestal (Forest Formation)
+    4: 1    # Formação Savânica (Savanna Formation)
+    5: 1    # Mangue (Mangrove) — não ocorre nos 3 sites (interior de SP, sem costa)
+    6: 1    # Floresta Alagável (Floodable Forest)
+    49: 1   # Restinga Arbórea (Wooded Sandbank Vegetation) — não ocorre nos 3 sites
+    10: 2   # Vegetação Herbácea e Arbustiva (Herbaceous and Shrubby Vegetation) — nó agregador
+    11: 0   # Campo Alagado e Área Pantanosa (Wetland) — ambíguo água/veg. rala, mesmo critério do WorldCover 90
+    12: 2   # Formação Campestre (Grassland)
+    32: 3   # Apicum (Hypersaline Tidal Flat) — solo não vegetado natural; não ocorre nos 3 sites
+    29: 3   # Afloramento Rochoso (Rocky Outcrop) — solo/rocha não vegetada, sem vegetação a remover
+    50: 2   # Restinga Herbácea (Herbaceous Sandbank Vegetation) — não ocorre nos 3 sites
+    14: 2   # Agropecuária (Farming) — nó agregador
+    15: 2   # Pastagem (Pasture)
+    18: 2   # Agricultura (Agriculture) — nó agregador
+    19: 2   # Lavoura Temporária (Temporary Crop) — nó agregador
+    39: 2   # Soja (Soybean)
+    20: 2   # Cana (Sugar cane)
+    40: 2   # Arroz (Rice)
+    62: 2   # Algodão (Cotton, beta)
+    41: 2   # Outras Lavouras Temporárias (Other Temporary Crops)
+    36: 2   # Lavoura Perene (Perennial Crop) — nó agregador
+    46: 2   # Café (Coffee)
+    47: 2   # Citrus
+    35: 2   # Dendê (Palm Oil) — dossel denso, mas mantido em 2 por consistência com a decisão do
+            # time de tratar toda "Agricultura" como vegetação rala (mesmo critério do WorldCover
+            # Cropland→2); ver ressalva no ADR-004
+    48: 2   # Outras Lavouras Perenes (Other Perennial Crops)
+    9: 1    # Silvicultura (Forest Plantation) — dossel arbóreo denso, mesmo critério do WorldCover
+            # Tree cover→1 (a espécie ser exótica/manejada não muda a estrutura de cobertura)
+    21: 2   # Mosaico de Usos (Mosaic of Uses)
+    22: 3   # Área não Vegetada (Non vegetated area) — nó agregador, ver ressalva no ADR-004
+            # sobre mineração/afloramento poderem ser 3 OU 4 dependendo do caso
+    23: 3   # Praia, Duna e Areal (Beach, Dune and Sand Spot) — não ocorre nos 3 sites
+    24: 4   # Área Urbanizada (Urban Area)
+    30: 3   # Mineração (Mining) — solo exposto por atividade antrópica, análogo mais próximo de
+            # "solo exposto/obras" que existe na legenda do MapBiomas
+    25: 3   # Outras Áreas não Vegetadas (Other non Vegetated Areas)
+    26: 5   # Corpo D'água (Water) — nó agregador
+    33: 5   # Rio, Lago e Oceano (River, Lake and Ocean)
+    31: 5   # Aquicultura (Aquaculture) — não ocorre nos 3 sites
+    27: 0   # Não observado (Not Observed)

@@ -1,0 +1,68 @@
+{
+  "site_id": "hostdime-joao-pessoa",
+  "ano": 2013,
+  "sensor": "landsat",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:24:54.639586+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    1620780.0,
+    0.0,
+    -30.0,
+    9205830.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "n_pixels_total": 111556,
+  "n_pixels_validos": 110741,
+  "n_pixels_nodata": 815,
+  "pct_pixels_validos": 99.2694,
+  "distribuicao_classes": {
+    "vegetacao_densa": 33382,
+    "vegetacao_rala": 24532,
+    "solo_exposto_obras": 4211,
+    "construida_urbana": 26675,
+    "agua": 21941
+  },
+  "confianca": {
+    "media": 77.0,
+    "minima": 26,
+    "maxima": 100
+  },
+  "sha256": "532f3750c582d22a90826b6e58ca51ab9e1e3e5adb7655b10cb9f2824150da9e",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "54fbd9e3e16291a81882297ee90cf3eec1d204cbbc598f0667eef99fba15ca1f",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\hostdime-joao-pessoa\\2013.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\hostdime-joao-pessoa\\2013_confianca.tif"
+}

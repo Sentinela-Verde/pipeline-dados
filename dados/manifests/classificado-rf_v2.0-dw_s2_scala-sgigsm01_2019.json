@@ -1,0 +1,68 @@
+{
+  "site_id": "scala-sgigsm01",
+  "ano": 2019,
+  "sensor": "s2",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:12:10.706408+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    663960.0,
+    0.0,
+    -10.0,
+    7482720.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1005
+  },
+  "n_pixels_total": 1007010,
+  "n_pixels_validos": 1007010,
+  "n_pixels_nodata": 0,
+  "pct_pixels_validos": 100.0,
+  "distribuicao_classes": {
+    "vegetacao_densa": 64336,
+    "vegetacao_rala": 35608,
+    "solo_exposto_obras": 51492,
+    "construida_urbana": 844934,
+    "agua": 10640
+  },
+  "confianca": {
+    "media": 80.99,
+    "minima": 27,
+    "maxima": 100
+  },
+  "sha256": "3393c5291ced26abb64ee85053ed7f0d94f883202fd1e46a1d10bc94c5de8e52",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "b5880907901ee582b9ea02887734eeddbe9d61be89e98caca9c593f65de5371b",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\s2\\scala-sgigsm01\\2019.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\s2\\scala-sgigsm01\\2019_confianca.tif"
+}

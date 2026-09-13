@@ -1,0 +1,68 @@
+{
+  "site_id": "clickip-manaus",
+  "ano": 2014,
+  "sensor": "landsat",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:00:56.586315+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    -1190010.0,
+    0.0,
+    -30.0,
+    9655320.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 334
+  },
+  "n_pixels_total": 111890,
+  "n_pixels_validos": 111669,
+  "n_pixels_nodata": 221,
+  "pct_pixels_validos": 99.8025,
+  "distribuicao_classes": {
+    "vegetacao_densa": 30345,
+    "vegetacao_rala": 19226,
+    "solo_exposto_obras": 8164,
+    "construida_urbana": 52980,
+    "agua": 954
+  },
+  "confianca": {
+    "media": 70.5,
+    "minima": 25,
+    "maxima": 100
+  },
+  "sha256": "3e14fe69023291c165ddbdc96b675ce1db38c4b120257bc076e53bb2fe947156",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "b8216e447fe1164a203952036a0a8df54753d883ada756497039f535f754841b",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\clickip-manaus\\2014.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\clickip-manaus\\2014_confianca.tif"
+}

@@ -36,7 +36,10 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
 - [x] **06 · Extração socioeconômico** — só a parte IBGE: código de `extract/bigquery_ibge/`
       copiado para `projetos/06_extracao_socioeconomico/ibge/`; dado (`ibge_municipios.csv`)
       copiado para `dados/bronze/ibge/`. **US ainda pendente** (`socioeconomico_us/` continua vazio).
-- [ ] Modelo 1 — treino/inferência
+- [ ] Modelo 1 — treino/inferência *(do Gui)*; já migrado o **export de indicadores**:
+      `modelos/modelo_1_classificacao_imagem/indicadores/` gera `dados/gold/area_por_classe.csv`
+      — uma linha por site × ano × sensor × classe, a partir dos rasters classificados. É a
+      entrada da comparação estatística (etapa 6a). Ver decisão 11.
 - [x] **Modelo 2 — grupo de controle (só seleção de candidatos)** — código de
       `modeling/modelo_grupo_controle/` copiado para
       `modelos/modelo_2_grupo_controle/selecao_candidatos/`; dados (cidades similares, 6 pontos,
@@ -76,6 +79,7 @@ sentinela_verde/
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
 │   │
 │   ├── gold/                               # pronto pra modelar / analisar
+│   │   ├── area_por_classe.csv             # ✅ série por site x ano x sensor x classe (rf_v2.0-dw)
 │   │   ├── dataset_classificacao.parquet   # dataset amostrado que alimenta o treino (5a)
 │   │   ├── consolidado_impacto_modelo.csv  # ⚠ hoje montado manualmente — etapa 7 do diagrama
 │   │   └── efeito_liquido/                 # saídas do step1: curvas, event study, CSVs
@@ -85,6 +89,7 @@ sentinela_verde/
 │
 ├── modelos/
 │   ├── modelo_1_classificacao_imagem/
+│   │   ├── indicadores/                    # ✅ já puxado — classificado -> CSV de área por classe
 │   │   ├── treino/                         # sentinela.train — roda 1x, gera o artefato (etapa 5a)
 │   │   ├── inferencia/                     # sentinela.predict — reaplica (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
@@ -261,6 +266,31 @@ volta para o MapBiomas — e nesse caso a etapa 3 seria reexecutada de qualquer 
 manifests. Os 32 manifests antigos ficam versionados como estão, com o campo `crosscheck`
 apontando para um `.tif` que não existe neste repo: são registro do que rodou lá atrás, não
 entrada de nada aqui.
+
+### 11 · O CSV de indicadores sai do `rf_v2.0-dw`, que nunca foi promovido a produção ⚠
+
+`dados/gold/area_por_classe.csv` é o artefato de handoff para a comparação estatística (etapa 6a):
+uma linha por site × ano × sensor × classe, com `area_m2`, `pct_area_valida`, `fator_correcao_sensor`
+e a faixa da série. 1.430 linhas, 16 sites, 2013-2025.
+
+Foi gerado do **`rf_v2.0-dw`** — coerente com o Dynamic World ser a fonte de rótulo ativa desde
+2026-09-11 (decisão 10). Duas ressalvas que quem consumir precisa saber:
+
+1. **Esse modelo nunca foi promovido a produção.** A inferência escreve em `classificado/` quando é
+   produção e num prefixo versionado (`classificado-rf_v2.0-dw/`) quando é avaliação paralela. O
+   `rf_v2.0-dw` só existe no prefixo de avaliação. O exportador original tinha o prefixo fixo em
+   `classificado_*` e por isso **não conseguia exportar essa classificação** — ela existia no disco
+   e era invisível. A versão migrada ganhou `--token` para resolver isso.
+2. **É o modelo sob o qual o achado de impacto não replica** (9/14, p=0,21, contra 14/14,
+   p=0,0001 do `rf_v1.0-tuned`). A escolha foi deliberada, por coerência com a fonte de rótulo —
+   mas a divergência entre os dois é um resultado do projeto, não um detalhe de implementação.
+
+Para comparação: o `rf_v1.0-tuned` cobre 270 rasters e o `rf_v2.0-dw` cobre 286 (os 16 extras são
+anos Landsat tardios). A mediana de `solo_exposto_obras` vai de 1,81% para 4,90% — consistente com
+o MapBiomas não ter classe de canteiro de obras e o DW ter `bare` nativa.
+
+No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
+não existe. É a etapa 6a que preenche essas duas colunas.
 
 ## Por que separar `treino/` de `inferencia/` dentro do Modelo 1
 
