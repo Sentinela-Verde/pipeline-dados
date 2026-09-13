@@ -28,3 +28,5 @@ modelos/**/*.joblib
 
 # Compostos RGB de conferência visual (--inspecionar da etapa 2): reproduzíveis a partir do .tif.
 projetos/02_extracao_imagem/inspecao/
+
+modelos/modelo_1_classificacao_imagem/artefatos/rf_v2.0-dw.joblib

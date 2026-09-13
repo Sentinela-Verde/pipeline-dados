@@ -344,7 +344,10 @@ flowchart TD
     subgraph S1["1 · Coleta"]
         A1["Scraping<br/>datacentermap.com"]:::fonte
         A2[["lat/lon, ano construção,<br/>specs de porte (MW/tier)"]]:::dado
+        A3["Google Geocoding API<br/>(reverse geocoding por lat/lon)"]:::fonte
+        A4[["Endereço/município/estado/país/CEP (silver)<br/>município e estado sempre atualizados;<br/>demais só complementados onde faltava"]]:::dado
         A1 --> A2
+        A2 --> A3 --> A4
     end
 
     subgraph S2["2 · Extração de imagem"]
@@ -413,6 +416,7 @@ flowchart TD
         H5[["Grupo controle definido"]]:::dado
         G2 --> H1
         G4 -. "(sites EUA)" .-> H1
+        A4 -. "município/estado padronizado" .-> H1
         H1 --> H2 --> H3 --> H3a --> H3b --> H4 --> H5
         EJ -. "mesmo modelo, não retreina" .-> H3a
         E2 -. "nível/tendência do data center" .-> H3b
@@ -530,6 +534,13 @@ flowchart TD
         <div class="stage-name">Coleta datacentermap</div>
         <div class="cell">Páginas do <span class="mono">datacentermap.com</span></div>
         <div class="cell">Lat/lon, ano de construção, specs de porte (MW, tier, nº prédios)</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">1b</div>
+        <div class="stage-name">Correção de endereço</div>
+        <div class="cell">Lat/lon do passo 1 → Google Geocoding API (reverse geocoding)</div>
+        <div class="cell">Endereço, município, estado, país e CEP — <span class="mono">município</span>/<span class="mono">estado</span> sempre atualizados pela API; os outros três só complementados onde o scraping deixou vazio (silver)</div>
       </div>
 
       <div class="stage-row">
