@@ -1,0 +1,150 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "geodata": {
+      "link": "sao-jose-dos-campos",
+      "type": "market",
+      "name": "Sao Jose dos Campos",
+      "localname": "",
+      "latitude": -23.17908,
+      "longitude": -45.887248,
+      "zoom": 11,
+      "meta_sponsor": null,
+      "meta_news": null,
+      "meta_stats": {
+        "dcs": {
+          "mw_live": 0,
+          "pue_avg": 0,
+          "pue_pct": 0,
+          "operators": 1,
+          "mw_planned": 0,
+          "mw_builtout": 0.65,
+          "mw_live_pct": 0,
+          "mw_pipeline": 0.65,
+          "ws_live_pct": 0,
+          "ws_live_sqm": 0,
+          "ws_live_sqft": 0,
+          "mw_referenced": 0.65,
+          "mw_planned_pct": 0,
+          "ws_planned_pct": 0,
+          "ws_planned_sqm": 0,
+          "coordinates_pct": 100,
+          "mw_builtout_pct": 100,
+          "mw_pipeline_pct": 100,
+          "ws_builtout_pct": 100,
+          "ws_builtout_sqm": 1000,
+          "ws_pipeline_pct": 100,
+          "ws_pipeline_sqm": 1000,
+          "ws_planned_sqft": 0,
+          "ws_builtout_sqft": 10764,
+          "ws_pipeline_sqft": 10764,
+          "mw_referenced_pct": 100,
+          "ws_referenced_pct": 100,
+          "ws_referenced_sqm": 1000,
+          "ws_referenced_sqft": 10764,
+          "mw_underconstruction": 0,
+          "year_operational_avg": 2026,
+          "year_operational_pct": 100,
+          "mw_underconstruction_pct": 0,
+          "ws_underconstruction_pct": 0,
+          "ws_underconstruction_sqm": 0,
+          "ws_underconstruction_sqft": 0
+        },
+        "ixps": 1,
+        "clouds": 0,
+        "networks": 0,
+        "companies": 0,
+        "datacenters": 1,
+        "dcs_listings": {
+          "0": 0,
+          "1": 1,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        },
+        "dcs_locations": {
+          "0": 0,
+          "1": 1,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        },
+        "dcs_facilities": {
+          "0": 0,
+          "1": 1,
+          "2": 0,
+          "4": 0,
+          "-1": 0,
+          "-2": 0,
+          "-3": 0,
+          "total": 1
+        }
+      },
+      "parents": {
+        "country": "Brazil",
+        "countrylink": "brazil"
+      },
+      "children": null,
+      "oneliner": null,
+      "description": null
+    },
+    "dcs": [
+      {
+        "id": 18034,
+        "maptype": "dc-unmapped",
+        "parent": 0,
+        "listingtype": "Facility",
+        "capacitytype": "Colocation",
+        "link": "tsdata",
+        "priority": 1,
+        "icon": "dc1",
+        "iconsize": 0.75,
+        "url": "/brazil/sao-jose-dos-campos/tsdata/",
+        "name": "TSData Eugênio de Melo",
+        "companylink": "tsdata",
+        "companyname": "TSData",
+        "companylogo": null,
+        "address": "within Cidade Tecnológica",
+        "address_ref": "Cidade Tecnológica",
+        "postal": "12247-016",
+        "city": "São José dos Campos",
+        "state": null,
+        "country": "Brazil",
+        "oneliner": "TSData's São José dos Campos data center offers secure, scalable hosting and colocation services with a focus on operational discipline and business continuity, designed for critical workloads.",
+        "thumbnail": null,
+        "extra": null,
+        "latitude": -23.1510828,
+        "longitude": -45.7828613
+      },
+      {
+        "maptype": "market-unmapped",
+        "icon": "q1",
+        "iconsize": 0.75,
+        "name": "Unmapped Data Centers",
+        "dcs": [
+          {
+            "name": "TSData Eugênio de Melo",
+            "url": "/brazil/sao-jose-dos-campos/tsdata/",
+            "address_ref": "Cidade Tecnológica",
+            "companyname": "TSData",
+            "address": "TBA - To Be Announced",
+            "postal": "12247-016",
+            "city": "São José dos Campos",
+            "state": null,
+            "country": "Brazil"
+          }
+        ],
+        "latitude": -23.17908,
+        "longitude": -45.887248
+      }
+    ]
+  }
+}

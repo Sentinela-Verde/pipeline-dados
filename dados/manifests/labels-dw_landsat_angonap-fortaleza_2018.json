@@ -1,0 +1,72 @@
+{
+  "site_id": "angonap-fortaleza",
+  "ano": 2018,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2018,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    1222470.0,
+    0.0,
+    -30.0,
+    9589500.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 11132,
+      "pct_total": 9.9788,
+      "pct_validos": 9.9788
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 2251,
+      "pct_total": 2.0178,
+      "pct_validos": 2.0178
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1345,
+      "pct_total": 1.2057,
+      "pct_validos": 1.2057
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 36224,
+      "pct_total": 32.4716,
+      "pct_validos": 32.4716
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 60604,
+      "pct_total": 54.3261,
+      "pct_validos": 54.3261
+    }
+  },
+  "crosscheck": null,
+  "sha256": "7ecb23ba082a207d233dbab9c3d4590dce12e8169e913ff6eea15f2cbdb95626",
+  "git_sha": "1a07c42fe3c1b94fc0dc47e72d749471e3ca04da",
+  "gerado_em": "2026-09-11T19:52:37.681836+00:00"
+}

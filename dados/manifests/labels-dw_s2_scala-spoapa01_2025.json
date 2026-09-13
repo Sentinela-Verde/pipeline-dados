@@ -1,0 +1,72 @@
+{
+  "site_id": "scala-spoapa01",
+  "ano": 2025,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2025,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    -103380.0,
+    0.0,
+    -10.0,
+    6669690.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 191974,
+      "pct_total": 19.1208,
+      "pct_validos": 19.1208
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 40810,
+      "pct_total": 4.0647,
+      "pct_validos": 4.0647
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1750,
+      "pct_total": 0.1743,
+      "pct_validos": 0.1743
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 554260,
+      "pct_total": 55.205,
+      "pct_validos": 55.205
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 215210,
+      "pct_total": 21.4352,
+      "pct_validos": 21.4352
+    }
+  },
+  "crosscheck": null,
+  "sha256": "627cb51339b3db1cee312c454d9f04734140a17c9ecacb79e48afdfb01b5e280",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:12:34.313496+00:00"
+}

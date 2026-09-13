@@ -1,0 +1,170 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12498,
+      "link": "armazem-dc-brusque",
+      "name": "Armazem DC Brusque",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Atílio Battistoti, 199 - Azambuja",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "88354-120",
+      "city": "Brusque",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Blumenau",
+      "marketlink": "blumenau",
+      "district": null,
+      "districtlink": null,
+      "latitude": -27.1076999,
+      "longitude": -48.9186753,
+      "description": "Armazem DC Brusque is a state-of-the-art data center located in the vibrant city of Brusque, Santa Catarina, Brazil. It boasts advanced infrastructure designed to ensure the utmost security and reliability of data management. With a strategic location and cutting-edge technology, the facility offers maximum security, performance, and availability to meet the demands of modern businesses.\n\nThe data center features two interconnected units, one in Joinville and the other in Brusque, both equipped with temperature control systems, backup power, and physical security measures. A specialized team is always on standby to address any eventualities, ensuring continuous operation and safety.\n\nArmazem DC Brusque stands out for its commitment to technological evolution and innovation in products, services, and business models. It holds prestigious certifications such as Tier III Design and Facility and ISO 27001 with extensions 17 and 18, reflecting its dedication to maintaining world-class standards in service quality, security, and high availability. The data center is a testament to the brand's mission to be an extension of its clients' businesses, fostering trust and safeguarding investments.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": {
+        "firesupression_text": "Novec 1230"
+      },
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 2,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 12113
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12278,
+        "link": "armazem-cloud",
+        "priority": 1,
+        "name": "Armazém Cloud",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Brusque",
+            "state": "",
+            "postal": "88354-120",
+            "address": "R. Atílio Battistoti, 199 - Azambuja",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788573714,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

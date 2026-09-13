@@ -1,0 +1,72 @@
+{
+  "site_id": "clickip-manaus",
+  "ano": 2021,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2021,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    -1190010.0,
+    0.0,
+    -30.0,
+    9655320.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 12,
+      "pct_total": 0.0107,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 21796,
+      "pct_total": 19.4798,
+      "pct_validos": 19.4819
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 851,
+      "pct_total": 0.7606,
+      "pct_validos": 0.7606
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1015,
+      "pct_total": 0.9071,
+      "pct_validos": 0.9072
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 88114,
+      "pct_total": 78.7506,
+      "pct_validos": 78.759
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 102,
+      "pct_total": 0.0912,
+      "pct_validos": 0.0912
+    }
+  },
+  "crosscheck": null,
+  "sha256": "203f55655b7567999bd2ebfc38b2db6a259a0e6f66cb526422045b5cfda1cc60",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:05:09.196467+00:00"
+}

@@ -1,0 +1,97 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:50",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 19088,
+      "link": "yamna-porto-do-au",
+      "name": "Yamna Porto do Açu",
+      "status": 1,
+      "stage": -1,
+      "listingtype": "Land",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "TBA - To Be Announced",
+      "address_ref": "Porto do Açu",
+      "address_details": null,
+      "postal": "28200",
+      "city": "São João da Barra",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -21.835768078438747,
+      "longitude": -41.044136664682156,
+      "description": "Yamna Porto do Açu is a planned hyperscale and AI-ready data center campus located at the Port of Açu in São João da Barra, Brazil. The project has secured an initial 20-hectare site with the option to expand, aiming to address the growing demand for digital infrastructure in Brazil and Latin America.\n\nPhase 1 of the development will feature an initial capacity of 250 MW, with the ability to scale over time. The site benefits from access to abundant, low-cost renewable power, as Brazil's national grid is approximately 85% renewable. The Port of Açu offers scalable land within an established industrial complex, proximity to one of Latin America's fastest-growing cloud regions and AI hubs, and the potential for subsea cable connectivity.\n\nThis development builds upon Yamna's existing presence at the Port of Açu through its green hydrogen initiatives, leveraging established relationships and regulatory experience. The project aims to provide a platform for rapid development and delivery of hyperscale capacity, supported by strong local partnerships and extensive infrastructure development expertise.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_plot": "200000",
+        "construction": "Purpose-built",
+        "tenancy_text": "Multi-tenant (data centers only)"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "250",
+        "mw_pipeline": "250",
+        "mw_referenced": "250"
+      },
+      "tags": [
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14512,
+        "link": "yamna",
+        "priority": 1,
+        "name": "Yamna",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "London",
+            "state": "",
+            "postal": "W1K 3QT",
+            "address": "50 Grosvenor Hill",
+            "country": "United Kingdom"
+          }
+        },
+        "meta_stats": {
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788573962,
+          "datacenters": 0
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1
+        }
+      }
+    }
+  }
+}

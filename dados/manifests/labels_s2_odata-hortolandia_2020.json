@@ -1,0 +1,73 @@
+{
+  "site_id": "odata-hortolandia",
+  "ano": 2020,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2020,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    269820.0,
+    0.0,
+    -10.0,
+    7470930.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 28287,
+      "pct_total": 2.8174,
+      "pct_validos": 2.8174
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 424961,
+      "pct_total": 42.3266,
+      "pct_validos": 42.3266
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 10049,
+      "pct_total": 1.0009,
+      "pct_validos": 1.0009
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 537640,
+      "pct_total": 53.5496,
+      "pct_validos": 53.5496
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 3067,
+      "pct_total": 0.3055,
+      "pct_validos": 0.3055
+    }
+  },
+  "crosscheck": null,
+  "sha256": "2075aad9b7904f86cd0ff0a78cb58926c29dab8814c02f4f4e65df414dec7ac1",
+  "git_sha": "086d36efa361bcdc7e24709808279af7c56eff13",
+  "gerado_em": "2026-08-27T19:41:49.113362+00:00"
+}

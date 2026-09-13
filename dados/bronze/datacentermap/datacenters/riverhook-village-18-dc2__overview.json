@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18160,
+      "link": "riverhook-village-18-dc2",
+      "name": "RiverHook Village 18 DC2",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 18158,
+      "address": "Av. Estrutural",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "12400-000",
+      "city": "Pindamonhangaba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.911549,
+      "longitude": -45.415284,
+      "description": "RiverHook Village 18 Campus is a next-generation AI hyperscale facility located in Pindamonhangaba, Brazil, strategically positioned within reach of 51.5% of Brazil's GDP and 39.7% of its population. This 500,000 m² campus is engineered for modular growth and speed-to-market, with a masterplan supporting up to 300 MW of IT load across three independent 100 MW modules.\n\nDesigned for advanced AI workloads, the campus prioritizes liquid-cooling integration and high-density GPU clusters. It boasts significant power infrastructure, including an estimated 150 MVA connection potential from a nearby 138 kV transmission corridor, supplemented by an additional 100 MVA from solar panels and BESS (Battery Energy Storage Systems). The project benefits from São Paulo's robust and reliable grid, with an estimated 99.982% uptime for Tier III data centers and low-cost industrial power tariffs of U$45/MWh from renewable sources.\n\nPhase I, scheduled for Go Live in Q1-Q2 2026, includes a 150 MW data center, offices, and R&D facilities. Subsequent phases will expand the campus, with Phase II (150 MW expansion) and Phase III planned for completion by 2031, bringing the total operational capacity to 300 MW.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "year_operational": "2031"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "150",
+        "mw_pipeline": "150",
+        "mw_referenced": "150"
+      },
+      "tags": [
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14311,
+        "link": "riverhook-village-18",
+        "priority": 1,
+        "name": "RiverHook Village 18",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 300,
+            "mw_live_pct": 0,
+            "mw_pipeline": 300,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 300,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 66.7,
+            "mw_pipeline_pct": 66.7,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 66.7,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2030,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788653627,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 3,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 3
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

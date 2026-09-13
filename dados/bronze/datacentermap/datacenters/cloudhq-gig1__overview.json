@@ -1,0 +1,182 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9266,
+      "link": "cloudhq-gig1",
+      "name": "CloudHQ GIG1",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Maria Soares Sendas, Parque Barreto",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "25586-140",
+      "city": "São João de Meriti",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.79429627273789,
+      "longitude": -43.35038030225854,
+      "description": "CloudHQ GIG1 is a 36 MW data center, located 18 km from the Rio de Janeiro metro.\n\nThe data center is a purpose-built 2 story 309,000 square feet / 28,735 square meter facility.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "36"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "floors": "2",
+        "area_building": "49958",
+        "area_whitespace": "28735"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "GIG1"
+      },
+      "meta_capacity": {
+        "mw_builtout": 36,
+        "mw_pipeline": 36,
+        "buildingsize": 49958,
+        "mw_referenced": 36,
+        "whitespace_builtout": 28735,
+        "whitespace_pipeline": 28735,
+        "whitespace_referenced": 28735
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 6253,
+        "link": "cloudhq",
+        "priority": 1,
+        "name": "CloudHQ",
+        "logo": "logo.webp",
+        "addresses": {
+          "main": {
+            "city": "Washington",
+            "state": "District of Columbia",
+            "postal": "20005",
+            "address": "1212 New York Ave NW, Suite 1000",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 170,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 200,
+            "mw_builtout": 5921.6,
+            "mw_live_pct": 2.4,
+            "mw_pipeline": 4772.8,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 5921.6,
+            "mw_planned_pct": 1.2,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 64.7,
+            "mw_pipeline_pct": 61.2,
+            "ws_builtout_pct": 8.2,
+            "ws_builtout_sqm": 186394,
+            "ws_pipeline_pct": 5.9,
+            "ws_pipeline_sqm": 150348,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 2006331,
+            "ws_pipeline_sqft": 1618331,
+            "mw_referenced_pct": 64.7,
+            "ws_referenced_pct": 8.2,
+            "ws_referenced_sqm": 186394,
+            "ws_referenced_sqft": 2006331,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2023,
+            "year_operational_pct": 9.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 49,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 110,
+          "hyperscale": 0,
+          "ts_updated": 1788648185,
+          "datacenters": 71,
+          "dcs_listings": {
+            "0": 58,
+            "1": 14,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 85
+          },
+          "dcs_locations": {
+            "0": 22,
+            "1": 7,
+            "2": 6,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 35
+          },
+          "dcs_facilities": {
+            "0": 53,
+            "1": 9,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 71
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16479,
+      "link": "tecto-tpoa1",
+      "name": "Tecto TPOA1",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Willy Eugênio Fleck, 505 - Rubem Berta",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "91150-010",
+      "city": "Porto Alegre",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Porto Alegre",
+      "marketlink": "porto-alegre",
+      "district": null,
+      "districtlink": null,
+      "latitude": -29.9956142,
+      "longitude": -51.119042,
+      "description": "Tecto TPOA1 is a new R$200 million (approximately US$38-39 million) data center facility located in the Sarandi neighborhood of Porto Alegre, Brazil. Developed by Tecto Data Centers, the facility is situated near Tecto's existing 33,000-square-meter plot of land.\n\nThis data center is designed to have a total power capacity of 20 megawatts (MW). A key feature of Tecto TPOA1 is its direct connection to V.tal's Malbec submarine cable, which links Brazil and Argentina. This connection provides access to significant infrastructure and connectivity across South America, including routes to Rio de Janeiro, São Paulo, Buenos Aires, and other international destinations via V.tal's extensive network.\n\nThe facility is being developed through the retrofit of an existing warehouse. In its initial phase, Tecto TPOA1 is scheduled to commence operations in the fourth quarter of 2026, with an initial capacity of 3MW. Expansion will be implemented gradually.\n\nSustainability is a core focus, with the data center expected to utilize a closed-loop air-cooling system that consumes zero water and operate entirely on 100% renewable energy, including solar power. Tecto aims to serve technology giants and cloud providers, expanding digital infrastructure supply in southern Brazil and reinforcing Porto Alegre's position as a critical hub for connectivity and data infrastructure.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_plot": "33000",
+        "construction": "Retrofitted",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2026"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "20",
+        "mw_pipeline": 3,
+        "mw_referenced": "20",
+        "mw_underconstruction": "3"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11808,
+        "link": "vtal",
+        "priority": 1,
+        "name": "Tecto Data Centers",
+        "logo": "logo.avif",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "postal": "04546-003",
+            "address": "Rua Casa do Ator 919",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 256,
+            "mw_live_pct": 0,
+            "mw_pipeline": 209,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 256,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 42.9,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 3,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 28.6,
+            "mw_underconstruction_pct": 14.3,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 7,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 7,
+          "hyperscale": 0,
+          "ts_updated": 1788658721,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

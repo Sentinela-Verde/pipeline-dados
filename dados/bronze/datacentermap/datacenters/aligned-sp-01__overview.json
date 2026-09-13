@@ -1,0 +1,206 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9234,
+      "link": "aligned-sp-01",
+      "name": "ODATA SP01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "39,2, Estr. dos Romeiros, 943",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "06513-001",
+      "city": "Votuparim, Santana de Parnaíba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4550357423391,
+      "longitude": -46.91510647119536,
+      "description": "Previously part of ODATA, acquired by Aligned Data Centers.\n22.000 m2 plot, 13.500 m2 building and 5.600 m2 of raised floor. 19.4 MW power.\n\nFacts:\n - Purpose-built\n - Located in Santana de Parnaíba, 30 minutes from São Paulo.\n - This strategic location offers connections to Brazil’s main telco operators as well as other data centers\n - Uptime Institute Tier III design & facility certifications\n - LEED Gold certified facility\n\nConnectivity\n - Carrier-neutral\n - Connectivity to PIX IX.br\n - Broad connectivity to several additional carriers and access to international routes\n\nCooling\n - Flexibility to host deployments up to 10 kW/rack\n\nCompliance:\n  Tier III, ISO 9001, ISO 20001, ISO 27001, ISAE3402, PCI DDS, LEED Gold",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1280,
+          "height": 800,
+          "source": "https://afonsofranca.com.br/obras/odata-santana-do-parnaiba-sp/",
+          "filename": "ODATA-SP01.jpg",
+          "reference": "ODATA-SP01",
+          "ts_uploaded": 1779881010
+        }
+      ],
+      "meta_standards": {
+        "pci": "1",
+        "soc1": "2",
+        "fedramp": "0",
+        "iso9001": "1",
+        "isae3402": "2",
+        "iso27001": "1",
+        "usgbc_leed": "3",
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "kw_rack": "10"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "floors": "3",
+        "floor_type": "Raised Floor",
+        "construction": "Purpose-built",
+        "year_operational": "2017"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 32,
+        "networkproviders": 4,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "ODATA DC SP01",
+        "provider_id": "SP-01",
+        "peeringdb_id": 3913
+      },
+      "meta_capacity": {
+        "mw_builtout": "19.4",
+        "buildingsize": 22000,
+        "mw_referenced": "19.4",
+        "whitespace_builtout": 5600,
+        "whitespace_referenced": 5600
+      },
+      "tags": [
+        "Carrier Neutral"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12886,
+        "link": "odata-an-aligned-data-centers-company",
+        "priority": 1,
+        "name": "ODATA, an Aligned Data Centers Company",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "",
+            "postal": "04534-013",
+            "address": "Rua Joaquim Floriano 913, 4º andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 178,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 730.6,
+            "mw_live_pct": 18.8,
+            "mw_pipeline": 144,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 730.6,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 59523,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 640700,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 87.5,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 59523,
+            "ws_referenced_sqft": 640700,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2021,
+            "year_operational_pct": 81.3,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 23,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 24,
+          "hyperscale": 0,
+          "ts_updated": 1788656981,
+          "datacenters": 15,
+          "dcs_listings": {
+            "0": 1,
+            "1": 1,
+            "2": 14,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 16
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

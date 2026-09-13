@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8773,
+      "link": "lumen-fortaleza",
+      "name": "Lumen Fortaleza",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Dioguinho, 2950",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "60182-001",
+      "city": "Fortaleza",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Fortaleza",
+      "marketlink": "fortaleza",
+      "district": null,
+      "districtlink": null,
+      "latitude": -3.7418705,
+      "longitude": -38.4537917,
+      "description": "Profile text unavailable for this listing.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 1
+      },
+      "meta_references": {
+        "peeringdb_id": 15909
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 464,
+        "link": "level3",
+        "priority": 1,
+        "name": "Lumen",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Broomfield",
+            "state": "Colorado",
+            "postal": "80021",
+            "address": "1025 Eldorado Boulevard",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 16,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 16,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 1.7,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 59,
+            "ws_builtout_sqm": 68292,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 735087,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 1.7,
+            "ws_referenced_pct": 59,
+            "ws_referenced_sqm": 68292,
+            "ws_referenced_sqft": 735087,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2001,
+            "year_operational_pct": 3.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 231,
+          "colo": 259,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 276,
+          "hyperscale": 0,
+          "ts_updated": 1788649893,
+          "datacenters": 229,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 229,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 229
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 228,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 228
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 187,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 187
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

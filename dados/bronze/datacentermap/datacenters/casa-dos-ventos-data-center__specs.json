@@ -1,0 +1,189 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 14715,
+      "link": "casa-dos-ventos-data-center",
+      "name": "Pecém Data Center",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Complexo Industrial e Portuário do Pecém",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "62670-000",
+      "city": "São Gonçalo do Amarante",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Fortaleza",
+      "marketlink": "fortaleza",
+      "district": null,
+      "districtlink": null,
+      "latitude": -3.653321,
+      "longitude": -38.8251428,
+      "description": "Casa dos Ventos is developing a landmark hyperscale data center campus in the Export Processing Zone (ZPE) of the Pecém Industrial and Port Complex (CIPP), located in São Gonçalo do Amarante, in the Metropolitan Region of Fortaleza, Brazil. The project represents a R$50 billion investment and is designed to integrate digital infrastructure with renewable energy, reinforcing Brazil’s role in the global energy transition.\n\nThe first phase of the campus will deliver 300MW of IT capacity, with scalability up to 900MW. It will be powered by renewable sources, including a dedicated photovoltaic complex in Pentecoste, approximately 100 km away. The facility will feature closed-loop cooling systems to minimize water consumption—estimated at just 30 cubic meters per day—and will be fully geared toward data export services, thanks to its strategic location near submarine cable landing stations.\n\nThe project has received key regulatory approvals, including from the National Electric System Operator (ONS) and the National Council of Export Processing Zones (CZPE), enabling it to operate under Brazil’s Normas Brasileiras de Serviços (NBSs) for international data services. Construction is expected to begin in late 2025, with operations commencing in 2027.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "year_operational": "2027"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "relations": [
+          {
+            "id": 10352,
+            "name": "TikTok",
+            "type": "Tenant"
+          },
+          {
+            "id": 13767,
+            "name": "OMNIA",
+            "type": "Co-owner"
+          }
+        ]
+      },
+      "meta_capacity": {
+        "mw_planned": "300",
+        "mw_builtout": "900",
+        "mw_pipeline": 300,
+        "mw_referenced": "900"
+      },
+      "tags": [
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 13195,
+        "link": "casa-dos-ventos",
+        "priority": 1,
+        "name": "Casa dos Ventos",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "",
+            "postal": "04538-133",
+            "address": "Av. Brig. Faria Lima, 3477, Torre A, 14º Andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 300,
+            "mw_builtout": 900,
+            "mw_live_pct": 0,
+            "mw_pipeline": 300,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 900,
+            "mw_planned_pct": 100,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2027,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788657449,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

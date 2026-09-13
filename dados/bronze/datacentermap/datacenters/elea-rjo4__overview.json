@@ -1,0 +1,173 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 14523,
+      "link": "elea-rjo4",
+      "name": "Elea RJO4",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 14520,
+      "address": "Est. Arroio Pavuna, 1464-1786",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "22775-020",
+      "city": "Rio de Janeiro",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.96352534540635,
+      "longitude": -43.38217515289966,
+      "description": "Please visit the website of Elea Data Centers for further details about Elea RJO4.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "RJO4"
+      },
+      "meta_capacity": {
+        "mw_builtout": ""
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11506,
+        "link": "elea-digital",
+        "priority": 1,
+        "name": "Elea Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Botafogo",
+            "state": "Rio de Janeiro",
+            "postal": "4103",
+            "address": "Rua Lauro Müller, 116",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 2,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 7.5,
+            "mw_builtout": 212.2,
+            "mw_live_pct": 7.1,
+            "mw_pipeline": 87.5,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 212.2,
+            "mw_planned_pct": 7.1,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 71.4,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 71.4,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2015,
+            "year_operational_pct": 21.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 21,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788657281,
+          "datacenters": 13,
+          "dcs_listings": {
+            "0": 3,
+            "1": 1,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 14
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 11
+          },
+          "dcs_facilities": {
+            "0": 3,
+            "1": 1,
+            "2": 9,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 13
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

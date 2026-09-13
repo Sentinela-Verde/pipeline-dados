@@ -1,0 +1,46 @@
+# Parâmetros da etapa 3 — extração de rótulos.
+#
+# A janela temporal e a grade NÃO são decididas aqui: cada raster de label é reprojetado para o
+# CRS/transform/shape exatos do manifest de imagem correspondente (`dados/manifests/`), gerado
+# pela etapa 2. Por isso esta etapa não repete `faixa_a`, `mes_inicio`, `crs_*` nem `resolucao_m`.
+
+faixa_a:
+  anos: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  sensor_por_ano:
+    2013: landsat
+    2014: landsat
+    2015: landsat
+    2016: landsat
+    2017: landsat
+    2018: landsat
+    2019: sentinel2
+    2020: sentinel2
+    2021: sentinel2
+    2022: sentinel2
+    2023: sentinel2
+    2024: sentinel2
+    2025: sentinel2
+  anos_sobreposicao: [2019, 2020, 2021]
+
+labels:
+  # ATENÇÃO — esta chave é uma decisão viva, não um default.
+  #
+  # Fonte trocada de MapBiomas para Dynamic World em 2026-09-11. O motivo NÃO foi a expansão
+  # americana (aquilo foi reprovado); foi um diagnóstico próprio: o achado de impacto não replica
+  # sob o DW (9/14, p=0,21 contra 14/14, p=0,0001 do RF do projeto), e degradar o DW de 10 m para
+  # 30 m mostrou que a discordância NÃO é de resolução (mediana +0,326 -> +0,325 pp). Sobra o
+  # rótulo — e o MapBiomas tem defeito conhecido: não tem classe de canteiro de obras, e a classe 3
+  # é a pior do modelo (F1 0,579).
+  #
+  # As duas fontes estão migradas e funcionam. Trocar é editar `fonte_principal` para "mapbiomas";
+  # os tifs de cada fonte vivem em diretórios separados (bronze/labels/{dynamic_world,mapbiomas}/),
+  # então a troca não sobrescreve a outra.
+  forma_adr004: "b"
+  fonte_principal: "dynamic_world"
+
+  colecao_dynamic_world: "GOOGLE/DYNAMICWORLD/V1"
+  ano_dw_min: 2016          # a coleção começa em jun/2015; 2016 é o 1o ano cheio
+
+  colecao_mapbiomas: "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1"
+  ano_mapbiomas_min: 2013
+  ano_mapbiomas_max: 2023   # último ano coberto pela Coleção 9 — anos além disso replicam este

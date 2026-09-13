@@ -1,0 +1,80 @@
+{
+  "site_id": "ascenty-maracanau",
+  "ano": 2021,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal+worldcover_crosscheck",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": "ESA/WorldCover/v200"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2021,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas",
+    "worldcover"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    1205790.0,
+    0.0,
+    -30.0,
+    9578940.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 26755,
+      "pct_total": 23.9119,
+      "pct_validos": 23.9119
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 4874,
+      "pct_total": 4.3561,
+      "pct_validos": 4.3561
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 66,
+      "pct_total": 0.059,
+      "pct_validos": 0.059
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 77899,
+      "pct_total": 69.6211,
+      "pct_validos": 69.6211
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 2296,
+      "pct_total": 2.052,
+      "pct_validos": 2.052
+    }
+  },
+  "crosscheck": {
+    "ano": 2021,
+    "colecao_worldcover": "ESA/WorldCover/v200",
+    "n_pixels_validos_ambas_fontes": 111674,
+    "pct_concordancia_global": 66.061,
+    "concordancia_tif": "data/raw/labels/landsat/ascenty-maracanau/concordancia_2021.tif"
+  },
+  "sha256": "e59d1f6982d54851595cd12d6e343d15a37ab416329b30633bf80441dddf4593",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:39:21.589968+00:00"
+}

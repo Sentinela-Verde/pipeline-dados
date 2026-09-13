@@ -1,0 +1,196 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9237,
+      "link": "aligned-rj-01",
+      "name": "ODATA RJ01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rod. Pres. Dutra, 4648",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "25565-350",
+      "city": "São João de Meriti",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.7966834,
+      "longitude": -43.3572998,
+      "description": "Previously part of ODATA, acquired by Aligned Data Centers.\n20.000 m2 plot with 18000 m2 raised floor. 24 MW of critical power.\n\nFacts:\n - Data center currently under construction\n - Located off the Rodovia Presidente Dutra (BR-116 – or SP-060), 4648\n\nConnectivity\n - Carrier-neutral",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1080,
+          "source": "https://afonsofranca.com.br/obras/odata-sao-joao-do-meriti-rj/",
+          "filename": "ODATA-RJ01_ABR26-17.jpg",
+          "reference": "ODATA RJ01",
+          "ts_uploaded": 1787315415
+        }
+      ],
+      "meta_standards": {
+        "pci": "2",
+        "iso27001": "1"
+      },
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "year_operational": 2023,
+        "footprint_building": 10311
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "ODATA DC RJ01",
+        "provider_id": "RJ-01",
+        "peeringdb_id": 13381
+      },
+      "meta_capacity": {
+        "mw_builtout": "23.4",
+        "buildingsize": 20000,
+        "mw_referenced": "23.4",
+        "whitespace_builtout": 1800,
+        "whitespace_referenced": 1800
+      },
+      "tags": [
+        "Carrier Neutral"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12886,
+        "link": "odata-an-aligned-data-centers-company",
+        "priority": 1,
+        "name": "ODATA, an Aligned Data Centers Company",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "São Paulo",
+            "state": "",
+            "postal": "04534-013",
+            "address": "Rua Joaquim Floriano 913, 4º andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 178,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 730.6,
+            "mw_live_pct": 18.8,
+            "mw_pipeline": 144,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 730.6,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 59523,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 640700,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 87.5,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 59523,
+            "ws_referenced_sqft": 640700,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2021,
+            "year_operational_pct": 81.3,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 23,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 24,
+          "hyperscale": 0,
+          "ts_updated": 1788656981,
+          "datacenters": 15,
+          "dcs_listings": {
+            "0": 1,
+            "1": 1,
+            "2": 14,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 16
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 1,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 15
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

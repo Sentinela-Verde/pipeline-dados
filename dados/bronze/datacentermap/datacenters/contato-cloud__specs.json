@@ -1,0 +1,189 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9204,
+      "link": "contato-cloud",
+      "name": "Contato Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Doutor Américo Cavalcante Rabello, 241",
+      "address_ref": null,
+      "address_details": "Contato Data Center",
+      "postal": "88901052",
+      "city": "Araranguá",
+      "state": "Santa Catarina",
+      "statelink": "santa-catarina",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Araranguá",
+      "marketlink": "ararangu",
+      "district": null,
+      "districtlink": null,
+      "latitude": -28.9420155,
+      "longitude": -49.4979287,
+      "description": "With the purpose of offering the best data security solution, we developed the most modern and secure Data Center in southern Santa Catarina. Our infrastructure has high availability, security and network performance, and we also have trained and experienced professionals to develop projects with customized solutions, according to your needs.",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "Apresentacao Data Center Ing.pdf",
+          "ts_uploaded": 1698672653
+        }
+      ],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "filename": "WhatsApp Image 2023-10-30 at 17.37.27.jpeg",
+          "reference": "WhatsApp Image 2023-10-30 at 17.37.27.jpeg",
+          "ts_uploaded": 1698698357
+        },
+        {
+          "type": "image",
+          "width": 1280,
+          "height": 720,
+          "filename": "WhatsApp Image 2023-10-30 at 17.37.29.jpeg",
+          "reference": "WhatsApp Image 2023-10-30 at 17.37.29.jpeg",
+          "ts_uploaded": 1698698365
+        }
+      ],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30077,
+      "companies": {
+        "id": 11526,
+        "link": "contato-cloud",
+        "priority": 1,
+        "name": "Contato Data Center",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Santa Catarina",
+            "state": "Santa Catarina",
+            "postal": "88901-052",
+            "address": "Rua Doutor Américo Cavalcante Rabello, 241",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788568692,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

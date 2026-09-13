@@ -1,0 +1,185 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 4187,
+      "link": "gvt-sao-paulo",
+      "name": "Vivo São Paulo - Guarulhos Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Doutor Timóteo Penteado, 976",
+      "address_ref": "",
+      "address_details": null,
+      "postal": "07094-000",
+      "city": "Guarulhos",
+      "state": "São Paulo",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.456573,
+      "longitude": -46.537871,
+      "description": "Global Village Telecom (GVT) is a Brazilian telecomunications company that offers advanced services on fixed phone and Data Center (Colocation, Dedicated Hosting and Cloud), broadband for both consumer and business and voice over IP. GVT has been on the market since 2000, offering services with a promise of quality and value to the consumer.\n \nGVT is part of the french company Vivendi and is present in 17 states and Distrito Federal, is the biggest growth in the telecommunications sector in Brazil.\nAre parts of the GVT group the ISP POP and the Voice over IP exclusive provider, Vono.\n\nWith 3 Data Centers in:\n- São Paulo / Guarulhos (São Paulo)\n- Rio de Janeiro (Rio de Janeiro)\n- Curitiba (Paraná)\n\nServices:\n- Voice and Unified Comunications Solutions\n- Data Network Solutions\n- Dedicated Internet and Broadband Solutions\n- Management Solutions\n- Data Center:\n   - Colocation\n   - Server Monitoring and Remote Hands\n   - Moving\n   - Dedicated Hosting\n   - Cloud Computing (IaaS and SaaS Solutions)\n",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "kw_rack": 4
+      },
+      "meta_security": {
+        "guards": "Yes, 24/7"
+      },
+      "meta_amenities": {
+        "meetmeroom": 1
+      },
+      "meta_building": {
+        "construction": "Retrofitted",
+        "tenancy_text": "Sole-tenant",
+        "rooftop_access": 1,
+        "area_whitespace": 200,
+        "year_operational": 2011
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 2,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Vivo São Paulo - Guarulhos Data Center"
+      },
+      "meta_capacity": {
+        "whitespace_builtout": 200,
+        "whitespace_referenced": 200
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 3088,
+        "link": "gvt",
+        "priority": 1,
+        "name": "Vivo",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Curitiba",
+            "state": "Paraná",
+            "postal": "80010160",
+            "address": "Rua Lourenço Pinto, 299",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 7.2,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 7.2,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 25,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 2900,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 31215,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 25,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 2900,
+            "ws_referenced_sqft": 31215,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2011,
+            "year_operational_pct": 75,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 4,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 4,
+          "hyperscale": 0,
+          "ts_updated": 1788656411,
+          "datacenters": 4,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 4
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

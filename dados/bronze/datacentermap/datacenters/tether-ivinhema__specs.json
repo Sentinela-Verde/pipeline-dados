@@ -1,0 +1,154 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 15667,
+      "link": "tether-ivinhema",
+      "name": "Tether Ivinhema",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Enterprise",
+      "parent": 0,
+      "address": "Rod. Paulo Rodrigues Santos",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "79740-000",
+      "city": "Ivinhema",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campo Grande",
+      "marketlink": "campo-grande",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.39820517765363,
+      "longitude": -53.89047238949252,
+      "description": "Tether Ivinhema is a Bitcoin mining data center located in Ivinhema, Brazil. This facility is part of a strategic collaboration between Tether and Adecoagro, an agriculture company in which Tether holds a controlling stake. \n\nThe data center will utilize power generated from biogas-fired thermoelectric plants owned by Adecoagro. The project aims to explore innovative ways to maximize the value of renewable energy assets by stabilizing energy sales and gaining exposure to Bitcoin. The deployment is expected to have a capacity of up to 12MW and will be operated using Tether's Mining OS. \n\nThis initiative aligns with Tether's long-term strategy of supporting resilient energy infrastructure and decentralized networks through renewable-powered Bitcoin mining, potentially serving as a model for responsible innovation at the intersection of technology and sustainability.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": null,
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 13543,
+        "link": "tether-limited-inc",
+        "priority": 1,
+        "name": "Tether Limited Inc.",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "El Salvador"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788647821,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 2,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "cloud": {
+          "gpu": 1
+        }
+      }
+    }
+  }
+}

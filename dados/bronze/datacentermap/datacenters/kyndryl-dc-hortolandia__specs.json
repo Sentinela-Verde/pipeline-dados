@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13376,
+      "link": "kyndryl-dc-hortolandia",
+      "name": "Kyndryl Hortolandia",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rodovia Jornalista Francisco Aguirre Proença, Km 09 - S/N",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "13186-900",
+      "city": "Hortolândia ",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.90004171218494,
+      "longitude": -47.20120587899308,
+      "description": "Please visit the website of Kyndryl for further details about Kyndryl DC Hortolandia.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "footprint_building": 24884
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "BRMM"
+      },
+      "meta_capacity": {
+        "mw_builtout": "2.966",
+        "mw_referenced": "2.966"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 10890,
+        "link": "kyndryl",
+        "priority": 1,
+        "name": "Kyndryl",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "New York",
+            "state": "New York",
+            "postal": "10017",
+            "address": "1 Vanderbilt Ave, 15th Floor",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 15.61,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 15.61,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 11.8,
+            "ws_builtout_sqm": 3600,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 38750,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 11.8,
+            "ws_referenced_sqm": 3600,
+            "ws_referenced_sqft": 38750,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2011,
+            "year_operational_pct": 5.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 25,
+          "hyperscale": 1,
+          "ts_updated": 1788648025,
+          "datacenters": 17,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 17,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 17
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 17,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 17
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 12,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 12
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 0,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

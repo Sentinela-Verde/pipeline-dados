@@ -1,0 +1,95 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11253,
+      "link": "ada-sao-paulo",
+      "name": "ADA Sao Paulo",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Campus",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Brig. Faria Lima, 3930",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "04538-132",
+      "city": "Sao Paulo",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.5902486,
+      "longitude": -46.6818551,
+      "description": "Nestled in the bustling heart of São Paulo, the ADA Infrastructure data center stands as a beacon of technological advancement and sustainability. This state-of-the-art facility is designed to meet the growing demands of hyperscale companies and large global enterprises, offering a robust 850 megawatts of secured IT capacity. With a commitment to innovation and environmental stewardship, the data center is a testament to ADA Infrastructure's dedication to powering the digital infrastructure needs of the future.\n\nThe São Paulo data center is not just a hub of technology; it's a symbol of ADA Infrastructure's ethos, embodying the 'poetical science' philosophy of its namesake, Ada Lovelace. The facility is built with the future in mind, featuring a global design playbook that incorporates evolving technologies to enhance efficiency and performance. It's a place where scientific discoveries, medical advancements, and the AI revolution converge, driven by the secure and sustainable growth of cloud services.\n\nADA Infrastructure's presence in São Paulo reflects their global strategy to ensure customers have capacity where and when they need it. By leveraging GLP's global presence and regional expertise, ADA Infrastructure can swiftly secure sites in high-demand markets, making it a strategic choice for businesses looking to thrive in the digital age. The São Paulo data center is more than just a building; it's a dynamic ecosystem poised to tackle some of the world's biggest challenges, all while fostering equitable access to economic and social opportunities.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "40",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": 40,
+        "mw_pipeline": 40,
+        "mw_referenced": 40
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11819,
+        "link": "ada-infrastructure",
+        "priority": 1,
+        "name": "Ada Infrastructure",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Bellevue",
+            "state": "Washington",
+            "postal": "98004",
+            "address": "10500 NE 8th ST Suite 625",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 7,
+          "hyperscale": 0,
+          "ts_updated": 1788567402,
+          "datacenters": 0
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {},
+        "cloud": {}
+      }
+    }
+  }
+}

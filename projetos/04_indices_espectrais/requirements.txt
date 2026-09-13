@@ -1,0 +1,7 @@
+# Etapa 4 — índices espectrais. Roda 100% LOCAL, sobre os .tif que a etapa 2 já baixou:
+# não há earthengine-api aqui de propósito, e esta etapa não precisa de credencial da Google.
+# Versões travadas em == para reprodutibilidade (Python 3.13, Windows 11).
+rasterio==1.5.1
+geopandas==1.1.4
+numpy==2.5.2
+python-dotenv==1.2.3

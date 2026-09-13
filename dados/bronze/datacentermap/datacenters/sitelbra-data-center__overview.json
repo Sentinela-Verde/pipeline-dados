@@ -1,0 +1,223 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 14894,
+      "link": "sitelbra-data-center",
+      "name": "Sitelbra Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "SOFN Quadra 1, Conjunto C, Lote 9-12",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "70634130",
+      "city": "Brasília",
+      "state": "DF",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Brasilia",
+      "marketlink": "brasilia",
+      "district": null,
+      "districtlink": null,
+      "latitude": -15.7470383,
+      "longitude": -47.9233792,
+      "description": "Sitelbra's data center infrastructure is designed to deliver Tier III-class reliability, flexibility, and performance for mission-critical enterprise and carrier environments. Located in Brazil, their facilities feature 2N power redundancy with dedicated generators and an in-house substation, ensuring continuous operation even during infrastructure failures. This makes it a resilient platform for ISPs, cloud providers, and organizations requiring 24/7 uptime.\n\nThe data center supports both indoor environments and modular IT containers. Indoor facilities offer tightly controlled temperature, humidity, and physical access conditions with advanced power and connectivity systems. Meanwhile, the modular container solutions enable rapid deployment and mobility while maintaining the same 2N redundancy and security profile—ideal for temporary or regional expansion needs.\n\nSecurity and network resilience are key highlights. Multiple physical and digital protection layers—including DDoS mitigation and continuous monitoring—safeguard hosted environments. Sitelbra’s co-location service is optimized for scalability, letting clients adjust capacity without worrying about physical constraints. Expert support, constant infrastructure oversight, and a focus on innovation round out a solution tailored for high-availability IT operations.",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "id": "_v7BO9OlADk",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "source": null,
+          "filename": "youtube_v7BO9OlADk.jpg",
+          "reference": "Institucional SITELBRA | 2026",
+          "ts_uploaded": 1781701314
+        }
+      ],
+      "meta_standards": {
+        "pci": 1,
+        "iso27001": 1,
+        "tier_designed": "3"
+      },
+      "meta_power": {
+        "kw_rack": 23,
+        "ups_redundancy": "2N",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "Automatic",
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "loadingbay": 1,
+        "meetmeroom": 1,
+        "loanertools": 1,
+        "officespace": 1,
+        "parking_text": "Yes",
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "area_plot": 3000,
+        "expandable": 1,
+        "floor_load": 1250,
+        "floor_type": "Mixed",
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "rooftop_access": 1,
+        "year_operational": 2016
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 4,
+        "networkproviders": 13,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 15488
+      },
+      "meta_capacity": {
+        "mw_live": 3,
+        "mw_planned": 3,
+        "mw_builtout": 6,
+        "mw_pipeline": 3,
+        "mw_referenced": 6
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 31742,
+      "companies": {
+        "id": 13252,
+        "link": "sitelbra",
+        "priority": 1,
+        "name": "Sitelbra",
+        "logo": "logo.jpg",
+        "addresses": {
+          "main": {
+            "city": "Brasilia",
+            "state": "DF",
+            "postal": "70634-130",
+            "address": "SOFN Quadra 1, Zona Industrial, Conjunto C, Lote 9-12",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 3,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 3,
+            "mw_builtout": 6,
+            "mw_live_pct": 100,
+            "mw_pipeline": 3,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 6,
+            "mw_planned_pct": 100,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 100,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2016,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788651795,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

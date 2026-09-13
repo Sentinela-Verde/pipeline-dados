@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-paulinia",
+  "ano": 2019,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2019,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    275880.0,
+    0.0,
+    -30.0,
+    7482330.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 29305,
+      "pct_total": 26.2693,
+      "pct_validos": 26.2693
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 41883,
+      "pct_total": 37.5444,
+      "pct_validos": 37.5444
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 363,
+      "pct_total": 0.3254,
+      "pct_validos": 0.3254
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 38720,
+      "pct_total": 34.709,
+      "pct_validos": 34.709
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1285,
+      "pct_total": 1.1519,
+      "pct_validos": 1.1519
+    }
+  },
+  "crosscheck": null,
+  "sha256": "fc9b48c4e4f1a3cf00e9cd3259ee9d9bfa05903d02a80a015265503e64aea7b5",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:22:37.471284+00:00"
+}

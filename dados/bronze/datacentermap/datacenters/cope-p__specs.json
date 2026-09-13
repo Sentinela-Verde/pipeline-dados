@@ -1,0 +1,177 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16975,
+      "link": "cope-p",
+      "name": "COPE-P Brasilia",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Government",
+      "parent": 0,
+      "address": "St. de Habitações Individuais Sul",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "70200-001",
+      "city": "Brasília",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Brasilia",
+      "marketlink": "brasilia",
+      "district": null,
+      "districtlink": null,
+      "latitude": -15.85834223206172,
+      "longitude": -47.89905002324178,
+      "description": "The COPE-P (Space Operations Center - Principal) data center, located in Brasília, Brazil, serves as the central command and control facility for the Geostationary Satellite System for Defense and Strategic Communication (SGDC). This critical infrastructure is integral to Brazil's national sovereignty, enabling independent civil and military communications via satellite. The facility was designed to achieve TIER IV certification from the Uptime Institute, representing the highest standard for mission-critical building performance, ensuring autonomous failure containment. The design was inspired by a satellite's shape, featuring distinct administrative and operational wings. The complex boasts a constructed area of 22,500m², with an installed power capacity of 17,500kVA, supported by redundant power supply lines from independent substations and extensive backup systems including 7 generator sets totaling 13,000kW and 7 UPS units totaling 3,330kW. It also features a 352.04 kWpeak photovoltaic power generation plant. The data center is engineered to operate a fleet of 3 satellites, with provisions for future expansion.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "tier_designed": "4",
+        "tier_certified": "4"
+      },
+      "meta_power": {
+        "ups_redundancy": "2N+1",
+        "cooling_redundancy": "2N",
+        "standby_redundancy": "2N+1"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Space Operations Center - Principal||Centro de Operações Espaciais"
+      },
+      "meta_capacity": {
+        "mw_builtout": "17.5",
+        "buildingsize": "22500",
+        "mw_referenced": "17.5",
+        "whitespace_builtout": "4500",
+        "whitespace_referenced": "4500"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14022,
+        "link": "telebras",
+        "priority": 1,
+        "name": "Telebras",
+        "logo": "logo.webp",
+        "addresses": {
+          "main": {
+            "city": "Brasília",
+            "state": "",
+            "postal": "70610-440",
+            "address": "Capital Financial Center Building",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 17.5,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 17.5,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 50,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 4500,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 48438,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 50,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 4500,
+            "ws_referenced_sqft": 48438,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788571562,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "cabinets": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "managed": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "site_id": "equinix-santana-parnaiba",
+  "ano": 2020,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2020,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    305010.0,
+    0.0,
+    -30.0,
+    7409310.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 51282,
+      "pct_total": 45.8325,
+      "pct_validos": 45.8325
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 6542,
+      "pct_total": 5.8468,
+      "pct_validos": 5.8468
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 561,
+      "pct_total": 0.5014,
+      "pct_validos": 0.5014
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 52124,
+      "pct_total": 46.585,
+      "pct_validos": 46.585
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1381,
+      "pct_total": 1.2342,
+      "pct_validos": 1.2342
+    }
+  },
+  "crosscheck": null,
+  "sha256": "196ebe3f3447bb1e9f84b4fe1b357319c99d024cb8d234ac4c55e96f6e5c3aad",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:07:16.984095+00:00"
+}

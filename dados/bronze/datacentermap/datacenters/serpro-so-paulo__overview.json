@@ -1,0 +1,177 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16973,
+      "link": "serpro-so-paulo",
+      "name": "Serpro Modular Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Government",
+      "parent": 0,
+      "address": "R. Olívia Guedes Penteado, 941 - Socorro",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "04766-900",
+      "city": "São Paulo",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.6751204615306,
+      "longitude": -46.70770043150605,
+      "description": "The Serpro São Paulo data center is a modular facility built with certified Secure Containers, designed for high availability and energy efficiency. It holds NBR/ABNT 10636 certification, ensuring rigorous safety, efficiency, and resilience for critical environments, including fire protection and operational threat mitigation.\n\nThis data center also boasts Tier III certification from the Uptime Institute, guaranteeing high availability with concurrent maintenance capabilities and a minimum uptime of 99.982%. The infrastructure is designed to withstand isolated component failures.\n\nWith a Power Usage Effectiveness (PUE) of 1.4, the facility demonstrates excellent energy efficiency, with only 40% of total consumption dedicated to support operations like cooling and lighting. This low PUE indicates optimized cooling systems and airflow control.\n\nThe modular design comprises multiple containers, creating segmented areas for front desk, NOC, data halls, electrical rooms, and a generator plant. This structure allows for scalability and enhanced operational control and management.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1920,
+          "height": 1080,
+          "source": "https://edgefy.com/cases/data-center-modular-serpro/",
+          "filename": "Serpro_3.webp",
+          "reference": "Serpro Modular Data Center",
+          "ts_uploaded": 1773075986
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "pue": "1.4"
+      },
+      "meta_security": {
+        "firesupression": 1
+      },
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "1.82",
+        "mw_referenced": "1.82"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14021,
+        "link": "serpro",
+        "priority": 1,
+        "name": "Serpro",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Brasília",
+            "state": "",
+            "postal": "70836-900",
+            "address": "SGAN Quadra 601 Módulo \"V\", Edifício Sede - Asa Norte",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.4,
+            "pue_pct": 50,
+            "mw_planned": 0,
+            "mw_builtout": 13.82,
+            "mw_live_pct": 0,
+            "mw_pipeline": 12,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 13.82,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 50,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 50,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788651883,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "cloud": {
+          "managed": 1
+        }
+      }
+    }
+  }
+}

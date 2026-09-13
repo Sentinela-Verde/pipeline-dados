@@ -1,0 +1,158 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16177,
+      "link": "enegix-piau",
+      "name": "Enegix Piauí",
+      "status": 1,
+      "stage": 0,
+      "listingtype": "Facility",
+      "capacitytype": "Enterprise",
+      "parent": 0,
+      "address": "ZPE Parnaíba",
+      "address_ref": "ZPE Parnaíba",
+      "address_details": "",
+      "postal": "64913-901",
+      "city": "Parnaíba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Parnaíba",
+      "marketlink": "parnaiba",
+      "district": null,
+      "districtlink": null,
+      "latitude": -2.956195978406484,
+      "longitude": -41.76979620360595,
+      "description": "Enegix Piauí is a planned 100MW Bitcoin mining data center located in Parnaíba, Brazil. The project, a result of a Memorandum of Understanding between Enegix Global and local authorities, is expected to cost up to $120 million and will utilize idle state grid energy. The forecast for project completion is between four to six years.\n\nThe data center will feature a plug-and-play setup, with equipment delivered and installed in pre-built containers. This initiative aims to position Piauí in the global cryptocurrency market and generate significant economic impacts, including taxes, revenue, and opportunities in infrastructure and civil construction for the state. Brazil's increasing renewable energy capacity and government incentives for Bitcoin mining, such as import tax elimination on equipment and competitive energy pricing, create a favorable environment for such operations.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_planned": "100",
+        "mw_builtout": "100",
+        "mw_pipeline": 100,
+        "mw_referenced": "100"
+      },
+      "tags": [
+        "Crypto Mining"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 13756,
+        "link": "enegix",
+        "priority": 1,
+        "name": "Enegix",
+        "logo": "logo.jpg",
+        "addresses": {
+          "main": {
+            "city": "Ekibastuz",
+            "state": "",
+            "postal": "140000",
+            "address": "st. Kunaeva 5",
+            "country": "Kazakhstan"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 150,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 150,
+            "mw_builtout": 530,
+            "mw_live_pct": 33.3,
+            "mw_pipeline": 150,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 530,
+            "mw_planned_pct": 66.7,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 66.7,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2019,
+            "year_operational_pct": 66.7,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 0,
+          "hyperscale": 0,
+          "ts_updated": 1788570882,
+          "datacenters": 3,
+          "dcs_listings": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 3
+          },
+          "dcs_locations": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 3
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 3
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": null
+  }
+}
