@@ -1,0 +1,253 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 6481,
+      "link": "ferenz-networks",
+      "name": "FERENZ NETWORKS SERVIÇOS DE INTERNET LTDA",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Governador Irineu Bornhausen, 473, Bairro Germânico",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "89825000",
+      "city": "Xaxim",
+      "state": "SC",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Xaxim",
+      "marketlink": "xaxim",
+      "district": null,
+      "districtlink": null,
+      "latitude": -26.968319,
+      "longitude": -52.5254562,
+      "description": "Ferenz Networks is a Brazilian Data Center and Cloud Computing provider operating since 2013. We deliver Cloud, VPS, Dedicated Servers, Colocation, Backup, IP Transit and connectivity solutions for businesses and ISPs. With strategic infrastructure in Santa Catarina, São Paulo and Fortaleza, we ensure high availability, low latency and enterprise-grade security, backed by SLA-driven monitoring and specialized 24/7 human technical support.",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "APRESENTAÇÃO FERENZ.pdf",
+          "reference": "APRESENTAÇÃO FERENZ",
+          "ts_uploaded": 1788480640
+        }
+      ],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 2048,
+          "height": 1365,
+          "source": null,
+          "filename": "IMG_1989.jpg",
+          "reference": "Data Center Ferenz Networks",
+          "ts_uploaded": 1788479239
+        },
+        {
+          "type": "image",
+          "width": 1365,
+          "height": 2048,
+          "source": null,
+          "filename": "IMG_2005.jpg",
+          "reference": "Racks",
+          "ts_uploaded": 1788479321
+        },
+        {
+          "type": "image",
+          "width": 1066,
+          "height": 1600,
+          "source": null,
+          "filename": "IMG_0579.JPG.jpeg",
+          "reference": "Racks",
+          "ts_uploaded": 1788479464
+        },
+        {
+          "type": "image",
+          "width": 1706,
+          "height": 2560,
+          "source": null,
+          "filename": "IMG_0569.JPG.jpeg",
+          "reference": "Servers",
+          "ts_uploaded": 1788479513
+        },
+        {
+          "type": "image",
+          "width": 2048,
+          "height": 1365,
+          "source": null,
+          "filename": "IMG_2112.jpg",
+          "reference": "Servers",
+          "ts_uploaded": 1788479526
+        },
+        {
+          "id": "dVv-hTTJ86I",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "source": null,
+          "filename": "youtubedVv-hTTJ86I.jpg",
+          "reference": "Ferenz Networks - Presença Nacional",
+          "ts_uploaded": 1788480279
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": 1
+      },
+      "meta_power": {
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "biometric": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "officespace": 1
+      },
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 5,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 6871
+      },
+      "meta_capacity": {
+        "whitespace_builtout": 450,
+        "whitespace_referenced": 450
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 12620,
+      "companies": {
+        "id": 5361,
+        "link": "ferenz-networks",
+        "priority": 1,
+        "name": "Ferenz Networks",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Xaxim",
+            "state": "SC",
+            "postal": "89.825-000",
+            "address": "Rua Governador Irineu Bornhausen, 473, Bairro Germânico",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 450,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 4844,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 450,
+            "ws_referenced_sqft": 4844,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788747500,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

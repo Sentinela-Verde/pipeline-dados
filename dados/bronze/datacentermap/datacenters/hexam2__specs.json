@@ -1,0 +1,199 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 4995,
+      "link": "hexam2",
+      "name": "HEXAM2",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 4996,
+      "address": "Rua Ceara, 356",
+      "address_ref": "",
+      "address_details": null,
+      "postal": "20270-160",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.91009621308617,
+      "longitude": -43.20449709892273,
+      "description": "HEXAM2 is a Brazilian telecomunications company that offers advanced services  Data Center (Colocation, Dedicated Hosting and Cloud), broadband for both consumer and business and voice over IP. HEXAM2 offering services with a promise of quality and value to the consumer.\n\nServices:\n- Voice and Unified Comunications Solutions\n- Data Network Solutions\n- Dedicated Internet and Broadband Solutions\n- Management Solutions\n- Data Center:\n- Colocation\n- Server Monitoring and Remote Hands\n- Moving\n- Dedicated Hosting\n- Cloud Computing (IaaS and SaaS Solutions)\n",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "id": 1865,
+          "type": "image",
+          "width": 640,
+          "height": 237,
+          "filename": "v2-Logo-Hexam2-01-(Copy).jpg",
+          "reference": "HEXAM2",
+          "ts_uploaded": 1688056873
+        },
+        {
+          "id": 1864,
+          "type": "image",
+          "width": 200,
+          "height": 196,
+          "filename": "v2-ed-teleporto.jpg",
+          "reference": "TELEPORTO RJ",
+          "ts_uploaded": 1688056873
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": 2,
+        "tier_certified": 2
+      },
+      "meta_power": {
+        "billing": "amp+kwh",
+        "renewable": "Yes"
+      },
+      "meta_security": {
+        "guards": "Yes, 24/7"
+      },
+      "meta_amenities": {},
+      "meta_building": {
+        "expandable": 1,
+        "construction": "Purpose-built",
+        "tenancy_text": "Multi-tenant (data centers only)",
+        "rooftop_access": 1,
+        "year_operational": 2013
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 3719,
+        "link": "hexam2",
+        "priority": 1,
+        "name": "HEXAM2",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "RIO DE JANEIRO",
+            "state": "RJ",
+            "postal": "20270-160",
+            "address": "Rua Ceará, 356",
+            "country": "BRAZIL"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2013,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788657687,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 0
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

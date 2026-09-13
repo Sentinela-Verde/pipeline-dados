@@ -1,0 +1,153 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18613,
+      "link": "ascenty-hortolandia-campus",
+      "name": "Ascenty Hortolandia Campus",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Campus",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Papa João Paulo II 4",
+      "address_ref": null,
+      "address_details": "Building 1 / Building 5",
+      "postal": "13185-252",
+      "city": "Hortolândia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.89580421484941,
+      "longitude": -47.17949818945308,
+      "description": "The Ascenty Hortolândia Campus, located in Hortolândia, Brazil, is a major data center campus comprising multiple operational and under-development facilities. The campus provides 85MW of power capacity and 602,000 square feet of data center space.\n\nDesigned for high availability and long-term scalability, the campus incorporates redundancy across all critical infrastructure systems, including power, cooling, and network connectivity. It operates as a carrier-neutral campus, offering dedicated telecom meet-me rooms and direct connectivity to major Internet exchange points and leading cloud providers.\n\nSecurity features include 24/7 CCTV monitoring and dual-authentication access control. Operated by Ascenty, a Digital Realty and Brookfield company, the campus is part of one of Latin America's largest data center platforms, with facilities across Brazil, Chile, and Mexico.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 6,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": null,
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 2821,
+        "link": "ascenty-data-centers",
+        "priority": 1,
+        "name": "Ascenty Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Vinhedo",
+            "state": "Sao Paulo",
+            "postal": "13.288-162",
+            "address": "Av. João Batista Nunes, 50 - Distrito Industrial Benedito Storani",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 552,
+            "mw_live_pct": 0,
+            "mw_pipeline": 190,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 552,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 87.8,
+            "mw_pipeline_pct": 24.4,
+            "ws_builtout_pct": 48.8,
+            "ws_builtout_sqm": 182869,
+            "ws_pipeline_pct": 4.9,
+            "ws_pipeline_sqm": 29984,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 1968384,
+            "ws_pipeline_sqft": 322745,
+            "mw_referenced_pct": 87.8,
+            "ws_referenced_pct": 48.8,
+            "ws_referenced_sqm": 182869,
+            "ws_referenced_sqft": 1968384,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2020,
+            "year_operational_pct": 63.4,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 39,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 40,
+          "hyperscale": 0,
+          "ts_updated": 1788660089,
+          "datacenters": 36,
+          "dcs_listings": {
+            "0": 2,
+            "1": 6,
+            "2": 31,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 41
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 25
+          },
+          "dcs_facilities": {
+            "0": 2,
+            "1": 6,
+            "2": 26,
+            "4": 0,
+            "-1": 0,
+            "-2": 2,
+            "-3": 0,
+            "total": 36
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {},
+        "cloud": {}
+      }
+    }
+  }
+}

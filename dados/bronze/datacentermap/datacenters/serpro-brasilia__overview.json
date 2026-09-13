@@ -1,0 +1,162 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16974,
+      "link": "serpro-brasilia",
+      "name": "Serpro Brasilia",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Government",
+      "parent": 0,
+      "address": "TBA - To Be Announced",
+      "address_ref": "Parque Tecnologico Biotic",
+      "address_details": null,
+      "postal": "70297-400",
+      "city": "Brasília",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Brasilia",
+      "marketlink": "brasilia",
+      "district": null,
+      "districtlink": null,
+      "latitude": -15.7111079,
+      "longitude": -47.9107354,
+      "description": "Serpro Brasilia is a new 12MW data center facility planned for construction in Brasília, Brazil, with operations anticipated by late 2026. Located within the Biotic technology park, this facility is specifically designed to support Artificial Intelligence (AI) workloads. The expansion is driven by increased demand for processing capacity, fueled by the implementation of tax reform and the expansion of the government cloud. Serpro's president, Wilton Mota, highlighted the need to strengthen infrastructure to meet ongoing projects and accommodate federal agency cloud loads. The project is part of Serpro's broader strategy to expand its processing capabilities, which also includes a new data center in São Paulo and potential utilization of Telebras infrastructure in Brasília to create a third sovereign cloud zone.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2026"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "12",
+        "mw_pipeline": "12",
+        "mw_referenced": "12"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14021,
+        "link": "serpro",
+        "priority": 1,
+        "name": "Serpro",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Brasília",
+            "state": "",
+            "postal": "70836-900",
+            "address": "SGAN Quadra 601 Módulo \"V\", Edifício Sede - Asa Norte",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.4,
+            "pue_pct": 50,
+            "mw_planned": 0,
+            "mw_builtout": 13.82,
+            "mw_live_pct": 0,
+            "mw_pipeline": 12,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 13.82,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 50,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 50,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788651883,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "cloud": {
+          "managed": 1
+        }
+      }
+    }
+  }
+}

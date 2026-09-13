@@ -1,0 +1,205 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 15077,
+      "link": "hostdime-so-paulo",
+      "name": "HostDime Brazil (São Paulo)",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 8774,
+      "address": "Av. Eid Mansur, 666 - Parque Sao George",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "06708-070",
+      "city": "Cotia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.5979056,
+      "longitude": -46.8488169,
+      "description": "HostDime’s São Paulo Data Center is a Tier III Design Certified facility strategically located in Cotia, São Paulo, in Brazil’s largest urban and economic region. Spanning over 30,000 square feet, it delivers enterprise-level colocation, cloud, and bare metal hosting services with low-latency access to South and North America. This southern Brazil site complements HostDime’s northern campus in João Pessoa.\n\nThe infrastructure includes 5.9MW of total power, N+1 HVAC cooling systems, AC/DC power architecture, and 2N generator and UPS configurations. It features raised flooring across 25,000 square feet, direct connectivity to major fiber landing stations, and comprehensive cooling, fire detection, and suppression systems. Amenities include office and conference space, loading dock access, and secure onsite parking.\n\nSecurity is multi-layered with biometric scanning, smart card access, and dual-authentication protocols, supported by 24/7 IP video surveillance and on-site guards. With advanced systems and robust connectivity, HostDime’s São Paulo facility stands as a secure, scalable data hub for regional and global clients.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "pci": "1",
+        "soc1": "2",
+        "soc2": "2",
+        "ssae16": "2",
+        "iso27001": "1",
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "ups_redundancy": "2N",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "2N"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "VESDA fire suppression and smoke detection",
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {
+        "loadingbay": 1,
+        "officespace": 1,
+        "parking_text": "Available on-site parking",
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floors": "4",
+        "floor_type": "Raised Floor",
+        "tenancy_text": "Multi-tenant (data centers only)",
+        "year_operational": "2013"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "5.9",
+        "buildingsize": "19777",
+        "mw_referenced": "5.9",
+        "whitespace_builtout": "2323",
+        "whitespace_referenced": "2323"
+      },
+      "tags": [
+        "Carrier Neutral"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 469,
+        "link": "hostdime-com",
+        "priority": 1,
+        "name": "HostDime Global Corp",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Orlando",
+            "state": "Florida",
+            "postal": "32801",
+            "address": "189 S Orange Ave Suite 1500",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.3,
+            "pue_pct": 14.3,
+            "mw_planned": 0,
+            "mw_builtout": 13.4,
+            "mw_live_pct": 0,
+            "mw_pipeline": 6,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 13.4,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 42.9,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 22763,
+            "ws_pipeline_pct": 28.6,
+            "ws_pipeline_sqm": 8363,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 245020,
+            "ws_pipeline_sqft": 90019,
+            "mw_referenced_pct": 42.9,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 22763,
+            "ws_referenced_sqft": 245020,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2011,
+            "year_operational_pct": 42.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 2,
+          "colo": 8,
+          "ixps": 1,
+          "cloud": 4,
+          "presence": 10,
+          "hyperscale": 0,
+          "ts_updated": 1788647894,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 2,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 2,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

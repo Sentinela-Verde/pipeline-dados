@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12614,
+      "link": "nuv-datacenter-nuv1",
+      "name": "NUV Datacenter - NUV1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Fioravanet Cassini, 28",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "29160-855",
+      "city": "Serra",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Vitoria",
+      "marketlink": "vitoria",
+      "district": null,
+      "districtlink": null,
+      "latitude": -20.2226002,
+      "longitude": -40.2710429,
+      "description": "NUV1 is one of NUV Data Center's premier facilities, located in Espírito Santo, Brazil. It offers a highly secure environment for data storage and management, equipped with state-of-the-art infrastructure to ensure reliability and efficiency. The data center features advanced security measures, including 24/7 monitoring and redundancy with numerous Points of Presence (PoPs) spread throughout Greater Vitória, ensuring continuous and secure operations.\n\nNUV2, also located in Espírito Santo, complements NUV1 by providing additional capacity and enhanced services. This facility is designed to meet the growing demands of businesses, offering robust connectivity solutions and high-performance infrastructure. NUV2 is equipped with the latest technology to support efficient data management and rapid service activation and recovery, making it an ideal choice for businesses looking to optimize their data operations.\n\nTogether, NUV1 and NUV2 form a comprehensive data center ecosystem that supports local, national, and international markets. With a focus on energy efficiency and high service capacity, these data centers provide businesses with reliable and secure solutions for their data storage and connectivity needs.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 12,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "NUV1",
+        "peeringdb_id": 12556
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 12339,
+        "link": "nuv-datacenter",
+        "priority": 1,
+        "name": "NUV Datacenter",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Diamantina",
+            "state": "",
+            "postal": "29160-855",
+            "address": "Rua Fioravanet Cassini, 28",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788651113,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

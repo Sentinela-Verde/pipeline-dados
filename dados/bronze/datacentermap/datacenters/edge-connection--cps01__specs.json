@@ -1,0 +1,191 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9013,
+      "link": "edge-connection--cps01",
+      "name": "Edge Connection - CPS01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Angelo Sellin, 401",
+      "address_ref": null,
+      "address_details": "Terreo",
+      "postal": "13098422",
+      "city": "Campinas",
+      "state": "Sao Paulo",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.8148445,
+      "longitude": -47.0287932,
+      "description": "Edge Connection is a company specialized in Edge Data Center solutions. With extensive experience and expertise in the field, Edge Connection offers state-of-the-art services and infrastructure to meet the growing demands of the Edge.\n\nWe accompany our customers on their journey to the Cloud, ensuring specialized and personalized service 24x7x365 and highly competitive costs.\n\nGet in touch with us today!",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 4032,
+          "height": 3024,
+          "filename": "IMG_9633.jpeg",
+          "reference": "Containment.jpeg",
+          "ts_uploaded": 1696269642
+        },
+        {
+          "type": "image",
+          "width": 3024,
+          "height": 4032,
+          "filename": "IMG_9608.jpeg",
+          "reference": "Racks.jpeg",
+          "ts_uploaded": 1696269668
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "billing": "Per kWh",
+        "kw_rack": 5,
+        "ups_redundancy": "2N",
+        "cooling_redundancy": "2N",
+        "standby_redundancy": "2N"
+      },
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {},
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30060,
+      "companies": {
+        "id": 11509,
+        "link": "edge-connection",
+        "priority": 1,
+        "name": "Edge Connection",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Campinas",
+            "state": "São Paulo",
+            "postal": "13098-422",
+            "address": "Rua Ângelo Sellin, 401",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788657593,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "mmr": 1,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9001,
+      "link": "cwbhn-01",
+      "name": "CWB-HN 01",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Brasílio Itiberê 2217",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "80230050",
+      "city": "Curitiba",
+      "state": "Paraná",
+      "statelink": "paran",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Curitiba",
+      "marketlink": "curitiba",
+      "district": null,
+      "districtlink": null,
+      "latitude": -25.44583383579607,
+      "longitude": -49.26575676773692,
+      "description": "The Hosting Now company's Data Center, located in Curitiba, Paraná, prioritizes excellence in IT infrastructure. With a comprehensive approach to ensuring availability, this data center sets a benchmark for redundancy. From its power infrastructure to the network, each layer has been designed to maximize uptime.\n\nOne of the notable features is power redundancy, with independent power sources and backup systems, ensuring servers never run out of power. Additionally, redundancy extends to the network, with links coming from various geographical locations, guaranteeing uninterrupted connectivity and reducing the likelihood of network failures.\n\nThe Hosting Now Data Center meets the stringent Tier 3 standard requirements, which means it is prepared to keep your critical operations running even in the face of unexpected events. This makes it a reliable choice for companies that demand high availability and security for their data and systems.",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "Apresentação - Hosting Now.pdf",
+          "reference": "Apresentação - Hosting Now",
+          "ts_uploaded": 1693776342
+        }
+      ],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {
+        "billing": "Per kWh"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {},
+      "meta_building": {
+        "floors": 4,
+        "expandable": 1,
+        "floor_type": "Solid Floor",
+        "area_building": 2500,
+        "year_upgraded": 2023,
+        "area_whitespace": 2000,
+        "year_operational": 2022
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 1,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {
+        "buildingsize": 2500,
+        "whitespace_builtout": 2000,
+        "whitespace_referenced": 2000
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 30038,
+      "companies": {
+        "id": 11487,
+        "link": "hosting-now",
+        "priority": 1,
+        "name": "Hosting Now",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 2000,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 21528,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 2000,
+            "ws_referenced_sqft": 21528,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2022,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788659545,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "mmr": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

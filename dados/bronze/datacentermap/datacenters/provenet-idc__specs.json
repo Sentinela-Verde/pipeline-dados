@@ -1,0 +1,159 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12461,
+      "link": "provenet-idc",
+      "name": "ProveNET IDC",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Isaías Domingos da Silveira, 215",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "60177-180",
+      "city": "Fortaleza",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Fortaleza",
+      "marketlink": "fortaleza",
+      "district": null,
+      "districtlink": null,
+      "latitude": -3.7356148,
+      "longitude": -38.466709,
+      "description": "ProveNET's IDC-FLA in Fortaleza is a state-of-the-art data center that offers a robust infrastructure tailored to meet diverse IT demands. The facility boasts a redundant UPS system and backup generators, ensuring an uninterrupted power supply and high availability for hosted services. Precision air conditioning systems maintain optimal temperatures, preventing overheating and promoting server efficiency and longevity.\n\nSecurity at the IDC-FLA is stringent, with multi-layered protocols including 24/7 on-site personnel, CCTV surveillance, biometric scanners, and keycard access points to ensure that only authorized individuals can access the facility. The data center's high-speed, reliable internet connectivity is supported by multiple fiber-optic connections, offering low latency and high bandwidth, ideal for businesses requiring fast and stable internet access. Additionally, being carrier-neutral, it allows clients the flexibility to choose their preferred internet service providers.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 13,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 6563
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": null,
+      "contact_sales": null,
+      "companies": {
+        "id": 12249,
+        "link": "provenet-internet-services-ltda",
+        "priority": 1,
+        "name": "ProveNET Internet Services LTDA",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Fortaleza",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788575226,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "cabinets": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        }
+      }
+    }
+  }
+}

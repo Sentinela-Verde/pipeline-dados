@@ -1,0 +1,231 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 1520,
+      "link": "hostdime-brazil",
+      "name": "HostDime Brazil (João Pessoa)",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av São Paulo, 1223",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "58020500",
+      "city": "João Pessoa",
+      "state": "Paraiba",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Joao Pessoa",
+      "marketlink": "joao-pessoa",
+      "district": null,
+      "districtlink": null,
+      "latitude": -7.115262,
+      "longitude": -34.880473,
+      "description": "HostDime is a global data center infrastructure company operating our owned purpose-built data center facilities in Mexico, Brazil, Colombia and our flagship facility in Florida, USA, and with owned networks in UK, India, and Hong Kong.\n\nOur mission is to design, build, and operate purpose-built next-gen data center facilities in emerging markets around the globe. We offer an array of cloud-native infrastructure products and services including physical bare-metal servers, cloud servers (both private and public), colocation and Hardware-as-a-Service in all our unique global edge data center locations. We also provide professional managed services on all core products globally.\n\nThis facility is one of the very few data centers in Northern Brazil. The four story data center building, designed, constructed, and owned by HostDime, is Tier III certified by the Uptime Institute. The facility can support up to 250 racks and has bountiful private cage space. HostDime also operates its own infrastructure in a partner data center in São Paulo, Brazil. \n\nJoão Pessoa, Brazil Data Center Features:\n- 20,000 sq. ft. edge data center\n- Tier III certified\n- Soc 2 Type 2 certified\n- HIPAA compliant\n- Deployment availability of racks, cages, and rooftop antenna space\n- Turnkey fit-out solutions\n- Colocation client workspace lounge\n- On-site parking\n\nNetwork Features:\n- Redundant underground fiber optic points of entry\n- Excellent connectivity with multiple major telecom partners\n- Alternate carrier networks available\n\nPower Features:\n- 99.99% uptime\n- 1500 KVA with primary feed of 13,800 Volts and secondary feed of 380/220 Volts\n- Dual A & B electrical distribution \n- Over 2000 kW high availability (N+1) parallel generator system with 22,000 liters of total reserve diesel fuel\n- Power Usage Effectiveness average of less than 1.5 PUE\n\nCooling Features:\n- 400 tons of independent air cooled chiller systems\n- 300 tons of redundant cooling capacity (N+1)\n- Latest generation energy efficient 100% variable speed EC fans\n- Exterior heat rejection and interior precision air handling units\n- Cold aisle containment: airflow using a raised floor of 1 meter\n\nSecurity Features:\n- Extensive 24/7/365 video surveillance systems\n- Dual authentication access control with card reader and biometric face recognition\n- Razor wire perimeter security\n- 24/7 on-site security\n\nServices:\n- Scalable cloud servers\n- Bare metal servers\n- Colocation services\n- Private and public cloud environments\n- Multiple tiers of managed services\n\nDownload Data Sheet for this facility: https://www.hostdime.com/kb/hd/data-center-data-sheets/north-brazil-data-center-data-sheet",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "id": "gVzrRDZ-0mI",
+          "type": "youtube",
+          "width": 120,
+          "height": 90,
+          "filename": "v2-gVzrRDZ-0mI.jpg",
+          "reference": "HostDIme Brazil DC Tour",
+          "ts_uploaded": 1688056546
+        },
+        {
+          "id": 3934,
+          "type": "image",
+          "width": 1200,
+          "height": 755,
+          "filename": "v2-HDBR-1.jpeg",
+          "reference": "Tier III Data Center",
+          "ts_uploaded": 1688056546
+        },
+        {
+          "id": 3936,
+          "type": "image",
+          "width": 1000,
+          "height": 667,
+          "filename": "v2-HDBR-3.jpeg",
+          "reference": "Carrier Neutral DC",
+          "ts_uploaded": 1688056546
+        },
+        {
+          "id": 3935,
+          "type": "image",
+          "width": 1000,
+          "height": 679,
+          "filename": "v2-HDBR-2.jpeg",
+          "reference": "Turnkey Fit-Out Solutions",
+          "ts_uploaded": 1688056547
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "kw_rack": "10",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "HFC-125 clean agent gas",
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {
+        "parking_text": "On-site parking"
+      },
+      "meta_building": {
+        "floors": "4",
+        "year_operational": "2017"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 11,
+        "networkproviders": 0,
+        "serviceproviders": 1
+      },
+      "meta_references": {
+        "peeringdb_id": 5210
+      },
+      "meta_capacity": {
+        "mw_builtout": "1.5",
+        "mw_referenced": "1.5",
+        "whitespace_builtout": "1858",
+        "whitespace_referenced": "1858"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 469,
+        "link": "hostdime-com",
+        "priority": 1,
+        "name": "HostDime Global Corp",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Orlando",
+            "state": "Florida",
+            "postal": "32801",
+            "address": "189 S Orange Ave Suite 1500",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.3,
+            "pue_pct": 14.3,
+            "mw_planned": 0,
+            "mw_builtout": 13.4,
+            "mw_live_pct": 0,
+            "mw_pipeline": 6,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 13.4,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 42.9,
+            "mw_pipeline_pct": 14.3,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 22763,
+            "ws_pipeline_pct": 28.6,
+            "ws_pipeline_sqm": 8363,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 245020,
+            "ws_pipeline_sqft": 90019,
+            "mw_referenced_pct": 42.9,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 22763,
+            "ws_referenced_sqft": 245020,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2011,
+            "year_operational_pct": 42.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 2,
+          "colo": 8,
+          "ixps": 1,
+          "cloud": 4,
+          "presence": 10,
+          "hyperscale": 0,
+          "ts_updated": 1788647894,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 2,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 2,
+            "2": 5,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 2,
+            "2": 3,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9946,
+      "link": "scala-data-centers-sgrutb12",
+      "name": "Scala Data Centers SGRUTB12",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 18131,
+      "address": "Av. Ceci",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "06460-120",
+      "city": "Barueri",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Tambore",
+      "marketlink": "tambore",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4950428,
+      "longitude": -46.8132396,
+      "description": "Scala Data Centers' SGRUTB12 datacenter delivers reliable colocation solutions in the heart of São Paulo's technology hub. Located within the Tamboré campus in Barueri, this facility provides a secure and well-connected environment for businesses seeking IT infrastructure within this dynamic market.\n\nOperational since 2023, SGRUTB12 offers a 70,277 sqft built area and a 6MW power capacity, suitable for businesses with focused or growing IT requirements. Scala Data Centers' commitment to sustainability and high-performance solutions makes SGRUTB12 a compelling choice for companies prioritizing a trusted partner in Brazil.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 2560,
+          "height": 1917,
+          "source": "https://scaladatacenters.com/en/data-centers-en/",
+          "filename": "SGRUTB12-scaled.jpg",
+          "reference": "Scala Data Centers SGRUTB12",
+          "ts_uploaded": 1782322436
+        }
+      ],
+      "meta_standards": null,
+      "meta_power": {
+        "pue": "1.3"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "year_operational": "2024"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "provider_id": "SGRUTB12",
+        "peeringdb_id": 14821
+      },
+      "meta_capacity": {
+        "mw_live": "2",
+        "mw_builtout": 6,
+        "buildingsize": 70277,
+        "mw_referenced": 6
+      },
+      "tags": [],
+      "metaunits": "imperial",
+      "contact_sales": null,
+      "companies": {
+        "id": 11602,
+        "link": "scala-data-centers",
+        "priority": 1,
+        "name": "Scala Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Tamboré",
+            "state": "",
+            "postal": "06455",
+            "address": "Alameda Tocantins 350",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 23.3,
+            "pue_avg": 1.35,
+            "pue_pct": 4.8,
+            "mw_planned": 0,
+            "mw_builtout": 925.4,
+            "mw_live_pct": 11.9,
+            "mw_pipeline": 468.9,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 925.4,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 54.8,
+            "mw_pipeline_pct": 50,
+            "ws_builtout_pct": 2.4,
+            "ws_builtout_sqm": 5305,
+            "ws_pipeline_pct": 2.4,
+            "ws_pipeline_sqm": 5305,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 57102,
+            "ws_pipeline_sqft": 57102,
+            "mw_referenced_pct": 54.8,
+            "ws_referenced_pct": 2.4,
+            "ws_referenced_sqm": 5305,
+            "ws_referenced_sqft": 57102,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2023,
+            "year_operational_pct": 61.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 22,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 44,
+          "hyperscale": 0,
+          "ts_updated": 1788656748,
+          "datacenters": 36,
+          "dcs_listings": {
+            "0": 16,
+            "1": 11,
+            "2": 15,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 42
+          },
+          "dcs_locations": {
+            "0": 10,
+            "1": 8,
+            "2": 8,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 26
+          },
+          "dcs_facilities": {
+            "0": 16,
+            "1": 8,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 37
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

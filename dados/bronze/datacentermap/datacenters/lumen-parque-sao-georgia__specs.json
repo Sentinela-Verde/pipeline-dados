@@ -1,0 +1,228 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8774,
+      "link": "lumen-parque-sao-georgia",
+      "name": "Cirion SAO1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Eid Mansur, 666",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "06708-070",
+      "city": "Cotia",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.5979329,
+      "longitude": -46.848808,
+      "description": "Profile text unavailable for this listing.",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "Cirion SAO1 Spec Sheet.pdf",
+          "ts_uploaded": 1785350839
+        }
+      ],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1600,
+          "height": 900,
+          "source": null,
+          "filename": "SAO1 - Cirion.jpg",
+          "reference": "SAO1 - Cirion",
+          "ts_uploaded": 1708988813
+        }
+      ],
+      "meta_standards": {
+        "pci": "1",
+        "iso7017": "1",
+        "iso7018": "1",
+        "iso9001": "1",
+        "isae3402": "1",
+        "iso22301": "1",
+        "iso27001": "1",
+        "iso45001": "1",
+        "tier_designed": "3",
+        "tier_certified": "3"
+      },
+      "meta_power": {
+        "kw_rack": "20",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1,
+        "firesupression_text": "FM200 / Novec"
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "officespace": 1,
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floors": "4",
+        "floor_type": "Raised Floor",
+        "tenancy_text": "Multi-tenant (data centers only)"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 1,
+        "networkpresence": 0,
+        "networkproviders": 1,
+        "serviceproviders": 1
+      },
+      "meta_references": {
+        "aliases": "Lumen Parque Sao Georgia Cotia",
+        "provider_id": "SAO1",
+        "peeringdb_id": 4490
+      },
+      "meta_capacity": {
+        "mw_builtout": "20",
+        "buildingsize": 19777,
+        "mw_referenced": "20",
+        "whitespace_builtout": 9826,
+        "whitespace_referenced": 9826
+      },
+      "tags": [
+        "Carrier Neutral",
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11513,
+        "link": "cirion",
+        "priority": 1,
+        "name": "Cirion",
+        "logo": "logo.jpg",
+        "addresses": {
+          "main": {
+            "city": "Miami",
+            "state": "Florida",
+            "postal": "33131",
+            "address": "801 Brickell Ave, suite 2400",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 4,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 144,
+            "mw_live_pct": 4.8,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 144,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 38.1,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 90.5,
+            "ws_builtout_sqm": 44290,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 476733,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 38.1,
+            "ws_referenced_pct": 90.5,
+            "ws_referenced_sqm": 44290,
+            "ws_referenced_sqft": 476733,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2007,
+            "year_operational_pct": 23.8,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 12,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788656926,
+          "datacenters": 21,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

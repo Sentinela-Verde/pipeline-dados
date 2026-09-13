@@ -1,0 +1,38 @@
+regiao,nome,qtd_datacenters_informada,latitude,longitude,url
+aracaju,Aracaju,1,-10.9271374,-37.0718676,https://www.datacentermap.com/brazil/aracaju/
+ararangu,Araranguá,1,-28.9370964,-49.4840256,https://www.datacentermap.com/brazil/ararangu/
+belem,Belem,1,-1.455021,-48.502368,https://www.datacentermap.com/brazil/belem/
+belo-horizonte,Belo Horizonte,4,-19.910824,-43.967285,https://www.datacentermap.com/brazil/belo-horizonte/
+blumenau,Blumenau,2,-26.9165792,-49.07173310000002,https://www.datacentermap.com/brazil/blumenau/
+brasilia,Brasilia,10,-15.780148,-47.92917,https://www.datacentermap.com/brazil/brasilia/
+campina-grande,Campina Grande,1,-7.230718,-35.881666,https://www.datacentermap.com/brazil/campina-grande/
+campinas,Campinas,30,-22.907105,-47.063239,https://www.datacentermap.com/brazil/campinas/
+campo-grande,Campo Grande,2,-20.4642965,-54.620842,https://www.datacentermap.com/brazil/campo-grande/
+cascavel,Cascavel,2,-24.9577771,-53.45951119999995,https://www.datacentermap.com/brazil/cascavel/
+cravinhos,Cravinhos,1,-21.3417462,-47.7352567,https://www.datacentermap.com/brazil/cravinhos/
+curitiba,Curitiba,7,-25.428356,-49.273252,https://www.datacentermap.com/brazil/curitiba/
+fortaleza,Fortaleza,11,-3.736689975030508,-38.5311412363709,https://www.datacentermap.com/brazil/fortaleza/
+goiania,Goiania,2,-16.677715,-49.26763,https://www.datacentermap.com/brazil/goiania/
+itauna,Itaúna,1,-20.076081,-44.5799703,https://www.datacentermap.com/brazil/itauna/
+joao-pessoa,Joao Pessoa,1,-7.11532,-34.861051,https://www.datacentermap.com/brazil/joao-pessoa/
+joinville,Joinville,2,-26.305088,-48.846093,https://www.datacentermap.com/brazil/joinville/
+lagoa-da-prata,Lagoa da Prata,1,-20.0232104,-45.5346127,https://www.datacentermap.com/brazil/lagoa-da-prata/
+manaus,Manaus,2,-3.106409,-60.02643,https://www.datacentermap.com/brazil/manaus/
+maringa,Maringa,3,-23.4209995,-51.93305580000003,https://www.datacentermap.com/brazil/maringa/
+muriae,Muriae,1,-21.126215,-42.3694516,https://www.datacentermap.com/brazil/muriae/
+palmas,Palmas,2,-10.2249324,-48.3309896,https://www.datacentermap.com/brazil/palmas/
+parnaiba,Parnaíba,1,-2.9147973,-41.7668454,https://www.datacentermap.com/brazil/parnaiba/
+porto-alegre,Porto Alegre,15,-30.027704,-51.228735,https://www.datacentermap.com/brazil/porto-alegre/
+recife,Recife,3,-8.0578381,-34.88289689999999,https://www.datacentermap.com/brazil/recife/
+ribeirao-preto,Ribeirao Preto,1,-21.1704008,-47.81032379999999,https://www.datacentermap.com/brazil/ribeirao-preto/
+rio-de-janeiro,Rio de Janeiro,23,-22.903539,-43.209587,https://www.datacentermap.com/brazil/rio-de-janeiro/
+santa-maria,Santa Maria,1,-29.6873064,-53.81547690000002,https://www.datacentermap.com/brazil/santa-maria/
+sao-jose-do-rio-preto,Sao Jose do Rio Preto,1,-20.820181,-49.379681,https://www.datacentermap.com/brazil/sao-jose-do-rio-preto/
+sao-jose-dos-campos,Sao Jose dos Campos,1,-23.17908,-45.887248,https://www.datacentermap.com/brazil/sao-jose-dos-campos/
+sao-paulo,Sao Paulo,59,-23.548943,-46.638818,https://www.datacentermap.com/brazil/sao-paulo/
+tambore,Tambore,10,-23.501201,-46.837394,https://www.datacentermap.com/brazil/tambore/
+teresina,Teresina,1,-5.0863441,-42.8035262,https://www.datacentermap.com/brazil/teresina/
+uberlandia,Uberlandia,3,-18.919037,-48.277984,https://www.datacentermap.com/brazil/uberlandia/
+videira,Videira,2,-27.0053,-51.1543,https://www.datacentermap.com/brazil/videira/
+vitoria,Vitoria,3,-20.31536,-40.301767,https://www.datacentermap.com/brazil/vitoria/
+xaxim,Xaxim,2,-26.9560607,-52.53600729999999,https://www.datacentermap.com/brazil/xaxim/

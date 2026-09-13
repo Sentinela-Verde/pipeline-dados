@@ -1,0 +1,180 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 8657,
+      "link": "nabiax-tambore",
+      "name": "NextStream Tamboré",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Marcos Penteado de Ulhôa Rodrigues",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "06543-001",
+      "city": "Santana de Parnaíba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4641876,
+      "longitude": -46.8588568,
+      "description": "Tamboré Data Center is located in Santana de Parnaíba - São Paulo (Brazil). With its two first phases built (2011 and 2018), it has 6.1 MW IT power supply, which can expand up to 11.5 MW in the medium term.\n\nThe surface has vacant space to build a new building similar to the existing one, which will lead to a maximum capacity of 23 MW IT Power, oubling the total IT load of the facility.\n\nTamboré was one of the first Data Centers in LatAm to be certified Tier III in Design and Facilities, as well as in Operational sustainability Gold.\n\nThe facility has 4,600 sqm of IT surface, divided in 2 IT rooms, and is 100% Carrier Neutral.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {
+        "tier_designed": 3,
+        "tier_certified": 3
+      },
+      "meta_power": {
+        "totalmw": "6.1"
+      },
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "year_operational": 2012
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Nabiax Tamboré||Telefonica Tamboré||Telefónica Tamboré"
+      },
+      "meta_capacity": {
+        "mw_builtout": 6.1,
+        "mw_referenced": 6.1,
+        "whitespace_builtout": 4600,
+        "whitespace_referenced": 4600
+      },
+      "tags": [],
+      "metaunits": "imperial",
+      "contact_sales": null,
+      "companies": {
+        "id": 11732,
+        "link": "actis",
+        "priority": 1,
+        "name": "NextStream",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "London",
+            "postal": "SE12JT",
+            "address": "2 More London Riverside",
+            "country": "United Kingdom"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 18.5,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 18.5,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 12452,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 134037,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 12452,
+            "ws_referenced_sqft": 134037,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2002,
+            "year_operational_pct": 60,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 10,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 10,
+          "hyperscale": 0,
+          "ts_updated": 1788573860,
+          "datacenters": 10,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 10
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 10
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 10,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 10
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 1,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

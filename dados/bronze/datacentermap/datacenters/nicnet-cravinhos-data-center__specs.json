@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13978,
+      "link": "nicnet-cravinhos-data-center",
+      "name": "NICNET - Cravinhos - Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Cesário Motta 231",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "14140000",
+      "city": "Cravinhos",
+      "state": "São Paulo",
+      "statelink": "so-paulo",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Cravinhos",
+      "marketlink": "cravinhos",
+      "district": null,
+      "districtlink": null,
+      "latitude": -21.3374876,
+      "longitude": -47.7344121,
+      "description": "Nicnet is a company specialized in Cloud Computing, Colocation, Disaster Recovery, and Backup, providing high-performance solutions for businesses seeking security, availability, and efficiency in their IT infrastructure.\n\nInfrastructure & Security\nNicnet’s Data Center follows Tier III standards, ensuring 99.98% uptime, with redundant power, controlled cooling, and DDoS protection. It features advanced security, 24/7 monitoring, and fire and flood prevention measures.\n\nServices Offered:\n\nCloud Computing.\nManaged Colocation.\nDisaster Recovery.\nBackup.\n\nNicnet is the ideal choice for companies prioritizing security, efficiency, and operational continuity in their digital environments.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "year_operational": "2025"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 31429,
+      "companies": {
+        "id": 12917,
+        "link": "nicnet-telecom-ltda",
+        "priority": 1,
+        "name": "Nicnet Telecom Ltda",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Cravinhos",
+            "state": "São Paulo",
+            "postal": "14140000",
+            "address": "Rua Cesario Motta 230",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2025,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788567756,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

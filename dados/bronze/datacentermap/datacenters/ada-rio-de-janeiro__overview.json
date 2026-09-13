@@ -1,0 +1,95 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11254,
+      "link": "ada-rio-de-janeiro",
+      "name": "ADA Rio de Janeiro",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Campus",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Oliveira Roxo",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "25240-080",
+      "city": "Duque de Caxias",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.70650052424456,
+      "longitude": -43.23743247257072,
+      "description": "Nestled in the dynamic city of Rio de Janeiro, the ADA Infrastructure datacenter stands as a beacon of modernity and efficiency. This state-of-the-art facility is designed to meet the growing demands of digital storage and processing, offering a staggering 60MW total IT load capacity across its three single-story buildings. With readiness for service, the campus is a testament to ADA's commitment to building a future-proof digital infrastructure.\n\nThe datacenter boasts a network-rich connectivity environment, positioning itself as a carrier-neutral hub within close proximity to other major hyperscale data centers. This strategic location ensures optimal performance and reliability, providing clients with seamless access to a broad range of network services. The infrastructure is further enhanced by an N+1 UPS Distributed Block redundant 6:5 configuration and an N+1 closed loop air-cooled chiller plant, underscoring ADA's dedication to power efficiency and uninterrupted service.\n\nADA Infrastructure's Rio de Janeiro campus is not just a data center; it's a cornerstone for the digital age, where scientific discoveries, medical advancements, and the AI revolution converge. As the world becomes increasingly reliant on digital platforms for commerce, communication, and innovation, ADA's facility stands ready to support the most transformative companies, making a positive impact on communities and the planet. It's a place where technology's potential to benefit society is realized, embodying the 'poetical science' that Ada Lovelace, the world's first computer programmer, envisioned.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "60",
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": 60,
+        "mw_pipeline": 60,
+        "mw_referenced": 60
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11819,
+        "link": "ada-infrastructure",
+        "priority": 1,
+        "name": "Ada Infrastructure",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Bellevue",
+            "state": "Washington",
+            "postal": "98004",
+            "address": "10500 NE 8th ST Suite 625",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "net": 0,
+          "colo": 0,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 7,
+          "hyperscale": 0,
+          "ts_updated": 1788567402,
+          "datacenters": 0
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {},
+        "cloud": {}
+      }
+    }
+  }
+}

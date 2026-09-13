@@ -1,0 +1,221 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9523,
+      "link": "cirion-cur1",
+      "name": "Cirion CUR1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. do Semeador, 350",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "81270",
+      "city": "Curitiba",
+      "state": "Paraná",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Curitiba",
+      "marketlink": "curitiba",
+      "district": null,
+      "districtlink": null,
+      "latitude": -25.4703512,
+      "longitude": -49.3502146,
+      "description": "Previously a part of Lumen Technologies, but was included when Lumens Latin America operations were spun off to form Cirion Technologies, with 18 data centers across various countries in the Latam region.\n\nFeatures and Specifications\n\n.\tOwned building\n.\tMonitored access and 24/7 surveillance\n.\tPhysical security points of control with biometric and card ID\n.\tCCTV with strategically located cameras\n.\tAccess control alarms and BMS\n.\tRedundant and highly available resources\n.\tMini Racks, rack, cages, and dedicated rooms for customers\n.\tLow, medium and high density rooms enable rack hosting from 3 up to 20 kW\n.\tAC and DC power",
+      "meta_files": [
+        {
+          "icon": "file pdf",
+          "filename": "Cirion CUR1 Spec Sheet.pdf",
+          "ts_uploaded": 1785349935
+        }
+      ],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1600,
+          "height": 900,
+          "source": null,
+          "filename": "CUR1 - Cirion.jpg",
+          "reference": "CUR1 - Cirion",
+          "ts_uploaded": 1708985102
+        }
+      ],
+      "meta_standards": {
+        "pci": 2,
+        "iso9001": 1,
+        "isae3402": 1,
+        "iso22301": 1,
+        "iso27001": 1
+      },
+      "meta_power": {
+        "kw_rack": 20,
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "mantrap": 1,
+        "biometric": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "officespace": 1,
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floors": "2",
+        "tenancy_text": "Sole-tenant"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 23,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Lumen Curitiba || CenturyLink Curitiba || Level 3 Curitiba",
+        "provider_id": "CUR1",
+        "peeringdb_id": 1564
+      },
+      "meta_capacity": {
+        "mw_builtout": "1",
+        "buildingsize": "2995",
+        "mw_referenced": "1",
+        "whitespace_builtout": "662",
+        "whitespace_referenced": "662"
+      },
+      "tags": [
+        "Carrier Neutral",
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "metric",
+      "contact_sales": 30064,
+      "companies": {
+        "id": 11513,
+        "link": "cirion",
+        "priority": 1,
+        "name": "Cirion",
+        "logo": "logo.jpg",
+        "addresses": {
+          "main": {
+            "city": "Miami",
+            "state": "Florida",
+            "postal": "33131",
+            "address": "801 Brickell Ave, suite 2400",
+            "country": "USA"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 4,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 144,
+            "mw_live_pct": 4.8,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 144,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 38.1,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 90.5,
+            "ws_builtout_sqm": 44290,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 476733,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 38.1,
+            "ws_referenced_pct": 90.5,
+            "ws_referenced_sqm": 44290,
+            "ws_referenced_sqft": 476733,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2007,
+            "year_operational_pct": 23.8,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 12,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 21,
+          "hyperscale": 0,
+          "ts_updated": 1788656926,
+          "datacenters": 21,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 21,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 21
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 1,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

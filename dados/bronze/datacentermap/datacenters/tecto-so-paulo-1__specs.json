@@ -1,0 +1,170 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13890,
+      "link": "tecto-so-paulo-1",
+      "name": "Tecto São Paulo 1",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Estr. Mun. Bela Vista - Alphaville",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "06532-040",
+      "city": "Santana de Parnaíba",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.4513504,
+      "longitude": -46.904908,
+      "description": "Tecto São Paulo 1 is an upcoming hyperscale data center located in Santana de Parnaíba, São Paulo, Brazil. With a planned capacity of 200MW, this facility will be powered entirely by renewable energy. It is part of Tecto's ambitious $1 billion expansion strategy to meet the growing demands of cloud computing, artificial intelligence, and machine learning. Positioned strategically near energy and connectivity hubs, the development aims to provide cutting-edge infrastructure for its clients while promoting sustainability.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": "200",
+        "mw_pipeline": "200",
+        "mw_referenced": "200"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11808,
+        "link": "vtal",
+        "priority": 1,
+        "name": "Tecto Data Centers",
+        "logo": "logo.avif",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "postal": "04546-003",
+            "address": "Rua Casa do Ator 919",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 256,
+            "mw_live_pct": 0,
+            "mw_pipeline": 209,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 256,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 42.9,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 3,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 28.6,
+            "mw_underconstruction_pct": 14.3,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 7,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 7,
+          "hyperscale": 0,
+          "ts_updated": 1788658721,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

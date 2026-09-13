@@ -1,0 +1,204 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 9561,
+      "link": "scala-sgrusp02",
+      "name": "Scala Data Centers SGRUSP02",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Alameda Glete 700",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "01215",
+      "city": "Sao Paulo",
+      "state": "SP",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Sao Paulo",
+      "marketlink": "sao-paulo",
+      "district": null,
+      "districtlink": null,
+      "latitude": -23.5354933,
+      "longitude": -46.6478307,
+      "description": "Scala Data Centers offers various solutions through its HyperCore and HyperEdge facilities. They construct energy-efficient data centers on large campuses (HyperCore) or offer prefabricated, rapidly deployable units (MiniPods) at edge locations (HyperEdge). This approach allows clients to enter new markets quickly and scale sustainably over time.\n\nThe provider boasts a vast land portfolio exceeding 21 million square feet across 57 strategically located properties in Latin America. These locations offer proximity to major cloud providers and submarine cable landing points, facilitating connections to North America, Asia, Europe, and Africa.\n\nScala Data Centers currently possesses over 60MW of operational capacity across its Latin American data centers, with an additional 900MW under construction or planned for future development. Notably, the provider maintains the most efficient Power Usage Effectiveness (PUE) in Latin America, achieving a PUE below 1.4. Additionally, they have attained a Water Usage Effectiveness (WUE) of zero by employing air-cooling methods in their newer facilities.\n",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 540,
+          "height": 291,
+          "source": null,
+          "filename": "SGRUSP02 - Scala Data Centers.webp",
+          "reference": "SGRUSP02 - Scala Data Centers",
+          "ts_uploaded": 1709075327
+        }
+      ],
+      "meta_standards": {
+        "pci": 1,
+        "iso9001": 1,
+        "isae3402": 1,
+        "iso14001": 1,
+        "iso27001": 1,
+        "iso45001": 1
+      },
+      "meta_power": {
+        "totalmw": 4
+      },
+      "meta_security": {
+        "staff": "Yes, 24/7"
+      },
+      "meta_amenities": {},
+      "meta_building": {
+        "floors": "8",
+        "floor_load": "307",
+        "floor_type": "Raised Floor",
+        "construction": "Purpose-built",
+        "year_operational": "2010"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 8,
+        "networkproviders": 0,
+        "serviceproviders": 1
+      },
+      "meta_references": {
+        "aliases": "UOL DIVEO Glete",
+        "provider_id": "SGRUSP02",
+        "peeringdb_id": 8677
+      },
+      "meta_capacity": {
+        "mw_builtout": 4,
+        "buildingsize": 68533,
+        "mw_referenced": 4
+      },
+      "tags": [
+        "Hyperscale-Ready"
+      ],
+      "metaunits": "imperial",
+      "contact_sales": 30162,
+      "companies": {
+        "id": 11602,
+        "link": "scala-data-centers",
+        "priority": 1,
+        "name": "Scala Data Centers",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Tamboré",
+            "state": "",
+            "postal": "06455",
+            "address": "Alameda Tocantins 350",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 23.3,
+            "pue_avg": 1.35,
+            "pue_pct": 4.8,
+            "mw_planned": 0,
+            "mw_builtout": 925.4,
+            "mw_live_pct": 11.9,
+            "mw_pipeline": 468.9,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 925.4,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 54.8,
+            "mw_pipeline_pct": 50,
+            "ws_builtout_pct": 2.4,
+            "ws_builtout_sqm": 5305,
+            "ws_pipeline_pct": 2.4,
+            "ws_pipeline_sqm": 5305,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 57102,
+            "ws_pipeline_sqft": 57102,
+            "mw_referenced_pct": 54.8,
+            "ws_referenced_pct": 2.4,
+            "ws_referenced_sqm": 5305,
+            "ws_referenced_sqft": 57102,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2023,
+            "year_operational_pct": 61.9,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 22,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 44,
+          "hyperscale": 0,
+          "ts_updated": 1788656748,
+          "datacenters": 36,
+          "dcs_listings": {
+            "0": 16,
+            "1": 11,
+            "2": 15,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 42
+          },
+          "dcs_locations": {
+            "0": 10,
+            "1": 8,
+            "2": 8,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 26
+          },
+          "dcs_facilities": {
+            "0": 16,
+            "1": 8,
+            "2": 13,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 37
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 1,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 0,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

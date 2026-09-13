@@ -1,0 +1,177 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:50",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11161,
+      "link": "vtal-voa",
+      "name": "Tecto V.OA",
+      "status": 1,
+      "stage": 1,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Frederico Mentz, 1115",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "90240-110",
+      "city": "Porto Alegre",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Porto Alegre",
+      "marketlink": "porto-alegre",
+      "district": null,
+      "districtlink": null,
+      "latitude": -29.99154555280535,
+      "longitude": -51.2015380880618,
+      "description": "The V.tal V.OA data center, poised to begin operations in 2024, represents a significant advancement in digital infrastructure within Latin America. With a constructed area of 5,000 m² and a total power capacity of 6 MW, the facility is designed to support up to 400 racks, ensuring a robust and scalable environment for businesses. As a carrier-neutral site, it offers a strategic advantage for a wide range of operators, fostering interconnectivity and reducing latency. This state-of-the-art data center is a testament to V.tal's commitment to providing comprehensive, integrated solutions that drive business evolution and digital transformation.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "6"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Retrofitted"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "V.tal V.OA"
+      },
+      "meta_capacity": {
+        "mw_builtout": 6,
+        "mw_pipeline": 6,
+        "buildingsize": 5000,
+        "mw_referenced": 6
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11808,
+        "link": "vtal",
+        "priority": 1,
+        "name": "Tecto Data Centers",
+        "logo": "logo.avif",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "postal": "04546-003",
+            "address": "Rua Casa do Ator 919",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 256,
+            "mw_live_pct": 0,
+            "mw_pipeline": 209,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 256,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 42.9,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 3,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 28.6,
+            "mw_underconstruction_pct": 14.3,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 7,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 7,
+          "hyperscale": 0,
+          "ts_updated": 1788658721,
+          "datacenters": 7,
+          "dcs_listings": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 3,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 7
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 1,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 16926,
+      "link": "avato-joinville",
+      "name": "Avato Joinville",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Santos Dumont, 935 - Santo Antônio",
+      "address_ref": null,
+      "address_details": "Ground Floor",
+      "postal": "89223-002",
+      "city": "Joinville",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Joinville",
+      "marketlink": "joinville",
+      "district": null,
+      "districtlink": null,
+      "latitude": -26.26412048317817,
+      "longitude": -48.85177190343191,
+      "description": "The Ávato Joinville data center, located in Joinville, Brazil, is a 300 sqm (3,200 sq ft) facility with capacity for up to 130 racks. Originally built and operated by industry veterans, the site has been operational since 2012.\n\nAcquired by Brazilian telecoms firm Brasil TecPar, the facility now operates under the Ávato brand. It provides a range of services including colocation, virtual servers, corporate Internet, and metropolitan network solutions. This acquisition marks Brasil TecPar's expansion beyond its home state and signifies plans for further growth across Brazil, enhancing access and availability for its customers.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": {
+        "iso27001": "1"
+      },
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "floors": "6",
+        "construction": "Retrofitted",
+        "tenancy_text": "Multi-tenant (mixed use)",
+        "year_operational": "2012"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 4,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Neogrid Datacenter",
+        "peeringdb_id": "6362"
+      },
+      "meta_capacity": {
+        "whitespace_builtout": "300",
+        "whitespace_referenced": "300"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 3978,
+        "link": "avato",
+        "priority": 1,
+        "name": "Ávato",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Santa Maria",
+            "state": "Rio Grande do Sul",
+            "postal": "97015004",
+            "address": "Rua Doutor Bozano, 1293 - 3o Andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 300,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 3229,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 300,
+            "ws_referenced_sqft": 3229,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2012,
+            "year_operational_pct": 50,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788647709,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

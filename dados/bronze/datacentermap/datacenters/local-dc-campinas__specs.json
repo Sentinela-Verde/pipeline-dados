@@ -1,0 +1,177 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:48",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 18058,
+      "link": "local-dc-campinas",
+      "name": "Local DC Campinas",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "TBA - To Be Announced",
+      "address_ref": "a former Banco Itau building in Campinas",
+      "address_details": null,
+      "postal": "13098-396",
+      "city": "Campinas",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Campinas",
+      "marketlink": "campinas",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.9050824,
+      "longitude": -47.0613327,
+      "description": "Local DC Campinas is a new data center facility located in Campinas, Brazil, with an investment of US$20 million. The facility is specifically designed to support artificial intelligence (AI) workloads, intensive GPU usage, and cloud services for providers and public sector organizations. It occupies a 10,000m² building and has an initial capacity for 1,200 racks and 6MW of power, with plans to scale up to 12MW. The data center's strategy centers on machine learning processing at its core in Campinas, with inferences distributed to edge data centers. This approach ensures scalability without overwhelming the core's energy capacity. The retrofit of the Campinas data center aims to increase energy density tenfold compared to conventional facilities, enabling the operation of next-generation AI equipment. Local DC's value proposition focuses on providing private AI clusters with consultative support for hardware and services, prioritizing proprietary solutions and strategic partnerships. The investment in the Campinas unit, including the building and retrofit, ranges between R$200 million and R$300 million, financed by the partners' own capital.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": null,
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "construction": "Retrofitted",
+        "tenancy_text": "Multi-tenant (data centers only)",
+        "year_operational": "2026"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_live": "6",
+        "mw_builtout": "12",
+        "mw_referenced": "12",
+        "whitespace_builtout": "10000",
+        "whitespace_referenced": "10000"
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 14287,
+        "link": "local-dc",
+        "priority": 1,
+        "name": "Local DC",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "",
+            "state": "",
+            "postal": "",
+            "address": "",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 6,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 12,
+            "mw_live_pct": 100,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 12,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 100,
+            "ws_builtout_sqm": 10000,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 107639,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 100,
+            "ws_referenced_sqm": 10000,
+            "ws_referenced_sqft": 107639,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2026,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788649659,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 0
+        },
+        "cloud": {
+          "gpu": 1,
+          "managed": 0,
+          "baremetal": 0,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

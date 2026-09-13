@@ -1,0 +1,235 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:50",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 13629,
+      "link": "wise-data",
+      "name": "NETWISE EMPRESAS",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Edson Rezende, 206",
+      "address_ref": null,
+      "address_details": "",
+      "postal": "35592094",
+      "city": "Lagoa da Prata",
+      "state": "Minas Gerais",
+      "statelink": "minas-gerais",
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Lagoa da Prata",
+      "marketlink": "lagoa-da-prata",
+      "district": null,
+      "districtlink": null,
+      "latitude": -20.0346344,
+      "longitude": -45.5247215,
+      "description": "The Netwise Empresas Edge Datacenter was designed with the best and highest-performance processing, storage, and security.\nWith Tier III level certification, the facility was designed following all international and national best practices for mission-critical environments. Located in the interior of the state of Minas Gerais, it is the best option for regional companies and those who require availability and business continuity.",
+      "meta_files": [],
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1280,
+          "height": 960,
+          "source": null,
+          "filename": "WhatsApp Image 2025-08-08 at 18.25.48 (1).jpeg",
+          "reference": "WhatsApp Image 2025-08-08 at 18.25.48 (1).jpeg",
+          "ts_uploaded": 1756897992
+        },
+        {
+          "id": "AxMTC32MzOQ",
+          "type": "youtube",
+          "width": 480,
+          "height": 360,
+          "source": null,
+          "filename": "youtubeAxMTC32MzOQ.jpg",
+          "reference": "Data Center Edge - Netwise Empresas",
+          "ts_uploaded": 1756897996
+        }
+      ],
+      "meta_standards": {
+        "tier_designed": 3
+      },
+      "meta_power": {
+        "kw_rack": 3.52,
+        "ups_text": "02 UPS modular tipo Hot Swap com capacidade do frame para até 200KVA/380V, inicialmente com 50KVA, com baterias VRLA alojadas em gabinete metálico",
+        "cooling_text": "03 equipamentos de ar de precisão (HVAC) do tipo “IN ROLL” com capacidade de refrigeração de 35KW cada operando na configuração 2N+1",
+        "standby_text": "capacidade inicial de 3520W, podendo expandir para até 7040W com a substituição da Regua PDU",
+        "ups_redundancy": "2N",
+        "cooling_redundancy": "2N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "staff": "Yes, 24/7",
+        "guards": "Yes, 24/7",
+        "keycard": 1,
+        "biometric": 1,
+        "firesupression": 1,
+        "firesupression_text": "novec",
+        "controlled_perimeter": 1
+      },
+      "meta_amenities": {
+        "wifi": 1,
+        "breakroom": 1,
+        "crashcarts": 1,
+        "loadingbay": 1,
+        "meetmeroom": 1,
+        "loanertools": 1,
+        "officespace": 1,
+        "parking_text": "Sim",
+        "conferenceroom": 1
+      },
+      "meta_building": {
+        "floors": -1,
+        "area_plot": 980,
+        "expandable": 1,
+        "floor_load": 5000,
+        "floor_type": "Solid Floor",
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "ceiling_height": -1,
+        "rooftop_access": 1,
+        "year_operational": 2024
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": null,
+      "meta_capacity": {
+        "mw_builtout": 0.0845,
+        "buildingsize": 170,
+        "mw_referenced": 0.0845,
+        "whitespace_live": 45,
+        "whitespace_planned": 45,
+        "whitespace_pipeline": 70,
+        "whitespace_underconstruction": 25
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": 31894,
+      "companies": {
+        "id": 12826,
+        "link": "netwise",
+        "priority": 1,
+        "name": "NETWISE EMPRESAS",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Lagoa da Prata",
+            "state": "Minas Gerais",
+            "postal": "35590030",
+            "address": "Praça Coronel Carlos Bernardes, 20 loja  106",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0.08,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 100,
+            "ws_live_sqm": 45,
+            "ws_live_sqft": 484,
+            "mw_referenced": 0.08,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 100,
+            "ws_planned_sqm": 45,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 100,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 100,
+            "ws_pipeline_sqm": 70,
+            "ws_planned_sqft": 484,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 753,
+            "mw_referenced_pct": 100,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2024,
+            "year_operational_pct": 100,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 100,
+            "ws_underconstruction_sqm": 25,
+            "ws_underconstruction_sqft": 269
+          },
+          "net": 0,
+          "colo": 1,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 1,
+          "hyperscale": 0,
+          "ts_updated": 1788653325,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 1,
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

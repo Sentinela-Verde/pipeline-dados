@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 11164,
+      "link": "takoda-rio-de-janeiro-rj1",
+      "name": "TAKODA Rio de Janeiro - RJ1",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Estrada dos Bandeirantes, 10916",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "22783-111",
+      "city": "Rio de Janeiro",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Rio de Janeiro",
+      "marketlink": "rio-de-janeiro",
+      "district": null,
+      "districtlink": null,
+      "latitude": -22.9846856,
+      "longitude": -43.4316007,
+      "description": "The Takoda Data Center in Rio de Janeiro represents a pinnacle of modern data infrastructure, boasting a sprawling area of over 9,800 square meters dedicated to high-performance computing and data management. Strategically located at Estrada dos Bandeirantes, this facility is designed to meet the growing demands for data services in Brazil, offering an array of racks and a robust power supply to ensure maximum uptime and reliability. With a focus on security and high availability, the data center is equipped to provide businesses with the assurance that their operations can run smoothly and efficiently, around the clock.",
+      "meta_files": null,
+      "meta_gallery": null,
+      "meta_standards": null,
+      "meta_power": {
+        "totalmw": "9"
+      },
+      "meta_security": null,
+      "meta_amenities": null,
+      "meta_building": {
+        "area_building": "9896"
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {
+        "mw_builtout": 9,
+        "buildingsize": 9896,
+        "mw_referenced": 9
+      },
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11809,
+        "link": "takoda",
+        "priority": 1,
+        "name": "TAKODA",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "state": "",
+            "postal": "04757-000",
+            "address": "R. Bento Branco de Andrade Filho, 621",
+            "country": "Brasil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 1.45,
+            "pue_pct": 50,
+            "mw_planned": 0,
+            "mw_builtout": 114,
+            "mw_live_pct": 0,
+            "mw_pipeline": 96,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 114,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 62.5,
+            "mw_pipeline_pct": 12.5,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 62.5,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2027,
+            "year_operational_pct": 12.5,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 12,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 12,
+          "hyperscale": 0,
+          "ts_updated": 1788656449,
+          "datacenters": 8,
+          "dcs_listings": {
+            "0": 4,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 8
+          },
+          "dcs_locations": {
+            "0": 2,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 6
+          },
+          "dcs_facilities": {
+            "0": 1,
+            "1": 0,
+            "2": 4,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 5
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 1,
+          "baremetal": 0,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}

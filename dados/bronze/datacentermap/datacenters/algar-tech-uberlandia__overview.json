@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:46",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 5641,
+      "link": "algar-tech-uberlandia",
+      "name": "Algar Tech Uberlandia - Jaraguá",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Rua Janaúba, 145",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "38413-102",
+      "city": "Uberlandia",
+      "state": "MG",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Uberlandia",
+      "marketlink": "uberlandia",
+      "district": null,
+      "districtlink": null,
+      "latitude": -18.9209149,
+      "longitude": -48.3090492,
+      "description": "Algar Tech has been in the corporate Market for 15 years, offering integrated ICT and BPO solutions in Latin America through IT Infrastructure, Business Applications, Customer Relationships, Managed ICT Services and Digital Business.\n\nIT infrastructure includes three international-level, strategically located data centers that are certified for quality and security. Managed ICT Services offers service desk, professional services and field service solutions for IT and Telecom, among others. Algar Tech also offers Business Applications solutions with licensing, support, software factories and application maintenance. Customer Relationships encompasses multichannel customer service, billing, call center and back office. The portfolio also includes Digital Business tools such as Customer Experience Management (GEXP), Big Data and Bring Your Own Device (BYOD).\n \nAll businesses are supported by more than 14,000 professionals. The company handles over 66 million calls per year with remote assistance in more than 100 countries and in eight languages: Portuguese, Spanish, English, German, Dutch, French, Japanese and Italian. The company covers 100% of Latin America with 73 offices in Brazil and centers in Columbia, Argentina and Chile and in 4100 cities throughout Latin America.",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "footprint_building": 460
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 0,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {},
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 411,
+        "link": "algar-technologia-bpo",
+        "priority": 1,
+        "name": "Algar Tech",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Sao Paulo",
+            "state": "SP",
+            "postal": "04546-044",
+            "address": "Rua Quata, 807",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 600,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 6458,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 600,
+            "ws_referenced_sqft": 6458,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 4,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 4,
+          "hyperscale": 0,
+          "ts_updated": 1788652163,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 1,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

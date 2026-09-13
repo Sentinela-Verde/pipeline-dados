@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:47",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 5261,
+      "link": "dc-coracao-do-rio-grande",
+      "name": "Avato Santa Maria",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "Av. Fernando Ferrari, 1280 - Nossa Sra. de Lourdes",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "97050-800",
+      "city": "Santa Maria",
+      "state": "RS",
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Santa Maria",
+      "marketlink": "santa-maria",
+      "district": null,
+      "districtlink": null,
+      "latitude": -29.6957946,
+      "longitude": -53.7978236,
+      "description": "The DataCenter \"Coração do Rio Grande\" is located in Santa Maria, Rio Grande do Sul, Brazil. It has facilities for Tier III level. Its main objective is to meet the demands of Cloud Computing and Backup Site for corporate clients. \n\nInfrastructure:\n* Building located in central Santa Maria \n* Raised Floor \n* Structured Cabling separate logical and electrical \n* Standardized Racks \n* Redundant Air Conditioners \n* Approach redundant fiber optic connectivity with separate entrances in the building (in the ring) \n* Racks with dual power input (for sources of energy derived from separate loads) \n* Approach electricity separate from the rest of the building, isolated with surge protectors\n* Dedicated to building transformer (isolated from the rest of the mains to the neighborhood) \n* Energy generator with automated entry in case of failure to supply the main power to the UPS \n* Sensors for early fire detection and gas extinguishing \n* Temperature sensors, power consumption sensors, opening / closing doors \n* CCTV cameras, 24 hours monitoring \n* Team monitoring of IT Services and Telecom 24x7x365 onsite \n* Appropriate physical security with 24 hour guard on site \n* External contracted armed security \n* Area quarantine security for entrance into the building after business hours \n\nNetworking: \n* Connectivity through metro-network to all cities in Rio Grande do Sul \n* 20 Gbps connectivity for Peering (many ISPs and carriers) \n* 10 Gbps connectivity for IP Transit National and International \n* Redundant connections to Porto Alegre, São Paulo and Miami",
+      "meta_files": [],
+      "meta_gallery": [],
+      "meta_standards": {},
+      "meta_power": {},
+      "meta_security": {},
+      "meta_amenities": {},
+      "meta_building": {
+        "construction": "Purpose-built",
+        "tenancy_text": "Sole-tenant",
+        "footprint_building": 650
+      },
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 2,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "aliases": "Avato DC Coração do Rio Grande",
+        "peeringdb_id": 5927
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 3978,
+        "link": "avato",
+        "priority": 1,
+        "name": "Ávato",
+        "logo": "logo.png",
+        "addresses": {
+          "main": {
+            "city": "Santa Maria",
+            "state": "Rio Grande do Sul",
+            "postal": "97015004",
+            "address": "Rua Doutor Bozano, 1293 - 3o Andar",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 50,
+            "ws_builtout_sqm": 300,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 3229,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 50,
+            "ws_referenced_sqm": 300,
+            "ws_referenced_sqft": 3229,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 2012,
+            "year_operational_pct": 50,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 2,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 2,
+          "hyperscale": 0,
+          "ts_updated": 1788647709,
+          "datacenters": 2,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 2,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 2
+          }
+        }
+      }
+    },
+    "tab": "overview",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 1,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "gpu": 0,
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 1
+        }
+      }
+    }
+  }
+}

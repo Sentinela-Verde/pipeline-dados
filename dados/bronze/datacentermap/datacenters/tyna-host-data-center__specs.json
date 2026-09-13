@@ -1,0 +1,185 @@
+{
+  "status": "ok",
+  "atualizado_em": "2026-09-07T14:30:49",
+  "tentativas": 1,
+  "dados": {
+    "dc": {
+      "id": 12608,
+      "link": "tyna-host-data-center",
+      "name": "Tyna Host Data Center",
+      "status": 1,
+      "stage": 2,
+      "listingtype": "Facility",
+      "capacitytype": "Colocation",
+      "parent": 0,
+      "address": "R. Waldemar Vaz Pereira, 45",
+      "address_ref": null,
+      "address_details": null,
+      "postal": "36889-186",
+      "city": "Muriaé",
+      "state": null,
+      "statelink": null,
+      "country": "Brazil",
+      "countrylink": "brazil",
+      "market": "Muriae",
+      "marketlink": "muriae",
+      "district": null,
+      "districtlink": null,
+      "latitude": -21.12686855946254,
+      "longitude": -42.35765232351934,
+      "description": "Tyna Host's data center, located in Brazil, is a highly efficient and strategically planned facility designed to support mission-critical environments. Situated in the Zona da Mata Mineira, near the intersections of BR-116 and BR-356, it offers excellent connectivity throughout Brazil. The data center operates on an N+1 topology, ensuring that for every active component, there is a backup ready to take over in case of failure. This includes redundant UPS systems, generators, cooling, and network components.\n\nThe facility employs multiple layers of security, including 24/7 CCTV monitoring and facial recognition access control. All third-party access is strictly controlled and supervised by specialized technical staff. Over 90% of the data center's energy consumption is offset by solar generation, reducing its carbon footprint and supporting sustainable development. The data center features three redundant optical fiber rings, each with independent geographic exits and building access points, ensuring resilient connections even in extreme situations.\n\nTyna Host's data center is committed to providing a reliable, secure, and sustainable environment for hosting critical applications and services. With its robust infrastructure and advanced security measures, it is well-equipped to meet the demands of modern businesses. The facility's strategic location and high redundancy make it an ideal choice for organizations seeking dependable and efficient data center solutions.",
+      "meta_files": null,
+      "meta_gallery": [
+        {
+          "type": "image",
+          "width": 1212,
+          "height": 823,
+          "filename": "dc01.jpg",
+          "reference": "Tyna Host Data Center",
+          "ts_uploaded": 1732123537
+        }
+      ],
+      "meta_standards": null,
+      "meta_power": {
+        "ups_redundancy": "N+1",
+        "cooling_redundancy": "N+1",
+        "standby_redundancy": "N+1"
+      },
+      "meta_security": {
+        "cctv": 1,
+        "keycard": 1,
+        "biometric": 1
+      },
+      "meta_amenities": null,
+      "meta_building": null,
+      "meta_stats": {
+        "ixps": 0,
+        "clouds": 0,
+        "children": 0,
+        "networkpresence": 1,
+        "networkproviders": 0,
+        "serviceproviders": 0
+      },
+      "meta_references": {
+        "peeringdb_id": 9702
+      },
+      "meta_capacity": {},
+      "tags": [],
+      "metaunits": "metric",
+      "contact_sales": null,
+      "companies": {
+        "id": 11119,
+        "link": "tyna-host-datacenter-no-brasil",
+        "priority": 1,
+        "name": "Tyna Host Datacenter no Brasil",
+        "logo": null,
+        "addresses": {
+          "main": {
+            "city": "Muriaé",
+            "state": "Minas Gerais",
+            "postal": "36889-186",
+            "address": "Rua Valdemar Vaz Pereira N45",
+            "country": "Brazil"
+          }
+        },
+        "meta_stats": {
+          "dcs": {
+            "mw_live": 0,
+            "pue_avg": 0,
+            "pue_pct": 0,
+            "mw_planned": 0,
+            "mw_builtout": 0,
+            "mw_live_pct": 0,
+            "mw_pipeline": 0,
+            "ws_live_pct": 0,
+            "ws_live_sqm": 0,
+            "ws_live_sqft": 0,
+            "mw_referenced": 0,
+            "mw_planned_pct": 0,
+            "ws_planned_pct": 0,
+            "ws_planned_sqm": 0,
+            "coordinates_pct": 100,
+            "mw_builtout_pct": 0,
+            "mw_pipeline_pct": 0,
+            "ws_builtout_pct": 0,
+            "ws_builtout_sqm": 0,
+            "ws_pipeline_pct": 0,
+            "ws_pipeline_sqm": 0,
+            "ws_planned_sqft": 0,
+            "ws_builtout_sqft": 0,
+            "ws_pipeline_sqft": 0,
+            "mw_referenced_pct": 0,
+            "ws_referenced_pct": 0,
+            "ws_referenced_sqm": 0,
+            "ws_referenced_sqft": 0,
+            "mw_underconstruction": 0,
+            "year_operational_avg": 0,
+            "year_operational_pct": 0,
+            "mw_underconstruction_pct": 0,
+            "ws_underconstruction_pct": 0,
+            "ws_underconstruction_sqm": 0,
+            "ws_underconstruction_sqft": 0
+          },
+          "net": 0,
+          "colo": 3,
+          "ixps": 0,
+          "cloud": 0,
+          "presence": 3,
+          "hyperscale": 0,
+          "ts_updated": 1788568370,
+          "datacenters": 1,
+          "dcs_listings": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_locations": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          },
+          "dcs_facilities": {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "4": 0,
+            "-1": 0,
+            "-2": 0,
+            "-3": 0,
+            "total": 1
+          }
+        }
+      }
+    },
+    "tab": "specs",
+    "serviceplan": {
+      "services": {
+        "colo": {
+          "build": 0,
+          "cages": 0,
+          "suites": 0,
+          "cabinets": 1,
+          "footprints": 0,
+          "remotehands": 0,
+          "partialcabinets": 1,
+          "sharedrackspace": 1
+        },
+        "cloud": {
+          "managed": 0,
+          "baremetal": 1,
+          "publiccloud": 0
+        }
+      }
+    }
+  }
+}
