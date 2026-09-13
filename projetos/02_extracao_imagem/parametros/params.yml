@@ -1,0 +1,43 @@
+# Parâmetros da etapa 2 — extração de imagem (AOI e janela temporal).
+#
+# Só o que esta etapa lê. As chaves de rótulo (MapBiomas / Dynamic World) ficaram na etapa 3,
+# e as de modelagem nas pastas de `modelos/` — cada etapa carrega a sua própria config.
+
+faixa_a:
+  anos: [2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  sensor_por_ano:
+    2013: landsat
+    2014: landsat
+    2015: landsat
+    2016: landsat
+    2017: landsat
+    2018: landsat
+    2019: sentinel2
+    2020: sentinel2
+    2021: sentinel2
+    2022: sentinel2
+    2023: sentinel2
+    2024: sentinel2
+    2025: sentinel2
+  # Anos ingeridos nos DOIS sensores (Landsat 8 E Sentinel-2), usados para medir o viés de
+  # instrumentação entre sensores.
+  anos_sobreposicao: [2019, 2020, 2021]
+
+faixa_b:
+  habilitada: false
+  anos: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011]
+  # Habilitar somente se a harmonização TM->OLI for validada dentro de tolerância aceitável E
+  # houver uma fonte de label anual que cubra o período (WorldCover não cobre).
+
+mes_inicio: 6   # composto anual de estação seca (jun-set), reduz nuvem e sombra
+mes_fim: 9
+
+# Contrato de grade. O CÓDIGO é a fonte da verdade — estes valores estão fixos como constantes
+# em `sentinel2.py` e `landsat.py` (CRS, CRS_CONFIG, RESOLUCAO_M) porque a fórmula de origem de
+# grade depende deles para os dois sensores caírem na mesma malha. Editar aqui não muda nada;
+# estão registrados só para a grade ficar legível sem abrir o código.
+crs_analise: "EPSG:31983"   # SIRGAS 2000 / UTM 23S — usado para buffer/área
+crs_config: "EPSG:4326"     # CRS de parametros/sites.geojson
+resolucao_m:
+  sentinel2: 10
+  landsat: 30
