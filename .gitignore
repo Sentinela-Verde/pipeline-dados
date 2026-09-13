@@ -15,5 +15,11 @@ dados/**/*.jpg
 dados/**/*.parquet
 dados/**/*.joblib
 
+# Modelos treinados (.joblib) são pesados demais pro git (ex.: rf_v2.0-dw.joblib, ~3,5 GB) —
+# a proveniência de cada um vai num manifesto .json ao lado (esse SIM é commitado, ver
+# modelos/*/artefatos/*.joblib.json) até definirmos onde o binário fica versionado de verdade
+# (ver decisão 2 do README: Git LFS? bucket S3?).
+modelos/**/*.joblib
+
 # Compostos RGB de conferência visual (--inspecionar da etapa 2): reproduzíveis a partir do .tif.
 projetos/02_extracao_imagem/inspecao/
