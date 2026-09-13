@@ -1,0 +1,646 @@
+<title>Pipeline Sentinela Verde</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f7f9;
+    --surface: #ffffff;
+    --surface-2: #eef1f4;
+    --border: #d8dee4;
+    --text: #1b222b;
+    --text-muted: #5b6572;
+    --accent: #2e5c8a;
+    --accent-soft: #e3ecf5;
+
+    --role-fonte-bg: #37474f;
+    --role-fonte-fg: #ffffff;
+    --role-processo-bg: #546e7a;
+    --role-processo-fg: #ffffff;
+    --role-modelo-bg: #1b5e20;
+    --role-modelo-fg: #ffffff;
+    --role-dado-bg: #eceff1;
+    --role-dado-fg: #37474f;
+    --role-dado-border: #90a4ae;
+    --role-manual-bg: #f5a623;
+    --role-manual-fg: #3a2900;
+  --role-futuro-bg: #c62828;
+    --role-futuro-fg: #ffffff;
+    --role-futuro-border: #7f1d1d;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12161b;
+      --surface: #1b2129;
+      --surface-2: #222a33;
+      --border: #313b46;
+      --text: #e8ecf1;
+      --text-muted: #9aa6b2;
+      --accent: #7fb0e8;
+      --accent-soft: #22334a;
+
+      --role-dado-bg: #2b3541;
+      --role-dado-fg: #dbe3ea;
+      --role-dado-border: #4a5867;
+      --role-manual-fg: #2a1d00;
+      --role-futuro-bg: #e04545;
+      --role-futuro-fg: #ffffff;
+      --role-futuro-border: #8f1f1f;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #12161b;
+    --surface: #1b2129;
+    --surface-2: #222a33;
+    --border: #313b46;
+    --text: #e8ecf1;
+    --text-muted: #9aa6b2;
+    --accent: #7fb0e8;
+    --accent-soft: #22334a;
+
+    --role-dado-bg: #2b3541;
+    --role-dado-fg: #dbe3ea;
+    --role-dado-border: #4a5867;
+    --role-manual-fg: #2a1d00;
+    --role-futuro-bg: #e04545;
+    --role-futuro-fg: #ffffff;
+    --role-futuro-border: #8f1f1f;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    padding-inline: max(16px, calc((100vw - 1040px) / 2));
+    padding-block: 40px 64px;
+  }
+
+  .wrap { max-width: 1040px; margin: 0 auto; }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  header.page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    font-weight: 700;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .subhead {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 62ch;
+    line-height: 1.55;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+  }
+  .meta span.mono { color: var(--text); }
+
+  section { margin-block: 36px; }
+
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  h2 .step-no {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* legend */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.82rem;
+    padding: 4px 10px 4px 8px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+  }
+  .swatch { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+  .sw-fonte { background: var(--role-fonte-bg); }
+  .sw-processo { background: var(--role-processo-bg); }
+  .sw-modelo { background: var(--role-modelo-bg); }
+  .sw-dado { background: var(--role-dado-bg); border: 1px solid var(--role-dado-border); }
+  .sw-manual { background: var(--role-manual-bg); border: 1px dashed var(--role-manual-fg); }
+  .sw-futuro { background: var(--role-futuro-bg); border: 1px dashed var(--role-futuro-border); }
+
+  /* diagram panel */
+  .diagram-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .diagram-toolbar button {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.95rem;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .diagram-toolbar button:hover { background: var(--surface-2); }
+  .diagram-toolbar button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .diagram-toolbar button.reset {
+    width: auto;
+    padding-inline: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.78rem;
+  }
+  .diagram-toolbar .zoom-level {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    min-width: 3.6em;
+    text-align: center;
+  }
+  .diagram-toolbar .hint {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+    margin-left: 4px;
+  }
+  .diagram-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    overflow: auto;
+    max-height: 78vh;
+  }
+  .diagram-zoom-wrap { display: inline-block; transform-origin: 0 0; }
+  .diagram-panel pre.mermaid { margin: 0; min-width: 900px; }
+
+  /* stage table */
+  .stage-table {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .stage-row {
+    display: grid;
+    grid-template-columns: 28px 1.1fr 1.3fr 1.3fr;
+    gap: 16px;
+    background: var(--surface);
+    padding: 14px 16px;
+    align-items: start;
+  }
+  .stage-row.head {
+    background: var(--surface-2);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    font-weight: 600;
+    padding-block: 10px;
+  }
+  .stage-num {
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--accent);
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+  .stage-name { font-weight: 600; font-size: 0.92rem; }
+  .stage-name .tag {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 1px 7px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .tag-manual { background: var(--role-manual-bg); color: var(--role-manual-fg); }
+  .cell { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
+  .cell .mono { color: var(--text); font-size: 0.8rem; }
+
+  @media (max-width: 720px) {
+    .stage-row { grid-template-columns: 1fr; }
+    .stage-row.head { display: none; }
+    .stage-num { display: inline-block; margin-right: 8px; }
+  }
+
+  /* callout */
+  .callout {
+    border: 1px solid var(--role-manual-bg);
+    background: color-mix(in srgb, var(--role-manual-bg) 12%, var(--surface));
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .callout h3 {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .callout ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .callout li { font-size: 0.88rem; line-height: 1.5; color: var(--text); }
+
+  .out-of-scope {
+    margin-top: 14px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    border-top: 1px dashed var(--border);
+    padding-top: 12px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="page">
+    <span class="eyebrow">Sentinela Verde · arquitetura de dados</span>
+    <h1>Pipeline Sentinela Verde</h1>
+  </header>
+
+  <section id="legenda">
+    <h2>Legenda</h2>
+    <div class="legend">
+      <span class="chip"><span class="swatch sw-fonte"></span>Fonte externa</span>
+      <span class="chip"><span class="swatch sw-processo"></span>Processo / script</span>
+      <span class="chip"><span class="swatch sw-modelo"></span>Modelo (ML)</span>
+      <span class="chip"><span class="swatch sw-dado"></span>Dado gerado / armazenado</span>
+      <span class="chip"><span class="swatch sw-manual"></span>Etapa manual / humana</span>
+      <span class="chip"><span class="swatch sw-futuro"></span>Próximo passo (fora de escopo)</span>
+    </div>
+  </section>
+
+  <section id="diagrama">
+    <h2>Fluxo de dados</h2>
+    <div class="diagram-toolbar">
+      <button type="button" id="zoomOut" aria-label="Diminuir zoom">−</button>
+      <span class="zoom-level" id="zoomLevel">100%</span>
+      <button type="button" id="zoomIn" aria-label="Aumentar zoom">+</button>
+      <button type="button" class="reset" id="zoomReset">Reset</button>
+      <span class="hint">ou Ctrl/⌘ + scroll sobre o diagrama</span>
+    </div>
+    <div class="diagram-panel" id="diagramPanel">
+      <div class="diagram-zoom-wrap" id="diagramZoomWrap">
+<pre class="mermaid">
+flowchart TD
+    subgraph S1["1 · Coleta"]
+        A1["Scraping<br/>datacentermap.com"]:::fonte
+        A2[["lat/lon, ano construção,<br/>specs de porte (MW/tier)"]]:::dado
+        A1 --> A2
+    end
+
+    subgraph S2["2 · Extração de imagem"]
+        B1["Google Earth Engine"]:::fonte
+        B2[["GeoTIFF bandas<br/>Landsat 30m / Sentinel-2 10m"]]:::dado
+        A2 --> B1 --> B2
+    end
+
+    subgraph S3["3 · Rótulos (em paralelo)"]
+        C1["MapBiomas Coleção 9"]:::fonte
+        C2[["Label automático anual"]]:::dado
+        C3["WorldCover"]:::fonte
+        C4[["Crosscheck<br/>(só ano 2021)"]]:::dado
+        C5["Rotulagem manual<br/>211 polígonos<br/>(solo exposto/obras)"]:::manual
+        C1 --> C2
+        C3 --> C4
+        C5 -. precedência .-> C2
+    end
+
+    subgraph S4["4 · Índices espectrais"]
+        D1["Cálculo de 7 índices<br/>NDVI·EVI·NDWI·MNDWI·NDBI·BSI·NDMI"]:::processo
+        D2[["Bandas + 7 índices"]]:::dado
+        B2 --> D1 --> D2
+    end
+
+    subgraph S5T["5a · Modelo 1 — Treino (uma vez só)"]
+        E0[["Dataset amostrado<br/>bandas+índices+labels<br/>split por bloco, sem vazamento"]]:::dado
+        ET["Treino Random Forest<br/>(GroupKFold, validação)"]:::modelo
+        EJ[["models/rf_{tag}.joblib<br/>+ sha256 de conferência"]]:::dado
+        D2 --> E0
+        C2 --> E0
+        C4 -. peso do label .-> E0
+        E0 --> ET --> EJ
+    end
+
+    subgraph S5["5b · Modelo 1 — Inferência (tratamento)"]
+        E1["Predição em lote<br/>(reaplica o .joblib, não retreina)"]:::modelo
+        E2[["Mapa de classes + % confiança<br/>15 data centers (Brasil)"]]:::dado
+        EJ --> E1
+        D2 --> E1
+        E1 --> E2
+    end
+
+    subgraph S6["Temperatura (paralelo)"]
+        F1["Extração LST<br/>(Landsat)"]:::processo
+        F2[["LST média por área/ano"]]:::dado
+        B2 --> F1 --> F2
+    end
+
+    subgraph S7["Socioeconômico"]
+        G1["BigQuery · IBGE"]:::fonte
+        G2[["População, PIB, empresas<br/>por município (Brasil)"]]:::dado
+        G3["Socioeconômico US<br/>(fonte a definir)"]:::fonte
+        G4[["Equivalente por condado/cidade<br/>(EUA)"]]:::dado
+        G1 --> G2
+        G3 --> G4
+    end
+
+    subgraph S8["6 · Modelo 2 — Grupo de controle"]
+        H1["KNN cidades similares"]:::modelo
+        H2[["Município/cidade similar"]]:::dado
+        H3["6 pontos candidatos<br/>(distância/direção do DC)"]:::processo
+        H3a["Inferência (mesmo .joblib)<br/>classifica os 6 candidatos<br/>(uso comparativo)"]:::modelo
+        H3b["Comparação estatística<br/>nível/tendência pré-obra<br/>candidato vs. data center"]:::processo
+        H4["Escolha final do ponto<br/>(mapa + comparação estatística)"]:::manual
+        H5[["Grupo controle definido"]]:::dado
+        G2 --> H1
+        G4 -. "(sites EUA)" .-> H1
+        H1 --> H2 --> H3 --> H3a --> H3b --> H4 --> H5
+        EJ -. "mesmo modelo, não retreina" .-> H3a
+        E2 -. "nível/tendência do data center" .-> H3b
+    end
+
+    subgraph S9["Modelo 1 — Inferência (controle, completa)"]
+        I1["Predição em lote<br/>(mesmo .joblib, AOI completo<br/>do ponto já escolhido)"]:::modelo
+        I2[["Mapa de classes<br/>área de controle"]]:::dado
+        EJ -. "mesmo modelo, não retreina" .-> I1
+        H5 --> I1 --> I2
+    end
+
+    subgraph S10["7 · Consolidação"]
+        J1["Junção manual<br/>(sem script hoje)"]:::manual
+        J2[["consolidado_impacto_modelo.csv<br/>1 linha por área x ano"]]:::dado
+        E2 --> J1
+        I2 --> J1
+        F2 --> J1
+        G2 --> J1
+        A2 --> J1
+        J1 --> J2
+    end
+
+    subgraph S11["8 · Análise estatística"]
+        K1["Event study · placebo · DiD<br/>curva de efeito líquido"]:::processo
+        K2[["Efeito líquido por variável/horizonte<br/>± erro padrão"]]:::dado
+        J2 --> K1 --> K2
+    end
+
+    subgraph S12["9 · Reiteração — expansão automática da amostra"]
+        L0["Mais pontos do scraping<br/>datacentermap (candidatos novos)"]:::dado
+        L1["Inferência (mesmo .joblib)<br/>classifica um raio menor<br/>ao redor do ponto"]:::modelo
+        L2[["Série anual de % por classe<br/>no raio menor, por site"]]:::dado
+        L3["Calibrador de obra<br/>(regras: pico de solo exposto ·<br/>recuo do solo · salto de área construída)"]:::processo
+        L4[["ano_inicio_obra / ano_fim_obra<br/>estimados automaticamente"]]:::dado
+        A2 --> L0 --> L1
+        EJ -. "mesmo modelo, não retreina" .-> L1
+        L1 --> L2 --> L3 --> L4
+    end
+    L4 -. "alimenta de volta o dataset de datacenters<br/>(define fase pré/durante/pós sem pesquisa manual do ano)<br/>→ amostra expandida: 15 → N sites (N a confirmar)" .-> A2
+
+    subgraph S13["Próximos passos — fora do escopo atual"]
+        N1["Consumo de energia<br/>(ANEEL/MME)"]:::futuro
+        N2["Uso de água<br/>(SNIS)"]:::futuro
+        N3["Ruído"]:::futuro
+        N1 ~~~ N2 ~~~ N3
+    end
+    N1 -. "entraria na análise final<br/>— ainda não integrado" .-> J2
+    N2 -. "idem" .-> J2
+    N3 -. "idem" .-> J2
+
+    classDef fonte fill:#37474F,color:#ffffff,stroke:#263238;
+    classDef processo fill:#546E7A,color:#ffffff,stroke:#37474F;
+    classDef modelo fill:#1B5E20,color:#ffffff,stroke:#0d3311,stroke-width:2px;
+    classDef dado fill:#ECEFF1,color:#222222,stroke:#90A4AE;
+    classDef manual fill:#F5A623,color:#2a1d00,stroke:#8a5a00,stroke-width:2px,stroke-dasharray: 4 3;
+    classDef futuro fill:#C62828,color:#ffffff,stroke:#7f1d1d,stroke-width:2px,stroke-dasharray: 3 3;
+</pre>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var scale = 1;
+      var MIN = 0.4, MAX = 3, STEP = 0.15;
+      var wrap = document.getElementById("diagramZoomWrap");
+      var panel = document.getElementById("diagramPanel");
+      var label = document.getElementById("zoomLevel");
+
+      function apply() {
+        wrap.style.transform = "scale(" + scale.toFixed(2) + ")";
+        label.textContent = Math.round(scale * 100) + "%";
+      }
+
+      document.getElementById("zoomIn").addEventListener("click", function () {
+        scale = Math.min(MAX, scale + STEP);
+        apply();
+      });
+      document.getElementById("zoomOut").addEventListener("click", function () {
+        scale = Math.max(MIN, scale - STEP);
+        apply();
+      });
+      document.getElementById("zoomReset").addEventListener("click", function () {
+        scale = 1;
+        apply();
+        panel.scrollLeft = 0;
+        panel.scrollTop = 0;
+      });
+      panel.addEventListener(
+        "wheel",
+        function (e) {
+          if (!e.ctrlKey && !e.metaKey) return;
+          e.preventDefault();
+          scale = Math.max(MIN, Math.min(MAX, scale + (e.deltaY < 0 ? STEP : -STEP)));
+          apply();
+        },
+        { passive: false }
+      );
+    })();
+  </script>
+
+  <section id="tabela">
+    <h2>Detalhe por etapa</h2>
+    <div class="stage-table">
+      <div class="stage-row head">
+        <div></div>
+        <div>Etapa</div>
+        <div>Input</div>
+        <div>Output</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">1</div>
+        <div class="stage-name">Coleta datacentermap</div>
+        <div class="cell">Páginas do <span class="mono">datacentermap.com</span></div>
+        <div class="cell">Lat/lon, ano de construção, specs de porte (MW, tier, nº prédios)</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">2</div>
+        <div class="stage-name">Extração de imagem</div>
+        <div class="cell">Lat/lon do passo 1</div>
+        <div class="cell">GeoTIFF de bandas (Landsat 2013-2018/2019-2021, Sentinel-2 2019-2025), harmonizados</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">3</div>
+        <div class="stage-name">Rótulos<span class="tag tag-manual">manual (parcial)</span></div>
+        <div class="cell">MapBiomas Coleção 9 (principal) · WorldCover (crosscheck só 2021) · 211 polígonos desenhados à mão</div>
+        <div class="cell">Raster de rótulo por pixel, com precedência do manual sobre o automático</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">4</div>
+        <div class="stage-name">Índices espectrais</div>
+        <div class="cell">Bandas do GeoTIFF (passo 2)</div>
+        <div class="cell">7 índices calculados: NDVI, EVI, NDWI, MNDWI, NDBI, BSI, NDMI</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">5a</div>
+        <div class="stage-name">Modelo 1 — treino<span class="tag" style="background:var(--role-modelo-bg);color:#fff;">uma vez só</span></div>
+        <div class="cell">Bandas + 7 índices + rótulos (peso ajustado pelo crosscheck)</div>
+        <div class="cell"><span class="mono">models/rf_{tag}.joblib</span> + sha256 — artefato reaproveitado depois, nunca retreinado a cada uso</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">5b</div>
+        <div class="stage-name">Modelo 1 — inferência (tratamento)</div>
+        <div class="cell">O <span class="mono">.joblib</span> do passo 5a + bandas/índices dos 15 sites</div>
+        <div class="cell">Mapa de classes + % de confiança por pixel — 15 data centers no Brasil</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">6</div>
+        <div class="stage-name">Modelo 2 — grupo de controle<span class="tag tag-manual">escolha manual</span></div>
+        <div class="cell">IBGE (ou Socioeconômico US, para sites nos EUA) + lat/lon do data center</div>
+        <div class="cell">KNN acha cidade similar → 6 pontos candidatos</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">6a</div>
+        <div class="stage-name">Comparação estatística dos candidatos</div>
+        <div class="cell">O mesmo <span class="mono">.joblib</span> do passo 5a classifica os 6 candidatos + nível/tendência pré-obra do data center (passo 5b)</div>
+        <div class="cell">Comparação nível/tendência de cada candidato vs. data center → apoia a escolha final (mapa + estatística, não só visual)</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">6b</div>
+        <div class="stage-name">Modelo 1 — inferência (controle)</div>
+        <div class="cell">O mesmo <span class="mono">.joblib</span> do passo 5a + bandas/índices do ponto de controle escolhido</div>
+        <div class="cell">Mapa de classes da área de controle — sem retreinar nada</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">7</div>
+        <div class="stage-name">Consolidação<span class="tag tag-manual">manual — sem script hoje</span></div>
+        <div class="cell">Saídas dos passos 1, 5b, 6b (tratamento + controle), LST e IBGE</div>
+        <div class="cell"><span class="mono">consolidado_impacto_modelo.csv</span> — painel único, 1 linha por área x ano</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">8</div>
+        <div class="stage-name">Análise estatística</div>
+        <div class="cell">Painel consolidado (passo 7)</div>
+        <div class="cell">Event study, teste de placebo, DiD, curva de efeito líquido com erro padrão</div>
+      </div>
+
+      <div class="stage-row">
+        <div class="stage-num">9</div>
+        <div class="stage-name">Reiteração — expansão da amostra</div>
+        <div class="cell">Mais pontos do scraping datacentermap (passo 1, ainda sem classificação) + o mesmo <span class="mono">.joblib</span> do passo 5a, aplicado num raio menor que o AOI de 5km (mais barato de rodar em escala)</div>
+        <div class="cell">Série anual de % por classe no raio menor → <strong>calibrador de obra</strong> (pico de solo exposto, recuo do solo, salto de área construída) → <span class="mono">ano_inicio_obra</span>/<span class="mono">ano_fim_obra</span> estimados sem pesquisa manual, alimentando de volta o passo 1 com mais sites elegíveis (15 → N, a confirmar)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="atencao">
+    <div class="callout">
+      <h3>⚠ O que hoje depende de trabalho manual</h3>
+      <ul>
+        <li><strong>Rotulagem de canteiro de obras</strong> — 211 polígonos desenhados à mão, porque nem MapBiomas nem WorldCover têm classe de "solo exposto/obras" confiável.</li>
+        <li><strong>Escolha do ponto de controle</strong> — dos 6 candidatos gerados automaticamente ao redor do município similar, a escolha final é feita olhando um mapa, não por regra automática.</li>
+        <li><strong>Junção do painel consolidado</strong> — não existe script que junte classificação + LST + grupo de controle + IBGE hoje; é a maior lacuna de automação do pipeline.</li>
+      </ul>
+      <div class="out-of-scope">
+        Fora do escopo desta v1, por decisão do time: o modelo de Estágio 2 (Random Forest que previa
+        o efeito líquido a partir do porte do data center).
+      </div>
+    </div>
+  </section>
+
+  <section id="proximos-passos">
+    <div class="callout" style="border-color: var(--role-futuro-border); background: color-mix(in srgb, var(--role-futuro-border) 10%, var(--surface));">
+      <h3>◌ Próximos passos — dados que ainda não entraram na análise</h3>
+      <ul>
+        <li><strong>Energia</strong> (ANEEL/MME) — consumo elétrico por município, já coletado em <span class="mono">extract/aneel_energia_municipio</span> e <span class="mono">extract/bigquery_mme_energia_uf</span>, mas não conectado ao painel de impacto.</li>
+        <li><strong>Água</strong> (SNIS) — produção/consumo/perdas por município, já coletado em <span class="mono">extract/bigquery_snis_agua</span>, mesma situação.</li>
+        <li><strong>Ruído</strong> — ainda sem fonte de dado nem extração no repositório hoje.</li>
+      </ul>
+      <div class="out-of-scope">
+        Os três entrariam futuramente na análise final (passo 7/8), como eixos adicionais de impacto —
+        mas <strong>não fazem parte do escopo atual</strong> deste pipeline. Marcados aqui só para
+        deixar visível pro time de arquitetura que a extensão já foi cogitada.
+      </div>
+    </div>
+  </section>
+
+
+</div>
