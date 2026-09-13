@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-jundiai",
+  "ano": 2020,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2020,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    292890.0,
+    0.0,
+    -30.0,
+    7438890.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 52582,
+      "pct_total": 47.1351,
+      "pct_validos": 47.1351
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 25911,
+      "pct_total": 23.2269,
+      "pct_validos": 23.2269
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1144,
+      "pct_total": 1.0255,
+      "pct_validos": 1.0255
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 31116,
+      "pct_total": 27.8927,
+      "pct_validos": 27.8927
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 803,
+      "pct_total": 0.7198,
+      "pct_validos": 0.7198
+    }
+  },
+  "crosscheck": null,
+  "sha256": "682321c226f232530b558bf038043ef15b38679190245fd55b283ff28e22e948",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:17:24.365498+00:00"
+}

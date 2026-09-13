@@ -170,6 +170,26 @@ além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sh
 Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
 S3; output pesado vai só pro S3.*
 
+### 8 · O WorldCover saiu do pipeline ✅ decidido
+
+O ESA WorldCover entrou no desenho como **verificação cruzada** do MapBiomas: só em 2021 (único
+ano de sobreposição real), gerando um raster de concordância que a etapa de dataset usava para
+ponderar amostra (`peso_label = 1/(1+distancia_safra) × (1,0 se concorda, senão 0,5)`).
+
+Na migração da etapa 3 descobrimos que ele **já estava inerte**. O bloco que gera a concordância é
+guardado por `if fonte_principal != "dynamic_world"` — e a fonte principal virou Dynamic World em
+2026-09-11. Os números confirmam: dos 494 manifests de rótulo, só **32** têm `crosscheck`
+preenchido, todos da era MapBiomas; sob o DW são zero. O DW é anual nativo, não tem safra
+defasada, então nem `distancia_safra` nem crosscheck têm o que fazer — os dois fatores do peso
+valem 1.
+
+Por isso o WorldCover não foi migrado: nem o código, nem as chaves de `params.yml`, nem o remap em
+`classes.yml`, nem os 32 rasters de concordância. Trazer de volta só faz sentido junto com uma
+volta para o MapBiomas — e nesse caso a etapa 3 seria reexecutada de qualquer forma, regerando os
+manifests. Os 32 manifests antigos ficam versionados como estão, com o campo `crosscheck`
+apontando para um `.tif` que não existe neste repo: são registro do que rodou lá atrás, não
+entrada de nada aqui.
+
 ## Por que separar `treino/` de `inferencia/` dentro do Modelo 1
 
 Reflete a distinção que ajustamos no diagrama: **treino roda uma vez e é caro** (gera o `.joblib`);

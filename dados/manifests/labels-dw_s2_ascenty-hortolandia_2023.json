@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-hortolandia",
+  "ano": 2023,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2023,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    271440.0,
+    0.0,
+    -10.0,
+    7471350.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 203338,
+      "pct_total": 20.2527,
+      "pct_validos": 20.2527
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 234960,
+      "pct_total": 23.4023,
+      "pct_validos": 23.4023
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 3803,
+      "pct_total": 0.3788,
+      "pct_validos": 0.3788
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 558171,
+      "pct_total": 55.5945,
+      "pct_validos": 55.5945
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 3732,
+      "pct_total": 0.3717,
+      "pct_validos": 0.3717
+    }
+  },
+  "crosscheck": null,
+  "sha256": "766c64975ba9e5860bae5f7f578cfdd111d7aed94229d71d39d07f0539fccd01",
+  "git_sha": "1a07c42fe3c1b94fc0dc47e72d749471e3ca04da",
+  "gerado_em": "2026-09-11T19:54:42.594981+00:00"
+}

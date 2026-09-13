@@ -1,0 +1,73 @@
+{
+  "site_id": "scala-sgigsm01",
+  "ano": 2019,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2019,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    663960.0,
+    0.0,
+    -30.0,
+    7482720.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 838,
+      "pct_total": 0.7489,
+      "pct_validos": 0.7489
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 4414,
+      "pct_total": 3.9449,
+      "pct_validos": 3.9449
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 152,
+      "pct_total": 0.1358,
+      "pct_validos": 0.1358
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 106324,
+      "pct_total": 95.0255,
+      "pct_validos": 95.0255
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 162,
+      "pct_total": 0.1448,
+      "pct_validos": 0.1448
+    }
+  },
+  "crosscheck": null,
+  "sha256": "935a5d83f170ccc544695a149d22ff6a169693971fc7be6ecce3c3f7460ac579",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:43:10.629586+00:00"
+}

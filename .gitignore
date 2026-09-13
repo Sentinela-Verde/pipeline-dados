@@ -10,6 +10,11 @@ venv/
 # Rasters e binários pesados do data lake não entram no git — a proveniência vai em
 # dados/manifests/*.json (esses SIM são commitados) e diz como regerar cada arquivo.
 dados/**/*.tif
+
+# Exceção: os rótulos são leves (526 arquivos, 14 MB no total — uint8, 5 classes, muito mais
+# compressíveis que reflectância). São o insumo de verdade do treino, então vale tê-los
+# versionados junto do código que os consome, em vez de só no S3.
+!dados/bronze/labels/**/*.tif
 dados/**/*.tif.aux.xml
 dados/**/*.jpg
 dados/**/*.parquet

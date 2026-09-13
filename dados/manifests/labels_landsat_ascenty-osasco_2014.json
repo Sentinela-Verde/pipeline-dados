@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-osasco",
+  "ano": 2014,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2014,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    313500.0,
+    0.0,
+    -30.0,
+    7405890.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 21403,
+      "pct_total": 19.1286,
+      "pct_validos": 19.1286
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 14249,
+      "pct_total": 12.7348,
+      "pct_validos": 12.7348
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 480,
+      "pct_total": 0.429,
+      "pct_validos": 0.429
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 74212,
+      "pct_total": 66.3259,
+      "pct_validos": 66.3259
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1546,
+      "pct_total": 1.3817,
+      "pct_validos": 1.3817
+    }
+  },
+  "crosscheck": null,
+  "sha256": "33dc7570acc5064f2a3432303ba3e7201fc84e63f1ac8b256eb3bdec015a01af",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:39:47.248565+00:00"
+}

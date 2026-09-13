@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-maracanau",
+  "ano": 2020,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2020,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    1205790.0,
+    0.0,
+    -10.0,
+    9578940.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1005
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 185360,
+      "pct_total": 18.407,
+      "pct_validos": 18.407
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 80443,
+      "pct_total": 7.9883,
+      "pct_validos": 7.9883
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 5837,
+      "pct_total": 0.5796,
+      "pct_validos": 0.5796
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 700982,
+      "pct_total": 69.6102,
+      "pct_validos": 69.6102
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 34388,
+      "pct_total": 3.4149,
+      "pct_validos": 3.4149
+    }
+  },
+  "crosscheck": null,
+  "sha256": "07b7a5a4ce41573fdcd478ad497c0d718635f86b08a2cfa08f8e68f2d5ac53ab",
+  "git_sha": "1a07c42fe3c1b94fc0dc47e72d749471e3ca04da",
+  "gerado_em": "2026-09-11T19:56:25.412686+00:00"
+}

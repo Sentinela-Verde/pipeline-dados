@@ -1,0 +1,73 @@
+{
+  "site_id": "angonap-fortaleza",
+  "ano": 2023,
+  "sensor": "s2",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2023,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    1222470.0,
+    0.0,
+    -10.0,
+    9589500.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 362973,
+      "pct_total": 36.1525,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 54359,
+      "pct_total": 5.4142,
+      "pct_validos": 8.4799
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 53299,
+      "pct_total": 5.3086,
+      "pct_validos": 8.3146
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 15432,
+      "pct_total": 1.537,
+      "pct_validos": 2.4074
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 343184,
+      "pct_total": 34.1815,
+      "pct_validos": 53.5363
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 174757,
+      "pct_total": 17.406,
+      "pct_validos": 27.2619
+    }
+  },
+  "crosscheck": null,
+  "sha256": "53586c985425f13a11ba0bcd8bb8392648f1b63c1233488b2b50a1274461bcb0",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:38:15.405089+00:00"
+}

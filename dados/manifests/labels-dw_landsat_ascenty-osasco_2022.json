@@ -1,0 +1,72 @@
+{
+  "site_id": "ascenty-osasco",
+  "ano": 2022,
+  "sensor": "landsat",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2022,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    313500.0,
+    0.0,
+    -30.0,
+    7405890.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 33112,
+      "pct_total": 29.5934,
+      "pct_validos": 29.5934
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 3443,
+      "pct_total": 3.0771,
+      "pct_validos": 3.0771
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 1095,
+      "pct_total": 0.9786,
+      "pct_validos": 0.9786
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 72970,
+      "pct_total": 65.2158,
+      "pct_validos": 65.2158
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1270,
+      "pct_total": 1.135,
+      "pct_validos": 1.135
+    }
+  },
+  "crosscheck": null,
+  "sha256": "3193e6c3ce7d8275f8fd73f7be8e1ef92a67464d322df7d0dae0d365649c24aa",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T19:59:08.735920+00:00"
+}

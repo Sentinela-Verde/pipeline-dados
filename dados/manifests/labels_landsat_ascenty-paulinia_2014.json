@@ -1,0 +1,73 @@
+{
+  "site_id": "ascenty-paulinia",
+  "ano": 2014,
+  "sensor": "landsat",
+  "fonte": "mapbiomas_principal",
+  "colecao": {
+    "mapbiomas": "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_integration_v1",
+    "worldcover": null
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2014,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "mapbiomas"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    275880.0,
+    0.0,
+    -30.0,
+    7482330.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 5926,
+      "pct_total": 5.3121,
+      "pct_validos": 5.3121
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 68880,
+      "pct_total": 61.7448,
+      "pct_validos": 61.7448
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 769,
+      "pct_total": 0.6893,
+      "pct_validos": 0.6893
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 34945,
+      "pct_total": 31.3251,
+      "pct_validos": 31.3251
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 1036,
+      "pct_total": 0.9287,
+      "pct_validos": 0.9287
+    }
+  },
+  "crosscheck": null,
+  "sha256": "347d75de90b37585941284de7175f76aff67d09f8b9d9f869250ff080bfeec02",
+  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
+  "gerado_em": "2026-09-01T11:44:54.160323+00:00"
+}

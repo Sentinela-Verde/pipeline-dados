@@ -1,0 +1,72 @@
+{
+  "site_id": "odata-hortolandia",
+  "ano": 2022,
+  "sensor": "s2",
+  "fonte": "dynamic_world_principal",
+  "colecao": {
+    "dynamic_world": "GOOGLE/DYNAMICWORLD/V1"
+  },
+  "anual": true,
+  "ano_mapbiomas_efetivo": 2022,
+  "distancia_safra": 0,
+  "remap_usado": [
+    "dynamic_world"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    269820.0,
+    0.0,
+    -10.0,
+    7470930.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "resolucao_m": 10,
+  "nodata": 0,
+  "distribuicao_classes": {
+    "0": {
+      "slug": "nodata",
+      "n_pixels": 0,
+      "pct_total": 0.0,
+      "pct_validos": null
+    },
+    "1": {
+      "slug": "vegetacao_densa",
+      "n_pixels": 172383,
+      "pct_total": 17.1696,
+      "pct_validos": 17.1696
+    },
+    "2": {
+      "slug": "vegetacao_rala",
+      "n_pixels": 253450,
+      "pct_total": 25.2439,
+      "pct_validos": 25.2439
+    },
+    "3": {
+      "slug": "solo_exposto_obras",
+      "n_pixels": 7204,
+      "pct_total": 0.7175,
+      "pct_validos": 0.7175
+    },
+    "4": {
+      "slug": "construida_urbana",
+      "n_pixels": 561834,
+      "pct_total": 55.9593,
+      "pct_validos": 55.9593
+    },
+    "5": {
+      "slug": "agua",
+      "n_pixels": 9133,
+      "pct_total": 0.9097,
+      "pct_validos": 0.9097
+    }
+  },
+  "crosscheck": null,
+  "sha256": "c5eaab90ce4c9b15e0c885e218d159f3a4839bf3164f397c6058d832287f0b1e",
+  "git_sha": "ed1e4cb7cc3cdbcfd95f91a38c876a085a39adba",
+  "gerado_em": "2026-09-11T20:09:35.636509+00:00"
+}
