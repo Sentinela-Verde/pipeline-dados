@@ -158,14 +158,14 @@ flowchart TD
 
 ## Árvore do repositório
 
-O que falta (sem check abaixo) é o que ainda não tem código nesta estrutura:
+❌ = ainda falta migrar (ou não existe código em nenhum repositório hoje):
 
-- [ ] 05 · Extração LST
-- [ ] `socioeconomico_us/` (dado + fonte a definir)
-- [ ] Modelo 1 — treino/inferência (código ainda não migrado pra cá)
-- [ ] `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
-- [ ] 07 · Reiteração / expansão da amostra
-- [ ] 08 · Consolidação (código não existe — ver decisões)
+- ❌ 05 · Extração LST
+- ❌ `socioeconomico_us/` (dado + fonte a definir)
+- ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
+- ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
+- ❌ 07 · Reiteração / expansão da amostra
+- ❌ 08 · Consolidação (código não existe — ver decisões)
 
 ```
 sentinela_verde/
@@ -180,7 +180,7 @@ sentinela_verde/
 │   │   │   ├── dynamic_world/              # fonte principal
 │   │   │   └── mapbiomas/                  # mantido como alternativa
 │   │   ├── ibge/
-│   │   └── socioeconomico_us/              # ⚠ pendente — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
+│   │   └── socioeconomico_us/              # ❌ falta migrar — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
@@ -197,7 +197,7 @@ sentinela_verde/
 │   └── manifests/                          # 1.066 manifests — proveniência (sha256), sempre commitado
 │
 ├── modelos/
-│   ├── modelo_1_classificacao_imagem/      # ⚠ pendente — código ainda não migrado pra cá
+│   ├── modelo_1_classificacao_imagem/      # ❌ falta migrar — código ainda não migrado pra cá
 │   │   ├── treino/                         # sentinela.train — roda 1x, gera o artefato (etapa 5a)
 │   │   ├── inferencia/                     # sentinela.predict — reaplica (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
@@ -205,7 +205,7 @@ sentinela_verde/
 │   │
 │   └── modelo_2_grupo_controle/
 │       ├── selecao_candidatos/             # KNN cidade similar (BR ou US) + 6 pontos candidatos
-│       ├── comparacao_estatistica/         # ⚠ pendente — chama a inferência do modelo 1 (dependência
+│       ├── comparacao_estatistica/         # ❌ falta migrar — chama a inferência do modelo 1 (dependência
 │       │                                   # cruzada, ver decisão 2) + compara nível/tendência pré-obra
 │       └── artefatos/                      # (AWS S3)
 │
@@ -214,10 +214,10 @@ sentinela_verde/
 │   ├── 02_extracao_imagem/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
-│   ├── 05_extracao_lst/                    # ⚠ pendente
-│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ⚠ fonte a definir
-│   ├── 07_reiteracao_expansao_amostra/     # ⚠ pendente — candidatos do scraping, joblib em raio menor, calibrador de obra
-│   ├── 08_consolidacao/                    # ⚠ pendente — ver decisão 1
+│   ├── 05_extracao_lst/                    # ❌ falta migrar
+│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ falta migrar (fonte a definir)
+│   ├── 07_reiteracao_expansao_amostra/     # ❌ falta migrar — candidatos do scraping, joblib em raio menor, calibrador de obra
+│   ├── 08_consolidacao/                    # ❌ falta migrar — ver decisão 1
 │   └── 09_analise_estatistica_impacto/     # sem o Estágio 2/RF — event study, placebo, DiD, curva efeito líquido
 │
 ├── docs/
