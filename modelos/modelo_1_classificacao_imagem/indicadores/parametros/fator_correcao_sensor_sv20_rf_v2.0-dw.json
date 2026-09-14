@@ -1,0 +1,54 @@
+{
+  "classes": {
+    "3": {
+      "classe_nome": "solo_exposto_obras",
+      "fator_por_site": {
+        "angonap-fortaleza": 0.6748,
+        "ascenty-hortolandia": 0.7208,
+        "ascenty-jundiai": 0.6711,
+        "ascenty-maracanau": 0.6206,
+        "ascenty-osasco": 0.4989,
+        "ascenty-paulinia": 0.7592,
+        "ascenty-sumare": 0.8393,
+        "ascenty-vinhedo": 0.8335,
+        "clickip-manaus": 0.7225,
+        "equinix-santana-parnaiba": 0.6299,
+        "everest-goiania": 0.3805,
+        "hostdime-joao-pessoa": 0.244,
+        "odata-hortolandia": 0.6716,
+        "scala-sgigsm01": 0.362,
+        "scala-spoapa01": 0.354,
+        "scala-tambore": 0.5006
+      },
+      "justificativa": "fator estável dentro do site em 15/16 (94%) dos sites (CV<0.3) E parecido entre sites (CV entre sites = 0.307 < 0.35) — aplicável um fator multiplicativo POR SITE (não um número nacional único), calibrado na média dos 3 anos de sobreposição.",
+      "tratamento": "b"
+    },
+    "4": {
+      "classe_nome": "construida_urbana",
+      "fator_por_site": {
+        "angonap-fortaleza": 1.3923,
+        "ascenty-hortolandia": 1.2057,
+        "ascenty-jundiai": 1.4492,
+        "ascenty-maracanau": 1.5357,
+        "ascenty-osasco": 1.1764,
+        "ascenty-paulinia": 1.2514,
+        "ascenty-sumare": 1.1427,
+        "ascenty-vinhedo": 1.5528,
+        "clickip-manaus": 1.1937,
+        "equinix-santana-parnaiba": 1.3276,
+        "everest-goiania": 1.3136,
+        "hostdime-joao-pessoa": 2.2947,
+        "odata-hortolandia": 1.2103,
+        "scala-sgigsm01": 1.0867,
+        "scala-spoapa01": 1.4757,
+        "scala-tambore": 1.1902
+      },
+      "justificativa": "fator estável dentro do site em 16/16 (100%) dos sites (CV<0.3) E parecido entre sites (CV entre sites = 0.211 < 0.35) — aplicável um fator multiplicativo POR SITE (não um número nacional único), calibrado na média dos 3 anos de sobreposição.",
+      "tratamento": "b"
+    }
+  },
+  "gerado_em": "2026-09-14T18:47:23.237693+00:00",
+  "metodo": "fator_mult = area_s2_agregado_30m_ha / area_landsat_ha (MESMA resolução, 30 m nos dois lados — isola sensor de resolução), média dos 3 anos de sobreposição (2019-2021), POR SITE. Só aplicado se estável dentro do site (CV<0.30 entre anos) E parecido entre sites (CV<0.35 entre a média dos 16 sites) — ver validacao_sensores.decidir_tratamento.",
+  "modelo_versao": "rf_v2.0-dw",
+  "n_pares_sobreposicao": 48
+}
