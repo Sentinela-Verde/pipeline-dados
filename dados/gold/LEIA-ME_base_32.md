@@ -53,3 +53,48 @@ coluna `qualidade_par` está vazia do lado americano.
 - o tratamento cresce mais que o seu controle em **13 dos 16 pares**
 
 Não é teste estatístico — é sanidade. As proporções somam 1,00 em todas as 428 linhas.
+
+---
+
+# Enriquecimento das colunas de contexto (2026-09-14, segunda rodada)
+
+## O que foi preenchido no lado americano
+
+| coluna | fonte | observação |
+|---|---|---|
+| `municipio` | US Census Geocoder | é o **condado**, análogo do município |
+| `uf` | FIPS do condado → sigla do estado | offline, sem API |
+| `codigo_ibge` | **FIPS** de 5 dígitos (estado+condado) | mesmo papel do código IBGE: chave oficial de geografia |
+| `regiao` | divisão censitária do estado | Northeast / Midwest / South / West |
+| `bioma` | RESOLVE Ecoregions 2017 (moda no buffer) | nomes traduzidos |
+| `lst_media_celsius` | MODIS MOD11A2, média anual no buffer | **mesmo instrumento e mesmo método do lado brasileiro** |
+| `l1_rf` / `qualidade_par` | distância L1 entre as proporções médias do período pré do tratamento e do seu controle | limiares de SV-29: bom ≤ 0,10 · aceitável ≤ 0,20 · ruim acima |
+| `populacao_buffer_5km` | GHSL GHS-POP 2020, soma no buffer | **coluna nova, calculada igual nos dois países** |
+
+## ⚠ O pareamento americano é fraco, e a coluna diz isso
+
+Dos 16 pares americanos: **14 ruins, 1 aceitável, 1 bom**. O controle foi gerado pelo anel de
+15 km sem a checagem de similaridade de cobertura pré-obra que o desenho brasileiro faz — e o
+resultado é que, na maioria dos casos, o ponto de controle não se parece com o tratamento antes da
+obra. Para diferença-em-diferenças isso é limitante: um par ruim mede tanto a diferença de partida
+quanto o efeito.
+
+Use `qualidade_par` para filtrar antes de concluir qualquer coisa. Melhorar isso é gerar vários
+candidatos por azimute e escolher o de menor L1 — é o que o lado brasileiro faz, e cabe numa
+próxima rodada.
+
+## O que ficou vazio, e por quê
+
+- **`populacao`** (condado) — o análogo do IBGE é o ACS do Census Bureau, que passou a exigir chave
+  de API (`api.census.gov` redireciona para `missing_key.html`). A chave é gratuita e imediata em
+  https://api.census.gov/data/key_signup.html; com ela na variável `CENSUS_API_KEY`, o preenchimento
+  é uma rodada de 32 chamadas. Enquanto isso, use `populacao_buffer_5km`, que existe nos dois lados.
+- **`pib_mil_reais`** — PIB por condado é do BEA (tabela CAGDP2), que também pede chave.
+- **`tier`** — não existe para os campi americanos: o `datacentermap` responde HTTP 429 para
+  raspagem em volume (ADR-006 §7), e os campi americanos vieram do OpenStreetMap, que não traz tier.
+
+## E no lado brasileiro
+
+`tier`, `regiao` e `bioma` estavam preenchidos só nas linhas de tratamento (102 de 204). Os
+controles agora herdam do seu par — o que é correto por construção: o controle fica no mesmo
+recorte regional do tratamento, é esse o desenho.
