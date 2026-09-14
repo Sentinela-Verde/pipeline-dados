@@ -6,6 +6,11 @@ Mesmo padrão das demais etapas de `projetos/` (ver `02_extracao_imagem/config.p
 
 Readaptado de `data-extraction/transform/filtra_datacenter/config.py` — mesmos critérios de
 elegibilidade, só os caminhos de entrada/saída mudaram pra a estrutura deste repositório.
+
+Encadeada depois de `correcao_endereco/`: lê `dados/silver/datacentermap_enderecos_corrigidos.csv`
+(endereço/município/estado já padronizados pela Geocoding API), não o bronze cru — assim o
+`datacenter_filtrado.csv` sai com `cidade` correta desde o início, sem precisar filtrar de novo
+depois.
 """
 
 from __future__ import annotations
@@ -31,9 +36,10 @@ ANO_OPERACIONAL_MAX = 2025  # exclusivo — precisa sobrar pelo menos 2026 como 
 TIPO_LISTAGEM_ALVO = "Facility"  # exclui "Campus" e "Multi-Tenant Building" (agregam vários facilities)
 
 # Colunas mantidas no CSV final (identificação + porte — sem certificação/segurança, não usadas
-# nas etapas seguintes). Sem `estado`: a versão corrigida por geocoding fica em
-# `correcao_endereco/`, mas esta sub-etapa preserva o schema original do filtro pra não quebrar
-# quem já consome `datacenter_filtrado.csv` (ex.: Modelo 2).
+# nas etapas seguintes). Ainda sem `estado` aqui: mesmo já vindo padronizado do
+# `correcao_endereco/`, o schema de saída continua igual ao do filtro original pra não quebrar
+# quem já consome `datacenter_filtrado.csv` (ex.: Modelo 2) — ver nota no README desta sub-etapa
+# se quiser incluir `estado` agora que ele é confiável.
 COLUNAS_FINAIS = [
     "nome_datacenter", "endereco", "cidade", "latitude", "longitude", "tags",
     "mw_construido", "whitespace_construido_m",
@@ -48,9 +54,10 @@ class Settings:
         self.data_root = Path(os.environ.get("DATA_ROOT", REPO_ROOT / "dados")).resolve()
 
     @property
-    def csv_bronze(self) -> Path:
-        """Entrada: o CSV bruto do scraping (step6_build_csv.py)."""
-        return self.data_root / "bronze" / "datacentermap" / "datacentermap_datacenters.csv"
+    def csv_entrada(self) -> Path:
+        """Entrada: saída de `correcao_endereco/` (endereço/município/estado já padronizados),
+        não o bronze cru do scraping."""
+        return self.data_root / "silver" / "datacentermap_enderecos_corrigidos.csv"
 
     @property
     def csv_silver(self) -> Path:

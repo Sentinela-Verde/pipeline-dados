@@ -1,8 +1,15 @@
-# filtro_elegibilidade — sub-etapa 1 (pós-coleta)
+# filtro_elegibilidade — sub-etapa 1 (pós-coleta, encadeada depois de `correcao_endereco/`)
 
-Roda **depois** de `run_pipeline.py` (a coleta principal do datacentermap.com). Pega
-`dados/bronze/datacentermap/datacentermap_datacenters.csv` e filtra só os data centers que
-servem pro estudo de impacto.
+Roda **depois** de `correcao_endereco/` — que por sua vez roda depois de `run_pipeline.py`:
+
+```
+run_pipeline.py            -> dados/bronze/datacentermap/datacentermap_datacenters.csv
+correcao_endereco/         -> dados/silver/datacentermap_enderecos_corrigidos.csv
+filtro_elegibilidade/ (este)  -> dados/silver/datacenter_filtrado.csv
+```
+
+Pega o CSV já com endereço/município/estado padronizados pela Geocoding API e filtra só os data
+centers que servem pro estudo de impacto.
 
 ## Critério de elegibilidade
 
@@ -29,11 +36,13 @@ pip install -r requirements.txt
 python step8_filtra_elegibilidade.py
 ```
 
-- **Entrada:** `dados/bronze/datacentermap/datacentermap_datacenters.csv`
+- **Entrada:** `dados/silver/datacentermap_enderecos_corrigidos.csv` (saída de `correcao_endereco/`)
 - **Saída:** `dados/silver/datacenter_filtrado.csv` — colunas de identificação e porte
   (`nome_datacenter`, `endereco`, `cidade`, `latitude`, `longitude`, `tags`, `mw_construido`,
   `whitespace_construido_m`, `ano_operacional`, `tipo_construcao`). `nome_datacenter` é o
   identificador usado a partir daqui — precisa ser único entre os data centers filtrados.
+  `cidade` já vem padronizada pela Geocoding API (`município`/`estado` sempre atualizados, ver
+  README de `correcao_endereco/`).
 
 ## Quem consome essa saída
 
@@ -45,15 +54,14 @@ python step8_filtra_elegibilidade.py
 ## Origem
 
 Readaptação de `data-extraction/transform/filtra_datacenter/` — mesma lógica de filtro (critérios
-e colunas finais idênticos), só trocando a entrada pra ler direto o bronze desta estrutura
-(`dados/bronze/datacentermap/datacentermap_datacenters.csv`) em vez de
-`data/raw/outputs_extraction/` do `data-extraction` — ver decisão sobre `transform/` no README da
-raiz.
+e colunas finais idênticos). Duas diferenças da versão original: a entrada é
+`dados/silver/datacentermap_enderecos_corrigidos.csv` (não `data/raw/outputs_extraction/` do
+`data-extraction`), e ela vem **depois** de `correcao_endereco/` — no repositório original não
+existia essa etapa de correção, então o filtro partia direto do bronze.
 
-## Nota sobre `correcao_endereco/`
+## Por que ainda sem `estado` no CSV final
 
-Esta sub-etapa lê o `endereco`/`cidade` **crus** do scraping, não a versão padronizada por
-`correcao_endereco/` (`dados/silver/datacentermap_enderecos_corrigidos.csv`) — mantém o mesmo
-schema/comportamento do filtro original. Se `município`/`estado` padronizados forem necessários
-downstream (ex.: Modelo 2 casando com o IBGE), vale considerar encadear esta sub-etapa depois da
-`correcao_endereco/` no futuro, em vez de partir direto do bronze.
+`COLUNAS_FINAIS` (`config.py`) não inclui `estado`, mesmo ele já vindo confiável de
+`correcao_endereco/` — mantém o schema idêntico ao filtro original pra não quebrar quem já
+consome `datacenter_filtrado.csv` (ex.: Modelo 2). Se for útil ter `estado` no CSV final agora
+que ele é padronizado, é só adicionar `"estado"` em `COLUNAS_FINAIS`.
