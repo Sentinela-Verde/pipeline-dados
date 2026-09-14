@@ -165,7 +165,8 @@ flowchart TD
 - ❌ `socioeconomico_us/` (dado + fonte a definir)
 - ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
 - ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
-- ❌ 07 · Reiteração / expansão da amostra
+- ❌ 07 · expansão da amostra — a **datação da obra** já veio (`datacao_obra/`); expandir de 15
+  para ~25 campi depende da inferência do Modelo 1, que ainda não está aqui
 - ❌ 08 · Consolidação (código não existe — ver decisões)
 
 ```
@@ -181,13 +182,15 @@ sentinela_verde/
 │   │   │   ├── dynamic_world/              # fonte principal
 │   │   │   └── mapbiomas/                  # mantido como alternativa
 │   │   ├── temperatura/                    # LST por site x ano + cenas brutas (220 KB, leve)
+│   │   ├── footprints_osm/                 # polígonos de prédio do OpenStreetMap (EUA)
 │   │   ├── ibge/
 │   │   └── socioeconomico_us/              # ❌ falta migrar — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
 │   │   ├── features/                       # (AWS S3) — 13 bandas, dado derivado pesado
-│   │   ├── expansao_amostra/               # série no raio menor + calibrador de obra (etapa 9)
+│   │   ├── datacao_obra/                   # série de NDBI, validação e datas derivadas por campus
+│   │   ├── expansao_amostra/               # série no raio menor (etapa 7) — ❌ depende do Modelo 1
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
 │   │
 │   ├── gold/                               # pronto pra modelar / analisar
@@ -221,7 +224,9 @@ sentinela_verde/
 │   ├── 04_indices_espectrais/
 │   ├── 05_extracao_lst/                    # LST via MODIS MOD11A2 (não Landsat — ver README da etapa)
 │   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ falta migrar (fonte a definir)
-│   ├── 07_reiteracao_expansao_amostra/     # ❌ falta migrar — candidatos do scraping, joblib em raio menor, calibrador de obra
+│   ├── 07_reiteracao_expansao_amostra/
+│   │   └── datacao_obra/                   # ano da obra por degrau de NDBI no Landsat
+│   │                                       # ❌ falta a expansão em si (depende do Modelo 1)
 │   ├── 08_consolidacao/                    # ❌ falta migrar — ver decisão 1
 │   └── 09_analise_estatistica_impacto/     # sem o Estágio 2/RF — event study, placebo, DiD, curva efeito líquido
 │
