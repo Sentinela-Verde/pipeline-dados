@@ -1,0 +1,22 @@
+{
+  "data_extracao": "2026-09-03",
+  "colecao_gee": "MODIS/061/MOD11A2",
+  "banda": "LST_Day_1km",
+  "n_sites": 16,
+  "anos": [
+    2016,
+    2025
+  ],
+  "n_site_ano_esperado": 160,
+  "n_site_ano_com_dado": 160,
+  "n_site_ano_sem_dado": 0,
+  "faixa_valores_encontrada_celsius": [
+    8.3,
+    45.13
+  ],
+  "faixa_sanidade_celsius": [
+    10.0,
+    50.0
+  ],
+  "avisos": []
+}

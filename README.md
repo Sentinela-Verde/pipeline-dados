@@ -69,9 +69,11 @@ flowchart TD
     end
 
     subgraph S6["Temperatura (paralelo)"]
-        F1["Extração LST<br/>(Landsat)"]:::processo
-        F2[["LST média por área/ano"]]:::dado
-        B2 --> F1 --> F2
+        F0["MODIS MOD11A2<br/>(Terra, LST diurna, 8 dias, 1 km)"]:::fonte
+        F1["Extração LST<br/>(buffer 5 km por site)"]:::processo
+        F2[["LST média por área/ano<br/>2016-2025"]]:::dado
+        A2 --> F1
+        F0 --> F1 --> F2
     end
 
     subgraph S7["Socioeconômico"]
@@ -160,7 +162,6 @@ flowchart TD
 
 ❌ = ainda falta migrar (ou não existe código em nenhum repositório hoje):
 
-- ❌ 05 · Extração LST
 - ❌ `socioeconomico_us/` (dado + fonte a definir)
 - ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
 - ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
@@ -179,6 +180,7 @@ sentinela_verde/
 │   │   ├── labels/                         # tifs leves (13 MB), versionados aqui
 │   │   │   ├── dynamic_world/              # fonte principal
 │   │   │   └── mapbiomas/                  # mantido como alternativa
+│   │   ├── temperatura/                    # LST por site x ano + cenas brutas (220 KB, leve)
 │   │   ├── ibge/
 │   │   └── socioeconomico_us/              # ❌ falta migrar — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
 │   │
@@ -217,7 +219,7 @@ sentinela_verde/
 │   ├── 02_extracao_imagem/                 # inclui relatorios/ (qualidade da ingestão, resíduo da harmonização)
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
-│   ├── 05_extracao_lst/                    # ❌ falta migrar
+│   ├── 05_extracao_lst/                    # LST via MODIS MOD11A2 (não Landsat — ver README da etapa)
 │   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ falta migrar (fonte a definir)
 │   ├── 07_reiteracao_expansao_amostra/     # ❌ falta migrar — candidatos do scraping, joblib em raio menor, calibrador de obra
 │   ├── 08_consolidacao/                    # ❌ falta migrar — ver decisão 1
