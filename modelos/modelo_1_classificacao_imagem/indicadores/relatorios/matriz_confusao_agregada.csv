@@ -1,0 +1,6 @@
+,s2agg30_vegetacao_densa,s2agg30_vegetacao_rala,s2agg30_solo_exposto_obras,s2agg30_construida_urbana,s2agg30_agua
+landsat_vegetacao_densa,637440,127231,1649,2675,10547
+landsat_vegetacao_rala,125957,1153217,62616,113172,11681
+landsat_solo_exposto_obras,222,1736,43060,7846,646
+landsat_construida_urbana,8697,200486,498132,1977717,14719
+landsat_agua,1822,985,1904,1827,330624

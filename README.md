@@ -189,6 +189,7 @@ sentinela_verde/
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
 │   │
 │   ├── gold/                               # pronto pra modelar / analisar
+│   │   ├── area_por_classe.csv             # série por site × ano × sensor × classe (rf_v2.0-dw) — ver decisão 5
 │   │   ├── dataset_classificacao.parquet   # (AWS S3) — dataset amostrado que alimenta o treino (5a)
 │   │   ├── consolidado_impacto_modelo.csv  # ⚠ hoje montado manualmente — etapa 7 do diagrama
 │   │   └── efeito_liquido/                 # saídas do step1: curvas, event study, CSVs
@@ -197,7 +198,9 @@ sentinela_verde/
 │   └── manifests/                          # 1.066 manifests — proveniência (sha256), sempre commitado
 │
 ├── modelos/
-│   ├── modelo_1_classificacao_imagem/      # ❌ falta migrar — código ainda não migrado pra cá
+│   ├── modelo_1_classificacao_imagem/      # ❌ treino/inferência ainda não migrados
+│   │   ├── indicadores/                    # classificado → dados/gold/area_por_classe.csv;
+│   │   │                                   # relatorios/ = validação cruzada de sensores (CSV no git)
 │   │   ├── treino/                         # sentinela.train — roda 1x, gera o artefato (etapa 5a)
 │   │   ├── inferencia/                     # sentinela.predict — reaplica (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
@@ -211,7 +214,7 @@ sentinela_verde/
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
 │   ├── 01_coleta_datacenter/               # inclui correcao_endereco/
-│   ├── 02_extracao_imagem/
+│   ├── 02_extracao_imagem/                 # inclui relatorios/ (qualidade da ingestão, resíduo da harmonização)
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
 │   ├── 05_extracao_lst/                    # ❌ falta migrar
@@ -272,3 +275,34 @@ além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sh
 
 Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
 S3; output pesado vai só pro S3.*
+
+### 5 · Qual classificação é a de produção — e o fator de sensor calibrado na outra ⚠
+
+`dados/gold/area_por_classe.csv` é o handoff para a comparação estatística (etapa 6a): uma linha
+por site × ano × sensor × classe, com `area_m2`, `pct_area_valida`, `fator_correcao_sensor` e a
+faixa da série. 1.430 linhas, 16 sites, 2013-2025. Foi gerado do **`rf_v2.0-dw`**, por coerência
+com o Dynamic World ser a fonte de rótulo ativa desde 2026-09-11. Daí saem três pontos que
+precisam de decisão, não só de registro:
+
+1. **O `rf_v2.0-dw` nunca foi promovido a produção.** A inferência escreve em `classificado/`
+   quando é produção e num prefixo versionado (`classificado-rf_v2.0-dw/`) quando é avaliação
+   paralela — e esse modelo só existe no prefixo de avaliação. O exportador original tinha o
+   prefixo fixo em `classificado_*`, então **não conseguia exportar essa classificação**: ela
+   existia no disco e era invisível para ele. A versão migrada ganhou `--token` para escolher o
+   prefixo.
+2. **É o modelo sob o qual o achado de impacto não replica** (9/14, p=0,21, contra 14/14,
+   p=0,0001 do `rf_v1.0-tuned`). A escolha foi deliberada, por coerência com a fonte de rótulo —
+   mas a divergência entre os dois é um resultado do projeto, não um detalhe de implementação.
+   Para comparação: o `rf_v1.0-tuned` cobre 270 rasters e o `rf_v2.0-dw` cobre 286 (os 16 extras
+   são anos Landsat tardios), e a mediana de `solo_exposto_obras` vai de 1,81% para 4,90% — o
+   MapBiomas não tem classe de canteiro de obras e o DW tem `bare` nativa.
+3. **O fator de correção de sensor foi calibrado sobre o OUTRO modelo.** O
+   `fator_correcao_sensor_sv20.json` traz `modelo_versao: rf_v1.0-tuned`, e é ele que preenche a
+   coluna `fator_correcao_sensor` das linhas de `construida_urbana` (0,4359 a 1,0977, por site).
+   Como as duas classificações não produzem as mesmas áreas, **esse fator não é necessariamente
+   válido para o `rf_v2.0-dw`**. Recalibrar exige rodar a validação de sensores sobre os rasters
+   do v2.0-dw, o que não foi feito. A evidência do fator está em CSV, legível direto no GitHub:
+   `modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`.
+
+No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
+não existe. É a etapa 6a que preenche essas duas colunas.

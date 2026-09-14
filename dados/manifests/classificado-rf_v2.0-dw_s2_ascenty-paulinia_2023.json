@@ -1,0 +1,68 @@
+{
+  "site_id": "ascenty-paulinia",
+  "ano": 2023,
+  "sensor": "s2",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:23:52.786952+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    275880.0,
+    0.0,
+    -10.0,
+    7482330.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "n_pixels_total": 1004004,
+  "n_pixels_validos": 1004004,
+  "n_pixels_nodata": 0,
+  "pct_pixels_validos": 100.0,
+  "distribuicao_classes": {
+    "vegetacao_densa": 320638,
+    "vegetacao_rala": 301614,
+    "solo_exposto_obras": 40961,
+    "construida_urbana": 320828,
+    "agua": 19963
+  },
+  "confianca": {
+    "media": 73.5,
+    "minima": 25,
+    "maxima": 100
+  },
+  "sha256": "7f247f9e95dc401a81ad91b0d1580342370b59700942bf87c4e75e62a8d2b982",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "8cb6b2c43ef399ffe36ce2bf4f009cbf8997d84e65b6769482aaa290bda1441f",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\s2\\ascenty-paulinia\\2023.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\s2\\ascenty-paulinia\\2023_confianca.tif"
+}

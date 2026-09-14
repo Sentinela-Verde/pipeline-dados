@@ -1,0 +1,68 @@
+{
+  "site_id": "everest-goiania",
+  "ano": 2018,
+  "sensor": "landsat",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:05:52.875128+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    42900.0,
+    0.0,
+    -30.0,
+    8154780.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "n_pixels_total": 111556,
+  "n_pixels_validos": 111553,
+  "n_pixels_nodata": 3,
+  "pct_pixels_validos": 99.9973,
+  "distribuicao_classes": {
+    "vegetacao_densa": 16397,
+    "vegetacao_rala": 25880,
+    "solo_exposto_obras": 9345,
+    "construida_urbana": 56239,
+    "agua": 3692
+  },
+  "confianca": {
+    "media": 67.18,
+    "minima": 26,
+    "maxima": 100
+  },
+  "sha256": "1bd1bffd7eac53bd3834a9b0a00fa08ce2b5501c5a7b193e9a0392aaa35d3d1c",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "3ae721a38e1694452a34bc30c63f2cb2623bc0f2a9d2d9a65de52e78823d2d8c",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\everest-goiania\\2018.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\everest-goiania\\2018_confianca.tif"
+}

@@ -1,0 +1,257 @@
+site_id,tier,regiao,bioma,sensor,ano,n_imagens_usadas,pct_pixels_validos,tamanho_mb,status
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2013,20,100.0,0.91,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2014,22,99.9991,0.911,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2015,22,99.2685,0.921,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2016,19,99.9991,0.913,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2017,21,99.9848,0.929,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2018,13,99.9982,0.92,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2019,18,100.0,0.902,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2020,20,99.9991,0.913,ok
+angonap-fortaleza,1,Nordeste,Caatinga,landsat,2021,21,100.0,0.914,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2019,48,100.0,6.663,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2020,50,100.0,6.633,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2021,48,100.0,6.671,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2022,50,100.0,6.675,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2023,50,100.0,6.658,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2024,50,100.0,6.621,ok
+angonap-fortaleza,1,Nordeste,Caatinga,sentinel2,2025,74,100.0,6.714,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2013,12,99.9785,0.969,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2014,14,99.8736,0.978,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2015,15,99.9839,0.972,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2016,14,99.9946,0.97,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2017,14,100.0,0.975,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2018,13,99.9973,0.975,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2019,14,99.9928,0.974,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2020,14,99.9991,0.975,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,landsat,2021,13,99.9946,0.972,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2019,98,100.0,8.217,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2020,96,100.0,8.192,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2021,96,100.0,8.166,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2022,96,100.0,8.167,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2023,98,100.0,8.104,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2024,96,100.0,8.137,ok
+ascenty-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2025,116,100.0,8.26,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2013,14,99.8919,1.006,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2014,16,99.7229,1.002,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2015,16,99.7649,1.004,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2016,16,99.9991,1.002,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2017,16,99.9973,1.004,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2018,13,99.6273,1.001,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2019,14,99.7944,1.003,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2020,16,99.9875,1.003,ok
+ascenty-maracanau,1,Nordeste,Caatinga,landsat,2021,16,99.9902,1.004,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2019,24,100.0,7.171,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2020,25,100.0,7.198,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2021,24,100.0,7.244,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2022,25,100.0,7.188,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2023,25,100.0,7.248,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2024,25,100.0,7.221,ok
+ascenty-maracanau,1,Nordeste,Caatinga,sentinel2,2025,37,100.0,7.3,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2013,7,99.8838,0.98,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2014,7,99.4584,0.981,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2015,7,99.9982,0.982,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2016,8,99.6532,0.985,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2017,8,99.9964,0.982,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2018,6,99.9946,0.989,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2019,7,100.0,0.989,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2020,6,99.8195,0.982,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,landsat,2021,7,99.9973,0.99,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2019,54,100.0,6.933,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2020,48,100.0,6.878,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2021,48,100.0,6.945,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2022,48,100.0,6.938,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2023,48,100.0,6.92,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2024,50,100.0,6.877,ok
+ascenty-osasco,1,Sudeste,Mata Atlântica,sentinel2,2025,57,100.0,7.018,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2013,12,99.9973,0.967,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2014,14,99.9937,0.973,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2015,15,100.0,0.966,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2016,14,100.0,0.967,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2017,14,100.0,0.97,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2018,13,100.0,0.968,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2019,14,99.9991,0.968,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2020,14,100.0,0.969,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,landsat,2021,13,100.0,0.968,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2019,98,100.0,8.159,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2020,96,100.0,8.184,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2021,96,100.0,8.173,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2022,96,100.0,8.131,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2023,98,100.0,8.083,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2024,96,100.0,8.107,ok
+ascenty-sumare,1,Sudeste,Mata Atlântica,sentinel2,2025,116,100.0,8.184,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2013,7,99.9821,0.988,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2014,7,99.5478,0.988,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2015,7,99.9821,0.985,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2016,8,99.9678,0.986,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2017,8,100.0,0.99,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2018,6,99.9848,0.992,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2019,7,99.9955,0.989,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2020,6,99.9044,0.984,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,landsat,2021,7,99.9964,0.99,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2019,98,100.0,7.779,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2020,96,100.0,7.715,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2021,96,100.0,7.759,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2022,96,100.0,7.715,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2023,96,100.0,7.711,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2024,96,100.0,7.707,ok
+ascenty-vinhedo,1,Sudeste,Mata Atlântica,sentinel2,2025,116,100.0,7.784,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2013,5,99.8642,0.979,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2014,8,99.8025,0.98,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2015,8,100.0,0.98,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2016,8,100.0,0.981,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2017,7,99.9115,0.981,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2018,7,100.0,0.976,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2019,8,99.8588,0.981,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2020,8,100.0,0.973,ok
+clickip-manaus,1,Norte,Amazônia,landsat,2021,7,100.0,0.979,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2019,47,100.0,6.977,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2020,49,100.0,6.947,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2021,48,100.0,6.901,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2022,48,100.0,6.894,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2023,48,100.0,6.872,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2024,48,100.0,6.834,ok
+clickip-manaus,1,Norte,Amazônia,sentinel2,2025,70,100.0,7.022,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2013,7,99.8007,0.974,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2014,7,99.7283,0.979,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2015,7,99.9893,0.976,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2016,8,99.6863,0.98,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2017,8,99.9955,0.977,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2018,6,99.9893,0.984,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2019,7,100.0,0.983,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2020,6,99.9929,0.976,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,landsat,2021,7,99.9902,0.986,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2019,127,100.0,6.943,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2020,117,100.0,6.888,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2021,119,100.0,6.943,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2022,104,100.0,6.949,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2023,103,100.0,6.913,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2024,111,100.0,6.879,ok
+equinix-santana-parnaiba,1,Sudeste,Mata Atlântica,sentinel2,2025,128,100.0,7.065,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2013,14,100.0,0.996,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2014,16,100.0,0.997,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2015,16,100.0,0.998,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2016,16,100.0,0.994,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2017,14,100.0,1.003,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2018,14,99.9973,1.0,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2019,16,100.0,0.998,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2020,16,100.0,1.002,ok
+everest-goiania,1,Centro-Oeste,Cerrado,landsat,2021,16,100.0,0.997,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2019,25,100.0,6.943,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2020,25,100.0,6.918,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2021,25,100.0,6.896,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2022,25,100.0,6.926,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2023,25,100.0,6.963,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2024,25,100.0,6.919,ok
+everest-goiania,1,Centro-Oeste,Cerrado,sentinel2,2025,36,100.0,6.932,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2013,12,99.9785,0.969,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2014,14,99.8754,0.978,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2015,15,99.9839,0.972,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2016,14,99.9946,0.969,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2017,14,100.0,0.974,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2018,13,99.9973,0.974,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2019,14,99.9928,0.974,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2020,14,99.9991,0.973,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,landsat,2021,13,99.9946,0.971,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2019,98,100.0,8.244,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2020,96,100.0,8.218,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2021,96,100.0,8.181,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2022,96,100.0,8.188,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2023,98,100.0,8.134,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2024,96,100.0,8.162,ok
+odata-hortolandia,1,Sudeste,Mata Atlântica,sentinel2,2025,116,100.0,8.296,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2013,5,100.0,0.98,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2014,8,99.8883,0.985,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2015,7,100.0,0.975,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2016,6,99.8981,0.981,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2017,7,99.9821,0.985,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2018,4,99.9955,0.983,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2019,6,99.8847,0.975,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2020,6,100.0,0.984,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,landsat,2021,8,100.0,0.984,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2019,24,100.0,6.902,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2020,25,100.0,6.927,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2021,24,100.0,7.004,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2022,25,100.0,6.931,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2023,25,100.0,6.968,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2024,25,100.0,6.918,ok
+scala-sgigsm01,1,Sudeste,Mata Atlântica,sentinel2,2025,31,100.0,7.006,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2013,7,95.137,0.925,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2014,4,99.7302,0.954,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2015,11,99.9946,0.972,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2016,8,92.8592,0.906,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2017,7,99.9964,0.947,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2018,6,99.9991,0.957,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2019,5,99.4953,0.957,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2020,5,99.9408,0.955,ok
+scala-spoapa01,1,Sul,Mata Atlântica,landsat,2021,8,96.4717,0.939,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2019,49,100.0,6.735,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2020,49,100.0,6.787,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2021,49,100.0,6.877,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2022,49,100.0,6.753,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2023,50,100.0,6.765,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2024,48,100.0,6.751,ok
+scala-spoapa01,1,Sul,Mata Atlântica,sentinel2,2025,60,100.0,6.781,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2013,7,99.8195,0.979,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2014,7,99.0812,0.979,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2015,7,99.9884,0.981,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2016,8,99.4387,0.982,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2017,8,99.9946,0.981,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2018,6,99.9866,0.99,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2019,7,99.9991,0.987,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2020,6,99.9866,0.98,ok
+scala-tambore,1,Sudeste,Mata Atlântica,landsat,2021,7,99.9884,0.989,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2019,54,100.0,6.934,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2020,48,100.0,6.881,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2021,48,100.0,6.941,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2022,48,100.0,6.932,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2023,48,100.0,6.909,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2024,50,100.0,6.862,ok
+scala-tambore,1,Sudeste,Mata Atlântica,sentinel2,2025,57,100.0,7.012,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2013,7,99.4478,0.965,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2014,7,98.7988,0.963,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2015,7,99.983,0.966,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2016,8,99.1708,0.962,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2017,8,99.8879,0.968,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2018,6,99.6845,0.971,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2019,7,99.9095,0.969,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2020,6,99.9014,0.967,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,landsat,2021,7,99.9839,0.972,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2019,147,100.0,7.17,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2020,144,100.0,7.209,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2021,144,100.0,7.299,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2022,144,100.0,7.178,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2023,144,100.0,7.158,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2024,144,100.0,7.177,ok
+ascenty-jundiai,2,Sudeste,Mata Atlântica,sentinel2,2025,173,100.0,7.245,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2013,12,100.0,0.956,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2014,14,100.0,0.963,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2015,15,100.0,0.959,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2016,14,100.0,0.957,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2017,14,100.0,0.961,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2018,13,100.0,0.959,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2019,14,100.0,0.957,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2020,14,100.0,0.959,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,landsat,2021,13,100.0,0.956,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2019,98,100.0,8.164,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2020,96,100.0,8.124,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2021,96,100.0,8.128,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2022,96,100.0,8.152,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2023,98,100.0,8.053,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2024,96,100.0,8.053,ok
+ascenty-paulinia,2,Sudeste,Mata Atlântica,sentinel2,2025,116,100.0,8.119,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2013,7,99.2882,0.957,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2014,4,95.0787,0.924,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2015,6,93.3191,0.921,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2016,8,94.6583,0.936,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2017,8,93.3845,0.916,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2018,8,99.9812,0.974,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2019,10,94.7157,0.939,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2020,11,96.3946,0.955,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,landsat,2021,6,91.4348,0.907,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2019,16,100.0,6.885,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2020,25,100.0,6.835,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2021,25,100.0,6.962,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2022,26,100.0,6.9,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2023,26,100.0,6.947,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2024,24,100.0,6.916,ok
+hostdime-joao-pessoa,2,Nordeste,Mata Atlântica,sentinel2,2025,36,100.0,7.035,ok
