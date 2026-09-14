@@ -1,0 +1,161 @@
+site_id,municipio,uf,ano,lst_media_celsius,n_observacoes,fonte,colecao_gee,data_extracao
+angonap-fortaleza,Fortaleza,CE,2016,31.84,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2017,31.3,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2018,31.58,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2019,31.85,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2020,31.19,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2021,31.71,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2022,30.81,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2023,30.83,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2024,30.27,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+angonap-fortaleza,Fortaleza,CE,2025,28.45,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2016,31.23,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2017,30.99,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2018,31.35,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2019,31.62,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2020,32.1,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2021,32.08,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2022,30.41,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2023,30.26,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2024,30.2,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-hortolandia,Hortolândia,SP,2025,27.41,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2016,33.87,38,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2017,32.49,41,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2018,33.16,38,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2019,33.09,38,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2020,32.86,40,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2021,33.6,41,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2022,32.03,39,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2023,31.84,40,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2024,30.96,39,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-maracanau,Maracanaú,CE,2025,29.42,39,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2016,28.96,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2017,28.77,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2018,28.63,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2019,29.41,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2020,29.11,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2021,28.62,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2022,27.72,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2023,28.38,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2024,27.63,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-osasco,Osasco,SP,2025,24.54,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2016,31.18,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2017,31.12,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2018,31.14,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2019,31.59,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2020,32.2,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2021,32.31,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2022,30.56,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2023,30.25,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2024,30.08,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-sumare,Sumaré,SP,2025,27.48,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2016,28.29,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2017,28.21,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2018,28.3,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2019,28.73,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2020,29.63,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2021,28.72,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2022,27.39,41,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2023,27.44,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2024,27.38,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-vinhedo,Vinhedo,SP,2025,24.56,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2016,35.42,25,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2017,35.08,27,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2018,35.79,26,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2019,34.58,28,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2020,35.41,30,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2021,34.14,29,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2022,33.79,29,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2023,34.65,27,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2024,34.21,32,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+clickip-manaus,Manaus,AM,2025,30.12,35,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2016,27.01,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2017,26.69,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2018,26.83,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2019,27.45,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2020,26.94,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2021,26.47,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2022,25.81,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2023,26.2,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2024,25.91,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+equinix-santana-parnaiba,Santana de Parnaíba,SP,2025,23.21,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2016,35.6,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2017,35.52,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2018,34.62,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2019,36.16,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2020,35.43,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2021,34.94,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2022,34.21,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2023,34.12,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2024,33.0,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+everest-goiania,Goiânia,GO,2025,30.5,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2016,31.14,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2017,30.91,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2018,31.26,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2019,31.58,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2020,31.99,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2021,32.04,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2022,30.15,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2023,30.18,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2024,30.05,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+odata-hortolandia,Hortolândia,SP,2025,27.34,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2016,33.76,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2017,34.15,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2018,34.16,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2019,34.97,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2020,34.39,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2021,33.83,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2022,32.57,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2023,33.27,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2024,32.5,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-sgigsm01,São João de Meriti,RJ,2025,29.81,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2016,23.85,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2017,24.97,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2018,24.58,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2019,25.28,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2020,25.07,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2021,24.83,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2022,23.96,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2023,24.06,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2024,23.84,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-spoapa01,Porto Alegre,RS,2025,22.13,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2016,28.8,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2017,28.52,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2018,28.8,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2019,29.35,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2020,28.96,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2021,28.48,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2022,27.58,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2023,28.2,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2024,27.48,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+scala-tambore,Barueri,SP,2025,24.41,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2016,27.32,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2017,27.43,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2018,27.12,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2019,27.41,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2020,28.45,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2021,27.43,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2022,26.27,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2023,26.93,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2024,26.43,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-jundiai,Jundiaí,SP,2025,23.96,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2016,31.34,43,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2017,31.08,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2018,31.43,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2019,31.67,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2020,32.27,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2021,32.18,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2022,30.37,42,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2023,29.97,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2024,30.07,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+ascenty-paulinia,Paulínia,SP,2025,27.21,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2016,30.26,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2017,29.08,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2018,29.79,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2019,29.92,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2020,30.45,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2021,29.83,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2022,29.42,44,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2023,29.54,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2024,29.43,46,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03
+hostdime-joao-pessoa,João Pessoa,PB,2025,27.84,45,MODIS/Terra,MODIS/061/MOD11A2,2026-09-03

@@ -1,0 +1,12 @@
+# Etapa 5 — extração de LST. Só o que lst.py / auth.py / config.py importam. Versões travadas em
+# == porque foram testadas juntas nesta combinação exata (Python 3.13, Windows 11).
+#
+# Não tem rasterio nem geopandas: esta etapa não abre raster e não faz geometria local — lê o
+# sites.geojson com o `json` da biblioteca padrão e deixa o recorte com o Earth Engine.
+earthengine-api==1.7.41
+pyyaml==6.0.3
+python-dotenv==1.2.3
+requests==2.34.2
+# Faz o Python validar TLS pela store de certificados do Windows. Sem isso, em máquina com
+# antivírus/VPN que inspeciona HTTPS, ee.Authenticate() falha no CERTIFICATE_VERIFY_FAILED.
+truststore==0.10.4
