@@ -22,6 +22,23 @@ SITES_PATH = PARAMS_DIR / "sites.geojson"
 
 load_dotenv(REPO_ROOT / ".env")
 
+# Subpasta de `dados/bronze/` onde os .tif de imagem de satélite são gravados — por padrão
+# `imagens_satelite` (os sites de tratamento/AOI oficiais). `definir_subpasta_imagens()` redireciona
+# pra outra pasta (ex.: `imagens_satelite_candidatos_grupo_controle`) sem duplicar nenhum dos dois
+# módulos de ingestão (`landsat.py`/`sentinel2.py`) — mesmo padrão de `sentinela.predict
+# .definir_token_saida()` no `modelo-imagens-satelite` (ADR-006 §4: um modelo candidato escreve em
+# token próprio, nunca sobrescreve a saída "oficial"). Usado em 2026-09-14 pra gerar imagem dos
+# candidatos a grupo de controle sem misturar com as 21 AOIs de tratamento.
+_SUBPASTA_IMAGENS_PADRAO = "imagens_satelite"
+_subpasta_imagens = _SUBPASTA_IMAGENS_PADRAO
+
+
+def definir_subpasta_imagens(nome: str) -> None:
+    if not nome or "/" in nome or "\\" in nome or nome in (".", ".."):
+        raise ValueError(f"nome de subpasta inválido: {nome!r}")
+    global _subpasta_imagens
+    _subpasta_imagens = nome
+
 
 class ConfigError(RuntimeError):
     """Erro de configuração com mensagem acionável (não é pra virar traceback cru)."""
@@ -61,8 +78,10 @@ class Settings:
 
     @property
     def imagens_dir(self) -> Path:
-        """`dados/bronze/imagens_satelite/` — os GeoTIFF por sensor/site/ano moram aqui."""
-        return self.data_root / "bronze" / "imagens_satelite"
+        """`dados/bronze/{subpasta}/` — os GeoTIFF por sensor/site/ano moram aqui.
+
+        `{subpasta}` é `imagens_satelite` por padrão; `definir_subpasta_imagens()` redireciona."""
+        return self.data_root / "bronze" / _subpasta_imagens
 
     @property
     def manifests_dir(self) -> Path:

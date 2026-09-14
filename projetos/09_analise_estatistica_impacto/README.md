@@ -42,7 +42,8 @@ ponta-a-ponta — hoje ele é o único elo que ainda depende de um processo manu
 | Step | Arquivo | O que faz |
 |---|---|---|
 | 1 | `step1_analise_exploratoria.py` | Visão geral, event study, teste de placebo, DiD simples, rankings, correlações e a curva de efeito líquido por par/horizonte |
-| 1b | `step1b_analise_consequencias.py` | Testa significância do efeito líquido (permutação + FDR), gera a narrativa "o que a chegada de um data center pode causar" e uma primeira mediação física (o que explica a variação de LST) |
+| 1b | `step1b_analise_consequencias.py` | Testa significância do efeito líquido (permutação + FDR) numa janela FIXA de horizontes pós-obra (`config.HORIZONTES_ALVO`), gera a narrativa "o que a chegada de um data center pode causar" e uma primeira mediação física (o que explica a variação de LST) |
+| 1c | `step1c_analise_por_fase.py` | Mesma pergunta do 1b, mas separada pela fase REAL da obra (`pre`/`durante`/`pos`, calculada por site a partir de `ano_operacional` — não uma janela fixa igual pra todo mundo) |
 | 2 | `step2_estagio2_modelo_efeito.py` (**ainda não existe** — ver gap abaixo) | Treinaria um modelo que aprende o efeito líquido a partir do porte do data center + tendência pré-obra, validado com Leave-One-DC-Out |
 
 `comum.py` guarda a lógica compartilhada entre os steps (cálculo de ano-base e `delta_*` —
@@ -103,6 +104,29 @@ Saídas em `dados/gold/efeito_liquido/`:
 - `figuras/forest_plot_consequencias.png` (só se `matplotlib` estiver instalado — o script
   roda e produz os CSVs/HTML mesmo sem ele).
 - `relatorio_consequencias_terreno.html`.
+
+## step1c — significância por fase real da obra (pré/durante/pós)
+
+`step1b` colapsa o efeito líquido numa janela fixa de horizontes (`HORIZONTES_ALVO = [0,1,2]`)
+igual pra todo data center. Mas a obra não dura o mesmo tempo em todo mundo — o painel real
+mostra o horizonte `+1` de um site que construiu em 1 ano já como fase `"pos"` (operando), e o
+`+1` de um que levou 3 anos ainda como `"durante"`. `step1c` usa a coluna `fase` do painel
+diretamente (por site, não uma janela fixa), rodando os mesmos testes do 1b (permutação, IC95%
+bootstrap, Cohen's d) em 3x mais combinações (10 variáveis × 3 fases = 30), com FDR aplicado
+em cima de todas as 30 juntas.
+
+**Ressalva:** o horizonte -1 (ano-base) é rotulado `"pre"` no painel, mas seu efeito líquido é
+sempre 0 por construção (é a própria referência) — excluído da agregação de `"pre"` aqui, senão
+puxaria essa fase artificialmente pra zero.
+
+**Resultado real (rodado em 2026-09-14):** ainda **0 de 30** combinações variável×fase
+significativas após FDR (alfa=0.05) — mesmo veredito honesto do step1b, agora com mais detalhe.
+Os dois sinais mais próximos de significância (mas que não sobrevivem à correção): `populacao`
+na fase `pos` (Cohen's d "média" 0.61, p bruto=0.006, p_fdr=0.176) e `lst_media_celsius` caindo
+mais na fase `pos` (-0.34°C) do que na `durante` (-0.15°C) — nenhum dos dois cruza o limiar após
+corrigir por 30 comparações.
+
+Saída: `consequencias_por_fase.csv`, `figuras/comparacao_fases.png`.
 
 ## step2 — Estágio 2 (aprender o efeito)
 

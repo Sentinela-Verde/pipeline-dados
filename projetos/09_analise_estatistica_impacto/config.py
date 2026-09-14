@@ -67,5 +67,11 @@ CONSEQUENCIAS_RESUMO_CSV_NAME = "consequencias_terreno_resumo.csv"
 CONSEQUENCIAS_MEDIACAO_CSV_NAME = "consequencias_terreno_mediacao_lst.csv"
 CONSEQUENCIAS_RELATORIO_HTML_NAME = "relatorio_consequencias_terreno.html"
 
+# --- Step 1c (significância por FASE da obra: pré/durante/pós) -------------
+# Diferente de HORIZONTES_ALVO (janela fixa [0,1,2] aplicada a todo mundo igual), a coluna
+# `fase` do painel já varia por site conforme a duração real da obra de cada um — ver
+# step1c_analise_por_fase.py.
+CONSEQUENCIAS_POR_FASE_CSV_NAME = "consequencias_por_fase.csv"
+
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 FIGURAS_DIR.mkdir(parents=True, exist_ok=True)

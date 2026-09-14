@@ -1,32 +1,69 @@
 # filtro_elegibilidade — sub-etapa 1 (pós-coleta, encadeada depois de `correcao_endereco/`)
 
-Roda **depois** de `correcao_endereco/` — que por sua vez roda depois de `run_pipeline.py`:
+Dois steps, rodados em sequência, encadeados depois de `correcao_endereco/` (que por sua vez roda
+depois de `run_pipeline.py`):
 
 ```
-run_pipeline.py            -> dados/bronze/datacentermap/datacentermap_datacenters.csv
-correcao_endereco/         -> dados/silver/datacentermap_enderecos_corrigidos.csv
-filtro_elegibilidade/ (este)  -> dados/silver/datacenter_filtrado.csv
+run_pipeline.py             -> dados/bronze/datacentermap/datacentermap_datacenters.csv
+correcao_endereco/          -> dados/silver/datacentermap_enderecos_corrigidos.csv
+step8_filtra_elegibilidade.py -> dados/silver/datacenter_filtrado_facilities.csv   (1 linha/facility)
+step9_consolida_aoi.py        -> dados/silver/datacenter_filtrado.csv             (1 linha/AOI — final)
 ```
 
-Pega o CSV já com endereço/município/estado padronizados pela Geocoding API e filtra só os data
-centers que servem pro estudo de impacto.
+## step8 — filtro de elegibilidade
 
-## Critério de elegibilidade
+Pega o CSV já com endereço/município/estado padronizados e filtra só os data centers que servem
+pro estudo de impacto.
+
+### Critério de elegibilidade
 
 Um data center entra no estudo se:
 
 - **`status == 1`** — está ativo (não descontinuado/planejado).
 - **`stage == 2`** — já foi construído (não é só projeto anunciado).
-- **`tipo_listagem == 'Facility'`** — exclui listagens de "Campus" e "Multi-Tenant Building"
-  (que agregam vários facilities e distorceriam a unidade de observação do estudo).
+- **`tipo_listagem == 'Facility'`** — exclui listagens de "Campus" e "Multi-Tenant Building".
 - **`ano_operacional`** entre **2018 e 2024** (exclusive nas pontas — ver
-  `config.ANO_OPERACIONAL_MIN`/`MAX`; linhas sem `ano_operacional` preenchido também caem fora,
-  já que `NaN` nunca satisfaz uma comparação `>`/`<`).
+  `config.ANO_OPERACIONAL_MIN`/`MAX`).
 
 O motivo da janela de anos: a análise estatística (`projetos/09_analise_estatistica_impacto/`)
-mede o efeito numa janela móvel ao redor do ano de abertura (ano-3 até ano+2). Um data center que
-abriu antes de 2018 ou depois de 2024 não deixaria sobrar anos suficientes de série de satélite
-dos dois lados da abertura.
+mede o efeito numa janela móvel ao redor do ano de abertura (ano-3 até ano+2).
+
+**Saída:** `dados/silver/datacenter_filtrado_facilities.csv` — 1 linha por facility elegível
+(`nome_datacenter`, `operadora`, `endereco`, `cidade`, `latitude`, `longitude`, `tags`,
+`mw_construido`, `whitespace_construido_m`, `ano_operacional`, `tipo_construcao`). **Não é o
+artefato final** — várias facilities do mesmo operador podem ser o mesmo campus.
+
+## step9 — consolidação por AOI
+
+Facilities do **mesmo operador** a até **`config.RAIO_MESMO_AOI_M` (600 m)** de distância viram
+**1 AOI só** — mesma ideia da SV-24 do `modelo-imagens-satelite` (lá com 5 km, pensado pra área de
+imagem de satélite; aqui 600 m, só pra identificar "é o mesmo campus"). Exemplo real: `Ascenty -
+Hortolandia HTL2/3/4/5` são 4 facilities do scraping, 1 AOI só (mesmo campus).
+
+### `ano_inicio_obra` por AOI
+
+Nesta ordem de prioridade:
+
+1. **Pesquisado** — se existe uma linha pra `(operadora, cidade)` em
+   `dados/bronze/datacentermap/aoi_construcao_pesquisada.csv` (ver README daquela pasta pra como
+   essa pesquisa foi feita/reaproveitada). Hoje cobre **9 dos 21 AOIs**.
+2. **Projetado** — senão, `ano_inicio_obra = ano_operacional_min do AOI −
+   config.ANOS_PROJECAO_INICIO_OBRA` (parâmetro, hoje **3**). Cobre os outros **12 AOIs**. Nunca
+   fica em branco, mas fica marcado (`metodo_ano_inicio_obra = "projecao"`) pra quem for usar
+   saber que não é pesquisa de verdade.
+
+Porte (`mw_construido`, `whitespace_construido_m`) é **somado** entre as facilities do mesmo AOI
+— representa o campus inteiro, não 1 prédio.
+
+**Saída (artefato final desta sub-etapa):** `dados/silver/datacenter_filtrado.csv` — colunas
+`aoi_id`, `operadora`, `cidade`, `n_facilities`, `facilities` (lista `; `-separada dos nomes
+originais), `latitude`/`longitude` (média do grupo), `mw_construido_total`,
+`whitespace_construido_m_total`, `ano_operacional_min`/`max`, `ano_inicio_obra`,
+`metodo_ano_inicio_obra` (`pesquisa_reaproveitada` | `projecao`), `confianca_ano_inicio_obra`
+(`alta`/`media`/`baixa`), `fonte_ano_inicio_obra`.
+
+**Resultado atual:** 29 facilities elegíveis → **21 AOIs** (9 com `ano_inicio_obra` pesquisado, 12
+projetado).
 
 ## Como rodar
 
@@ -34,34 +71,29 @@ dos dois lados da abertura.
 cd projetos/01_coleta_datacenter/filtro_elegibilidade
 pip install -r requirements.txt
 python step8_filtra_elegibilidade.py
+python step9_consolida_aoi.py
 ```
-
-- **Entrada:** `dados/silver/datacentermap_enderecos_corrigidos.csv` (saída de `correcao_endereco/`)
-- **Saída:** `dados/silver/datacenter_filtrado.csv` — colunas de identificação e porte
-  (`nome_datacenter`, `endereco`, `cidade`, `latitude`, `longitude`, `tags`, `mw_construido`,
-  `whitespace_construido_m`, `ano_operacional`, `tipo_construcao`). `nome_datacenter` é o
-  identificador usado a partir daqui — precisa ser único entre os data centers filtrados.
-  `cidade` já vem padronizada pela Geocoding API (`município`/`estado` sempre atualizados, ver
-  README de `correcao_endereco/`).
 
 ## Quem consome essa saída
 
-- `modelos/modelo_2_grupo_controle/` — pareia cada data center filtrado (por `nome_datacenter`)
-  com um grupo de controle.
-- `projetos/02_extracao_imagem/` — usa `nome_datacenter`/`latitude`/`longitude` como lista de
-  pontos a extrair do Google Earth Engine.
+- `modelos/modelo_2_grupo_controle/` — pareia cada AOI (por `aoi_id`) com um grupo de controle.
+- `projetos/02_extracao_imagem/` — usa `aoi_id`/`latitude`/`longitude` como lista de pontos a
+  extrair do Google Earth Engine.
+
+⚠️ **Mudança de schema em relação à versão anterior**: a chave passou de `nome_datacenter`
+(1 por facility) pra `aoi_id` (1 por campus) — quem já consumia `datacenter_filtrado.csv` no
+formato antigo (facility-level) precisa se adaptar, ou ler `datacenter_filtrado_facilities.csv`
+em vez do arquivo final.
 
 ## Origem
 
-Readaptação de `data-extraction/transform/filtra_datacenter/` — mesma lógica de filtro (critérios
-e colunas finais idênticos). Duas diferenças da versão original: a entrada é
-`dados/silver/datacentermap_enderecos_corrigidos.csv` (não `data/raw/outputs_extraction/` do
-`data-extraction`), e ela vem **depois** de `correcao_endereco/` — no repositório original não
-existia essa etapa de correção, então o filtro partia direto do bronze.
+`step8` é readaptação de `data-extraction/transform/filtra_datacenter/` (mesmos critérios,
+`operadora` adicionada ao schema). `step9` é lógica nova, inspirada na dedup por AOI da SV-24 e na
+pesquisa de `ano_inicio_obra` por fonte primária da SV-25, ambas do `modelo-imagens-satelite` —
+ver `dados/bronze/datacentermap/README.md` pra como a pesquisa de construção foi reaproveitada.
 
-## Por que ainda sem `estado` no CSV final
+## Por que ainda sem `estado` no schema de facilities
 
-`COLUNAS_FINAIS` (`config.py`) não inclui `estado`, mesmo ele já vindo confiável de
-`correcao_endereco/` — mantém o schema idêntico ao filtro original pra não quebrar quem já
-consome `datacenter_filtrado.csv` (ex.: Modelo 2). Se for útil ter `estado` no CSV final agora
-que ele é padronizado, é só adicionar `"estado"` em `COLUNAS_FINAIS`.
+`config.COLUNAS_FINAIS` (usado pelo step8) não inclui `estado`, mesmo ele já vindo confiável de
+`correcao_endereco/` — mantém compatibilidade com quem ainda lê
+`datacenter_filtrado_facilities.csv` no formato antigo. Se for útil, é só adicionar `"estado"` lá.

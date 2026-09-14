@@ -1,14 +1,16 @@
 """Etapa 1 (coleta de data center) — sub-etapa: filtra os facilities elegíveis pro estudo.
 
-Roda DEPOIS de `correcao_endereco/` (que roda depois de `run_pipeline.py`) — encadeamento:
+Roda DEPOIS de `correcao_endereco/` (que roda depois de `run_pipeline.py`) e ANTES de
+`step9_consolida_aoi.py` — encadeamento completo desta sub-etapa:
 
-    run_pipeline.py -> dados/bronze/datacentermap/datacentermap_datacenters.csv
-    correcao_endereco/step7_corrige_endereco.py -> dados/silver/datacentermap_enderecos_corrigidos.csv
-    filtro_elegibilidade/step8_filtra_elegibilidade.py (este arquivo) -> dados/silver/datacenter_filtrado.csv
+    run_pipeline.py            -> dados/bronze/datacentermap/datacentermap_datacenters.csv
+    correcao_endereco/         -> dados/silver/datacentermap_enderecos_corrigidos.csv
+    step8 (este arquivo)       -> dados/silver/datacenter_filtrado_facilities.csv (1 linha/facility)
+    step9_consolida_aoi.py     -> dados/silver/datacenter_filtrado.csv (1 linha/AOI, o artefato final)
 
 Lê o CSV já com endereço/município/estado padronizados pela Geocoding API, não o bronze cru —
-assim quem consome `datacenter_filtrado.csv` (Modelo 2, extração de imagem) já recebe `cidade`
-corrigida, sem precisar rodar `correcao_endereco/` de novo por fora.
+assim quem consome a saída já recebe `cidade` corrigida, sem precisar rodar `correcao_endereco/`
+de novo por fora.
 
 Aplica os critérios de elegibilidade descritos em `config.py`: data center ativo, já construído
 (`stage`), listado como `Facility` (não `Campus`/`Multi-Tenant Building`, que agregam vários
@@ -17,11 +19,12 @@ janela de estudo (2018-2024, pra sobrar pelo menos 3 anos de série de satélite
 abertura).
 
 Readaptado de `data-extraction/transform/filtra_datacenter/step1_filtra_dados.py` — mesma lógica
-de filtro; lá a entrada era o bronze direto (`correcao_endereco/` não existia nesse repositório).
+de filtro; lá a entrada era o bronze direto (`correcao_endereco/` não existia nesse repositório)
+e a saída não tinha `operadora` (adicionada aqui — necessária pro step9 agrupar por AOI).
 
-Saída: `dados/silver/datacenter_filtrado.csv` (mesmo separador `;`, mesmo schema reduzido de
-porte) — é o que `modelos/modelo_2_grupo_controle/` e a extração de imagem (etapa 2) esperam
-como lista de data centers do estudo.
+Saída: `dados/silver/datacenter_filtrado_facilities.csv` — 1 linha por facility elegível. **Não é
+o artefato final** desta sub-etapa: várias facilities do mesmo operador podem ser o mesmo campus
+(AOI) — isso só é resolvido em `step9_consolida_aoi.py`.
 
 Uso:
     cd projetos/01_coleta_datacenter/filtro_elegibilidade
@@ -69,9 +72,10 @@ def main() -> None:
           f"stage={config.STAGE_ALVO}, tipo_listagem={config.TIPO_LISTAGEM_ALVO!r}, "
           f"ano_operacional em ({config.ANO_OPERACIONAL_MIN}, {config.ANO_OPERACIONAL_MAX})")
 
-    SETTINGS.csv_silver.parent.mkdir(parents=True, exist_ok=True)
-    df_filtrado.to_csv(SETTINGS.csv_silver, sep=";", index=False, encoding="utf-8")
-    print(f"Salvo em {SETTINGS.csv_silver}")
+    SETTINGS.csv_facilities.parent.mkdir(parents=True, exist_ok=True)
+    df_filtrado.to_csv(SETTINGS.csv_facilities, sep=";", index=False, encoding="utf-8")
+    print(f"Salvo em {SETTINGS.csv_facilities}")
+    print("(lembrete: rode step9_consolida_aoi.py em seguida pra gerar o artefato final)")
 
 
 if __name__ == "__main__":

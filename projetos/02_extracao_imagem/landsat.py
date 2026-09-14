@@ -68,6 +68,13 @@ PCT_VALIDOS_MINIMO = 90.0
 AMPLIACOES_JANELA = (0, 1, 2)  # tentativas: padrão, +-1 mes, +-2 meses
 HARMONIZACAO_VERSAO = "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
 
+# Filtro de nuvem por CENA (metadado `CLOUD_COVER`, % da cena inteira), aplicado ANTES da
+# composição — reduz quanto o Earth Engine processa por chamada (menos cenas entrando na mediana)
+# e reduz a chance de precisar ampliar a janela sazonal (`AMPLIACOES_JANELA`) por nuvem residual.
+# Isto é além do QA_PIXEL bitmask por pixel já aplicado em `mascara_nuvem` (esse continua rodando
+# igual — o filtro aqui é grosso/rápido, o bitmask é fino/por pixel).
+CLOUD_COVER_MAXIMO = 20
+
 COLECOES_LANDSAT = {
     "LC08": "LANDSAT/LC08/C02/T1_L2",
     "LC09": "LANDSAT/LC09/C02/T1_L2",
@@ -181,39 +188,46 @@ def _com_retry(fn, tentativas: int = 5, espera_inicial: float = 5.0):
 
 def _colecoes_filtradas(aoi: ee.Geometry, ano: int, mes_ini: int, mes_fim: int) -> tuple[ee.ImageCollection, ee.ImageCollection]:
     start, end = f"{ano}-01-01", f"{ano}-12-31"
+    filtro_cloud = ee.Filter.lt("CLOUD_COVER", CLOUD_COVER_MAXIMO)
     l8 = (
         ee.ImageCollection(COLECOES_LANDSAT["LC08"])
         .filterBounds(aoi)
         .filterDate(start, end)
         .filter(ee.Filter.calendarRange(mes_ini, mes_fim, "month"))
+        .filter(filtro_cloud)
     )
     l9 = (
         ee.ImageCollection(COLECOES_LANDSAT["LC09"])
         .filterBounds(aoi)
         .filterDate(start, end)
         .filter(ee.Filter.calendarRange(mes_ini, mes_fim, "month"))
+        .filter(filtro_cloud)
     )
     return l8, l9
 
 
 def _compor(aoi: ee.Geometry, ano: int, mes_ini: int, mes_fim: int) -> tuple[ee.Image, list[str], int]:
-    """Composto mediano anual, harmonizado e mascarado. Devolve (imagem, satelites_usados, n_imagens)."""
-    l8, l9 = _colecoes_filtradas(aoi, ano, mes_ini, mes_fim)
-    n_l8 = _com_retry(lambda: l8.size().getInfo())
-    n_l9 = _com_retry(lambda: l9.size().getInfo())
+    """Composto mediano anual, harmonizado e mascarado. Devolve (imagem, satelites_usados, n_imagens).
 
-    satelites: list[str] = []
-    if n_l8 > 0:
-        satelites.append("LC08")
-    if n_l9 > 0:
-        satelites.append("LC09")
+    **Otimização (2026-09-14):** 1 chamada de contagem em vez de 2 — antes contava `l8`/`l9`
+    separadamente (2 `getInfo()`) só para saber quais satélites entraram; agora conta a coleção já
+    mesclada (1 `getInfo()`). O custo é granularidade: `satelites_usados` deixa de dizer qual dos
+    dois efetivamente contribuiu e passa a listar os dois sempre que a contagem total é > 0 (ambos
+    SEMPRE são consultados no filtro — a informação perdida é só "algum L8 entrou" vs "algum L9
+    entrou" isoladamente, não usada em nenhum critério de aceite hoje). `pct_pixels_validos` e a
+    checagem de qualidade continuam 100% locais (`_pct_pixels_validos`, pós-download) — nunca
+    foram via `reduceRegion`, então não há chamada de rede a menos aí (já era o formato enxuto)."""
+    l8, l9 = _colecoes_filtradas(aoi, ano, mes_ini, mes_fim)
 
     def _prep(img: ee.Image) -> ee.Image:
         return harmonizar_landsat(mascara_nuvem(img, "landsat"))
 
-    colecao = l8.merge(l9).map(_prep)
-    composto = colecao.median()
-    return composto, satelites, n_l8 + n_l9
+    colecao_merge = l8.merge(l9)
+    n_total = _com_retry(lambda: colecao_merge.size().getInfo())
+    satelites = ["LC08", "LC09"] if n_total > 0 else []
+
+    composto = colecao_merge.map(_prep).median()
+    return composto, satelites, n_total
 
 
 def _baixar_bandas(composto: ee.Image, grade: dict[str, Any]) -> np.ndarray:
@@ -467,6 +481,20 @@ def ingerir_site_ano(
         mes_ini = max(1, mes_ini_padrao - ampliacao)
         mes_fim = min(12, mes_fim_padrao + ampliacao)
         composto, satelites_usados, n_imagens_usadas = _compor(aoi, ano, mes_ini, mes_fim)
+
+        # BUG corrigido em 2026-09-14: com CLOUD_COVER_MAXIMO apertado (20%), é real ter 0 cenas
+        # numa janela (ex.: Manaus/João Pessoa, região de nuvem alta) — `.median()` de coleção
+        # vazia vira uma Image SEM bandas, e `_baixar_bandas` (`.select(bandas)`) quebrava com
+        # EEException em vez de tratar como "0% válido" e deixar o laço ampliar a janela.
+        if n_imagens_usadas == 0:
+            pct_validos = 0.0
+            print(
+                f"[{site_id}/{ano}] janela {mes_ini}-{mes_fim}: 0 cenas com CLOUD_COVER<"
+                f"{CLOUD_COVER_MAXIMO}%."
+                + (" Tentando ampliar a janela sazonal..." if passo < len(AMPLIACOES_JANELA) - 1 else "")
+            )
+            continue
+
         arr_float = _baixar_bandas(composto, grade)
         arr_int16 = _para_int16(arr_float)
         pct_validos = _pct_pixels_validos(arr_int16)
@@ -483,7 +511,12 @@ def ingerir_site_ano(
             + (" Tentando ampliar a janela sazonal..." if passo < len(AMPLIACOES_JANELA) - 1 else "")
         )
 
-    assert arr_int16 is not None
+    if arr_int16 is None:
+        raise RuntimeError(
+            f"[{site_id}/{ano}] 0 cenas Landsat (L8+L9) com CLOUD_COVER<{CLOUD_COVER_MAXIMO}% em "
+            f"nenhuma das janelas tentadas ({[f'{max(1, mes_ini_padrao - a)}-{min(12, mes_fim_padrao + a)}' for a in AMPLIACOES_JANELA]}) "
+            f"— sem imagem pra compor esse site/ano com o filtro de nuvem atual."
+        )
     if pct_validos < PCT_VALIDOS_MINIMO:
         print(
             f"ACHADO [{site_id}/{ano}]: pct_pixels_validos={pct_validos:.2f}% permanece abaixo de "

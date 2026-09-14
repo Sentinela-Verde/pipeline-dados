@@ -35,16 +35,26 @@ ANO_OPERACIONAL_MIN = 2017  # exclusivo — amostra ficaria muito distante do pe
 ANO_OPERACIONAL_MAX = 2025  # exclusivo — precisa sobrar pelo menos 2026 como ano de referência pós-obra
 TIPO_LISTAGEM_ALVO = "Facility"  # exclui "Campus" e "Multi-Tenant Building" (agregam vários facilities)
 
-# Colunas mantidas no CSV final (identificação + porte — sem certificação/segurança, não usadas
-# nas etapas seguintes). Ainda sem `estado` aqui: mesmo já vindo padronizado do
-# `correcao_endereco/`, o schema de saída continua igual ao do filtro original pra não quebrar
-# quem já consome `datacenter_filtrado.csv` (ex.: Modelo 2) — ver nota no README desta sub-etapa
-# se quiser incluir `estado` agora que ele é confiável.
+# Colunas mantidas no CSV de facilities (identificação + porte — sem certificação/segurança, não
+# usadas nas etapas seguintes). `operadora` foi adicionada (não estava no filtro original) porque
+# a consolidação por AOI (step9) precisa dela pra agrupar facilities do mesmo operador.
 COLUNAS_FINAIS = [
-    "nome_datacenter", "endereco", "cidade", "latitude", "longitude", "tags",
+    "nome_datacenter", "operadora", "endereco", "cidade", "latitude", "longitude", "tags",
     "mw_construido", "whitespace_construido_m",
     "ano_operacional", "tipo_construcao",
 ]
+
+# --- Consolidação por AOI (step9_consolida_aoi.py) --------------------------
+# Facilities do MESMO operador a até esta distância viram 1 AOI só (ex.: Ascenty Hortolândia
+# HTL2/3/4/5 são 4 facilities, 1 campus/AOI). 600m, não os 5km de buffer de imagem do
+# modelo-imagens-satelite — aqui o objetivo é só identificar "é o mesmo campus", não definir a
+# área de análise de satélite.
+RAIO_MESMO_AOI_M = 600
+
+# Quando não há pesquisa de imprensa/fonte primária pro ano de início de obra de uma AOI (ver
+# `aoi_construcao_pesquisada.csv`), projeta-se: ano_inicio_obra = ano_operacional_min − este valor.
+# Parametrizado aqui, não hardcoded no script, pra poder recalibrar sem mexer na lógica.
+ANOS_PROJECAO_INICIO_OBRA = 3
 
 
 class Settings:
@@ -60,8 +70,22 @@ class Settings:
         return self.data_root / "silver" / "datacentermap_enderecos_corrigidos.csv"
 
     @property
-    def csv_silver(self) -> Path:
-        """Saída: só os data centers elegíveis pro estudo, com o schema reduzido de porte."""
+    def csv_facilities(self) -> Path:
+        """Saída do step8: 1 linha por facility elegível (schema reduzido de porte)."""
+        return self.data_root / "silver" / "datacenter_filtrado_facilities.csv"
+
+    @property
+    def csv_pesquisa_aoi(self) -> Path:
+        """Entrada do step9: pesquisa real de ano de início de obra por AOI (operador+cidade),
+        reaproveitada de `modelo-imagens-satelite/config/sites_candidatos.csv` onde existe, ou
+        pesquisada nova — ver `dados/bronze/datacentermap/README.md`."""
+        return self.data_root / "bronze" / "datacentermap" / "aoi_construcao_pesquisada.csv"
+
+    @property
+    def csv_final(self) -> Path:
+        """Saída do step9 — e o artefato final desta sub-etapa: 1 linha por AOI (facilities do
+        mesmo operador a até `RAIO_MESMO_AOI_M` consolidadas), com `ano_inicio_obra` pesquisado
+        ou projetado. É este arquivo que Modelo 2 e a extração de imagem devem consumir."""
         return self.data_root / "silver" / "datacenter_filtrado.csv"
 
 
