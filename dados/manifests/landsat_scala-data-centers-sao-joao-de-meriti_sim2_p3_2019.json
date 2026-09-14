@@ -1,0 +1,59 @@
+{
+  "site_id": "scala-data-centers-sao-joao-de-meriti_sim2_p3",
+  "ano": 2019,
+  "sensor": "landsat",
+  "colecoes": [
+    "LANDSAT/LC08/C02/T1_L2",
+    "LANDSAT/LC09/C02/T1_L2"
+  ],
+  "satelites_usados": [
+    "LC08",
+    "LC09"
+  ],
+  "janela_padrao": "05-09",
+  "janela_efetiva": "05-09",
+  "janela_ampliada": false,
+  "mascara": {
+    "metodo": "QA_PIXEL bitmask + QA_RADSAT",
+    "qa_pixel_bits": {
+      "dilated_cloud": 1,
+      "cirrus": 2,
+      "cloud": 3,
+      "cloud_shadow": 4
+    },
+    "qa_radsat": "pixel removido se qualquer banda saturada (QA_RADSAT != 0)"
+  },
+  "harmonizacao": {
+    "metodo": "harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
+    "versao": "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    354900.0,
+    0.0,
+    -30.0,
+    7353480.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "n_imagens_usadas": 9,
+  "pct_pixels_validos": 100.0,
+  "sha256": "0ec6389869b8cbe8609a7eed2008198c194be055df0a75fd8f976e6d35d4764a",
+  "git_sha": "5c8d17ec3d1fffafe1dbfe31e5564296605dee27",
+  "gerado_em": "2026-09-14T19:29:10.104944+00:00"
+}

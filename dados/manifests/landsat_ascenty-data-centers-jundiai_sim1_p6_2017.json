@@ -1,0 +1,59 @@
+{
+  "site_id": "ascenty-data-centers-jundiai_sim1_p6",
+  "ano": 2017,
+  "sensor": "landsat",
+  "colecoes": [
+    "LANDSAT/LC08/C02/T1_L2",
+    "LANDSAT/LC09/C02/T1_L2"
+  ],
+  "satelites_usados": [
+    "LC08",
+    "LC09"
+  ],
+  "janela_padrao": "05-09",
+  "janela_efetiva": "05-09",
+  "janela_ampliada": false,
+  "mascara": {
+    "metodo": "QA_PIXEL bitmask + QA_RADSAT",
+    "qa_pixel_bits": {
+      "dilated_cloud": 1,
+      "cirrus": 2,
+      "cloud": 3,
+      "cloud_shadow": 4
+    },
+    "qa_radsat": "pixel removido se qualquer banda saturada (QA_RADSAT != 0)"
+  },
+  "harmonizacao": {
+    "metodo": "harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
+    "versao": "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    268890.0,
+    0.0,
+    -30.0,
+    7430430.0
+  ],
+  "shape": {
+    "width": 335,
+    "height": 335
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "n_imagens_usadas": 10,
+  "pct_pixels_validos": 99.9982,
+  "sha256": "2704b87d4b6cff0c0b80f30c74e659af3e8d8e9abeb4fb3194abdb1d36202591",
+  "git_sha": "5c8d17ec3d1fffafe1dbfe31e5564296605dee27",
+  "gerado_em": "2026-09-14T17:44:32.610745+00:00"
+}

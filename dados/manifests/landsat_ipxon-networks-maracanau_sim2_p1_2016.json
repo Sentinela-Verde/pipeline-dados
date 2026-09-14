@@ -1,0 +1,59 @@
+{
+  "site_id": "ipxon-networks-maracanau_sim2_p1",
+  "ano": 2016,
+  "sensor": "landsat",
+  "colecoes": [
+    "LANDSAT/LC08/C02/T1_L2",
+    "LANDSAT/LC09/C02/T1_L2"
+  ],
+  "satelites_usados": [
+    "LC08",
+    "LC09"
+  ],
+  "janela_padrao": "05-09",
+  "janela_efetiva": "03-11",
+  "janela_ampliada": true,
+  "mascara": {
+    "metodo": "QA_PIXEL bitmask + QA_RADSAT",
+    "qa_pixel_bits": {
+      "dilated_cloud": 1,
+      "cirrus": 2,
+      "cloud": 3,
+      "cloud_shadow": 4
+    },
+    "qa_radsat": "pixel removido se qualquer banda saturada (QA_RADSAT != 0)"
+  },
+  "harmonizacao": {
+    "metodo": "harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
+    "versao": "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    1569690.0,
+    0.0,
+    -30.0,
+    9100140.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 334
+  },
+  "resolucao_m": 30,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "n_imagens_usadas": 2,
+  "pct_pixels_validos": 61.0043,
+  "sha256": "2c4590f1878da2cc53f3720204c3e243d8e37e56be06d5d13a3ad1d5bd6b8e7d",
+  "git_sha": "5c8d17ec3d1fffafe1dbfe31e5564296605dee27",
+  "gerado_em": "2026-09-14T18:36:12.323281+00:00"
+}

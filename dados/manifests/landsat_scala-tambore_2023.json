@@ -10,8 +10,8 @@
     "LC08",
     "LC09"
   ],
-  "janela_padrao": "06-09",
-  "janela_efetiva": "06-09",
+  "janela_padrao": "05-09",
+  "janela_efetiva": "05-09",
   "janela_ampliada": false,
   "mascara": {
     "metodo": "QA_PIXEL bitmask + QA_RADSAT",
@@ -24,7 +24,7 @@
     "qa_radsat": "pixel removido se qualquer banda saturada (QA_RADSAT != 0)"
   },
   "harmonizacao": {
-    "metodo": "sentinela.gee.harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
+    "metodo": "harmonizacao.harmonizar_landsat (Landsat = referência do bandpass)",
     "versao": "ADR-003 (2026-08-27) — coeficientes Claverie via NASA HLS bandpass page"
   },
   "bandas": [
@@ -51,9 +51,9 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "n_imagens_usadas": 14,
-  "pct_pixels_validos": 99.7212,
-  "sha256": "45b3876473e92c202810eb7680d3606cce3029d5d22d8aec953b8284bb8238cc",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T22:00:55.740355+00:00"
+  "n_imagens_usadas": 9,
+  "pct_pixels_validos": 99.7408,
+  "sha256": "b314a0624865693a58574f749349800b7293f5192736e3afe3b27db280cd786a",
+  "git_sha": "5c8d17ec3d1fffafe1dbfe31e5564296605dee27",
+  "gerado_em": "2026-09-14T17:06:24.502578+00:00"
 }
