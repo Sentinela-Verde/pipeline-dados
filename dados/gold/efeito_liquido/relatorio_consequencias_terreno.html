@@ -1,0 +1,236 @@
+<!doctype html><html lang='pt-br'><head><meta charset='utf-8'><title>O que a chegada de um data center pode causar num terreno</title><style>
+body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 1000px;
+       margin: 40px auto; padding: 0 20px; color: #1a1a1a; background: #fafafa; }
+h1 { border-bottom: 3px solid #2ecc71; padding-bottom: 12px; }
+h2 { margin-top: 48px; border-bottom: 1px solid #ddd; padding-bottom: 6px; color: #1a1a1a; }
+p.subtitulo { color: #666; margin-top: -8px; }
+table { border-collapse: collapse; margin: 12px 0 24px; font-size: 13px; }
+table, th, td { border: 1px solid #ddd; }
+th, td { padding: 6px 10px; text-align: right; }
+th { background: #f0f0f0; text-align: center; }
+td:first-child, th:first-child { text-align: left; }
+pre { background: #f0f0f0; padding: 12px 16px; border-radius: 6px; overflow-x: auto;
+      font-size: 13px; white-space: pre-wrap; }
+img { max-width: 100%; margin: 12px 0 24px; display: block; }
+.nota { color: #666; font-size: 13px; font-style: italic; }
+</style></head><body><h1>O que a chegada de um data center pode causar num terreno</h1><p class='subtitulo'>Painel: consolidado_impacto_modelo.csv | 30 áreas | 15 pares tratamento-controle</p><h2>1. Significância do efeito líquido pós-obra, por variável</h2>
+<pre>Cada linha testa se o efeito líquido médio (delta_tratamento - delta_controle, média dos horizontes pós-obra) é consistentemente diferente de zero ENTRE OS PARES — não linha a linha, pra não pseudo-replicar o mesmo evento.
+Teste: permutação de sinal (sign-flip), bicaudal. IC95%: bootstrap percentil (10,000 reamostragens). p_valor_fdr: correção Benjamini-Hochberg pra comparações múltiplas.</pre>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>variavel</th>
+      <th>n_pares</th>
+      <th>media</th>
+      <th>mediana</th>
+      <th>ic95_baixo</th>
+      <th>ic95_alto</th>
+      <th>cohen_d</th>
+      <th>magnitude</th>
+      <th>p_valor</th>
+      <th>p_valor_fdr</th>
+      <th>significativo_fdr</th>
+      <th>direcao</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>populacao</td>
+      <td>14</td>
+      <td>43111.6548</td>
+      <td>5706.6667</td>
+      <td>4036.0304</td>
+      <td>95876.1640</td>
+      <td>0.4705</td>
+      <td>pequena</td>
+      <td>0.0454</td>
+      <td>0.4541</td>
+      <td>False</td>
+      <td>aumenta</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>prop_vegetacao_densa</td>
+      <td>15</td>
+      <td>0.0008</td>
+      <td>0.0060</td>
+      <td>-0.0107</td>
+      <td>0.0124</td>
+      <td>0.0320</td>
+      <td>desprezível</td>
+      <td>0.9005</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>aumenta</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>prop_solo_exposto_obras</td>
+      <td>15</td>
+      <td>0.0005</td>
+      <td>0.0003</td>
+      <td>-0.0015</td>
+      <td>0.0028</td>
+      <td>0.1041</td>
+      <td>desprezível</td>
+      <td>0.7394</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>aumenta</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>prop_vegetacao_rala</td>
+      <td>15</td>
+      <td>-0.0017</td>
+      <td>-0.0023</td>
+      <td>-0.0133</td>
+      <td>0.0100</td>
+      <td>-0.0718</td>
+      <td>desprezível</td>
+      <td>0.7806</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>diminui</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>prop_construida_urbana</td>
+      <td>15</td>
+      <td>-0.0007</td>
+      <td>0.0009</td>
+      <td>-0.0070</td>
+      <td>0.0048</td>
+      <td>-0.0602</td>
+      <td>desprezível</td>
+      <td>0.8452</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>diminui</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>prop_agua</td>
+      <td>15</td>
+      <td>0.0012</td>
+      <td>0.0001</td>
+      <td>-0.0023</td>
+      <td>0.0053</td>
+      <td>0.1513</td>
+      <td>desprezível</td>
+      <td>0.6739</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>aumenta</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>lst_media_celsius</td>
+      <td>15</td>
+      <td>-0.1207</td>
+      <td>0.0299</td>
+      <td>-0.3444</td>
+      <td>0.0703</td>
+      <td>-0.2885</td>
+      <td>pequena</td>
+      <td>0.2943</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>diminui</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>emprego_formal_total</td>
+      <td>15</td>
+      <td>-9792.1444</td>
+      <td>2264.3333</td>
+      <td>-51402.5050</td>
+      <td>16081.3397</td>
+      <td>-0.1328</td>
+      <td>desprezível</td>
+      <td>0.9425</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>diminui</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>pib_mil_reais</td>
+      <td>15</td>
+      <td>1759388.8111</td>
+      <td>1265513.6667</td>
+      <td>-5153082.9894</td>
+      <td>7113947.6417</td>
+      <td>0.1384</td>
+      <td>desprezível</td>
+      <td>0.6582</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>aumenta</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>numero_empresas</td>
+      <td>15</td>
+      <td>-8660.3667</td>
+      <td>74.6667</td>
+      <td>-30818.3572</td>
+      <td>3704.7036</td>
+      <td>-0.2097</td>
+      <td>pequena</td>
+      <td>0.9302</td>
+      <td>0.9425</td>
+      <td>False</td>
+      <td>diminui</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Narrativa</h2>
+<pre>Nenhuma variável passou no teste de significância após a correção por comparações múltiplas — com a amostra atual (poucos pares, muita linha com qualidade_par == &#x27;ruim&#x27;), não dá pra afirmar efeito causal robusto pra nenhuma variável ainda. Ver seção de limitações.</pre>
+<p class='nota'>matplotlib não instalado neste ambiente — forest plot pulado (dados completos no CSV).</p>
+<h2>2. Mediação física: o que explica a variação de LST</h2>
+<pre>Regressão OLS (n=15 áreas tratadas, 1 valor por área = média dos horizontes pós-obra) de delta_lst_media_celsius sobre as variações de cobertura do solo. Preditores padronizados (z-score) pra comparar magnitude entre eles. P-valor por permutação (20,000 embaralhamentos de y).</pre>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>preditor</th>
+      <th>coeficiente_padronizado</th>
+      <th>p_valor_permutacao</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>intercepto</td>
+      <td>-0.3281</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>delta_prop_vegetacao_densa</td>
+      <td>0.4563</td>
+      <td>0.1684</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>delta_prop_solo_exposto_obras</td>
+      <td>0.2008</td>
+      <td>0.4157</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>delta_prop_construida_urbana</td>
+      <td>-0.1716</td>
+      <td>0.5831</td>
+    </tr>
+  </tbody>
+</table>
+<p class='nota'>Regressão observacional, não um experimento controlado — trate como hipótese pra investigar com mais dado (mais data centers reais), não como efeito causal estabelecido. Ver &#x27;Técnicas pensadas para causalidade&#x27; no README.</p>
+<h2>Limitações (leia antes de citar qualquer número acima)</h2>
+<pre>- Amostra pequena: 15 pares tratamento-controle únicos hoje; qualquer p-valor aqui é sobre essa amostra, não uma verdade populacional.
+- qualidade_par: boa parte das linhas do painel tem qualidade_par == &#x27;ruim&#x27; e entra nos testes sem filtro — refazer só com qualidade &#x27;bom&#x27;/&#x27;aceitável&#x27; é a primeira checagem de robustez a rodar se os resultados mudarem o quadro.
+- A mediação de LST é regressão observacional em poucas áreas — sinal pra investigar com mais dado, não efeito causal estabelecido.
+- Efeitos socioeconômicos (população, emprego, PIB) não entraram na mediação: têm causalidade reversa plausível (a região cresce e por isso atrai o data center, não só o contrário) e exigem uma técnica que trate esse viés — ver &#x27;Técnicas pensadas para causalidade&#x27; no README.</pre></body></html>

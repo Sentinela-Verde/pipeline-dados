@@ -10,7 +10,7 @@ grupo de controle, `par_id`) que os dois steps abaixo pressupõem.
 
 ## Entrada: o painel consolidado
 
-Ambos os steps partem de `data/silver/consolidado_impacto_modelo.csv` — uma linha por
+Os steps partem de `dados/gold/consolidado_impacto_modelo.csv` — uma linha por
 **área x horizonte** (uma área tratada ou de controle, num ano relativo à abertura do data
 center ao qual está pareada). Colunas principais:
 
@@ -42,16 +42,18 @@ ponta-a-ponta — hoje ele é o único elo que ainda depende de um processo manu
 | Step | Arquivo | O que faz |
 |---|---|---|
 | 1 | `step1_analise_exploratoria.py` | Visão geral, event study, teste de placebo, DiD simples, rankings, correlações e a curva de efeito líquido por par/horizonte |
-| 2 | `step2_estagio2_modelo_efeito.py` | Treina o modelo que aprende o efeito líquido a partir do porte do data center + tendência pré-obra, valida com Leave-One-DC-Out |
+| 1b | `step1b_analise_consequencias.py` | Testa significância do efeito líquido (permutação + FDR), gera a narrativa "o que a chegada de um data center pode causar" e uma primeira mediação física (o que explica a variação de LST) |
+| 2 | `step2_estagio2_modelo_efeito.py` (**ainda não existe** — ver gap abaixo) | Treinaria um modelo que aprende o efeito líquido a partir do porte do data center + tendência pré-obra, validado com Leave-One-DC-Out |
 
-`comum.py` guarda a lógica compartilhada pelos dois (cálculo de ano-base e `delta_*` —
-ver item 4 do guia; e a inclinação da tendência pré-obra — item 5).
+`comum.py` guarda a lógica compartilhada entre os steps (cálculo de ano-base e `delta_*` —
+ver item 4 do guia; a inclinação da tendência pré-obra — item 5; e o cálculo de efeito
+líquido por par, usado tanto pelo step1 quanto pelo step1b).
 
 ```bash
-cd data-extraction/modeling/modelo_impacto
+cd projetos/09_analise_estatistica_impacto
 pip install -r requirements.txt
 python step1_analise_exploratoria.py
-python step2_estagio2_modelo_efeito.py
+python step1b_analise_consequencias.py
 ```
 
 ## step1 — análise exploratória
@@ -65,11 +67,42 @@ correlação, e a **curva de efeito líquido** (`delta_tratamento - delta_contro
 entre os pares — esta última é o mesmo alvo que o step2 aprende a prever, só que aqui
 descritivo (média/mediana entre pares), não modelado.
 
-Saídas em `data/gold/modelo_impacto/`:
+Saídas em `dados/gold/efeito_liquido/`:
 - `efeito_liquido_por_par.csv` — um registro por (par, horizonte, variável).
 - `curva_efeito_liquido.csv` — agregado (média, mediana, desvio padrão, nº de pares) por
   (variável, horizonte).
 - `figuras/event_study_tratamento_x_controle.png`, `figuras/curva_efeito_liquido.png`.
+- `relatorio_analise_exploratoria.html` — tudo acima num único HTML autocontido.
+
+## step1b — análise de consequências
+
+Responde a pergunta que o step1 só descreve: **o efeito líquido de cada variável é
+estatisticamente diferente de zero, ou pode ser ruído dessa amostra pequena?** Para isso:
+
+1. Colapsa o efeito líquido por par pra **1 valor por (par, variável)** — a média dos
+   horizontes pós-obra (`config.HORIZONTES_ALVO`). Isso é deliberado: testar em cima das
+   linhas por horizonte trataria observações do mesmo par como independentes (mesma
+   pseudo-replicação que o item 9 do guia já proíbe pro Leave-One-DC-Out).
+2. Testa cada variável com um **teste de permutação de sinal** (exato até 20 pares, Monte
+   Carlo acima disso) e estima o **IC95% por bootstrap** — sem depender de `scipy` (não está
+   no requirements) nem da suposição de normalidade de um teste-t com n~15.
+3. Corrige os p-valores por **Benjamini-Hochberg** (FDR) — testar ~10 variáveis a 5% sem
+   correção infla o risco de falso positivo pra quase 40%.
+4. Gera uma **narrativa em texto** a partir da tabela (as variáveis que sobrevivem à
+   correção, ordenadas por tamanho de efeito) — a resposta direta pra "o que a chegada de um
+   data center pode causar num terreno".
+5. Roda uma **mediação física exploratória**: regride `delta_lst_media_celsius` sobre as
+   variações de vegetação/solo exposto/área construída (por área, 1 linha por site) pra ver
+   qual mudança de cobertura do solo mais anda junto com o aquecimento — regressão
+   observacional (OLS manual via numpy + p-valor por permutação), não uma prova causal.
+
+Saídas em `dados/gold/efeito_liquido/`:
+- `consequencias_terreno_resumo.csv` — 1 linha por variável: média, IC95%, Cohen's d,
+  p-valor e p-valor FDR.
+- `consequencias_terreno_mediacao_lst.csv` — coeficientes padronizados da mediação de LST.
+- `figuras/forest_plot_consequencias.png` (só se `matplotlib` estiver instalado — o script
+  roda e produz os CSVs/HTML mesmo sem ele).
+- `relatorio_consequencias_terreno.html`.
 
 ## step2 — Estágio 2 (aprender o efeito)
 
@@ -81,13 +114,49 @@ porte do data center, bioma/região) e o **alvo** (efeito líquido nos horizonte
 **Leave-One-DC-Out** (remove a área inteira, nunca uma linha isolada — item 9 do guia) e
 compara com uma baseline ingênua que só prevê a média do treino.
 
-Saídas em `data/gold/modelo_impacto/`:
+Saídas em `dados/gold/efeito_liquido/`:
 - `validacao_leave_one_dc_out.csv` — MAE do modelo vs. baseline, por variável.
   `melhora_vs_baseline_%` perto de 0 (ou negativa) = o modelo não aprendeu nada além da
   média; valores bem positivos (>30-40%) indicariam sinal real capturado pelas features.
 - `modelos/modelo_efeito_<variavel>.joblib` — modelo final (treinado com todos os dados)
   por variável, reutilizável via `joblib.load(...)` + `prever_impacto()`.
 - `figuras/importancia_features_estagio2.png`.
+
+## Técnicas pensadas para causalidade (além do que já está implementado)
+
+O DiD/event study do step1 e o teste de permutação do step1b já são inferência causal
+"de base" (contrafactual via grupo de controle + placebo pré-tendência). O que seria o
+próximo degrau, em ordem de prioridade dado o tamanho de amostra atual:
+
+- **Regressão DiD com covariáveis** (em vez de só a diferença de médias) — controla
+  explicitamente por `bioma`, `regiao`, porte do data center e tendência pré-obra na mesma
+  equação, em vez de só comparar médias brutas tratamento x controle. É o passo mais barato
+  a partir do painel que já existe.
+- **Efeitos fixos de par/tempo (two-way fixed effects)** — absorve qualquer choque que afete
+  igualmente tratamento e controle de um mesmo par (seca regional, crise, nova rodovia) sem
+  precisar listar essas variáveis uma a uma.
+- **Synthetic control** — em vez de 1 controle por par (ou a média de poucos), constrói um
+  "controle sintético" como combinação ponderada de vários municípios parecidos; ganha
+  robustez justamente quando o número de controles reais por data center é pequeno, como é
+  o caso aqui (`n_predios_no_campus` e pareamento 1:1 hoje).
+- **Double Machine Learning / causal forests** — estimaria efeito heterogêneo (o efeito é
+  diferente pra data center grande vs. pequeno? Cerrado vs. Mata Atlântica?) controlando por
+  muitas covariáveis ao mesmo tempo sem imposição de forma funcional linear. Só compensa
+  quando a amostra crescer — com 15 pares, o risco de overfitting é alto.
+- **Inferência por randomização/placebo espacial** — em vez de só testar os horizontes
+  negativos (item 3 do guia), testar "datas de tratamento" e "polígonos" falsos sorteados
+  aleatoriamente e comparar a distribuição desses efeitos-placebo com o efeito observado;
+  robusto a autocorrelação espacial que testes de permutação simples ignoram.
+- **Mediação/path analysis formal** (o step1b faz uma versão simples com 1 regressão) —
+  encadear vegetação → solo exposto → construção → LST → indicadores socioeconômicos como um
+  grafo causal explícito (SEM ou DAG com ajuste por backdoor), em vez de uma regressão
+  isolada por efeito.
+- **Variável instrumental pro braço socioeconômico** — população/emprego/PIB têm causalidade
+  reversa óbvia (a região que já estava crescendo é mais atraente pro data center); sem um
+  instrumento (algo que mude a chance de receber um data center sem afetar diretamente a
+  economia local, ex.: proximidade de backbone de fibra pré-existente), esse braço deve ficar
+  como correlação, não como efeito — é por isso que o step1b não inclui as vars
+  socioeconômicas na mediação.
 
 ## Limitações (herdadas de `proposta_projeto.md`)
 
@@ -105,3 +174,9 @@ Saídas em `data/gold/modelo_impacto/`:
   também limita a capacidade de capturar interações mais complexas entre porte e contexto
   regional.
 - **Lacuna do painel consolidado** — ver seção acima.
+- **`step2_estagio2_modelo_efeito.py` ainda não existe** neste repositório (só documentado
+  aqui e no guia) — o que existe hoje, além do step1, é o `step1b_analise_consequencias.py`.
+- **Caminhos de `config.py` estavam desatualizados** — apontavam pra `data/silver/...` e
+  `data/gold/modelo_impacto/` (nomenclatura em inglês de um repo anterior); corrigido pra
+  `dados/gold/consolidado_impacto_modelo.csv` e `dados/gold/efeito_liquido/`, que é onde os
+  artefatos deste repo realmente vivem. Com o caminho antigo, nenhum dos steps rodava.
