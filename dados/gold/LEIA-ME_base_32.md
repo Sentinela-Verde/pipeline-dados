@@ -85,11 +85,18 @@ próxima rodada.
 
 ## O que ficou vazio, e por quê
 
-- **`populacao`** (condado) — o análogo do IBGE é o ACS do Census Bureau, que passou a exigir chave
-  de API (`api.census.gov` redireciona para `missing_key.html`). A chave é gratuita e imediata em
-  https://api.census.gov/data/key_signup.html; com ela na variável `CENSUS_API_KEY`, o preenchimento
-  é uma rodada de 32 chamadas. Enquanto isso, use `populacao_buffer_5km`, que existe nos dois lados.
-- **`pib_mil_reais`** — PIB por condado é do BEA (tabela CAGDP2), que também pede chave.
+- **`populacao`** — ✅ **preenchida** (2026-09-14, terceira rodada): ACS 5-year de 2022, variável
+  `B01003_001E`, população do **condado** — 26 condados distintos para os 32 pontos. A coluna
+  `populacao_tipo_estimativa` diz a origem linha a linha: `ACS 2022 5-year (condado)` nos EUA,
+  IBGE no Brasil. A chave do Census fica na variável de ambiente `CENSUS_API_KEY`, nunca no código
+  nem no CSV.
+
+  Atenção à unidade: são populações de recortes administrativos de tamanhos muito diferentes
+  (condado americano × município brasileiro). Para comparar densidade ou pressão populacional no
+  entorno, use `populacao_buffer_5km`, que é o mesmo recorte de 5 km nos dois países.
+- **`pib_mil_reais`** — PIB por condado é do BEA (tabela CAGDP2), que pede uma chave própria,
+  diferente da do Census. Único campo de contexto que segue vazio do lado americano, junto do
+  `tier`.
 - **`tier`** — não existe para os campi americanos: o `datacentermap` responde HTTP 429 para
   raspagem em volume (ADR-006 §7), e os campi americanos vieram do OpenStreetMap, que não traz tier.
 
@@ -98,3 +105,14 @@ próxima rodada.
 `tier`, `regiao` e `bioma` estavam preenchidos só nas linhas de tratamento (102 de 204). Os
 controles agora herdam do seu par — o que é correto por construção: o controle fica no mesmo
 recorte regional do tratamento, é esse o desenho.
+
+
+## Reprodução
+
+Os três scripts que geraram e completaram esta base estão em
+`projetos/07_reiteracao_expansao_amostra/base_eua_dw/`:
+
+1. `gerar_base_eua.py` — seleção dos campi, controles e classes por ano (Dynamic World);
+2. `enriquecer32.py` — geografia, bioma, LST e L1/qualidade do par;
+3. `enriquecer_pass2.py` — UF/região pelo FIPS e população no buffer (GHSL);
+4. `preencher_pop.py` — população do condado (ACS; lê `CENSUS_API_KEY` do ambiente).
