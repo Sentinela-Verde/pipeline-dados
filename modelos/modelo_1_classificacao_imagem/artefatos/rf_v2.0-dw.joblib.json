@@ -1,0 +1,11 @@
+{
+  "arquivo": "rf_v2.0-dw.joblib",
+  "descricao": "Modelo 1 — Random Forest de classificação de cobertura do solo (modelo-imagens-satelite/src/sentinela.train)",
+  "tag_versao": "v2.0-dw",
+  "tamanho_bytes": 3747444412,
+  "tamanho_legivel": "3.49 GiB",
+  "sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "gerado_em": "2026-09-13",
+  "onde_esta_o_binario_real": "local apenas nesta máquina por enquanto — ainda não definimos storage compartilhado (ver decisão 2 do README: Git LFS? bucket S3?)",
+  "nota": "Este .json é um manifesto/mock: representa que o .joblib existe e documenta como conferi-lo (tamanho + sha256), sem versionar os 3.5 GB do binário em si — ele está no .gitignore (modelos/**/*.joblib)."
+}
