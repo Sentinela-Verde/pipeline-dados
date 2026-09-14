@@ -79,7 +79,7 @@ flowchart TD
     subgraph S7["Socioeconômico"]
         G1["BigQuery · IBGE"]:::fonte
         G2[["População, PIB, empresas<br/>por município (Brasil)"]]:::dado
-        G3["Socioeconômico US<br/>(fonte a definir)"]:::fonte
+        G3["Socioeconômico US<br/>(ACS 5-year, Census Bureau)"]:::fonte
         G4[["Equivalente por condado/cidade<br/>(EUA)"]]:::dado
         G1 --> G2
         G3 --> G4
@@ -162,7 +162,8 @@ flowchart TD
 
 ❌ = ainda falta migrar (ou não existe código em nenhum repositório hoje):
 
-- ❌ `socioeconomico_us/` (dado + fonte a definir)
+- ❌ `socioeconomico_us/` — a fonte existe (ACS 5-year, com implementação de referência na
+  origem); a frente americana é que está reprovada no portão do ADR-006, ver decisão 3
 - ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
 - ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
 - ❌ 07 · expansão da amostra — a **datação da obra** já veio (`datacao_obra/`); expandir de 15
@@ -184,7 +185,8 @@ sentinela_verde/
 │   │   ├── temperatura/                    # LST por site x ano + cenas brutas (220 KB, leve)
 │   │   ├── footprints_osm/                 # polígonos de prédio do OpenStreetMap (EUA)
 │   │   ├── ibge/
-│   │   └── socioeconomico_us/              # ❌ falta migrar — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
+│   │   └── socioeconomico_us/              # ❌ sem dado — fonte é o ACS 5-year; a frente US está parada
+│   │                                       # na datação da obra, não aqui (decisão 3)
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
@@ -223,7 +225,7 @@ sentinela_verde/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
 │   ├── 05_extracao_lst/                    # LST via MODIS MOD11A2 (não Landsat — ver README da etapa)
-│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ falta migrar (fonte a definir)
+│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ (ACS 5-year — ver decisão 3)
 │   ├── 07_reiteracao_expansao_amostra/
 │   │   └── datacao_obra/                   # ano da obra por degrau de NDBI no Landsat
 │   │                                       # ❌ falta a expansão em si (depende do Modelo 1)
@@ -262,13 +264,32 @@ expõe a inferência do Modelo 1 precisa ser importável tanto por quem roda a c
 (etapas 5b/6b) quanto por quem roda a seleção de controle (6a) e a expansão (9) — ou seja, a
 inferência não pode ficar "presa" dentro do projeto do Modelo 1 sem uma forma de reuso.
 
-### 3 · Fonte de dado socioeconômico dos EUA ainda não existe
+### 3 · A frente americana está parada na DATA da obra, não na fonte socioeconômica
 
-`socioeconomico_us/` está na árvore como placeholder — nenhuma extração equivalente ao IBGE para
-municípios/condados americanos foi encontrada no código hoje. Antes de implementar
-`modelos/modelo_2_grupo_controle/` para sites nos EUA, alguém precisa decidir a fonte (Census
-Bureau ACS? BLS? outra?) — isso também é pré-requisito da expansão internacional mencionada no
-ADR-006 do `modelo-imagens-satelite` (hoje proposta, não aprovada).
+Correção de um registro anterior: dizia-se aqui que a fonte de dado socioeconômico dos EUA "não
+existe". Ela existe e tem implementação que roda, em `modelo-impacto/scripts/extrair_acs_eua.py`
+(`modelo-imagens-satelite`): **American Community Survey 5-year**, do Census Bureau, via
+`api.census.gov`. É o análogo direto do IBGE — resolve a geografia por lat/lon → FIPS no Census
+Geocoder e busca o indicador no ACS, onde o lado brasileiro resolve por nome+UF → código IBGE e
+busca no SIDRA. O próprio arquivo se declara exemplo de referência, não entregável.
+
+O que trava a expansão americana é outra coisa, e está medido no **ADR-006 §7**: a lista não é o
+gargalo (488 campi distintos contra 118 do Brasil, de graça via Overpass/OSM), mas só **15 têm
+ano documentado** — e são datas de construção do prédio, não da virada para data center. Datar
+pelo Dynamic World dentro do footprint alcançou **75**, dos quais 38 na janela útil; o portão
+pedia ~30 campi novos pareados, o que exigiria taxa de pareamento ≥79% contra os **50% medidos no
+Brasil**. Reprovou.
+
+A limitação registrada lá é o que ainda dá esperança: **329 dos 482 campi já estavam construídos
+em 2016** e são invisíveis ao DW, que começa em jun/2015 — não são indatáveis, é aquela fonte que
+não os data. A etapa 7 deste repositório (`projetos/07_reiteracao_expansao_amostra/datacao_obra/`)
+é exatamente a tentativa de alcançá-los pelo Landsat, que vai a 2013 — e a validação dela também
+não passou ainda (erro mediano de −2,0 anos, 33% dentro de ±1).
+
+**Então a decisão em aberto não é "qual fonte socioeconômica".** É: vale insistir na datação por
+imagem (corrigir o viés do NDBI, que parece marcar terraplenagem em vez de obra), buscar uma fonte
+de datas reais, ou encerrar a frente americana? O socioeconômico só é pré-requisito depois que
+essa responder.
 
 ### 4 · Onde mora o dado pesado
 
@@ -283,36 +304,52 @@ além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sh
 Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
 S3; output pesado vai só pro S3.*
 
-### 5 · Qual classificação é a de produção ⚠
+### 5 · O CSV publicado sai de um classificador que o projeto reprovou ⚠
 
-`dados/gold/area_por_classe.csv` é o handoff para a comparação estatística (etapa 6a): uma linha
-por site × ano × sensor × classe, com `area_m2`, `pct_area_valida`, `fator_correcao_sensor` e a
-faixa da série. 1.430 linhas, 16 sites, 2013-2025. Foi gerado do **`rf_v2.0-dw`**, por coerência
-com o Dynamic World ser a fonte de rótulo ativa desde 2026-09-11. Daí saem dois pontos que pedem
-decisão do time:
+Correção de um registro anterior: esta decisão dizia que "qual classificação é a de produção"
+estava em aberto. **Não está** — o critério existe, está escrito desde antes de haver número, e
+foi medido. O `manifest.json` que acompanha os artefatos no S3 e o **ADR-006 §8** registram:
 
-1. **O `rf_v2.0-dw` nunca foi promovido a produção.** A inferência escreve em `classificado/`
-   quando é produção e num prefixo versionado (`classificado-rf_v2.0-dw/`) quando é avaliação
-   paralela — e esse modelo só existe no prefixo de avaliação. O exportador original tinha o
-   prefixo fixo em `classificado_*`, então **não conseguia exportar essa classificação**: ela
-   existia no disco e era invisível para ele. A versão migrada ganhou `--token` para escolher o
-   prefixo.
-2. **É o modelo sob o qual o achado de impacto não replica** (9/14, p=0,21, contra 14/14,
-   p=0,0001 do `rf_v1.0-tuned`). A escolha foi deliberada, por coerência com a fonte de rótulo —
-   mas a divergência entre os dois é um resultado do projeto, não um detalhe de implementação.
-   Para comparação: o `rf_v1.0-tuned` cobre 270 rasters e o `rf_v2.0-dw` cobre 286 (os 16 extras
-   são anos Landsat tardios), e a mediana de `solo_exposto_obras` vai de 1,81% para 4,90% — o
-   MapBiomas não tem classe de canteiro de obras e o DW tem `bare` nativa.
+> produção é o **`rf_v1.0-tuned`**, e o critério de adoção deste projeto **não é acurácia, é
+> estabilidade temporal**: um retreino só substitui o modelo atual se ficar abaixo da
+> instabilidade do próprio rótulo que o treinou.
 
-**O fator de correção de sensor foi recalibrado** (2026-09-14) e não é mais o pendente que era: a
-validação cruzada rodou sobre os rasters do próprio `rf_v2.0-dw`, e agora as duas classes críticas
-são corrigidas — `construida_urbana` (CV entre sites 0,211; fator por site de 1,0867 a 2,2947) e
-`solo_exposto_obras` (CV 0,307; de 0,2440 a 0,8393), que sob o `rf_v1.0-tuned` não passava no
-critério. O fator agora mora num arquivo por classificação
-(`fator_correcao_sensor_sv20_<modelo_versao>.json`) e o exportador **falha** se o JSON tiver sido
-calibrado sobre outro modelo — o cruzamento silencioso que produziu a primeira versão do CSV não
-tem mais como acontecer. Evidência em
-`modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`.
+O `rf_v2.0-dw` ganha em acurácia com folga — macro-F1 0,828 contra 0,776, e a classe 3
+(`solo_exposto_obras`) salta de F1 0,580 para 0,804, o maior ganho isolado do projeto, porque o
+Dynamic World tem `bare` nativa onde o MapBiomas não tinha canteiro de obras. E ainda assim
+reprova, nos mesmos pixels e nos mesmos 58 pares de anos:
+
+| instrumento | instabilidade temporal |
+|---|---:|
+| `dynamic_world` (a barra) | **7,21%** |
+| `rf_v2.0-dw` | 13,09% |
+| `rf_v1.0-tuned` | 17,54% |
+
+O retreino melhora 25% nesse eixo e continua 1,8× acima da barra. A hipótese registrada lá é que
+estabilidade vem de **contexto espacial** — o Dynamic World é uma rede convolucional, e o nosso é
+um Random Forest por pixel, sem vizinhança nenhuma. Se estiver certa, nenhum retreino com a mesma
+arquitetura passa.
+
+**O problema que isso cria aqui.** O `dados/gold/area_por_classe.csv` publicado neste repositório
+é do **`rf_v2.0-dw`** — o modelo reprovado. A escolha foi coerente com o Dynamic World ser a fonte
+de rótulo ativa desde 2026-09-11, mas cria uma divergência real com o resto do projeto: toda a
+análise de impacto publicada (o achado de 18/20 pares, p=0,0002, o placebo, os testes de robustez)
+foi calculada com o `rf_v1.0-tuned`. E é sob o v2.0-dw que o achado **não replica** — 9/14,
+p=0,21, contra 14/14, p=0,0001.
+
+Três saídas, e a escolha é do time:
+
+1. **Republicar o CSV a partir do `rf_v1.0-tuned`**, alinhando com o que a análise usou. O
+   exportador já aceita `--token`, então é uma execução — mas o fator de correção de sensor teria
+   de ser o do v1.0 (ele existe, é o arquivo histórico), e a classe 3 volta a não ser corrigível.
+2. **Manter o v2.0-dw e assumir a divergência**, documentando que o CSV de indicadores e a análise
+   de impacto falam de classificações diferentes.
+3. **Publicar os dois** e deixar a comparação explícita — é a mais cara e a que mais informa, já
+   que a diferença entre eles é um resultado do projeto.
+
+Enquanto não se decide, vale a regra que o código já impõe: o fator de correção de sensor é
+calibrado sobre uma classificação e o exportador falha se aplicá-lo a outra (ver
+`modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`).
 
 No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
 não existe. É a etapa 6a que preenche essas duas colunas.
