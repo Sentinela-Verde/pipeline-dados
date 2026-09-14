@@ -33,6 +33,12 @@ antes de reconectar o pipeline como um todo — ver `## De-para` para o destino 
       (6 harmonizadas + 7 índices). Saída vai para **silver**, não bronze — é dado derivado:
       2,9 GB só no S3 silver, com os 286 manifests versionados aqui.
 - [ ] 05 · Extração LST
+- [x] **Relatórios de conferência em CSV** — versionados junto do código que os descreve, para
+      poderem ser lidos direto no GitHub: `projetos/02_extracao_imagem/relatorios/` (qualidade da
+      ingestão, resíduo da harmonização) e
+      `modelos/modelo_1_classificacao_imagem/indicadores/relatorios/` (validação cruzada de
+      sensores). ⚠ Os geradores dos dois conjuntos **não foram migrados** — os CSVs são artefatos
+      copiados e não se atualizam sozinhos.
 - [x] **06 · Extração socioeconômico** — só a parte IBGE: código de `extract/bigquery_ibge/`
       copiado para `projetos/06_extracao_socioeconomico/ibge/`; dado (`ibge_municipios.csv`)
       copiado para `dados/bronze/ibge/`. **US ainda pendente** (`socioeconomico_us/` continua vazio).
@@ -288,6 +294,14 @@ Foi gerado do **`rf_v2.0-dw`** — coerente com o Dynamic World ser a fonte de r
 Para comparação: o `rf_v1.0-tuned` cobre 270 rasters e o `rf_v2.0-dw` cobre 286 (os 16 extras são
 anos Landsat tardios). A mediana de `solo_exposto_obras` vai de 1,81% para 4,90% — consistente com
 o MapBiomas não ter classe de canteiro de obras e o DW ter `bare` nativa.
+
+3. **O fator de correção de sensor foi calibrado sobre o OUTRO modelo.** O
+   `fator_correcao_sensor_sv20.json` traz `modelo_versao: rf_v1.0-tuned`, e é ele que preenche a
+   coluna `fator_correcao_sensor` das linhas de `construida_urbana` (0,4359 a 1,0977, por site).
+   Como as duas classificações não produzem as mesmas áreas, **esse fator não é necessariamente
+   válido para o `rf_v2.0-dw`**. Recalibrar exige rodar a validação de sensores sobre os rasters
+   do v2.0-dw, o que não foi feito. Detalhe em
+   `modelos/modelo_1_classificacao_imagem/indicadores/relatorios/README.md`.
 
 No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
 não existe. É a etapa 6a que preenche essas duas colunas.
