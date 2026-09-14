@@ -19,6 +19,17 @@ PARAMS_DIR = Path(__file__).resolve().parent / "parametros"
 SITES_PATH = PARAMS_DIR / "sites.geojson"
 FATOR_CORRECAO_PATH = PARAMS_DIR / "fator_correcao_sensor_sv20.json"
 
+
+def caminho_fator_correcao(modelo_versao: str) -> Path:
+    """Um JSON de fator por classificação: `fator_correcao_sensor_sv20_<modelo_versao>.json`.
+
+    O fator é calibrado SOBRE uma classificação — o mesmo modelo que gerou os rasters. Aplicar
+    o de outra é erro silencioso, e foi o que aconteceu na primeira versão deste CSV. O nome
+    sem sufixo é o histórico (`rf_v1.0-tuned`) e só é usado se não houver o do modelo pedido;
+    a guarda em `carregar_fator_correcao_sv20()` barra a aplicação cruzada."""
+    versionado = PARAMS_DIR / f"fator_correcao_sensor_sv20_{modelo_versao}.json"
+    return versionado if versionado.exists() else FATOR_CORRECAO_PATH
+
 load_dotenv(REPO_ROOT / ".env")
 
 # Resolução nominal por sensor. Espelha o contrato de grade da etapa 2 (`02_extracao_imagem`),

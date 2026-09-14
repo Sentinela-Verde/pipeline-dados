@@ -80,6 +80,7 @@ import shapely.ops
 import classes
 from config import (
     FATOR_CORRECAO_PATH,
+    caminho_fator_correcao,
     REPO_ROOT,
     RESOLUCAO_M,
     SITES_PATH,
@@ -179,15 +180,24 @@ def carregar_resolucoes() -> dict[str, int]:
     return dict(RESOLUCAO_M)
 
 
-def carregar_fator_correcao_sv20() -> dict[int, dict[str, Any]]:
+def carregar_fator_correcao_sv20(modelo_versao: str) -> dict[int, dict[str, Any]]:
     """Lê `data/manifests/fator_correcao_sensor_sv20.json` (gerado por
     `a validação de sensores`) e retorna `{classe_id: {"tratamento": "b"|"c",
     "fator_por_site": {site_id: float}}}`. Se o arquivo não existir, retorna `{}` — todo
     `fator_correcao_sensor` fica `1.0` (comportamento anterior a SV-20, sem quebrar quem roda
     `export_indicadores` sem ter rodado `validacao_sensores` antes)."""
-    if not FATOR_CORRECAO_SV20_PATH.exists():
+    caminho = caminho_fator_correcao(modelo_versao)
+    if not caminho.exists():
         return {}
-    payload = json.loads(FATOR_CORRECAO_SV20_PATH.read_text(encoding="utf-8"))
+    payload = json.loads(caminho.read_text(encoding="utf-8"))
+    # O fator é calibrado sobre UMA classificação; aplicá-lo a outra é erro silencioso.
+    calibrado_em = payload.get("modelo_versao")
+    if calibrado_em != modelo_versao:
+        raise ExportError(
+            f"{caminho} foi calibrado sobre '{calibrado_em}', mas a exportação é de "
+            f"'{modelo_versao}' — o fator de correção de sensor não é transferível entre "
+            "classificações. Rode a validação de sensores para este modelo antes."
+        )
     out: dict[int, dict[str, Any]] = {}
     for classe_id_str, info in payload.get("classes", {}).items():
         out[int(classe_id_str)] = {
@@ -523,12 +533,12 @@ def main(argv: list[str] | None = None) -> int:
     itens = localizar_rasters(args.modelo_versao, site_filtro=args.site, token=args.token)
     print(f"[export_indicadores] {len(itens)} rasters classificados encontrados para exportar.")
 
-    fator_sv20 = carregar_fator_correcao_sv20()
+    fator_sv20 = carregar_fator_correcao_sv20(args.modelo_versao)
     if fator_sv20:
         resumo = {c: info["tratamento"] for c, info in fator_sv20.items()}
-        print(f"[export_indicadores] fator de correção SV-20 carregado de {FATOR_CORRECAO_SV20_PATH} — tratamento por classe: {resumo}")
+        print(f"[export_indicadores] fator de correção SV-20 carregado de {caminho_fator_correcao(args.modelo_versao)} — tratamento por classe: {resumo}")
     else:
-        print(f"[export_indicadores] {FATOR_CORRECAO_SV20_PATH} não encontrado — fator_correcao_sensor=1.0 em toda linha (rode `a validação de sensores` antes para propagar SV-20).")
+        print(f"[export_indicadores] {caminho_fator_correcao(args.modelo_versao)} não encontrado — fator_correcao_sensor=1.0 em toda linha (rode `a validação de sensores` antes para propagar SV-20).")
 
     # --- Artefato 1 -----------------------------------------------------------------------
     df = gerar_area_por_classe(itens, sites_meta, resolucoes, args.modelo_versao, gerado_em, fator_sv20)

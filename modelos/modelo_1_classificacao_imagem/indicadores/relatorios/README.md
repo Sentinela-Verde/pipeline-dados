@@ -4,6 +4,8 @@ Estes seis CSVs são a razão de existir de duas colunas do `dados/gold/area_por
 **`fator_correcao_sensor`** e **`faixa_serie`**. Quem for usar aquele CSV para comparar níveis ou
 tendências ao longo do tempo precisa saber o que está aqui.
 
+Todos são medidos sobre a classificação **`rf_v2.0-dw`** — a mesma que gera o CSV publicado.
+
 ## O problema que eles medem
 
 A série muda de sensor no meio: Landsat (30 m) até 2018, Sentinel-2 (10 m) de 2019 em diante. Uma
@@ -22,45 +24,60 @@ duas coisas.
 
 ## Como isso vira o fator
 
-O método está gravado em `../parametros/fator_correcao_sensor_sv20.json`:
+O método está gravado em `../parametros/fator_correcao_sensor_sv20_rf_v2.0-dw.json` — um arquivo
+de fator por classificação, porque o fator é calibrado **sobre** uma delas:
 
 > `fator_mult = area_s2_agregado_30m_ha / area_landsat_ha` (mesma resolução, 30 m nos dois lados —
 > isola sensor de resolução), média dos 3 anos de sobreposição, **por site**. Só aplicado se
 > estável dentro do site (CV < 0,30 entre anos) **e** parecido entre sites (CV < 0,35 entre a
 > média dos 16 sites). Base: 48 pares de sobreposição.
 
-Só duas classes foram avaliadas, e o desfecho foi diferente para cada uma:
+Só duas classes foram avaliadas, e sob o `rf_v2.0-dw` **as duas passam no critério**:
 
-| classe | CV entre sites | tratamento | efeito no CSV |
-|---|---|---|---|
-| 4 · `construida_urbana` | 0,241 | **corrige** | `fator_correcao_sensor` por site, de 0,4359 a 1,0977 |
-| 3 · `solo_exposto_obras` | 0,440 | **não corrige** | fator fica 1,0; a série é publicada em faixas separadas |
+| classe | estável dentro do site | CV entre sites | tratamento | efeito no CSV |
+|---|---|---|---|---|
+| 4 · `construida_urbana` | 16/16 sites | 0,211 | **corrige** | `fator_correcao_sensor` por site, de 1,0867 a 2,2947 |
+| 3 · `solo_exposto_obras` | 15/16 sites | 0,307 | **corrige** | `fator_correcao_sensor` por site, de 0,2440 a 0,8393 |
 
-As classes 1, 2 e 5 não estão no JSON — saem com fator 1,0.
+As classes 1, 2 e 5 não estão no JSON — saem com fator 1,0. Para referência, o
+`heterogeneidade_fator_entre_sites.csv` mede as cinco: a 1 (`vegetacao_densa`) tem o menor CV
+entre sites, 0,087, e a 5 (`agua`) o maior, 0,520.
 
-Para a classe 3, a justificativa gravada é explícita: *"calibrar em 3 anos e aplicar aos outros 6
-anos da era Landsat seria chute, não correção"*. O fator médio entre sites dela é 13,1 — ordem de
-grandeza que mostra por que emendar seria temerário.
+**A classe 3 mudou de desfecho com a recalibragem.** Sob o `rf_v1.0-tuned` ela tinha CV entre
+sites de 0,440 e ficava sem correção ("calibrar em 3 anos e aplicar aos outros 6 da era Landsat
+seria chute, não correção"). Sob o `rf_v2.0-dw` o CV cai para 0,307 e ela passa a ser corrigida —
+o Dynamic World tem classe `bare` nativa, e a classificação resultante se comporta de forma mais
+consistente entre os dois sensores. A classe 4 continua corrigida, mas com fatores diferentes: os
+do v1.0 iam de 0,4359 a 1,0977 (encolhiam a área Landsat), os do v2.0-dw vão de 1,0867 a 2,2947
+(aumentam). É a medida de quanto o fator antigo estava errado para esta classificação.
 
-**Consequência prática:** para a classe 3, não compare direto um valor da era Landsat com um da era
-Sentinel-2. Use a coluna `faixa_serie`, que separa as quatro situações:
+**Consequência prática:** a coluna `faixa_serie` continua sendo a forma de saber o que é
+comparável com o quê:
 
 | `faixa_serie` | linhas no CSV |
 |---|---|
 | `sentinel2_oficial_2019_2025` | 560 |
-| `landsat_pre2019_nao_corrigido` | 504 |
+| `landsat_pre2019_nao_corrigido` | 378 |
+| `landsat_pre2019_corrigido_sv20` | 252 |
 | `landsat_overlap_referencia` | 240 |
-| `landsat_pre2019_corrigido_sv20` | 126 |
 
-## ⚠ Duas ressalvas sérias
+## Proveniência
 
-**1. O fator foi calibrado sobre outro modelo.** O JSON traz `modelo_versao: rf_v1.0-tuned`, mas o
-CSV publicado é do `rf_v2.0-dw`. Ou seja: a correção de sensor aplicada às linhas de
-`construida_urbana` foi derivada da classificação antiga. As duas classificações não produzem as
-mesmas áreas (a mediana de `solo_exposto_obras` vai de 1,81% para 4,90% entre elas), então **o
-fator não é necessariamente válido para o v2.0-dw**. Recalibrar exige rodar
-`sentinela.validacao_sensores` sobre os rasters do v2.0-dw — não foi feito.
+Todos os seis CSVs e o JSON saem de uma execução só, sobre os rasters do `rf_v2.0-dw`:
 
-**2. Sem gerador neste repositório.** Estes CSVs e o JSON foram copiados como artefatos. Saem de
-`sentinela.validacao_sensores`, que não foi migrado — se a classificação for reexecutada, nada
-aqui se atualiza sozinho. O gerador continua em `modelo-imagens-satelite`.
+```
+python -m sentinela.validacao_sensores --modelo models/rf_v2.0-dw.joblib \n                                       --token classificado-rf_v2.0-dw
+```
+
+48 pares de sobreposição (16 sites × 3 anos), nenhuma reclassificação — o módulo só lê os rasters
+que a inferência já escreveu.
+
+**⚠ Sem gerador neste repositório.** Estes CSVs e o JSON foram copiados como artefatos: o
+`validacao_sensores.py` continua em `modelo-imagens-satelite` e não foi migrado. Se a
+classificação for reexecutada, nada aqui se atualiza sozinho — é preciso rodar o comando acima lá
+e copiar os arquivos de volta.
+
+O que o `export_indicadores.py` daqui garante é que o fator não seja aplicado à classificação
+errada: ele lê `fator_correcao_sensor_sv20_<modelo_versao>.json` e **falha** se o `modelo_versao`
+gravado no JSON não for o que está sendo exportado. Foi exatamente esse cruzamento silencioso que
+produziu a primeira versão deste CSV.

@@ -276,13 +276,13 @@ além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sh
 Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
 S3; output pesado vai só pro S3.*
 
-### 5 · Qual classificação é a de produção — e o fator de sensor calibrado na outra ⚠
+### 5 · Qual classificação é a de produção ⚠
 
 `dados/gold/area_por_classe.csv` é o handoff para a comparação estatística (etapa 6a): uma linha
 por site × ano × sensor × classe, com `area_m2`, `pct_area_valida`, `fator_correcao_sensor` e a
 faixa da série. 1.430 linhas, 16 sites, 2013-2025. Foi gerado do **`rf_v2.0-dw`**, por coerência
-com o Dynamic World ser a fonte de rótulo ativa desde 2026-09-11. Daí saem três pontos que
-precisam de decisão, não só de registro:
+com o Dynamic World ser a fonte de rótulo ativa desde 2026-09-11. Daí saem dois pontos que pedem
+decisão do time:
 
 1. **O `rf_v2.0-dw` nunca foi promovido a produção.** A inferência escreve em `classificado/`
    quando é produção e num prefixo versionado (`classificado-rf_v2.0-dw/`) quando é avaliação
@@ -296,13 +296,16 @@ precisam de decisão, não só de registro:
    Para comparação: o `rf_v1.0-tuned` cobre 270 rasters e o `rf_v2.0-dw` cobre 286 (os 16 extras
    são anos Landsat tardios), e a mediana de `solo_exposto_obras` vai de 1,81% para 4,90% — o
    MapBiomas não tem classe de canteiro de obras e o DW tem `bare` nativa.
-3. **O fator de correção de sensor foi calibrado sobre o OUTRO modelo.** O
-   `fator_correcao_sensor_sv20.json` traz `modelo_versao: rf_v1.0-tuned`, e é ele que preenche a
-   coluna `fator_correcao_sensor` das linhas de `construida_urbana` (0,4359 a 1,0977, por site).
-   Como as duas classificações não produzem as mesmas áreas, **esse fator não é necessariamente
-   válido para o `rf_v2.0-dw`**. Recalibrar exige rodar a validação de sensores sobre os rasters
-   do v2.0-dw, o que não foi feito. A evidência do fator está em CSV, legível direto no GitHub:
-   `modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`.
+
+**O fator de correção de sensor foi recalibrado** (2026-09-14) e não é mais o pendente que era: a
+validação cruzada rodou sobre os rasters do próprio `rf_v2.0-dw`, e agora as duas classes críticas
+são corrigidas — `construida_urbana` (CV entre sites 0,211; fator por site de 1,0867 a 2,2947) e
+`solo_exposto_obras` (CV 0,307; de 0,2440 a 0,8393), que sob o `rf_v1.0-tuned` não passava no
+critério. O fator agora mora num arquivo por classificação
+(`fator_correcao_sensor_sv20_<modelo_versao>.json`) e o exportador **falha** se o JSON tiver sido
+calibrado sobre outro modelo — o cruzamento silencioso que produziu a primeira versão do CSV não
+tem mais como acontecer. Evidência em
+`modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`.
 
 No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
 não existe. É a etapa 6a que preenche essas duas colunas.
