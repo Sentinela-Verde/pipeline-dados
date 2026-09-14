@@ -772,6 +772,30 @@
           -7.117382
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "site_id": "ascenty-hortolandia-htl5",
+        "nome": "Ascenty - Hortolandia HTL5",
+        "operador": "Ascenty",
+        "municipio": "Hortolandia",
+        "uf": "SP",
+        "lat": -22.8958925,
+        "lon": -47.1801919,
+        "buffer_km": 5,
+        "fonte_coordenada": "dados/silver/datacenter_filtrado.csv (scraping datacentermap.com, projetos/01_coleta_datacenter)",
+        "ano_operacional": 2022,
+        "ativo": true,
+        "origem": "amostra do processo de extracao de imagem (etapa 2), facility-level (nao campus)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.1801919,
+          -22.8958925
+        ]
+      }
     }
   ]
 }
