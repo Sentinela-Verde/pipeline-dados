@@ -210,7 +210,7 @@ sentinela_verde/
 │       └── artefatos/                      # (AWS S3)
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
-│   ├── 01_coleta_datacenter/               # inclui correcao_endereco/
+│   ├── 01_coleta_datacenter/               # inclui correcao_endereco/ e filtro_elegibilidade/
 │   ├── 02_extracao_imagem/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/

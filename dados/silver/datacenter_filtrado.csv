@@ -1,0 +1,30 @@
+nome_datacenter;endereco;cidade;latitude;longitude;tags;mw_construido;whitespace_construido_m;ano_operacional;tipo_construcao
+ODATA RJ01;Rod. Pres. Dutra, 4648;São João de Meriti;-22.7966834;-43.3572998;Carrier Neutral;23.4;1800.0;2023;Purpose-built
+ASAP SP1;Av. das Nações Unidas, 22540;São Paulo;-23.6761714;-46.6992381;;2.0;400.0;2022;Retrofitted
+Ascenty - Hortolandia HTL4;Rua Papa João Paulo II, 4;Hortolândia;-22.8948579;-47.1789044;Carrier Neutral;3.0;1997.0;2021;Retrofitted
+Ascenty - Hortolandia HTL5;Rua Papa João Paulo II, 4;Hortolândia;-22.8958925;-47.1801919;Carrier Neutral;30.0;22984.0;2022;Purpose-built
+Ascenty - Jundiai JDI2;Av. Beirute, 863;Jundiaí;-23.1924667;-46.9729886;Carrier Neutral;13.0;8993.0;2019;Purpose-built
+Ascenty - Sao Paulo SP4;Avenida Roberto Pinto Sobrinho, 350;Osasco;-23.4898885;-46.7752556;;9.0;7497.0;2023;Purpose-built
+Ascenty- Rio de Janeiro RJ2;R. Mercúrio, 1736;Rio de Janeiro;-22.8050847;-43.3484313;Carrier Neutral;3.0;3493.0;2021;Retrofitted
+Ascenty - Sao Paulo SP3;Avenida Roberto Pinto Sobrinho, 350;Osasco;-23.491232;-46.7759313;Carrier Neutral;4.0;3995.0;2020;Retrofitted
+CWB-HN 01;Rua Brasílio Itiberê 2217;Curitiba;-25.44583383579607;-49.26575676773692;;;2000.0;2022;
+Equinix SP5x;Av. Marcos Penteado de Ulhôa Rodrigues, 888;Santana de Parnaíba;-23.46393786425595;-46.8626817427955;;14.4;5087.0;2021;
+IDX Data Centers & IT Services;Q. 103 Sul Rua SO 5, 274 - Plano Diretor Sul;Palmas;-10.1875328;-48.340776;;1.2;250.0;2022;Purpose-built
+IPXON Fortaleza;R. Quatorze, 1161 - Fortaleza;Fortaleza;-3.8308368;-38.6112238;Carrier Neutral;27.0;1900.0;2021;Purpose-built
+IPXON Rio de Janeiro;Av. Cel. Phidias Távora, 513 - Pavuna;Rio de Janeiro;-22.8059797;-43.3480982;;10.0;;2021;Retrofitted
+IPXON Sao Paulo;Avenida Roberto Pinto Sobrinho, 350;Osasco;-23.4920457;-46.7760135;;12.0;;2021;Retrofitted
+ODATA SP02 DC1;R. José Blumer, 150;Chácaras Assay, Hortolândia;-22.900571;-47.19466;;;;2020;Purpose-built
+Quântico Data Center;R. Eng. Homero Carlos Simon, 1100 - Guajuviras;Canoas;-29.9040072;-51.1283808;;50.0;73000.0;2021;Purpose-built
+Ascenty - Paulinia PLN1;R. Sebastião Cardoso 350;Paulínia;-22.7970795;-47.1352301;Carrier Neutral;13.0;;2019;Purpose-built
+Ascenty - Sumare SUM2;Rodovia Anhanguera s/n, Parque das Industrias (Nova Veneza);Sumaré;-22.8138615;-47.2133634;Carrier Neutral;20.0;;2019;
+Ascenty - Hortolandia HTL2;Rua Papa João Paulo II, 4;Hortolândia;-22.8949687;-47.1794405;Carrier Neutral;7.0;2991.0;2019;Retrofitted
+Ascenty - Hortolandia HTL3;Rua Papa João Paulo II, 4;Hortolândia;-22.8942092;-47.1797024;Carrier Neutral;3.0;1997.0;2019;Retrofitted
+Scala Data Centers SGRUTB08;Av. Ceci, 1649;Barueri;-23.495578;-46.8138807;;24.0;;2024;Purpose-built
+Scala Data Centers SGRUTB12;Av. Ceci;Barueri;-23.4950428;-46.8132396;;6.0;;2024;Purpose-built
+Scala Data Centers SGIGSM01;Rod. Pres. Dutra 4300;Sao Joao de Meriti;-22.796438;-43.356317;Hyperscale-Ready;13.2;;2023;Purpose-built
+Scala Data Centers SGRUTB03;Av. Ceci 1750;Tamboré;-23.4968936;-46.8132542;Hyperscale-Ready;9.0;;2021;Retrofitted
+Scala Data Centers SGRUTB04;Av. Ceci 1650;Tamboré;-23.4980647;-46.815057;Hyperscale-Ready;12.0;;2022;Purpose-built
+Scala Data Centers SGRUTB05;Av. Ceci 1600;Tamboré;-23.4975162;-46.814508;Hyperscale-Ready;6.0;;2023;Purpose-built
+Scala Data Centers SPOAPA01;Av. Pernambuco 1124 ;Porto Alegre;-30.0028052;-51.1979623;Hyperscale-Ready;8.4;;2023;Purpose-built
+TO HOST Data Centers;Quadra ACSV SO 43, Av. LO 09, Lote 10, Sl 01;Palmas;-10.2048941;-48.3529666;;0.075;37.0;2023;Purpose-built
+NETWISE EMPRESAS;Rua Edson Rezende, 206;Lagoa da Prata;-20.0346344;-45.5247215;;0.0845;;2024;Purpose-built
