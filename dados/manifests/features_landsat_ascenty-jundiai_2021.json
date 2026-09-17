@@ -3,8 +3,8 @@
   "ano": 2021,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-jundiai/2021.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-jundiai_2021.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-jundiai/2021.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-jundiai_2021.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.9839,
-  "sha256": "1d072db8d01ce0f43663ac8803141e2c4598cc29d3565a266b7238aeda36e629",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:48:04.825850+00:00"
+  "pct_pixels_validos": 99.8503,
+  "sha256": "a2c2e5f09d2a7f12b6be8822e9547998983c1c2aef5561d26a794960985ee209",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:21:04.936704+00:00"
 }

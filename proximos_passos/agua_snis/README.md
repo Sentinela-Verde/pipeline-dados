@@ -2,9 +2,9 @@
 
 Extração de dados de uso de água (produção, consumo, perdas, atendimento) por
 **município e ano**, para o Brasil inteiro, via BigQuery, usando a
-[Base dos Dados](https://basedosdados.org/). É uma das coletas dentro de
-`data-extraction/extract/` — ver o [README da raiz](../../README.md) pra
-entender como as coletas se encaixam (pasta `data/raw/` compartilhada).
+[Base dos Dados](https://basedosdados.org/). Faz parte do backlog isolado de
+`proximos_passos/` (ainda não conectado ao pipeline ativo) — ver o
+[README da raiz](../../README.md).
 
 ## Ideia geral
 
@@ -42,14 +42,14 @@ confundir:
 ## Como rodar
 
 ```bash
-cd data-extraction/extract/bigquery_snis_agua
+cd proximos_passos/agua_snis
 pip install -r requirements.txt
 python step0a_extract_dados_snis_agua.py
 ```
 
 ## Saída
 
-- `../../data/raw/outputs_extraction/snis_agua_municipios.csv` — um
+- `snis_agua_municipios.csv` (ao lado do step, ainda não gerado — ver nota no README raiz) — um
   município x ano por linha, `utf-8-sig` (abre certo no Excel). Colunas:
 
   | Grupo | Colunas |

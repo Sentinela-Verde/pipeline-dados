@@ -3,8 +3,8 @@
   "ano": 2022,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-paulinia/2022.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-paulinia_2022.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-paulinia/2022.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-paulinia_2022.json"
   },
   "bandas": [
     "blue",
@@ -95,7 +95,7 @@
   "nodata": -9999,
   "fator_escala": 10000,
   "pct_pixels_validos": 100.0,
-  "sha256": "e14ec1b05d537cd96322c0a185fee5dbcdeb03c54fd065ce0ff191fed4c876e0",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T21:58:20.673521+00:00"
+  "sha256": "2e2c6bea41b57b1c4175ccd5b865c60d92b9798f9488be78097dbc1387430c23",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:29:59.143458+00:00"
 }

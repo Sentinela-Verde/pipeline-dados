@@ -3,8 +3,8 @@
   "ano": 2022,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-jundiai/2022.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-jundiai_2022.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-jundiai/2022.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-jundiai_2022.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.8144,
-  "sha256": "dd8a442135246aed1db97592af20f5e42bcadeb7a4e31ad7185c8568f0e4ee6b",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T21:57:29.577222+00:00"
+  "pct_pixels_validos": 99.7893,
+  "sha256": "4c1f8295cc70946024d911e4bd68b1400049f805c839887eaf9bb41ad6327a41",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:21:20.705415+00:00"
 }

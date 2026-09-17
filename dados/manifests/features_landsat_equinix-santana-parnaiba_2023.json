@@ -3,8 +3,8 @@
   "ano": 2023,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/equinix-santana-parnaiba/2023.tif",
-    "raw_manifest": "data/manifests/landsat_equinix-santana-parnaiba_2023.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/equinix-santana-parnaiba/2023.tif",
+    "raw_manifest": "dados/manifests/landsat_equinix-santana-parnaiba_2023.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.8597,
-  "sha256": "558d30f6f4f43149678895277e477d945ef7794b8d65ae0267ca7631ab29a6d9",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T21:59:12.342060+00:00"
+  "pct_pixels_validos": 99.9482,
+  "sha256": "14df5811b63ab49e9b141ef55b664776d757a58dadb7d8a659b6f747b36e6a00",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:36:02.979101+00:00"
 }

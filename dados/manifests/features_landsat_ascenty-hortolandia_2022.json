@@ -3,8 +3,8 @@
   "ano": 2022,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-hortolandia/2022.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-hortolandia_2022.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-hortolandia/2022.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-hortolandia_2022.json"
   },
   "bandas": [
     "blue",
@@ -95,7 +95,7 @@
   "nodata": -9999,
   "fator_escala": 10000,
   "pct_pixels_validos": 100.0,
-  "sha256": "b41e81a3a9129bc50b21dc3e273b911af5b837b35c83d18b332caee8b5ab2b0c",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T22:58:59.186569+00:00"
+  "sha256": "39cf2270f8bb5b0c0fbf3cf83e6ba319e4c80d06d3ca9d0ca354c49b3364a28f",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:18:27.235087+00:00"
 }

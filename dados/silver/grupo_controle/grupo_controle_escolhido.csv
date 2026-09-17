@@ -1,0 +1,253 @@
+﻿aoi_id;candidato_id;similar_rank;municipio_similar;ponto_latitude;ponto_longitude;l1;qualidade;posicao;escolhido
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p6;1;Rio de Janeiro (RJ);-22.796317;-43.378676;0.41004;ruim;1;True
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p5;1;Rio de Janeiro (RJ);-22.956845;-43.378855;0.517545;ruim;2;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p4;2;Belo Horizonte (MG);-19.976308;-43.95631;0.593385;ruim;3;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p2;1;Rio de Janeiro (RJ);-22.796317;-43.077074;0.833411;ruim;4;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p5;2;Belo Horizonte (MG);-19.895983;-44.104157;0.850385;ruim;5;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p1;1;Rio de Janeiro (RJ);-22.716123;-43.227875;0.980846;ruim;6;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p3;1;Rio de Janeiro (RJ);-22.956845;-43.076895;1.104175;ruim;7;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p1;2;Belo Horizonte (MG);-19.65525;-43.95631;1.200941;ruim;8;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p6;2;Belo Horizonte (MG);-19.735454;-44.104008;1.210881;ruim;9;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p3;2;Belo Horizonte (MG);-19.895983;-43.808463;1.40792;ruim;10;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim2_p2;2;Belo Horizonte (MG);-19.735454;-43.808612;1.529834;ruim;11;False
+asap-telecom-sao-paulo;asap-telecom-sao-paulo_sim1_p4;1;Rio de Janeiro (RJ);-23.037181;-43.227875;1.582016;ruim;12;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p2;1;Jacareí (SP);-23.277445;-45.915842;0.11422;aceitavel;1;True
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p5;2;Taubaté (SP);-23.05154;-45.605075;0.227137;ruim;2;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p1;2;Taubaté (SP);-22.972093;-45.555221;0.324787;ruim;3;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p6;2;Taubaté (SP);-22.99857;-45.605056;0.343329;ruim;4;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p1;1;Jacareí (SP);-23.250968;-45.96578;0.459561;ruim;5;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p2;2;Taubaté (SP);-22.99857;-45.505386;0.499613;ruim;6;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p5;1;Jacareí (SP);-23.330415;-46.015738;0.619524;ruim;7;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p6;1;Jacareí (SP);-23.277445;-46.015718;0.62001;ruim;8;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p4;2;Taubaté (SP);-23.078033;-45.555221;0.628725;ruim;9;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p3;1;Jacareí (SP);-23.330415;-45.915822;0.724545;ruim;10;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim2_p3;2;Taubaté (SP);-23.05154;-45.505367;0.730686;ruim;11;False
+ascenty-data-centers-hortolandia;ascenty-data-centers-hortolandia_sim1_p4;1;Jacareí (SP);-23.356908;-45.96578;0.841495;ruim;12;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p2;1;Cabreúva (SP);-23.265129;-47.055415;0.27858;ruim;1;True
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p6;1;Cabreúva (SP);-23.265129;-47.210049;0.466965;ruim;2;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p4;1;Cabreúva (SP);-23.388175;-47.132732;0.52755;ruim;3;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p1;1;Cabreúva (SP);-23.224139;-47.132732;0.553144;ruim;4;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p5;1;Cabreúva (SP);-23.347147;-47.210096;0.643951;ruim;5;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim1_p3;1;Cabreúva (SP);-23.347147;-47.055368;0.826091;ruim;6;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p3;2;São Caetano do Sul (SP);-23.66269;-46.473512;1.041421;ruim;7;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p2;2;São Caetano do Sul (SP);-23.580672;-46.473561;1.115492;ruim;8;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p4;2;São Caetano do Sul (SP);-23.703718;-46.551062;1.153378;ruim;9;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p5;2;São Caetano do Sul (SP);-23.66269;-46.628612;1.296617;ruim;10;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p6;2;São Caetano do Sul (SP);-23.580672;-46.628563;1.402162;ruim;11;False
+ascenty-data-centers-jundiai;ascenty-data-centers-jundiai_sim2_p1;2;São Caetano do Sul (SP);-23.539682;-46.551062;1.412446;ruim;12;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p3;1;Jundiaí (SP);-23.206632;-46.843444;0.380442;ruim;1;True
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p4;1;Jundiaí (SP);-23.228221;-46.884119;0.520903;ruim;2;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p6;1;Jundiaí (SP);-23.163465;-46.924781;0.531244;ruim;3;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p5;1;Jundiaí (SP);-23.206632;-46.924794;0.566918;ruim;4;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p2;1;Jundiaí (SP);-23.163465;-46.843457;0.576619;ruim;5;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p3;2;Santos (SP);-23.981042;-46.292646;0.607059;ruim;6;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim1_p1;1;Jundiaí (SP);-23.141887;-46.884119;0.626631;ruim;7;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p6;2;Santos (SP);-23.937875;-46.374464;0.632489;ruim;8;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p2;2;Santos (SP);-23.937875;-46.29266;0.718713;ruim;9;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p1;2;Santos (SP);-23.916297;-46.333562;0.812293;ruim;10;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p5;2;Santos (SP);-23.981042;-46.374478;0.895404;ruim;11;False
+ascenty-data-centers-osasco;ascenty-data-centers-osasco_sim2_p4;2;Santos (SP);-24.002631;-46.333562;1.318236;ruim;12;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p4;1;Louveira (SP);-23.126246;-46.950508;0.179404;aceitavel;1;True
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p6;1;Louveira (SP);-23.064458;-46.989278;0.203535;ruim;2;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p5;1;Louveira (SP);-23.105647;-46.98929;0.276772;ruim;3;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p1;1;Louveira (SP);-23.043868;-46.950508;0.361062;ruim;4;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p3;1;Louveira (SP);-23.105647;-46.911726;0.486309;ruim;5;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim1_p2;1;Louveira (SP);-23.064458;-46.911738;0.596626;ruim;6;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p6;2;São Gonçalo do Rio Abaixo (MG);-19.811203;-43.385955;0.90327;ruim;7;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p1;2;São Gonçalo do Rio Abaixo (MG);-19.790612;-43.34804;0.905425;ruim;8;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p3;2;São Gonçalo do Rio Abaixo (MG);-19.852391;-43.310116;1.029918;ruim;9;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p5;2;São Gonçalo do Rio Abaixo (MG);-19.852391;-43.385964;1.049709;ruim;10;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p2;2;São Gonçalo do Rio Abaixo (MG);-19.811203;-43.310125;1.051382;ruim;11;False
+ascenty-data-centers-paulinia;ascenty-data-centers-paulinia_sim2_p4;2;São Gonçalo do Rio Abaixo (MG);-19.87299;-43.34804;1.069896;ruim;12;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p3;2;Guarulhos (SP);-23.527479;-46.408416;0.055127;bom;1;True
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p4;2;Guarulhos (SP);-23.593629;-46.533285;0.111469;aceitavel;2;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p5;2;Guarulhos (SP);-23.527479;-46.658154;0.120362;aceitavel;3;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p4;1;Belo Horizonte (MG);-19.947979;-43.95631;0.254271;ruim;4;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p5;1;Belo Horizonte (MG);-19.881838;-44.078055;0.997054;ruim;5;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p2;2;Guarulhos (SP);-23.395279;-46.408541;1.004942;ruim;6;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p1;1;Belo Horizonte (MG);-19.683579;-43.95631;1.284609;ruim;7;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p3;1;Belo Horizonte (MG);-19.881838;-43.834565;1.408814;ruim;8;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p6;1;Belo Horizonte (MG);-19.749638;-44.077954;1.479445;ruim;9;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim1_p2;1;Belo Horizonte (MG);-19.749638;-43.834666;1.537397;ruim;10;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p1;2;Guarulhos (SP);-23.329229;-46.533285;1.688322;ruim;11;False
+ascenty-data-centers-rio-de-janeiro;ascenty-data-centers-rio-de-janeiro_sim2_p6;2;Guarulhos (SP);-23.395279;-46.658029;1.702088;ruim;12;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p4;2;Piracicaba (SP);-22.773814;-47.646846;0.094317;bom;1;True
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p1;2;Piracicaba (SP);-22.67363;-47.646846;0.12315;aceitavel;2;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p3;2;Piracicaba (SP);-22.748761;-47.599806;0.126676;aceitavel;3;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p6;2;Piracicaba (SP);-22.698669;-47.693869;0.140144;aceitavel;4;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p2;2;Piracicaba (SP);-22.698669;-47.599823;0.189327;aceitavel;5;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p4;1;Indaiatuba (SP);-23.139037;-47.21801;0.265885;ruim;6;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim2_p5;2;Piracicaba (SP);-22.748761;-47.693886;0.321971;ruim;7;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p5;1;Indaiatuba (SP);-23.113984;-47.265177;0.358869;ruim;8;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p3;1;Indaiatuba (SP);-23.113984;-47.170843;0.496934;ruim;9;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p2;1;Indaiatuba (SP);-23.063892;-47.17086;0.499287;ruim;10;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p6;1;Indaiatuba (SP);-23.063892;-47.26516;0.579548;ruim;11;False
+ascenty-data-centers-sumare;ascenty-data-centers-sumare_sim1_p1;1;Indaiatuba (SP);-23.038853;-47.21801;0.687184;ruim;12;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p4;2;Salto (SP);-23.254265;-47.2869;0.536496;ruim;1;True
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p1;2;Salto (SP);-23.144727;-47.2869;0.668046;ruim;2;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p3;2;Salto (SP);-23.226872;-47.235286;0.699665;ruim;3;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p5;2;Salto (SP);-23.226872;-47.338514;0.710409;ruim;4;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p2;2;Salto (SP);-23.172103;-47.235307;0.71085;ruim;5;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p6;1;Pouso Alegre (MG);-22.201319;-45.987561;0.719824;ruim;6;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p5;1;Pouso Alegre (MG);-22.256087;-45.987581;0.765227;ruim;7;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p3;1;Pouso Alegre (MG);-22.256087;-45.885083;0.770733;ruim;8;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim2_p6;2;Salto (SP);-23.172103;-47.338493;0.785253;ruim;9;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p2;1;Pouso Alegre (MG);-22.201319;-45.885103;0.822163;ruim;10;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p4;1;Pouso Alegre (MG);-22.28348;-45.936332;0.864752;ruim;11;False
+equinix-santana-de-parnaiba;equinix-santana-de-parnaiba_sim1_p1;1;Pouso Alegre (MG);-22.173942;-45.936332;0.935857;ruim;12;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p3;1;Porto Alegre (RS);-30.041726;-51.209386;0.57159;ruim;1;True
+hosting-now-curitiba;hosting-now-curitiba_sim2_p2;2;Joinville (SC);-26.292669;-48.825634;0.65329;ruim;2;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p2;1;Porto Alegre (RS);-30.021131;-51.20939;0.658461;ruim;3;False
+hosting-now-curitiba;hosting-now-curitiba_sim2_p1;2;Joinville (SC);-26.282374;-48.845527;0.685137;ruim;4;False
+hosting-now-curitiba;hosting-now-curitiba_sim2_p3;2;Joinville (SC);-26.313264;-48.82563;0.686206;ruim;5;False
+hosting-now-curitiba;hosting-now-curitiba_sim2_p6;2;Joinville (SC);-26.292669;-48.86542;0.810471;ruim;6;False
+hosting-now-curitiba;hosting-now-curitiba_sim2_p4;2;Joinville (SC);-26.323562;-48.845527;0.814377;ruim;7;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p4;1;Porto Alegre (RS);-30.052024;-51.229989;0.842947;ruim;8;False
+hosting-now-curitiba;hosting-now-curitiba_sim2_p5;2;Joinville (SC);-26.313264;-48.865424;0.861367;ruim;9;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p1;1;Porto Alegre (RS);-30.010836;-51.229989;0.984775;ruim;10;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p5;1;Porto Alegre (RS);-30.041726;-51.250592;1.146125;ruim;11;False
+hosting-now-curitiba;hosting-now-curitiba_sim1_p6;1;Porto Alegre (RS);-30.021131;-51.250588;1.233654;ruim;12;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p4;2;Araguaína (TO);-7.214082;-48.208705;0.450861;ruim;1;True
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p5;2;Araguaína (TO);-7.202705;-48.228566;0.454324;ruim;2;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p3;2;Araguaína (TO);-7.202705;-48.188844;0.455235;ruim;3;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p6;2;Araguaína (TO);-7.179952;-48.228565;0.466901;ruim;4;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p2;2;Araguaína (TO);-7.179952;-48.188845;0.467972;ruim;5;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p5;1;Rio Branco (AC);-9.985486;-67.830147;0.469512;ruim;6;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim2_p1;2;Araguaína (TO);-7.168576;-48.208705;0.478561;ruim;7;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p6;1;Rio Branco (AC);-9.962733;-67.830145;0.480696;ruim;8;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p4;1;Rio Branco (AC);-9.996863;-67.810139;0.541164;ruim;9;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p1;1;Rio Branco (AC);-9.951357;-67.810139;0.547146;ruim;10;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p3;1;Rio Branco (AC);-9.985486;-67.790131;0.588378;ruim;11;False
+idx-data-centers-&-it-services-palmas;idx-data-centers-&-it-services-palmas_sim1_p2;1;Rio Branco (AC);-9.962733;-67.790133;0.624812;ruim;12;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p4;2;Vitória de Santo Antão (PE);-8.165498;-35.291195;0.637964;ruim;1;True
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p4;1;Simões Filho (BA);-12.831608;-38.40374;0.654133;ruim;2;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p5;1;Simões Filho (BA);-12.807638;-38.446311;0.743496;ruim;3;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p5;2;Vitória de Santo Antão (PE);-8.141529;-35.33313;0.750139;ruim;4;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p3;1;Simões Filho (BA);-12.807638;-38.361169;0.808701;ruim;5;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p2;1;Simões Filho (BA);-12.759704;-38.361177;0.862685;ruim;6;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p3;2;Vitória de Santo Antão (PE);-8.141529;-35.24926;0.863297;ruim;7;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p6;2;Vitória de Santo Antão (PE);-8.093595;-35.333125;0.92795;ruim;8;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p2;2;Vitória de Santo Antão (PE);-8.093595;-35.249265;0.949139;ruim;9;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p6;1;Simões Filho (BA);-12.759704;-38.446303;0.958614;ruim;10;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim2_p1;2;Vitória de Santo Antão (PE);-8.06963;-35.291195;0.977266;ruim;11;False
+ipxon-networks-maracanau;ipxon-networks-maracanau_sim1_p1;1;Simões Filho (BA);-12.73574;-38.40374;1.028571;ruim;12;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p3;1;Jundiaí (SP);-23.205868;-46.844885;0.420842;ruim;1;True
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p4;1;Jundiaí (SP);-23.226693;-46.884119;0.527369;ruim;2;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p6;1;Jundiaí (SP);-23.16423;-46.923341;0.550778;ruim;3;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p5;1;Jundiaí (SP);-23.205868;-46.923353;0.57767;ruim;4;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p2;1;Jundiaí (SP);-23.16423;-46.844897;0.613338;ruim;5;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p6;2;Santos (SP);-23.93864;-46.373016;0.620492;ruim;6;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p3;2;Santos (SP);-23.980278;-46.294095;0.62139;ruim;7;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim1_p1;1;Jundiaí (SP);-23.143415;-46.884119;0.651179;ruim;8;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p2;2;Santos (SP);-23.93864;-46.294108;0.705739;ruim;9;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p1;2;Santos (SP);-23.917825;-46.333562;0.777478;ruim;10;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p5;2;Santos (SP);-23.980278;-46.373029;0.898466;ruim;11;False
+ipxon-networks-osasco;ipxon-networks-osasco_sim2_p4;2;Santos (SP);-24.001103;-46.333562;1.295663;ruim;12;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p3;1;Carapicuíba (SP);-23.532344;-46.814357;0.11222;aceitavel;1;True
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p2;1;Carapicuíba (SP);-23.509951;-46.81436;0.320852;ruim;2;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p4;1;Carapicuíba (SP);-23.543542;-46.835509;0.357723;ruim;3;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p5;1;Carapicuíba (SP);-23.532344;-46.856661;0.39892;ruim;4;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p6;1;Carapicuíba (SP);-23.509951;-46.856658;0.428196;ruim;5;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim1_p1;1;Carapicuíba (SP);-23.498756;-46.835509;0.571718;ruim;6;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p2;2;São Vicente (SP);-23.950488;-46.370675;0.939537;ruim;7;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p3;2;São Vicente (SP);-23.972881;-46.370671;0.977949;ruim;8;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p5;2;São Vicente (SP);-23.972881;-46.413119;0.995245;ruim;9;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p1;2;São Vicente (SP);-23.939293;-46.391895;1.079561;ruim;10;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p6;2;São Vicente (SP);-23.950488;-46.413115;1.143999;ruim;11;False
+ipxon-networks-sao-joao-de-meriti;ipxon-networks-sao-joao-de-meriti_sim2_p4;2;São Vicente (SP);-23.984079;-46.391895;1.157932;ruim;12;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p5;2;Cruzeiro (SP);-22.585869;-44.983466;0.122738;aceitavel;1;True
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p4;2;Cruzeiro (SP);-22.596932;-44.962715;0.124162;aceitavel;2;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p3;2;Cruzeiro (SP);-22.585869;-44.941964;0.18814;aceitavel;3;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p6;2;Cruzeiro (SP);-22.563746;-44.983463;0.224938;ruim;4;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p2;2;Cruzeiro (SP);-22.563746;-44.941967;0.24249;ruim;5;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim2_p1;2;Cruzeiro (SP);-22.552686;-44.962715;0.336358;ruim;6;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p6;1;Camanducaia (MG);-22.742901;-46.165444;0.452847;ruim;7;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p5;1;Camanducaia (MG);-22.765024;-46.165447;0.480908;ruim;8;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p1;1;Camanducaia (MG);-22.731841;-46.144669;0.501994;ruim;9;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p2;1;Camanducaia (MG);-22.742901;-46.123894;0.576021;ruim;10;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p4;1;Camanducaia (MG);-22.776087;-46.144669;0.647647;ruim;11;False
+netwise-empresas-lagoa-da-prata;netwise-empresas-lagoa-da-prata_sim1_p3;1;Camanducaia (MG);-22.765024;-46.123891;0.708534;ruim;12;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p2;1;Jacareí (SP);-23.27956;-45.919826;0.070902;bom;1;True
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p5;2;Taubaté (SP);-23.049428;-45.601096;0.165746;aceitavel;2;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p1;2;Taubaté (SP);-22.97632;-45.555221;0.230191;ruim;3;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p6;2;Taubaté (SP);-23.000685;-45.60108;0.260203;ruim;4;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p1;1;Jacareí (SP);-23.255195;-45.96578;0.389246;ruim;5;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p2;2;Taubaté (SP);-23.000685;-45.509362;0.424429;ruim;6;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p6;1;Jacareí (SP);-23.27956;-46.011734;0.555278;ruim;7;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p4;2;Taubaté (SP);-23.073806;-45.555221;0.560893;ruim;8;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p5;1;Jacareí (SP);-23.328303;-46.011751;0.569697;ruim;9;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim2_p3;2;Taubaté (SP);-23.049428;-45.509346;0.647033;ruim;10;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p3;1;Jacareí (SP);-23.328303;-45.919809;0.659026;ruim;11;False
+odata,-an-aligned-data-centers-company-hortolandia;odata,-an-aligned-data-centers-company-hortolandia_sim1_p4;1;Jacareí (SP);-23.352681;-45.96578;0.761707;ruim;12;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p3;1;Carapicuíba (SP);-23.528613;-46.821408;0.14668;aceitavel;1;True
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p4;1;Carapicuíba (SP);-23.536078;-46.835509;0.275791;ruim;2;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p2;1;Carapicuíba (SP);-23.513684;-46.82141;0.276881;ruim;3;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p5;1;Carapicuíba (SP);-23.528613;-46.84961;0.322446;ruim;4;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p6;1;Carapicuíba (SP);-23.513684;-46.849608;0.364799;ruim;5;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim1_p1;1;Carapicuíba (SP);-23.50622;-46.835509;0.449455;ruim;6;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p3;2;São Vicente (SP);-23.96915;-46.377746;0.962484;ruim;7;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p2;2;São Vicente (SP);-23.954221;-46.377748;0.998585;ruim;8;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p5;2;São Vicente (SP);-23.96915;-46.406044;1.028122;ruim;9;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p4;2;São Vicente (SP);-23.976615;-46.391895;1.095284;ruim;10;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p1;2;São Vicente (SP);-23.946757;-46.391895;1.117185;ruim;11;False
+odata,-an-aligned-data-centers-company-sao-joao-de-meriti;odata,-an-aligned-data-centers-company-sao-joao-de-meriti_sim2_p6;2;São Vicente (SP);-23.954221;-46.406042;1.142122;ruim;12;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p6;2;Blumenau (SC);-26.893249;-49.114028;0.301147;ruim;1;True
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p6;1;Ponta Grossa (PR);-25.06888;-50.209126;0.317439;ruim;2;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p1;2;Blumenau (SC);-26.86857;-49.066085;0.38851;ruim;3;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p5;1;Ponta Grossa (PR);-25.118253;-50.209145;0.406113;ruim;4;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p3;1;Ponta Grossa (PR);-25.118253;-50.114697;0.422406;ruim;5;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p2;1;Ponta Grossa (PR);-25.06888;-50.114716;0.431314;ruim;6;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p4;1;Ponta Grossa (PR);-25.142947;-50.161921;0.436781;ruim;7;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim1_p1;1;Ponta Grossa (PR);-25.044201;-50.161921;0.440422;ruim;8;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p5;2;Blumenau (SC);-26.942621;-49.114049;0.632331;ruim;9;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p2;2;Blumenau (SC);-26.893249;-49.018142;0.659746;ruim;10;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p3;2;Blumenau (SC);-26.942621;-49.018121;0.705081;ruim;11;False
+quantico-data-center-canoas;quantico-data-center-canoas_sim2_p4;2;Blumenau (SC);-26.967316;-49.066085;0.865703;ruim;12;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p4;1;Cajamar (SP);-23.419247;-46.88292;0.753107;ruim;1;True
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p3;1;Cajamar (SP);-23.390099;-46.827933;0.835102;ruim;2;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p2;1;Cajamar (SP);-23.331823;-46.827957;0.977172;ruim;3;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p5;1;Cajamar (SP);-23.390099;-46.937907;1.057232;ruim;4;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p1;2;Jaguariúna (SP);-22.645966;-46.985785;1.060379;ruim;5;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p3;2;Jaguariúna (SP);-22.733371;-46.931065;1.087538;ruim;6;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p1;1;Cajamar (SP);-23.302695;-46.88292;1.095737;ruim;7;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p6;2;Jaguariúna (SP);-22.675095;-47.040481;1.12675;ruim;8;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p5;2;Jaguariúna (SP);-22.733371;-47.040505;1.153024;ruim;9;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p2;2;Jaguariúna (SP);-22.675095;-46.931089;1.154752;ruim;10;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim1_p6;1;Cajamar (SP);-23.331823;-46.937883;1.215112;ruim;11;False
+scala-data-centers-barueri;scala-data-centers-barueri_sim2_p4;2;Jaguariúna (SP);-22.762518;-46.985785;1.235739;ruim;12;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p6;1;Curitiba (PR);-25.406412;-49.311224;0.383461;ruim;1;True
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p1;1;Curitiba (PR);-25.386497;-49.273028;0.385764;ruim;2;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p5;2;Londrina (PR);-23.328844;-51.200333;0.427671;ruim;3;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p4;2;Londrina (PR);-23.348769;-51.162759;0.439367;ruim;4;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p3;2;Londrina (PR);-23.328844;-51.125185;0.455132;ruim;5;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p2;2;Londrina (PR);-23.289005;-51.125196;0.463571;ruim;6;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p1;2;Londrina (PR);-23.269089;-51.162759;0.484503;ruim;7;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p5;1;Curitiba (PR);-25.446252;-49.311237;0.505949;ruim;8;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim2_p6;2;Londrina (PR);-23.289005;-51.200322;0.529685;ruim;9;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p2;1;Curitiba (PR);-25.406412;-49.234832;0.572851;ruim;10;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p3;1;Curitiba (PR);-25.446252;-49.234819;0.721678;ruim;11;False
+scala-data-centers-porto-alegre;scala-data-centers-porto-alegre_sim1_p4;1;Curitiba (PR);-25.466177;-49.273028;0.759724;ruim;12;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p3;1;Carapicuíba (SP);-23.529062;-46.820558;0.144883;aceitavel;1;True
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p2;1;Carapicuíba (SP);-23.513234;-46.82056;0.286153;ruim;2;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p4;1;Carapicuíba (SP);-23.536977;-46.835509;0.287043;ruim;3;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p5;1;Carapicuíba (SP);-23.529062;-46.85046;0.336717;ruim;4;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p6;1;Carapicuíba (SP);-23.513234;-46.850458;0.377932;ruim;5;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim1_p1;1;Carapicuíba (SP);-23.505321;-46.835509;0.471328;ruim;6;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p3;2;São Vicente (SP);-23.969599;-46.376894;0.970481;ruim;7;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p2;2;São Vicente (SP);-23.953771;-46.376896;1.006439;ruim;8;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p5;2;São Vicente (SP);-23.969599;-46.406896;1.047125;ruim;9;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p4;2;São Vicente (SP);-23.977514;-46.391895;1.126456;ruim;10;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p1;2;São Vicente (SP);-23.945858;-46.391895;1.135756;ruim;11;False
+scala-data-centers-sao-joao-de-meriti;scala-data-centers-sao-joao-de-meriti_sim2_p6;2;São Vicente (SP);-23.953771;-46.406894;1.17318;ruim;12;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p2;2;Araguaína (TO);-7.169609;-48.170791;0.78047;ruim;1;True
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p4;2;Araguaína (TO);-7.234766;-48.208705;0.785326;ruim;2;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p6;1;Rio Branco (AC);-9.952389;-67.848331;0.79717;ruim;3;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p5;2;Araguaína (TO);-7.213046;-48.246623;0.817471;ruim;4;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p3;2;Araguaína (TO);-7.213046;-48.170787;0.842167;ruim;5;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p5;1;Rio Branco (AC);-9.995826;-67.848337;0.876422;ruim;6;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p1;2;Araguaína (TO);-7.147892;-48.208705;0.897823;ruim;7;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim2_p6;2;Araguaína (TO);-7.169609;-48.246619;0.96371;ruim;8;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p1;1;Rio Branco (AC);-9.930673;-67.810139;0.971217;ruim;9;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p4;1;Rio Branco (AC);-10.017547;-67.810139;0.971538;ruim;10;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p3;1;Rio Branco (AC);-9.995826;-67.771941;1.016612;ruim;11;False
+to-host-data-centers-palmas;to-host-data-centers-palmas_sim1_p2;1;Rio Branco (AC);-9.952389;-67.771947;1.083405;ruim;12;False

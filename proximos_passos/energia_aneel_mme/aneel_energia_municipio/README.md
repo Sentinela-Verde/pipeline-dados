@@ -3,8 +3,9 @@
 Estimativa de consumo de energia elétrica por **município e ano**, construída
 a partir de dados abertos da ANEEL — já que **não existe, em lugar nenhum,
 uma tabela pronta de consumo elétrico por município no Brasil** (nem na Base
-dos Dados, nem na própria ANEEL — ver `extract/bigquery_mme_energia_uf/`
+dos Dados, nem na própria ANEEL — ver `../bigquery_mme_energia_uf/`
 pro relatório dessa investigação, que só achou dado pronto em nível de UF).
+Faz parte do backlog isolado de `proximos_passos/` (ainda não conectado ao pipeline ativo).
 
 ## ⚠️ Isso é uma ESTIMATIVA, não uma medição
 
@@ -28,7 +29,7 @@ agregado, não pra detectar consumo atípico de um município específico.
 ## Pipeline (3 steps, nessa ordem)
 
 ```bash
-cd data-extraction/extract/aneel_energia_municipio
+cd proximos_passos/energia_aneel_mme/aneel_energia_municipio
 pip install -r requirements.txt
 python step1_mapear_municipio_distribuidora.py
 python step2_consumo_distribuidora_ano.py
@@ -36,7 +37,7 @@ python step3_rateio_energia_municipio.py
 ```
 
 Não precisa de credencial nenhuma (dados abertos da ANEEL, sem autenticação) —
-diferente das outras coletas de `extract/`, que usam BigQuery/Base dos Dados.
+diferente das coletas via BigQuery/Base dos Dados.
 
 ### Step 1 — `municipio -> distribuidora`
 
@@ -57,7 +58,7 @@ de distribuidora ao longo do tempo, por fusão/privatização) — nesses casos,
 fica com a distribuidora mais frequente entre os conjuntos do município
 (maioria simples), pra garantir exatamente 1 distribuidora por município.
 
-- **Saída:** `../../data/raw/outputs_extraction/aneel_municipio_distribuidora.csv`
+- **Saída:** `../aneel_municipio_distribuidora.csv`
 - **Cobertura:** 5.568 de ~5.570 municípios (6 municípios do IndQual ficaram
   sem distribuidora encontrada — provavelmente conjuntos sem indicador de
   continuidade reportado em nenhuma das 3 décadas disponíveis).
@@ -68,7 +69,7 @@ Soma `VlrMercado` do SAMP (`samp-{ano}.parquet`, um arquivo por ano,
 2003-presente) só nas combinações de campos que representam **energia de
 fato consumida em kWh** (ver "Como o consumo é calculado" abaixo).
 
-- **Saída:** `../../data/raw/outputs_extraction/aneel_consumo_distribuidora_ano.csv`
+- **Saída:** `../aneel_consumo_distribuidora_ano.csv`
 
 ### Step 3 — rateio pra `município x ano`
 
@@ -76,12 +77,12 @@ fato consumida em kWh** (ver "Como o consumo é calculado" abaixo).
 consumo_estimado_município = consumo_distribuidora × (população_município / população_total_da_área_da_distribuidora)
 ```
 
-População vem de `data/raw/outputs_extraction/ibge_municipios.csv`
-(`extract/bigquery_ibge/`) — **precisa rodar aquela coleta antes** (ou já ter
+População vem de `dados/bronze/ibge/ibge_municipios.csv`
+(`projetos/06_extracao_socioeconomico/ibge/`) — **precisa rodar aquela coleta antes** (ou já ter
 o CSV). Como a série de população do IBGE ali começa em 2016, o resultado
 final também começa em 2016, mesmo o SAMP/DEC-FEC cobrindo desde 2010/2003.
 
-- **Saída:** `../../data/raw/outputs_extraction/aneel_energia_municipio.csv`
+- **Saída:** `../aneel_energia_municipio.csv`
   — colunas: `id_municipio`, `municipio`, `uf`, `ano`, `sigla_distribuidora`,
   `cnpj_distribuidora`, `populacao`, `populacao_area_distribuidora`,
   `consumo_distribuidora_kwh` (total da distribuidora, sem ratear —
@@ -126,6 +127,6 @@ o filtro de `NomTipoMercado`/`DscDetalheMercado` de acordo).
 
 ## Cache local
 
-Os arquivos brutos baixados (SAMP e continuidade, em parquet) ficam em
-`data/raw/aneel_cache/` e são reaproveitados entre execuções — apague essa
+Os arquivos brutos baixados (SAMP e continuidade, em parquet) ficam em cache local (ver
+`config.py` para o caminho exato) e são reaproveitados entre execuções — apague essa
 pasta se quiser forçar um redownload.

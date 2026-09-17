@@ -3,8 +3,8 @@
   "ano": 2018,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-maracanau/2018.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-maracanau_2018.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-maracanau/2018.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-maracanau_2018.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.6273,
-  "sha256": "0ca3135c1cb6fdddf591dc2c55b89cc20d67ecf58bb96cf4f8df636091b9279e",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:46:47.819962+00:00"
+  "pct_pixels_validos": 99.7998,
+  "sha256": "f490372ca543e5352e8ce0d146fff2d7eff25f8c4b44ab85647f9dc907063d6a",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:23:10.743053+00:00"
 }

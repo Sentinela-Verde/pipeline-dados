@@ -3,8 +3,8 @@
   "ano": 2024,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/equinix-santana-parnaiba/2024.tif",
-    "raw_manifest": "data/manifests/landsat_equinix-santana-parnaiba_2024.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/equinix-santana-parnaiba/2024.tif",
+    "raw_manifest": "dados/manifests/landsat_equinix-santana-parnaiba_2024.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.9786,
-  "sha256": "a717e68183319271b4de2a8439248573e7fb2ad14cb022b5d561b12fa01a1e31",
-  "git_sha": "7d07b4b66a0d8232987fce20fdb3fd704496e41f",
-  "gerado_em": "2026-09-10T20:34:51.188423+00:00"
+  "pct_pixels_validos": 99.9303,
+  "sha256": "120ce4f8da97aeb15383ca06b6b86ef086d4ca5b89d8b0878e7b14b37389972b",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:36:19.759248+00:00"
 }

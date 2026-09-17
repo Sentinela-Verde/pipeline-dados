@@ -20,7 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config
-from comum import calcula_deltas
+from comum import calcula_deltas, calcula_efeito_liquido_por_par
 from relatorio_html import RelatorioHTML
 
 import matplotlib.pyplot as plt
@@ -182,24 +182,6 @@ def secao_correlacao(df: pd.DataFrame, relatorio: RelatorioHTML):
     relatorio.tabela(corr)
 
 
-def calcula_efeito_liquido_por_par(df: pd.DataFrame, delta_cols: list[str]) -> pd.DataFrame:
-    """efeito_liquido = delta_tratamento - delta_controle, por par e horizonte comum aos dois."""
-    registros = []
-    for par in df["pareado_com"].dropna().unique():
-        grupo = df[df["pareado_com"] == par]
-        trat = grupo[grupo["tipo"] == "tratamento"].set_index("ano_relativo_ao_inicio_obra")
-        ctrl = grupo[grupo["tipo"] == "controle"].set_index("ano_relativo_ao_inicio_obra")
-
-        for h in trat.index.intersection(ctrl.index):
-            for var in config.VARS_ALVO:
-                dcol = f"delta_{var}"
-                registros.append({
-                    "par": par, "horizonte": h, "variavel": var,
-                    "efeito_liquido": trat.loc[h, dcol] - ctrl.loc[h, dcol],
-                })
-    return pd.DataFrame(registros)
-
-
 def secao_curva_efeito_liquido(efeito_df: pd.DataFrame, relatorio: RelatorioHTML) -> pd.DataFrame:
     print("\n" + "=" * 70)
     print("12/13. CURVA DE EFEITO LÍQUIDO (agregado entre os pares) + placebo")
@@ -281,7 +263,7 @@ def main():
     secao_ranking(df, relatorio)
     secao_correlacao(df, relatorio)
 
-    efeito_df = calcula_efeito_liquido_por_par(df, delta_cols)
+    efeito_df = calcula_efeito_liquido_por_par(df, config.VARS_ALVO)
     print(f"\n{len(efeito_df)} registros de efeito líquido (pares x horizontes x variáveis)")
     curva = secao_curva_efeito_liquido(efeito_df, relatorio)
 

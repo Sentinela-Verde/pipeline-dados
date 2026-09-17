@@ -3,8 +3,8 @@
   "ano": 2016,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/equinix-santana-parnaiba/2016.tif",
-    "raw_manifest": "data/manifests/landsat_equinix-santana-parnaiba_2016.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/equinix-santana-parnaiba/2016.tif",
+    "raw_manifest": "dados/manifests/landsat_equinix-santana-parnaiba_2016.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.6863,
-  "sha256": "046d600f6e4e894bc5f9d56854cda70d0133f122e8a8d953bd79e4640345dcb4",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:47:25.215151+00:00"
+  "pct_pixels_validos": 99.7283,
+  "sha256": "23143d1899566221d6c049f816cd4924b024dd05f4bce0522519daf94b5c2879",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:34:07.407336+00:00"
 }

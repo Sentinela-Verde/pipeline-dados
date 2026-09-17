@@ -49,6 +49,29 @@ def calcula_deltas(df: pd.DataFrame, vars_alvo: list[str]) -> tuple[pd.DataFrame
     return df, baseline_map
 
 
+def calcula_efeito_liquido_por_par(df: pd.DataFrame, vars_alvo: list[str]) -> pd.DataFrame:
+    """efeito_liquido = delta_tratamento - delta_controle, por par e horizonte comum aos dois.
+
+    Compartilhada entre `step1_analise_exploratoria.py` (curva de efeito líquido descritiva)
+    e `step1b_analise_consequencias.py` (testes de significância + cadeia de mediação) —
+    ambos precisam do mesmo `efeito_liquido_por_par` como ponto de partida.
+    """
+    registros = []
+    for par in df["pareado_com"].dropna().unique():
+        grupo = df[df["pareado_com"] == par]
+        trat = grupo[grupo["tipo"] == "tratamento"].set_index("ano_relativo_ao_inicio_obra")
+        ctrl = grupo[grupo["tipo"] == "controle"].set_index("ano_relativo_ao_inicio_obra")
+
+        for h in trat.index.intersection(ctrl.index):
+            for var in vars_alvo:
+                dcol = f"delta_{var}"
+                registros.append({
+                    "par": par, "horizonte": h, "variavel": var,
+                    "efeito_liquido": trat.loc[h, dcol] - ctrl.loc[h, dcol],
+                })
+    return pd.DataFrame(registros)
+
+
 def calcula_tendencia(serie_horizontes, serie_valores) -> float:
     """Inclinação da reta ajustada (regressão linear simples) sobre os anos pré-obra
     disponíveis — indica se a região já estava mudando por conta própria antes do data

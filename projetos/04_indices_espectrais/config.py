@@ -24,6 +24,20 @@ load_dotenv(REPO_ROOT / ".env")
 # mapa é a única ponte entre as duas convenções.
 DIR_POR_SENSOR = {"s2": "sentinel2", "landsat": "landsat"}
 
+# Subpasta de `dados/bronze/` de onde os .tif brutos são lidos — espelha
+# `02_extracao_imagem.config.definir_subpasta_imagens()`. Precisa ser setada igual à subpasta que
+# a etapa 2 usou pra gerar aquele site_id, senão `bronze_imagens_dir` procura no lugar errado.
+# Usado em 2026-09-14 pra calcular índices dos candidatos a grupo de controle (bronze separado).
+_SUBPASTA_IMAGENS_PADRAO = "imagens_satelite"
+_subpasta_imagens = _SUBPASTA_IMAGENS_PADRAO
+
+
+def definir_subpasta_imagens(nome: str) -> None:
+    if not nome or "/" in nome or "\\" in nome or nome in (".", ".."):
+        raise ValueError(f"nome de subpasta inválido: {nome!r}")
+    global _subpasta_imagens
+    _subpasta_imagens = nome
+
 
 class Settings:
     """Caminhos do data lake para esta etapa."""
@@ -37,9 +51,10 @@ class Settings:
         return self.data_root / "manifests"
 
     def bronze_imagens_dir(self, sensor_token: str) -> Path:
-        """Entrada: `dados/bronze/imagens_satelite/{sensor}/` — saída da etapa 2."""
+        """Entrada: `dados/bronze/{subpasta}/{sensor}/` — saída da etapa 2 (`{subpasta}` normalmente
+        `imagens_satelite`; ver `definir_subpasta_imagens()`)."""
         sensor = DIR_POR_SENSOR.get(sensor_token, sensor_token)
-        return self.data_root / "bronze" / "imagens_satelite" / sensor
+        return self.data_root / "bronze" / _subpasta_imagens / sensor
 
     def silver_features_dir(self, sensor_token: str) -> Path:
         """Saída: `dados/silver/features/{sensor}/`.

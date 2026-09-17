@@ -1,10 +1,42 @@
 # Pipeline de dados: coletas, armazenamento, modelos e análises
 
 Pipeline de dados do Sentinela Verde: da coleta de data centers e imagens de satélite até a
-análise estatística do impacto ambiental e territorial no entorno deles. Organiza, numa estrutura
-única (**dados / modelos / projetos**), o que antes estava espalhado em **3 repositórios**
-(`data-extraction`, `modelo-imagens-satelite` e o protótipo abandonado
-`datacenter-extracao-modelos`), cada um com sua própria convenção de pastas.
+análise estatística do impacto ambiental e territorial no entorno deles.
+
+## Racional geral
+
+Data centers vêm crescendo rápido no Brasil, em geral perto de áreas urbanas ou periurbanas: cada
+um ocupa terreno, consome dezenas de MW e altera o uso do solo ao seu redor. Não existe hoje uma
+medição sistemática desse impacto — a pergunta de pesquisa deste projeto é: **a chegada de um data
+center muda, de forma mensurável, a cobertura do solo (vegetação, construção, solo exposto) e a
+temperatura de superfície ao seu redor — além do que já mudaria de qualquer forma pela tendência
+regional?**
+
+Responder isso exige separar o que teria acontecido de qualquer jeito (crescimento urbano natural,
+tendência regional) do que é atribuível especificamente ao data center. A estratégia adotada é
+comparar cada área tratada (onde um data center foi construído) com uma área de controle (uma
+região parecida socioeconomicamente que não recebeu data center), medindo as duas antes e depois
+da obra — um desenho de inferência causal observacional (event study / diferença-em-diferenças),
+o cabível quando não é possível randomizar quem recebe o "tratamento".
+
+O pipeline existe para produzir, de ponta a ponta, os dados que alimentam essa comparação:
+
+1. localizar data centers reais e um grupo de controle comparável (coleta + filtro de
+   elegibilidade + pareamento por similaridade socioeconômica);
+2. baixar e classificar imagem de satélite (vegetação densa/rala, solo exposto, área construída,
+   água) de cada área, ano a ano, tanto para o data center quanto para seu controle;
+3. extrair temperatura de superfície e indicadores socioeconômicos da mesma área;
+4. consolidar tudo num painel único (área × ano); e
+5. testar estatisticamente se o efeito líquido (tratamento − controle) é diferente de zero, com o
+   cuidado de corrigir por múltiplas comparações e validar sem misturar linhas do mesmo evento
+   entre treino e teste.
+
+Hoje a amostra é pequena (15 pares tratamento/controle no Brasil) e o resultado honesto, depois da
+correção por múltiplas comparações, é que nenhuma variável mostra efeito estatisticamente
+significativo ainda — embora a direção de algumas (ex.: área construída) aponte para uma possível
+interferência que a amostra atual não tem poder estatístico para confirmar. Esse resultado, suas
+limitações e os próximos passos metodológicos estão documentados em
+[`projetos/09_analise_estatistica_impacto/`](projetos/09_analise_estatistica_impacto/README.md).
 
 > Os pontos marcados como "⚠ decisão em aberto" na seção de decisões, mais abaixo, ainda não têm
 > dono — o resto deste documento já reflete a estrutura em uso.
@@ -160,16 +192,6 @@ flowchart TD
 
 ## Árvore do repositório
 
-❌ = ainda falta migrar (ou não existe código em nenhum repositório hoje):
-
-- ❌ `socioeconomico_us/` — a fonte existe (ACS 5-year, com implementação de referência na
-  origem); a frente americana é que está reprovada no portão do ADR-006, ver decisão 3
-- ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
-- ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
-- ❌ 07 · expansão da amostra — a **datação da obra** já veio (`datacao_obra/`); expandir de 15
-  para ~25 campi depende da inferência do Modelo 1, que ainda não está aqui
-- ❌ 08 · Consolidação (código não existe — ver decisões)
-
 ```
 sentinela_verde/
 │
@@ -185,8 +207,7 @@ sentinela_verde/
 │   │   ├── temperatura/                    # LST por site x ano + cenas brutas (220 KB, leve)
 │   │   ├── footprints_osm/                 # polígonos de prédio do OpenStreetMap (EUA)
 │   │   ├── ibge/
-│   │   └── socioeconomico_us/              # ❌ sem dado — fonte é o ACS 5-year; a frente US está parada
-│   │                                       # na datação da obra, não aqui (decisão 3)
+│   │   └── socioeconomico_us/              # equivalente ao IBGE pra grupo controle nos EUA
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
@@ -199,49 +220,62 @@ sentinela_verde/
 │   │   ├── area_por_classe.csv             # série por site × ano × sensor × classe (rf_v2.0-dw) — ver decisão 5
 │   │   ├── dataset_classificacao.parquet   # (AWS S3) — dataset amostrado que alimenta o treino (5a)
 │   │   ├── consolidado_impacto_modelo.csv  # ⚠ hoje montado manualmente — etapa 7 do diagrama
-│   │   └── efeito_liquido/                 # saídas do step1: curvas, event study, CSVs
+│   │   ├── efeito_liquido/                 # saídas do step1/1b/1c: curvas, event study, testes de significância
+│   │   ├── efeito_liquido_32dc/            # análise exploratória à parte — ver nota abaixo
+│   │   └── powerbi_export/                 # tabelas gold pro dashboard Power BI — ver nota abaixo
 │   │
 │   ├── labels_manual/                      # 211 polígonos humanos — é INSUMO versionado, não saída
 │   └── manifests/                          # 1.066 manifests — proveniência (sha256), sempre commitado
 │
 ├── modelos/
-│   ├── modelo_1_classificacao_imagem/      # ❌ treino/inferência ainda não migrados
-│   │   ├── indicadores/                    # classificado → dados/gold/area_por_classe.csv;
-│   │   │                                   # relatorios/ = validação cruzada de sensores (CSV no git)
-│   │   ├── treino/                         # sentinela.train — roda 1x, gera o artefato (etapa 5a)
-│   │   ├── inferencia/                     # sentinela.predict — reaplica (etapas 5b e 6b)
+│   ├── modelo_1_classificacao_imagem/
+│   │   ├── treino/                         # roda 1x, gera o artefato (etapa 5a)
+│   │   ├── inferencia/                     # classifica.py — reaplica o .joblib já treinado (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
+│   │   ├── exemplos/                       # 1 par input/output real, pra conferir a inferência sem rodar o pipeline inteiro
 │   │   └── artefatos/                      # (AWS S3) — *.joblib + *.sha256
 │   │
 │   └── modelo_2_grupo_controle/
 │       ├── selecao_candidatos/             # KNN cidade similar (BR ou US) + 6 pontos candidatos
-│       ├── comparacao_estatistica/         # ❌ falta migrar — chama a inferência do modelo 1 (dependência
+│       ├── comparacao_estatistica/         # chama a inferência do modelo 1 (dependência
 │       │                                   # cruzada, ver decisão 2) + compara nível/tendência pré-obra
 │       └── artefatos/                      # (AWS S3)
 │
 ├── projetos/                               # 1 pasta por etapa do diagrama, numeradas na mesma ordem
-│   ├── 01_coleta_datacenter/               # inclui correcao_endereco/
-│   ├── 02_extracao_imagem/                 # inclui relatorios/ (qualidade da ingestão, resíduo da harmonização)
+│   ├── 01_coleta_datacenter/               # inclui correcao_endereco/ e filtro_elegibilidade/
+│   ├── 02_extracao_imagem/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
-│   ├── 05_extracao_lst/                    # LST via MODIS MOD11A2 (não Landsat — ver README da etapa)
-│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ (ACS 5-year — ver decisão 3)
-│   ├── 07_reiteracao_expansao_amostra/
-│   │   └── datacao_obra/                   # ano da obra por degrau de NDBI no Landsat
-│   │                                       # ❌ falta a expansão em si (depende do Modelo 1)
-│   ├── 08_consolidacao/                    # ❌ falta migrar — ver decisão 1
+│   ├── 05_extracao_lst/
+│   ├── 06_extracao_socioeconomico/         # ibge/ + socioeconomico_us/
+│   ├── 07_reiteracao_expansao_amostra/     # candidatos do scraping, joblib em raio menor, calibrador de obra
+│   ├── 08_consolidacao/                    # ver decisão 1
 │   └── 09_analise_estatistica_impacto/     # sem o Estágio 2/RF — event study, placebo, DiD, curva efeito líquido
 │
 ├── docs/
-│   ├── decisoes/                           # ADRs (ex.: status de propostas como Dynamic World)
-│   ├── tarefas/                            # 1 tarefa por arquivo
-│   └── guia_estrutura_dados.md
+│   ├── decisoes/                           # ADRs do time
+│   └── tarefas/                            # 1 tarefa por arquivo
 │
 └── proximos_passos/                        # backlog isolado, fora do pipeline ativo
     ├── energia_aneel_mme/                  # aneel_energia_municipio + bigquery_mme_energia_uf — não conectado ao pipeline ativo
     ├── agua_snis/                          # bigquery_snis_agua — sem dado, nunca foi gerado na fonte
     └── ruido/                              # sem fonte de dado ainda
 ```
+
+## Análises exploratórias (fora do estudo principal)
+
+Duas coisas neste repositório são investigações à parte do estudo de 15 pares descrito no
+racional acima — não substituem o resultado principal, apenas o complementam:
+
+- **`dados/gold/efeito_liquido_32dc/`** (gerado por
+  `projetos/09_analise_estatistica_impacto/step_analise_32dc_br_eua.py`) — testa se ampliar a
+  amostra para 31 pares (Brasil + EUA, fonte suplementar) melhora a significância estatística.
+  Os p-valores melhoram, mas nenhuma variável cruza o limiar de significância após a correção por
+  múltiplas comparações — ver seção própria no
+  [README da análise estatística](projetos/09_analise_estatistica_impacto/README.md).
+- **`dados/gold/powerbi_export/`** (gerado por `export_gold_powerbi.py`, na mesma pasta) — exporta
+  o painel dos 15 pares (mais imagens em miniatura) em formato de tabela gold, para alimentar um
+  dashboard Power BI — ver [README da pasta](dados/gold/powerbi_export/README.md).
 
 ## Decisões em aberto (o time de arquitetura precisa bater o martelo)
 
@@ -264,32 +298,13 @@ expõe a inferência do Modelo 1 precisa ser importável tanto por quem roda a c
 (etapas 5b/6b) quanto por quem roda a seleção de controle (6a) e a expansão (9) — ou seja, a
 inferência não pode ficar "presa" dentro do projeto do Modelo 1 sem uma forma de reuso.
 
-### 3 · A frente americana está parada na DATA da obra, não na fonte socioeconômica
+### 3 · Fonte de dado socioeconômico dos EUA ainda não existe
 
-Correção de um registro anterior: dizia-se aqui que a fonte de dado socioeconômico dos EUA "não
-existe". Ela existe e tem implementação que roda, em `modelo-impacto/scripts/extrair_acs_eua.py`
-(`modelo-imagens-satelite`): **American Community Survey 5-year**, do Census Bureau, via
-`api.census.gov`. É o análogo direto do IBGE — resolve a geografia por lat/lon → FIPS no Census
-Geocoder e busca o indicador no ACS, onde o lado brasileiro resolve por nome+UF → código IBGE e
-busca no SIDRA. O próprio arquivo se declara exemplo de referência, não entregável.
-
-O que trava a expansão americana é outra coisa, e está medido no **ADR-006 §7**: a lista não é o
-gargalo (488 campi distintos contra 118 do Brasil, de graça via Overpass/OSM), mas só **15 têm
-ano documentado** — e são datas de construção do prédio, não da virada para data center. Datar
-pelo Dynamic World dentro do footprint alcançou **75**, dos quais 38 na janela útil; o portão
-pedia ~30 campi novos pareados, o que exigiria taxa de pareamento ≥79% contra os **50% medidos no
-Brasil**. Reprovou.
-
-A limitação registrada lá é o que ainda dá esperança: **329 dos 482 campi já estavam construídos
-em 2016** e são invisíveis ao DW, que começa em jun/2015 — não são indatáveis, é aquela fonte que
-não os data. A etapa 7 deste repositório (`projetos/07_reiteracao_expansao_amostra/datacao_obra/`)
-é exatamente a tentativa de alcançá-los pelo Landsat, que vai a 2013 — e a validação dela também
-não passou ainda (erro mediano de −2,0 anos, 33% dentro de ±1).
-
-**Então a decisão em aberto não é "qual fonte socioeconômica".** É: vale insistir na datação por
-imagem (corrigir o viés do NDBI, que parece marcar terraplenagem em vez de obra), buscar uma fonte
-de datas reais, ou encerrar a frente americana? O socioeconômico só é pré-requisito depois que
-essa responder.
+`socioeconomico_us/` está na árvore como placeholder — nenhuma extração equivalente ao IBGE para
+municípios/condados americanos foi encontrada no código hoje. Antes de implementar
+`modelos/modelo_2_grupo_controle/` para sites nos EUA, alguém precisa decidir a fonte (Census
+Bureau ACS? BLS? outra?) — isso também é pré-requisito de qualquer expansão internacional do
+estudo (proposta, ainda não aprovada).
 
 ### 4 · Onde mora o dado pesado
 

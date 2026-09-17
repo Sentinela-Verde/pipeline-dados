@@ -3,8 +3,8 @@
   "ano": 2024,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-vinhedo/2024.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-vinhedo_2024.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-vinhedo/2024.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-vinhedo_2024.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.9929,
-  "sha256": "e1490e8501c59a1d24b21f9be100ccc066a0ce88c0c25d5a1eaeed538e4c5189",
-  "git_sha": "7d07b4b66a0d8232987fce20fdb3fd704496e41f",
-  "gerado_em": "2026-09-10T20:34:07.551924+00:00"
+  "pct_pixels_validos": 99.9973,
+  "sha256": "24c0224a110fcdeb9df4dc709a973de269939082a3e14579b92ef30890858553",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-14T23:41:23.529504+00:00"
 }

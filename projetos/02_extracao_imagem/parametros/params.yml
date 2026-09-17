@@ -29,8 +29,8 @@ faixa_b:
   # Habilitar somente se a harmonização TM->OLI for validada dentro de tolerância aceitável E
   # houver uma fonte de label anual que cubra o período (WorldCover não cobre).
 
-mes_inicio: 6   # composto anual de estação seca (jun-set), reduz nuvem e sombra
-mes_fim: 9
+mes_inicio: 5   # composto anual de estação seca (mai-set), reduz nuvem e sombra (ampliado de
+mes_fim: 9      # jun-set em 2026-09-14 para dar mais cenas de baixa nuvem à mediana)
 
 # Contrato de grade. O CÓDIGO é a fonte da verdade — estes valores estão fixos como constantes
 # em `sentinel2.py` e `landsat.py` (CRS, CRS_CONFIG, RESOLUCAO_M) porque a fórmula de origem de

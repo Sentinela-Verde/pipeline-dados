@@ -173,6 +173,13 @@ def _anos_sentinel2() -> list[int]:
 # --------------------------------------------------------------------------------------------
 
 
+# Filtro de nuvem por CENA (metadado `CLOUDY_PIXEL_PERCENTAGE`, % da cena inteira), aplicado ANTES
+# da composição — mesma otimização de 2026-09-14 aplicada a `landsat.py`: reduz quantas cenas o
+# Earth Engine processa por chamada e reduz a chance de precisar ampliar a janela sazonal. É além
+# (não substitui) da máscara Cloud Score+ por pixel já aplicada em `mascara_nuvem`.
+CLOUD_COVER_MAXIMO = 20
+
+
 def _colecao_filtrada(aoi: ee.Geometry, ano: int, mes_ini: int, mes_fim: int) -> ee.ImageCollection:
     def _prep(img: ee.Image) -> ee.Image:
         return harmonizar_s2(mascara_nuvem(img, "sentinel2"))
@@ -182,80 +189,55 @@ def _colecao_filtrada(aoi: ee.Geometry, ano: int, mes_ini: int, mes_fim: int) ->
         .filterBounds(aoi)
         .filterDate(f"{ano}-01-01", f"{ano}-12-31")
         .filter(ee.Filter.calendarRange(mes_ini, mes_fim, "month"))
+        .filter(ee.Filter.lt("CLOUDY_PIXEL_PERCENTAGE", CLOUD_COVER_MAXIMO))
         .map(_prep)
     )
 
 
-def _compor_ano(
-    grade_geom: ee.Geometry, grade: dict, ano: int, mes_ini: int, mes_fim: int
-) -> tuple[ee.Image, int, float]:
+def _compor_ano(grade_geom: ee.Geometry, ano: int, mes_ini: int, mes_fim: int) -> tuple[ee.Image, int]:
+    """Composto mediano — SEM nenhuma chamada de rede (`getInfo`/`reduceRegion`) aqui.
+
+    **Otimização (2026-09-14):** antes, `pct_pixels_validos` e a sanidade física (mediana
+    red/nir sobre vegetação) eram calculadas via `reduceRegion().getInfo()` — 2-3 idas-e-voltas
+    síncronas ao servidor do Earth Engine POR TENTATIVA de janela, cada uma recompondo a mediana
+    do zero (~2 min/item medido). Agora as duas são calculadas LOCALMENTE, em numpy, sobre o
+    array já baixado (ver `_stats_locais` e `processar_site_ano`) — o download em si
+    (`getDownloadURL` + `requests.get`) já é necessário de qualquer forma, então stats
+    calculadas nele são de graça. Resultado medido: ~9 s/item (mesma ordem de grandeza do ganho
+    em `landsat.py`). A contagem de cenas (`n_imagens`) é mantida como 1 chamada leve só por
+    provenância no manifest.
+    """
     colecao = _colecao_filtrada(grade_geom, ano, mes_ini, mes_fim)
     n_imagens = _retry(lambda: colecao.size().getInfo(), descricao=f"contar imagens {ano}")
     composto = colecao.median()
-
-    total_px = grade["width"] * grade["height"]
-    if n_imagens == 0 or total_px == 0:
-        return composto, int(n_imagens), 0.0
-
-    validos = _retry(
-        lambda: composto.select("blue")
-        .reduceRegion(
-            reducer=ee.Reducer.count(),
-            geometry=grade_geom,
-            crs=CRS,
-            crsTransform=grade["crs_transform"],
-            maxPixels=int(1e9),
-        )
-        .get("blue")
-        .getInfo(),
-        descricao=f"contar pixels válidos {ano}",
-    )
-    validos = validos or 0
-    pct = 100.0 * validos / total_px
-    return composto, int(n_imagens), pct
+    return composto, int(n_imagens)
 
 
-def _compor_com_retentativa(
-    grade_geom: ee.Geometry, grade: dict, ano: int, mes_ini: int, mes_fim: int
-) -> tuple[ee.Image, int, float, tuple[int, int], bool]:
-    composto, n_imagens, pct = _compor_ano(grade_geom, grade, ano, mes_ini, mes_fim)
-    janela_usada = (mes_ini, mes_fim)
-    ampliada = False
+def _stats_locais(arr_int16) -> tuple[float, dict[str, float | None]]:
+    """`(pct_pixels_validos, sanidade_fisica)` calculados LOCALMENTE a partir do array (6, H, W)
+    int16 já baixado — substitui os 2 `reduceRegion().getInfo()` que existiam antes (ver
+    docstring de `_compor_ano`). `sanidade_fisica` é a mediana de red/nir (reflectância) só nos
+    pixels prováveis de vegetação (NDVI > 0.5) — mesmo teste de faixa física de antes, mesma
+    fórmula, só que em numpy em vez de `ee.Reducer.median()`."""
+    import numpy as np
 
-    if pct < PCT_VALIDOS_MINIMO:
-        mes_ini2, mes_fim2 = max(1, mes_ini - 1), min(12, mes_fim + 1)
-        if (mes_ini2, mes_fim2) != janela_usada:
-            print(
-                f"  {ano}: pct_pixels_validos={pct:.1f}% < {PCT_VALIDOS_MINIMO}% na janela "
-                f"{mes_ini}-{mes_fim}; tentando ampliar para {mes_ini2}-{mes_fim2}...",
-                file=sys.stderr,
-            )
-            composto2, n_imagens2, pct2 = _compor_ano(grade_geom, grade, ano, mes_ini2, mes_fim2)
-            if pct2 > pct:
-                composto, n_imagens, pct = composto2, n_imagens2, pct2
-                janela_usada = (mes_ini2, mes_fim2)
-                ampliada = True
+    bandas = bandas_harmonizadas()
+    idx = {b: i for i, b in enumerate(bandas)}
+    banda0 = arr_int16[idx["blue"]]
+    total = banda0.size
+    validos_mask = banda0 != NODATA
+    pct = 100.0 * float(np.sum(validos_mask)) / total if total else 0.0
 
-    return composto, n_imagens, pct, janela_usada, ampliada
-
-
-def _sanidade_fisica(composto_float: ee.Image, grade_geom: ee.Geometry, grade: dict) -> dict[str, float | None]:
-    """Mediana de red/nir sobre pixels prováveis de vegetação (ndvi > 0.5) — teste de faixa física."""
-    ndvi = composto_float.normalizedDifference(["nir", "red"])
-    vegetacao = composto_float.updateMask(ndvi.gt(0.5))
-    stats = _retry(
-        lambda: vegetacao.select(["red", "nir"])
-        .reduceRegion(
-            reducer=ee.Reducer.median(),
-            geometry=grade_geom,
-            crs=CRS,
-            crsTransform=grade["crs_transform"],
-            maxPixels=int(1e9),
-        )
-        .getInfo(),
-        descricao="sanidade física (red/nir sobre vegetação)",
-    )
-    return {"red_mediana_vegetacao": stats.get("red"), "nir_mediana_vegetacao": stats.get("nir")}
+    refl = arr_int16.astype(np.float32) / np.float32(FATOR_ESCALA)
+    red, nir = refl[idx["red"]], refl[idx["nir"]]
+    denom = nir + red
+    ndvi = np.divide(nir - red, denom, out=np.zeros_like(denom), where=np.abs(denom) > 1e-6)
+    veg_mask = validos_mask & (ndvi > 0.5)
+    sanidade = {
+        "red_mediana_vegetacao": float(np.median(red[veg_mask])) if veg_mask.any() else None,
+        "nir_mediana_vegetacao": float(np.median(nir[veg_mask])) if veg_mask.any() else None,
+    }
+    return pct, sanidade
 
 
 def _preparar_para_download(composto: ee.Image) -> ee.Image:
@@ -333,11 +315,53 @@ def processar_site_ano(site: dict, ano: int, *, force: bool = False) -> dict:
 
     grade = calcular_grade(site["lon"], site["lat"], site["buffer_km"])
     grade_geom = _grade_geometry(grade)
+    raw_path = tif_path.with_suffix(".raw.tif")
 
-    composto, n_imagens, pct, janela_usada, ampliada = _compor_com_retentativa(
-        grade_geom, grade, ano, mes_ini, mes_fim
-    )
+    # Laço de ampliação de janela — agora baixa a cada tentativa e mede localmente (ver docstring
+    # de `_compor_ano`), em vez de medir via `reduceRegion` antes de decidir se baixa. Mesmo padrão
+    # de `landsat.ingerir_site_ano` (AMPLIACOES_JANELA), aqui com 0/+-1 mês (2 tentativas — o
+    # comportamento anterior só ampliava 1x).
+    AMPLIACOES = (0, 1)
+    n_imagens = pct = 0
+    janela_usada = (mes_ini, mes_fim)
+    ampliada = False
+    arr_int16 = sanidade = None
 
+    for passo, ampliacao in enumerate(AMPLIACOES):
+        mi, mf = max(1, mes_ini - ampliacao), min(12, mes_fim + ampliacao)
+        composto, n_imagens = _compor_ano(grade_geom, ano, mi, mf)
+        if n_imagens == 0:
+            pct = 0.0
+            print(
+                f"  {site_id}/{ano}: janela {mi}-{mf}: 0 cenas com CLOUDY_PIXEL_PERCENTAGE<"
+                f"{CLOUD_COVER_MAXIMO}%."
+                + (" Tentando ampliar..." if passo < len(AMPLIACOES) - 1 else ""),
+                file=sys.stderr,
+            )
+            continue
+
+        imagem_int16 = _preparar_para_download(composto)
+        _baixar_tif(imagem_int16, grade, raw_path)
+        with rasterio.open(raw_path) as ds:
+            arr_int16 = ds.read()
+        pct, sanidade = _stats_locais(arr_int16)
+        janela_usada, ampliada = (mi, mf), ampliacao > 0
+
+        if pct >= PCT_VALIDOS_MINIMO:
+            break
+        print(
+            f"  {site_id}/{ano}: janela {mi}-{mf}: pct_pixels_validos={pct:.1f}% < "
+            f"{PCT_VALIDOS_MINIMO}%."
+            + (" Tentando ampliar a janela sazonal..." if passo < len(AMPLIACOES) - 1 else ""),
+            file=sys.stderr,
+        )
+
+    if arr_int16 is None:
+        raise RuntimeError(
+            f"{site_id}/{ano}: 0 cenas Sentinel-2 com CLOUDY_PIXEL_PERCENTAGE<{CLOUD_COVER_MAXIMO}% "
+            f"em nenhuma das janelas tentadas — sem imagem pra compor esse site/ano com o filtro "
+            f"de nuvem atual."
+        )
     if pct < PCT_VALIDOS_MINIMO:
         print(
             f"ACHADO: {site_id}/{ano}: pct_pixels_validos={pct:.1f}% < {PCT_VALIDOS_MINIMO}% "
@@ -346,11 +370,6 @@ def processar_site_ano(site: dict, ano: int, *, force: bool = False) -> dict:
             file=sys.stderr,
         )
 
-    sanidade = _sanidade_fisica(composto, grade_geom, grade)
-
-    imagem_int16 = _preparar_para_download(composto)
-    raw_path = tif_path.with_suffix(".raw.tif")
-    _baixar_tif(imagem_int16, grade, raw_path)
     _finalizar_tif(raw_path, tif_path, grade, bandas_harmonizadas())
     raw_path.unlink(missing_ok=True)
 

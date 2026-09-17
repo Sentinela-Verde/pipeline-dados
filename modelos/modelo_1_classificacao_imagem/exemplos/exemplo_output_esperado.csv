@@ -1,0 +1,11 @@
+pixel_id,classe_id,classe_nome,confianca_pct
+px_01,4,construida_urbana,50
+px_02,1,vegetacao_densa,100
+px_03,4,construida_urbana,99
+px_04,1,vegetacao_densa,55
+px_05,1,vegetacao_densa,96
+px_06,4,construida_urbana,75
+px_07,4,construida_urbana,72
+px_08,2,vegetacao_rala,76
+px_09,2,vegetacao_rala,83
+px_10,4,construida_urbana,95

@@ -3,8 +3,8 @@
   "ano": 2023,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-osasco/2023.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-osasco_2023.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-osasco/2023.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-osasco_2023.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.7042,
-  "sha256": "b0ff52590fb15bf62206164cf53888f5bb84aafc41083bdc9ec35675e24557ba",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T21:58:07.772736+00:00"
+  "pct_pixels_validos": 99.7426,
+  "sha256": "7ea323f24710744ec0e1907c996c202215fc6ade6320d16330fe5f7b67a2eb21",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:27:18.765528+00:00"
 }

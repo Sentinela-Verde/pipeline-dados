@@ -3,8 +3,8 @@
   "ano": 2020,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-maracanau/2020.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-maracanau_2020.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-maracanau/2020.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-maracanau_2020.json"
   },
   "bandas": [
     "blue",
@@ -95,7 +95,7 @@
   "nodata": -9999,
   "fator_escala": 10000,
   "pct_pixels_validos": 99.9875,
-  "sha256": "39eb140bfe23d50ca400c0e72974ab779f64ef7e752a123e6615ec493c51e849",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:46:48.078657+00:00"
+  "sha256": "cd313a92f8193f009863bd2490510d2b7adb157e1c4a29fe315fd68ed3d9e06f",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:23:42.217344+00:00"
 }

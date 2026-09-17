@@ -3,8 +3,8 @@
   "ano": 2017,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-sumare/2017.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-sumare_2017.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-sumare/2017.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-sumare_2017.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 100.0,
-  "sha256": "d75da730417bfa361f47c0da862bed5c1ddf42ad4bad50a83de1866e815a9411",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:47:06.145104+00:00"
+  "pct_pixels_validos": 99.9991,
+  "sha256": "f73b4e7ca1c5fe521057f920dbd180836e045ad1df411e3ca1787e1b0e42b325",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:31:32.834739+00:00"
 }

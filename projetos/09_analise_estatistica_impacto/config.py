@@ -2,19 +2,24 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-# raiz de data-extraction/, dois níveis acima de modeling/modelo_impacto/
+# raiz do repo (pipeline-dados/), dois níveis acima de projetos/09_analise_estatistica_impacto/
 RAIZ_PROJETO = BASE_DIR.parent.parent
 
 # --- Entrada -----------------------------------------------------------
 # Painel consolidado (uma linha por área x horizonte) — ver guia_estrutura_dados_modelo_impacto.md.
 # NOTA: ainda não existe um step neste repositório que gere esse CSV a partir de
-# modeling/modelo_classifica_imagem (cobertura do solo) + extract/bigquery_ibge (socioeconômico)
-# + LST + modeling/modelo_grupo_controle (pareamento) — hoje ele é um insumo externo. Ver
+# modelos/modelo_1_classificacao_imagem (cobertura do solo) + IBGE (socioeconômico)
+# + LST + modelos/modelo_2_grupo_controle (pareamento) — hoje ele é um insumo externo. Ver
 # "Lacuna conhecida" no README desta pasta.
-CONSOLIDADO_CSV = RAIZ_PROJETO / "data" / "silver" / "consolidado_impacto_modelo.csv"
+# ATENÇÃO: já foi "data/silver" (nomenclatura em inglês, de um repo anterior) — corrigido pra
+# bater com a árvore real deste repo (pasta "dados", em português, e o CSV vive em "gold",
+# não em "silver", porque já é um produto de outros modelos, não dado bruto). Com o caminho
+# antigo, `CONSOLIDADO_CSV.exists()` dava False e o step1 quebrava na leitura do CSV.
+CONSOLIDADO_CSV = RAIZ_PROJETO / "dados" / "gold" / "consolidado_impacto_modelo.csv"
 
 # --- Saída -----------------------------------------------------------------
-OUTPUT_DIR = RAIZ_PROJETO / "data" / "gold" / "modelo_impacto"
+# Mesma pasta onde os artefatos do step1 já estão versionados (dados/gold/efeito_liquido/).
+OUTPUT_DIR = RAIZ_PROJETO / "dados" / "gold" / "efeito_liquido"
 FIGURAS_DIR = OUTPUT_DIR / "figuras"
 # Relatório único (HTML autocontido, com tabelas e gráficos embutidos) do step1.
 RELATORIO_EXPLORATORIA_HTML = OUTPUT_DIR / "relatorio_analise_exploratoria.html"
@@ -48,6 +53,25 @@ RANDOM_STATE = 42
 # Só para o gráfico de curva de efeito líquido: intervalo de horizontes comum a todos
 # os pares hoje disponíveis (evita que 1 par com dado isolado num horizonte distorça a curva).
 HORIZONTE_GRAFICO_MIN, HORIZONTE_GRAFICO_MAX = -3, 3
+
+# --- Step 1b (análise de consequências / significância) --------------------
+ALPHA = 0.05  # nível de significância, aplicado DEPOIS da correção por comparações múltiplas
+MIN_PARES_TESTE = 5  # abaixo disso, reporta "amostra insuficiente" em vez de um p-valor
+N_BOOTSTRAP = 10_000  # reamostragens pro IC95% (bootstrap percentil) da média do efeito líquido
+N_PERMUTACOES_MONTE_CARLO = 20_000  # usado só quando n_pares > LIMITE_PERMUTACAO_EXATA
+LIMITE_PERMUTACAO_EXATA = 20  # até esse nº de pares, enumera os 2^n sinais possíveis (teste exato)
+# Preditores da mediação física de LST — mudanças de cobertura do solo que, fisicamente,
+# reduzem evapotranspiração/sombra e por isso são candidatas a "explicar" o aquecimento.
+VARS_MEDIACAO_LST = ["prop_vegetacao_densa", "prop_solo_exposto_obras", "prop_construida_urbana"]
+CONSEQUENCIAS_RESUMO_CSV_NAME = "consequencias_terreno_resumo.csv"
+CONSEQUENCIAS_MEDIACAO_CSV_NAME = "consequencias_terreno_mediacao_lst.csv"
+CONSEQUENCIAS_RELATORIO_HTML_NAME = "relatorio_consequencias_terreno.html"
+
+# --- Step 1c (significância por FASE da obra: pré/durante/pós) -------------
+# Diferente de HORIZONTES_ALVO (janela fixa [0,1,2] aplicada a todo mundo igual), a coluna
+# `fase` do painel já varia por site conforme a duração real da obra de cada um — ver
+# step1c_analise_por_fase.py.
+CONSEQUENCIAS_POR_FASE_CSV_NAME = "consequencias_por_fase.csv"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 FIGURAS_DIR.mkdir(parents=True, exist_ok=True)

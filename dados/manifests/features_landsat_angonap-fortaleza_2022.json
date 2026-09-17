@@ -3,8 +3,8 @@
   "ano": 2022,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/angonap-fortaleza/2022.tif",
-    "raw_manifest": "data/manifests/landsat_angonap-fortaleza_2022.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/angonap-fortaleza/2022.tif",
+    "raw_manifest": "dados/manifests/landsat_angonap-fortaleza_2022.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.706,
-  "sha256": "c1913d5621b10323f555bbbbb38599b48cba3783c079affe7a483f6cd5c4f58f",
-  "git_sha": "7d07b4b66a0d8232987fce20fdb3fd704496e41f",
-  "gerado_em": "2026-09-10T20:27:53.997724+00:00"
+  "pct_pixels_validos": 99.6889,
+  "sha256": "198496f20b3f39c248afa8272798d9e6f5433078bef3b3a718167ea32bd5f301",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:15:34.952238+00:00"
 }

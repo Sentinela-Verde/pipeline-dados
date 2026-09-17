@@ -3,8 +3,8 @@
   "ano": 2022,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/hostdime-joao-pessoa/2022.tif",
-    "raw_manifest": "data/manifests/landsat_hostdime-joao-pessoa_2022.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/hostdime-joao-pessoa/2022.tif",
+    "raw_manifest": "dados/manifests/landsat_hostdime-joao-pessoa_2022.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.1251,
-  "sha256": "f9c352026a4950946d477ae59823c9cff8d5cb8c4bfbe73eb63cd2dc95a0d32f",
-  "git_sha": "dfb3a829ac4ae45bb8544e0e3cc5ddcd1e417451",
-  "gerado_em": "2026-09-10T20:35:17.994104+00:00"
+  "pct_pixels_validos": 51.6781,
+  "sha256": "e57530349f6d801b07d5f18a60cd0999f4cbb282a9085d70260e4cd41c020c63",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:40:45.597200+00:00"
 }

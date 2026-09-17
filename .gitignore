@@ -30,3 +30,4 @@ modelos/**/*.joblib
 projetos/02_extracao_imagem/inspecao/
 
 modelos/modelo_1_classificacao_imagem/artefatos/rf_v2.0-dw.joblib
+modelos/modelo_1_classificacao_imagem/artefatos/rf_v1.0-tuned.joblib
