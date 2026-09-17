@@ -101,15 +101,17 @@ flowchart TD
     end
 
     subgraph S6["Temperatura (paralelo)"]
-        F1["Extração LST<br/>(Landsat)"]:::processo
-        F2[["LST média por área/ano"]]:::dado
-        B2 --> F1 --> F2
+        F0["MODIS MOD11A2<br/>(Terra, LST diurna, 8 dias, 1 km)"]:::fonte
+        F1["Extração LST<br/>(buffer 5 km por site)"]:::processo
+        F2[["LST média por área/ano<br/>2016-2025"]]:::dado
+        A2 --> F1
+        F0 --> F1 --> F2
     end
 
     subgraph S7["Socioeconômico"]
         G1["BigQuery · IBGE"]:::fonte
         G2[["População, PIB, empresas<br/>por município (Brasil)"]]:::dado
-        G3["Socioeconômico US<br/>(fonte a definir)"]:::fonte
+        G3["Socioeconômico US<br/>(ACS 5-year, Census Bureau)"]:::fonte
         G4[["Equivalente por condado/cidade<br/>(EUA)"]]:::dado
         G1 --> G2
         G3 --> G4
@@ -202,16 +204,20 @@ sentinela_verde/
 │   │   ├── labels/                         # tifs leves (13 MB), versionados aqui
 │   │   │   ├── dynamic_world/              # fonte principal
 │   │   │   └── mapbiomas/                  # mantido como alternativa
+│   │   ├── temperatura/                    # LST por site x ano + cenas brutas (220 KB, leve)
+│   │   ├── footprints_osm/                 # polígonos de prédio do OpenStreetMap (EUA)
 │   │   ├── ibge/
 │   │   └── socioeconomico_us/              # equivalente ao IBGE pra grupo controle nos EUA
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
 │   │   ├── features/                       # (AWS S3) — 13 bandas, dado derivado pesado
-│   │   ├── expansao_amostra/               # série no raio menor + calibrador de obra (etapa 9)
+│   │   ├── datacao_obra/                   # série de NDBI, validação e datas derivadas por campus
+│   │   ├── expansao_amostra/               # série no raio menor (etapa 7) — ❌ depende do Modelo 1
 │   │   └── grupo_controle/                 # 6 candidatos + comparação estatística (etapa 6/6a) + escolha final
 │   │
 │   ├── gold/                               # pronto pra modelar / analisar
+│   │   ├── area_por_classe.csv             # série por site × ano × sensor × classe (rf_v2.0-dw) — ver decisão 5
 │   │   ├── dataset_classificacao.parquet   # (AWS S3) — dataset amostrado que alimenta o treino (5a)
 │   │   ├── consolidado_impacto_modelo.csv  # ⚠ hoje montado manualmente — etapa 7 do diagrama
 │   │   ├── efeito_liquido/                 # saídas do step1/1b/1c: curvas, event study, testes de significância
@@ -312,3 +318,53 @@ além de espelhado no S3 — é ele que liga o commit ao arquivo remoto, via `sh
 
 Regra geral que saiu daqui, e que vale pras próximas etapas: *output leve vai pro git **e** pro
 S3; output pesado vai só pro S3.*
+
+### 5 · O CSV publicado sai de um classificador que o projeto reprovou ⚠
+
+Correção de um registro anterior: esta decisão dizia que "qual classificação é a de produção"
+estava em aberto. **Não está** — o critério existe, está escrito desde antes de haver número, e
+foi medido. O `manifest.json` que acompanha os artefatos no S3 e o **ADR-006 §8** registram:
+
+> produção é o **`rf_v1.0-tuned`**, e o critério de adoção deste projeto **não é acurácia, é
+> estabilidade temporal**: um retreino só substitui o modelo atual se ficar abaixo da
+> instabilidade do próprio rótulo que o treinou.
+
+O `rf_v2.0-dw` ganha em acurácia com folga — macro-F1 0,828 contra 0,776, e a classe 3
+(`solo_exposto_obras`) salta de F1 0,580 para 0,804, o maior ganho isolado do projeto, porque o
+Dynamic World tem `bare` nativa onde o MapBiomas não tinha canteiro de obras. E ainda assim
+reprova, nos mesmos pixels e nos mesmos 58 pares de anos:
+
+| instrumento | instabilidade temporal |
+|---|---:|
+| `dynamic_world` (a barra) | **7,21%** |
+| `rf_v2.0-dw` | 13,09% |
+| `rf_v1.0-tuned` | 17,54% |
+
+O retreino melhora 25% nesse eixo e continua 1,8× acima da barra. A hipótese registrada lá é que
+estabilidade vem de **contexto espacial** — o Dynamic World é uma rede convolucional, e o nosso é
+um Random Forest por pixel, sem vizinhança nenhuma. Se estiver certa, nenhum retreino com a mesma
+arquitetura passa.
+
+**O problema que isso cria aqui.** O `dados/gold/area_por_classe.csv` publicado neste repositório
+é do **`rf_v2.0-dw`** — o modelo reprovado. A escolha foi coerente com o Dynamic World ser a fonte
+de rótulo ativa desde 2026-09-11, mas cria uma divergência real com o resto do projeto: toda a
+análise de impacto publicada (o achado de 18/20 pares, p=0,0002, o placebo, os testes de robustez)
+foi calculada com o `rf_v1.0-tuned`. E é sob o v2.0-dw que o achado **não replica** — 9/14,
+p=0,21, contra 14/14, p=0,0001.
+
+Três saídas, e a escolha é do time:
+
+1. **Republicar o CSV a partir do `rf_v1.0-tuned`**, alinhando com o que a análise usou. O
+   exportador já aceita `--token`, então é uma execução — mas o fator de correção de sensor teria
+   de ser o do v1.0 (ele existe, é o arquivo histórico), e a classe 3 volta a não ser corrigível.
+2. **Manter o v2.0-dw e assumir a divergência**, documentando que o CSV de indicadores e a análise
+   de impacto falam de classificações diferentes.
+3. **Publicar os dois** e deixar a comparação explícita — é a mais cara e a que mais informa, já
+   que a diferença entre eles é um resultado do projeto.
+
+Enquanto não se decide, vale a regra que o código já impõe: o fator de correção de sensor é
+calibrado sobre uma classificação e o exportador falha se aplicá-lo a outra (ver
+`modelos/modelo_1_classificacao_imagem/indicadores/relatorios/`).
+
+No CSV, `tipo` é `tratamento` em toda linha e `pareado_com` está vazio: o grupo de controle ainda
+não existe. É a etapa 6a que preenche essas duas colunas.

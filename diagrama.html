@@ -392,15 +392,17 @@ flowchart TD
     end
 
     subgraph S6["Temperatura (paralelo)"]
-        F1["Extração LST<br/>(Landsat)"]:::processo
-        F2[["LST média por área/ano"]]:::dado
-        B2 --> F1 --> F2
+        F0["MODIS MOD11A2<br/>(Terra, LST diurna, 8 dias, 1 km)"]:::fonte
+        F1["Extração LST<br/>(buffer 5 km por site)"]:::processo
+        F2[["LST média por área/ano<br/>2016-2025"]]:::dado
+        A2 --> F1
+        F0 --> F1 --> F2
     end
 
     subgraph S7["Socioeconômico"]
         G1["BigQuery · IBGE"]:::fonte
         G2[["População, PIB, empresas<br/>por município (Brasil)"]]:::dado
-        G3["Socioeconômico US<br/>(fonte a definir)"]:::fonte
+        G3["Socioeconômico US<br/>(ACS 5-year, Census Bureau)"]:::fonte
         G4[["Equivalente por condado/cidade<br/>(EUA)"]]:::dado
         G1 --> G2
         G3 --> G4

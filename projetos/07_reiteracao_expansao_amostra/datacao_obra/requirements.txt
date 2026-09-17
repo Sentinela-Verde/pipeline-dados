@@ -1,0 +1,15 @@
+# Etapa 7 (datação de obra). Só o que datar_landsat.py / campi.py / auth.py / config.py importam.
+# Versões travadas em == porque foram testadas juntas nesta combinação exata (Python 3.13,
+# Windows 11).
+#
+# Sem rasterio e sem geopandas: não abre raster nem faz geometria local — o footprint é lido do
+# JSON do OSM e o recorte acontece no Earth Engine.
+earthengine-api==1.7.41
+numpy==2.5.2
+pandas==3.0.5
+pyyaml==6.0.3
+python-dotenv==1.2.3
+requests==2.34.2
+# Faz o Python validar TLS pela store de certificados do Windows. Sem isso, em máquina com
+# antivírus/VPN que inspeciona HTTPS, ee.Authenticate() falha no CERTIFICATE_VERIFY_FAILED.
+truststore==0.10.4

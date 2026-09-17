@@ -1,0 +1,68 @@
+{
+  "site_id": "equinix-santana-parnaiba",
+  "ano": 2018,
+  "sensor": "landsat",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T02:03:03.896732+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    30.0,
+    0.0,
+    305010.0,
+    0.0,
+    -30.0,
+    7409310.0
+  ],
+  "shape": {
+    "width": 334,
+    "height": 335
+  },
+  "n_pixels_total": 111890,
+  "n_pixels_validos": 111878,
+  "n_pixels_nodata": 12,
+  "pct_pixels_validos": 99.9893,
+  "distribuicao_classes": {
+    "vegetacao_densa": 50113,
+    "vegetacao_rala": 17623,
+    "solo_exposto_obras": 3988,
+    "construida_urbana": 34606,
+    "agua": 5548
+  },
+  "confianca": {
+    "media": 78.41,
+    "minima": 27,
+    "maxima": 100
+  },
+  "sha256": "b568cd581f8047730b2dec0bdef5e041443a56be40275ab3127f093ecaed848b",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "1300fc636933d18e10581c6ffb7063189087901a7b090c1fe0940555af3f112a",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\equinix-santana-parnaiba\\2018.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\landsat\\equinix-santana-parnaiba\\2018_confianca.tif"
+}

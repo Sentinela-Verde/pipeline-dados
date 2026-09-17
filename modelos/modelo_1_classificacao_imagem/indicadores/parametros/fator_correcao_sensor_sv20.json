@@ -1,0 +1,37 @@
+{
+  "classes": {
+    "3": {
+      "classe_nome": "solo_exposto_obras",
+      "fator_por_site": {},
+      "justificativa": "fator heterogêneo entre sites (CV=0.440 >= 0.35) — calibrar em 3 anos e aplicar aos outros 6 anos da era Landsat seria chute, não correção. Publicar em faixas separadas (sem emendar a série) é a opção defensável.",
+      "tratamento": "c"
+    },
+    "4": {
+      "classe_nome": "construida_urbana",
+      "fator_por_site": {
+        "angonap-fortaleza": 0.8112,
+        "ascenty-hortolandia": 0.6564,
+        "ascenty-jundiai": 0.4359,
+        "ascenty-maracanau": 0.9574,
+        "ascenty-osasco": 0.8343,
+        "ascenty-paulinia": 0.5029,
+        "ascenty-sumare": 0.5923,
+        "ascenty-vinhedo": 0.5353,
+        "clickip-manaus": 0.9084,
+        "equinix-santana-parnaiba": 0.6904,
+        "everest-goiania": 0.8181,
+        "hostdime-joao-pessoa": 1.0977,
+        "odata-hortolandia": 0.6657,
+        "scala-sgigsm01": 0.9343,
+        "scala-spoapa01": 0.8058,
+        "scala-tambore": 0.799
+      },
+      "justificativa": "fator estável dentro do site em 16/16 (100%) dos sites (CV<0.3) E parecido entre sites (CV entre sites = 0.241 < 0.35) — aplicável um fator multiplicativo POR SITE (não um número nacional único), calibrado na média dos 3 anos de sobreposição.",
+      "tratamento": "b"
+    }
+  },
+  "gerado_em": "2026-09-03T04:58:25.261440+00:00",
+  "metodo": "fator_mult = area_s2_agregado_30m_ha / area_landsat_ha (MESMA resolução, 30 m nos dois lados — isola sensor de resolução), média dos 3 anos de sobreposição (2019-2021), POR SITE. Só aplicado se estável dentro do site (CV<0.30 entre anos) E parecido entre sites (CV<0.35 entre a média dos 16 sites) — ver validacao_sensores.decidir_tratamento.",
+  "modelo_versao": "rf_v1.0-tuned",
+  "n_pares_sobreposicao": 48
+}

@@ -1,0 +1,30 @@
+# Parâmetros da etapa 5 — extração de LST (temperatura de superfície).
+#
+# Só o que esta etapa lê. A janela e o buffer NÃO são os mesmos da etapa 2: lá a série começa em
+# 2013 (Landsat) e o recorte é a grade do raster; aqui a série começa em 2016 e o recorte é um
+# buffer circular por site. Ver README.md e METODOLOGIA.md.
+
+fonte:
+  colecao_gee: "MODIS/061/MOD11A2"   # Terra, LST diurna, composto de 8 dias
+  banda: "LST_Day_1km"
+  # LST_Day_1km vem em Kelvin escalado por 0,02 — celsius = DN * 0,02 - 273,15.
+  fator_escala: 0.02
+  offset_kelvin: 273.15
+  resolucao_nativa_m: 1000
+  rotulo_fonte: "MODIS/Terra"
+
+janela:
+  ano_inicio: 2016
+  ano_fim: 2025
+
+# Raio do recorte por site, em km. É o `buffer_km` de cada feature do sites.geojson; este valor
+# só é usado para sites que não trazem o campo.
+buffer_km_padrao: 5
+
+qualidade:
+  # LST de superfície no Brasil deveria ficar nessa faixa. Fora dela é sinal de erro de escala ou
+  # unidade — vira aviso, não erro: solo exposto e urbano denso passam de 45 C em dia quente.
+  faixa_sanidade_celsius: [10.0, 50.0]
+  # O MOD11A2 tem ~46 cenas por ano. Abaixo deste número de cenas válidas, a média anual do site
+  # merece desconfiança (nuvem persistente) e entra como aviso no log.
+  minimo_cenas_por_ano: 20

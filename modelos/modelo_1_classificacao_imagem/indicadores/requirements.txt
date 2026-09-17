@@ -1,0 +1,9 @@
+# Export de indicadores — roda 100% LOCAL sobre os rasters já classificados.
+# Sem earthengine-api de propósito: esta etapa não fala com a Google.
+rasterio==1.5.1
+geopandas==1.1.4
+shapely==2.1.2
+numpy==2.5.2
+pandas==3.0.5
+pyyaml==6.0.3
+python-dotenv==1.2.3

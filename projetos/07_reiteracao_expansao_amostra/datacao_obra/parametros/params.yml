@@ -1,0 +1,41 @@
+# Parâmetros da datação de obra (etapa 7) — degrau de NDBI no Landsat.
+#
+# Só o que esta etapa lê. A janela aqui é a do Landsat (2013+), e não a de rótulo do Dynamic
+# World (jun/2015+) — alcançar quem começou a obra antes de 2016 é justamente a razão desta peça
+# existir.
+
+fonte:
+  colecoes:
+    - "LANDSAT/LC08/C02/T1_L2"
+    - "LANDSAT/LC09/C02/T1_L2"
+  # Reflectância de superfície da Collection 2 Level-2 vem escalada: sr = DN * 0,0000275 - 0,2.
+  fator_escala: 0.0000275
+  offset: -0.2
+  mes_inicio: 6     # verão do hemisfério norte — os campi datados aqui são americanos
+  mes_fim: 9
+  escala_m: 30
+
+janela:
+  ano_inicio: 2013
+  ano_fim: 2025
+
+agrupamento:
+  # Dois footprints do OSM caem no mesmo campus se os centroides estiverem a menos disto.
+  raio_campus_km: 2.0
+  # Lado da célula de grade usada para achar vizinhos sem comparar todos contra todos.
+  celula_grau: 0.02
+
+criterio_degrau:
+  # Anos mínimos de cada lado do corte — com menos que isso, "média antes" e "média depois"
+  # viram ruído.
+  minimo_lado: 2
+  # Degrau de NDBI abaixo disto não conta como obra.
+  degrau_minimo: 0.03
+
+# Quantos campi por chamada de reduceRegions. Lote grande demais estoura o limite de payload do
+# Earth Engine; pequeno demais multiplica as idas e vindas.
+lote_reduce_regions: 60
+
+# Datação independente usada como gabarito na fase `validar` (vem do Dynamic World, no
+# repositório de origem). Fica em dados/silver/datacao_obra/.
+referencia_validacao: "eua_datas_derivadas.csv"

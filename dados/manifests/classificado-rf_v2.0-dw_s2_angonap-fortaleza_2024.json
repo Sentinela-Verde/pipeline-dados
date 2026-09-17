@@ -1,0 +1,68 @@
+{
+  "site_id": "angonap-fortaleza",
+  "ano": 2024,
+  "sensor": "s2",
+  "modelo_versao": "rf_v2.0-dw",
+  "modelo_path": "models\\rf_v2.0-dw.joblib",
+  "modelo_sha256": "9dd049b4dec2e47f90c20bc7c66ca7fd19e43840a218d2962570cbb854938b19",
+  "dataset_versao": "v2.0",
+  "lista_features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "git_sha": "5da72030175561a8d93e718d0587a0449c3707b1",
+  "gerado_em": "2026-09-13T01:43:31.465387+00:00",
+  "classes": {
+    "0": "nodata",
+    "1": "vegetacao_densa",
+    "2": "vegetacao_rala",
+    "3": "solo_exposto_obras",
+    "4": "construida_urbana",
+    "5": "agua"
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    1222470.0,
+    0.0,
+    -10.0,
+    9589500.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002
+  },
+  "n_pixels_total": 1004004,
+  "n_pixels_validos": 1004004,
+  "n_pixels_nodata": 0,
+  "pct_pixels_validos": 100.0,
+  "distribuicao_classes": {
+    "vegetacao_densa": 100228,
+    "vegetacao_rala": 50461,
+    "solo_exposto_obras": 42247,
+    "construida_urbana": 268163,
+    "agua": 542905
+  },
+  "confianca": {
+    "media": 89.97,
+    "minima": 25,
+    "maxima": 100
+  },
+  "sha256": "1447c0a896da807f20a889e17ba0eec3c3a06d9267d47a4a360ad2e7cdfc1a18",
+  "sha256_nota": "hash dos bytes do array uint8 de classes preditas, NAO do arquivo .tif inteiro (ver docstring do módulo) — é o que garante o critério de determinismo.",
+  "sha256_confianca": "dc4380f3bf89b6da5ba1907a61cd1e59c231f080dbf8c89692726c3dbb2375bc",
+  "tif": "data\\processed\\classificado-rf_v2.0-dw\\s2\\angonap-fortaleza\\2024.tif",
+  "tif_confianca": "data\\processed\\classificado-rf_v2.0-dw\\s2\\angonap-fortaleza\\2024_confianca.tif"
+}

@@ -1,0 +1,483 @@
+campus_id,lat,lon,nome,operadora,n_predios,ano_obra_dw,status,frac_built_inicio,frac_built_fim
+us-0001,32.832756365,-97.040946085,Cyxtera Dallas-Fort Worth Data Center,Cyxtera,1,,pre_ja_construido,0.7733,0.7134
+us-0002,32.800845284615384,-96.81951845769233,Equinix Infomart,Equinix,1,,pre_ja_construido,1.0,1.0
+us-0003,42.3765836,-71.07986428,CoreSite BO1,,1,,pre_ja_construido,1.0,1.0
+us-0004,34.058040375675674,-118.23557544662162,USPO Terminal Annex,United States Postal Service,1,,pre_ja_construido,1.0,1.0
+us-0005,32.78097235081081,-96.79637707765764,Live Oak Data Center,,2,,pre_ja_construido,1.0,1.0
+us-0006,39.30390701282052,-84.31162447179487,CyrusOne Cincinnati-Mason CIN3,CyrusOne,1,,pre_ja_construido,1.0,1.0
+us-0007,32.82800371111111,-117.12996633333334,LightEdge SAN1,,1,,pre_ja_construido,1.0,1.0
+us-0008,32.8423202,-117.16931507,EdgeConneX San Diego,EdgeConneX,1,,pre_ja_construido,1.0,1.0
+us-0009,38.64787477194445,-121.49166701833332,QTS Sacramento,Quality Technology Services,4,,pre_ja_construido,1.0,1.0
+us-0010,37.24181967928241,-121.78344028630951,Equinix SV11,Equinix,4,,pre_ja_construido,1.0,1.0
+us-0011,39.29400868333333,-84.41219388333333,,,1,2022.0,datado,0.0,1.0
+us-0012,34.08104410901285,-84.25689226581275,T5 Data Center,Ascent,8,,pre_ja_construido,0.7204,0.6548
+us-0013,44.66809826470588,-74.9806132117647,Old Main,Clarkson University,1,,pre_ja_construido,1.0,1.0
+us-0014,38.62948859285714,-90.19685971857145,TierPoint,,2,,pre_ja_construido,1.0,1.0
+us-0015,44.99011453909091,-93.27837627363635,Lumen Minneapolis 3,Lumen Technologies,2,,pre_ja_construido,1.0,1.0
+us-0016,38.80340298863637,-77.51045224805196,Equinix DC14,Equinix,2,,pre_ja_construido,1.0,1.0
+us-0017,39.10281136153846,-84.51781673076924,CyrusOne CIN2,CyrusOne,1,,pre_ja_construido,1.0,1.0
+us-0018,44.85153317142857,-93.59907847142856,Flexential Minneapolis - Chaska,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0019,39.74541640833333,-104.98753652,Insurance Exchange Building,,2,,pre_ja_construido,1.0,1.0
+us-0020,37.37632714111441,-121.9641150753618,STACK SVY02,Stack Infrastructure,54,,pre_ja_construido,1.0,1.0
+us-0021,44.97141696923077,-93.25483566923076,Minnesota Gateway Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0022,38.981199357142856,-84.61875264857143,,CyrusOne,1,,pre_ja_construido,1.0,1.0
+us-0023,42.32628436098901,-83.0733391620879,,Quicken Loans,2,,pre_ja_construido,1.0,1.0
+us-0024,43.14363342307692,-70.95261243076924,,University of New Hampshire,1,,pre_ja_construido,1.0,1.0
+us-0025,38.94865281279762,-77.32845142767857,IAD1,Evocative,2,,pre_ja_construido,1.0,1.0
+us-0026,38.95287872331169,-77.36958967010823,CoreSite Reston Campus VA2,CoreSite,4,,pre_ja_construido,0.9999,1.0
+us-0027,43.07607225384615,-70.80810243846153,,FirstLight,1,,pre_ja_construido,1.0,1.0
+us-0028,39.05834683043479,-76.96436517826086,Lincoln Rackhouse Maryland,Lincoln Rackhouse,1,,pre_ja_construido,1.0,1.0
+us-0029,39.388050640909086,-84.22142296568182,,CyrusOne,2,,pre_ja_construido,0.6084,0.6157
+us-0030,40.79678816,-74.03125926,Equinix NY7 Data Center,Equinix,1,,pre_ja_construido,1.0,1.0
+us-0031,37.40704514954545,-122.01460769257577,Equinix SV6,Equinix,2,,pre_ja_construido,1.0,1.0
+us-0032,44.80725145,-93.37546334642856,Verizon - Bloomington Network,Verizon,1,,pre_ja_construido,1.0,1.0
+us-0033,29.42937364,-98.4868428,H5 Data Centers San Antonio,H5 Data Centers,1,,pre_ja_construido,1.0,1.0
+us-0034,41.58800863076923,-93.63106861538462,Aureon,,1,,pre_ja_construido,1.0,1.0
+us-0035,35.588614214571805,-81.26247105660077,,,3,,pre_ja_construido,0.7914,1.0
+us-0036,39.09435066666666,-94.57944843333333,,"Patmos Hosting, Inc.",1,,pre_ja_construido,1.0,1.0
+us-0037,41.24051847826087,-73.14698582753623,Digital Realty New York HVN10,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0038,41.7722872,-88.21729699090909,Lincoln Rackhouse,,1,,pre_ja_construido,1.0,1.0
+us-0039,44.97198958181818,-93.14757765,H5 Minneapolis,H5,1,,pre_ja_construido,1.0,1.0
+us-0040,33.4210995,-112.03793094,Data Storage Centers,Iron Mountain,2,,pre_ja_construido,0.9215,1.0
+us-0041,37.44586692222222,-122.16084736666666,Equinix SV8,Equinix,1,,pre_ja_construido,1.0,1.0
+us-0042,40.095240100000005,-88.24201091428571,NCSA Petascale Computing Facility,,1,,pre_ja_construido,1.0,1.0
+us-0043,39.912769445,-83.723588265,LexisNexus Springfield,,1,,pre_ja_construido,1.0,0.6854
+us-0044,33.4939713,-112.07077542954544,Lumen,Lumen Technologies,2,,pre_ja_construido,1.0,1.0
+us-0045,33.30579136719457,-111.67173720339366,AZ Labs,,2,,pre_ja_construido,1.0,1.0
+us-0046,33.659030015,-112.111194275,Aligned Energy Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0047,38.91421940251282,-77.21828977343588,Element Critical VA1,Equinix,5,,pre_ja_construido,1.0,1.0
+us-0048,41.85362718571429,-87.61838238571428,Lakeside Technology Center,,1,,pre_ja_construido,1.0,1.0
+us-0049,33.68472850909091,-112.09823183636364,Flexential Phoenix - Deer Valley,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0050,36.15853876,-95.9886568,TierPoint,,1,,pre_ja_construido,1.0,1.0
+us-0051,41.31792986666667,-96.05033657777776,"Union Pacific Jack Koraleski Technology, Research & Development Center",Union Pacific Railroad,1,2018.0,datado,0.1337,0.4542
+us-0052,40.45142195384615,-80.19014290384615,DataBank Pittsburgh PIT2,,1,,sem_leitura_dw,,1.0
+us-0053,34.99552467777778,-106.61810735555557,Molina Healthcare,Molina Healthcare,1,,nunca_cruza_limiar,0.0741,0.0
+us-0054,36.05939774149206,-115.21638144674208,Switch Las Vegas 14,Switch,10,,pre_periodo_curto,0.4517,0.7591
+us-0055,39.37779605714286,-77.41172161428572,,,1,,pre_ja_construido,1.0,1.0
+us-0056,35.89537946410256,-81.54733276820512,,,2,,pre_ja_construido,0.98,0.9543
+us-0057,41.2168006576923,-95.87111339769233,,CyrusOne,2,,pre_ja_construido,0.6586,1.0
+us-0058,37.7888519,-122.39026998666664,365 Main Street Data Center,Digital Realty,2,,pre_ja_construido,1.0,1.0
+us-0059,40.78153052443957,-74.06882295856157,CoreSite NY3,CoreSite,11,,pre_ja_construido,1.0,1.0
+us-0060,39.29479714417101,-94.67943458889276,Black Rock Financial Management,,5,,pre_ja_construido,0.9937,0.9982
+us-0061,36.26253570526316,-95.91033082105264,Cherokee Data Center,,1,,nunca_cruza_limiar,0.4584,0.4755
+us-0062,41.79991666749935,-88.24436695720047,Edged Chicago ORD01,CyrusOne,5,2022.0,datado,0.2829,0.7804
+us-0063,39.592941943299245,-104.85414245821936,Verizon,Verizon,6,,pre_ja_construido,1.0,1.0
+us-0064,39.17454163333333,-86.50083893333334,IU Data Center,Indiana University,1,,sem_leitura_dw,,1.0
+us-0065,40.521122320689656,-74.34774689310345,IO Datacenter,,1,,pre_ja_construido,0.5976,0.999
+us-0066,40.5512029419718,-74.45809832891165,Digital Realty New York EWR11,Digital Realty,5,,pre_ja_construido,0.9964,0.982
+us-0067,40.54943540425926,-74.49038745388889,QTS Piscataway Data Center,Quality Technology Services,3,,pre_ja_construido,0.9645,1.0
+us-0068,47.493513382802576,-122.29107685471232,Intergate Seattle West Building A,Sabey Data Centers,8,,pre_ja_construido,1.0,1.0
+us-0069,41.84240951007752,-87.6691237007752,QTS Chicago,Quality Technology Services,1,,pre_ja_construido,1.0,1.0
+us-0070,41.864202715315656,-87.63921956912037,CoreSite Chicago Data Center (CH2),CoreSite,4,,pre_ja_construido,1.0,1.0
+us-0071,42.68575235714285,-71.20853827619047,,TierPoint,1,,pre_ja_construido,1.0,1.0
+us-0072,42.62998650666667,-71.30447557999999,Markley Data Center,Markley Group,1,,pre_ja_construido,1.0,1.0
+us-0073,35.13535957142857,-80.93687204285713,Flexential Charlotte - South,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0074,33.39504937893773,-111.96125887106228,Omnis Network,EdgeConneX,2,,pre_ja_construido,1.0,1.0
+us-0075,33.3446148125,-111.89913855416668,Digital Realty Data Center,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0076,47.69332941666667,-122.31731716666668,,Comcast,1,,pre_ja_construido,1.0,1.0
+us-0077,38.81571302637722,-77.65228132134142,Amazon Web Services,Amazon Web Services,6,,pre_ja_construido,0.7599,0.957
+us-0078,47.617282011585296,-122.34478828313284,KOMO Plaza West,Equinix,6,,pre_ja_construido,1.0,1.0
+us-0079,37.41824871764706,-121.94307354705884,Dell 350 Holger Way,,1,,pre_ja_construido,1.0,1.0
+us-0080,38.74741107407407,-77.67437694444445,OVH US East Vint Hill,,1,,pre_ja_construido,1.0,1.0
+us-0081,41.12490429066451,-104.90209316964638,CYS42 Datacenter,Microsoft,13,,pre_ja_construido,0.5456,0.9861
+us-0082,45.62968065195725,-121.20496146128846,Google,Google,4,,pre_ja_construido,0.5159,0.935
+us-0083,35.72510922,-78.6624238,Segra Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0084,43.60356155277778,-96.801770775,ADP South Dakota,,2,,pre_ja_construido,0.8913,0.9884
+us-0085,40.56370287363636,-112.04921787151514,Ebay,,2,,pre_periodo_curto,0.4231,0.8003
+us-0086,41.81258277142857,-87.97298555714285,Equinix Chicago Data CH7,Equinix,1,,pre_ja_construido,1.0,1.0
+us-0087,33.41595940882353,-112.00940153529412,PhoenixNAP,,1,,pre_ja_construido,1.0,1.0
+us-0088,40.60722239466463,-74.17388378998984,Telehouse Teleport,Telehouse,2,,pre_ja_construido,1.0,1.0
+us-0089,40.718273482954544,-74.00533059833916,33 Thomas Street,,2,,pre_ja_construido,1.0,1.0
+us-0090,38.9108728421508,-77.4755615012877,Amazon Web Services,Amazon Web Services,20,2018.0,datado,0.435,0.9988
+us-0091,42.679389,-76.94867405294117,Greenidge Power Plant and Data Center,Greenidge Generation Holdings Inc.,1,,sem_leitura_dw,1.0,1.0
+us-0092,36.143720821875,-115.07872252625,Switch Las Vegas 5,Switch,4,,pre_ja_construido,1.0,1.0
+us-0093,29.445486305901586,-98.6438221401162,Amazon,Quality Technology Services,24,,pre_ja_construido,0.9284,0.904
+us-0094,33.09559702991453,-96.68264553461538,Evoque Allen DA1,Centersquare,2,,pre_ja_construido,0.8133,0.9957
+us-0095,41.25567048795094,-95.93151925753068,Omaha Switch,Cogent Communications,4,,pre_ja_construido,1.0,1.0
+us-0096,37.64680022,-77.4386982,Flexential - Richmond,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0097,38.74649254375,-77.1912354775,Amazon Web Services,Amazon Web Services,2,,pre_ja_construido,1.0,0.7971
+us-0098,38.92825534856151,-77.42586069476687,Amazon IAD-500,Amazon Web Services,8,,pre_ja_construido,0.6116,0.9892
+us-0099,34.03630407777777,-84.3195622111111,Cox Data Center,,1,,pre_ja_construido,0.9858,0.9636
+us-0100,33.77728982777778,-84.42032106111111,QTS Atlanta Data Center 2,Quality Technology Services,2,,pre_ja_construido,0.7282,0.6682
+us-0101,33.65703647714285,-84.41526376571429,Digital Realty Data Center,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0102,40.761265085000005,-74.02542357166666,Digital Realty New Jersey EWR10,Digital Realty,2,,pre_ja_construido,1.0,1.0
+us-0103,47.247714385875845,-119.82096979382524,Vantage WA13,,16,,pre_ja_construido,0.5987,0.9994
+us-0104,33.92561353529412,-84.48176978235294,CoreSite AT2 - Marietta Data Center,CoreSite,1,,pre_ja_construido,1.0,1.0
+us-0105,37.72379154705882,-122.3979946764706,Digital Realty San Francisco SFO10,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0106,43.82525942857143,-111.78206725714288,VentureData,,1,,pre_ja_construido,1.0,1.0
+us-0107,33.40017863636364,-112.04781217272726,Cogent Data Center,"Cogent Communications, Inc.",1,,pre_ja_construido,1.0,1.0
+us-0108,40.6357803,-75.45767128,Flexential Allentown Data Center,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0109,37.405664900000005,-121.916188,CoreSite SV2,"CoreSite Real Estate 1656 McCarthy, L.P.",1,,pre_ja_construido,1.0,1.0
+us-0110,33.27048414765027,-111.88322154505175,H5 Phoenix,CyrusOne,10,,pre_ja_construido,0.5488,0.9674
+us-0111,44.80812213648352,-93.63622653199025,StreamData Center,,3,,pre_ja_construido,0.8827,1.0
+us-0112,42.216730354545454,-87.95303346818183,VISA,VISA,1,,sem_leitura_dw,,1.0
+us-0113,35.67241731666667,-105.9566162388889,John F. Simms Building,SONM,1,,pre_ja_construido,1.0,1.0
+us-0114,29.4383032,-98.5064791,Lumen San Antonio 2,Lumen Technologies,1,,pre_ja_construido,1.0,1.0
+us-0115,44.29431539426674,-120.88166576991226,Apple,Apple Inc.,11,2018.0,datado,0.4129,0.9921
+us-0116,45.55516924083286,-122.92275869683723,QTS Data Center - Hillsboro 3,Quality Technology Services,31,2021.0,datado,0.3456,0.9506
+us-0117,38.27701952352942,-85.50726631176471,Flexential Louisville - East,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0118,38.24243268571429,-85.73343424285714,Flexential Louisville - Downtown,Flexential,1,,sem_leitura_dw,,1.0
+us-0119,39.959778825,-75.160632525,Terminal Commerce Building,,1,,pre_ja_construido,1.0,1.0
+us-0120,47.67192323333333,-117.0959462,TierPoint,,1,,pre_ja_construido,1.0,1.0
+us-0121,39.27529079090909,-76.6256165090909,Baltimore Technology Park,,1,,pre_ja_construido,1.0,1.0
+us-0122,47.238959167589925,-119.87548185989172,Microsoft,Microsoft,17,,pre_ja_construido,0.5671,0.9945
+us-0123,41.55032574,-90.48250608,Geneseo Communications Inc,,1,,sem_leitura_dw,,1.0
+us-0124,41.905325985714285,-88.21955605714285,,,1,,pre_ja_construido,1.0,1.0
+us-0125,39.71715803125,-85.9414431875,,Verizon Wireless,1,,sem_leitura_dw,,1.0
+us-0126,40.62040728,-111.98610158,Flexential Salt Lake City - South Valley,Flexential,1,,pre_ja_construido,0.9534,1.0
+us-0127,37.6994713,-121.90382064,QES Computers,,1,,pre_ja_construido,1.0,1.0
+us-0128,39.05264653333334,-76.92604041333334,AiNET,,1,,pre_ja_construido,0.983,1.0
+us-0129,29.473545775961814,-98.68617483894062,Vantage Data Centers TX21,Vantage Data Centers,15,,pre_ja_construido,0.7316,0.6694
+us-0130,18.44678786,-66.05163972,,Claro,1,,pre_ja_construido,1.0,1.0
+us-0131,40.12453388333333,-75.41478393888889,TierPoint Valley Forge,TierPoint,2,,pre_ja_construido,1.0,1.0
+us-0132,45.52144692857143,-122.68082124285716,Pittock Block,,1,,pre_ja_construido,1.0,1.0
+us-0133,45.52669082857143,-122.87551137142856,Data Center,Oregon Health & Science University,1,,pre_ja_construido,1.0,1.0
+us-0134,39.61251628,-74.32749976,GlobeNet Tuckerton Cable Landing Station,GlobeNet,2,,pre_ja_construido,0.9421,0.9486
+us-0135,33.138210539750915,-96.65873608272528,CyrusOne Allen,CyrusOne,5,2018.0,datado,0.2649,0.4444
+us-0136,48.75729408888888,-122.48049452222222,CSSNW Bellingham,CSS Communications,1,,pre_ja_construido,1.0,1.0
+us-0137,41.99866490616931,-87.96201486968275,T5 Chicago II,T5 Data Centers,17,,pre_ja_construido,0.8734,0.9224
+us-0138,37.79896475555555,-122.28259795555556,Digital Realty,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0139,39.55897402446429,-104.83560450053572,Flexential Denver - Englewood,Flexential,2,,pre_ja_construido,0.6975,1.0
+us-0140,42.44773837058823,-83.26279747058823,EdgeConneX Detroit DET01,EdgeConneX,1,,pre_ja_construido,1.0,1.0
+us-0141,30.26126221969697,-97.72277166666666,Alpheus DataCenter,Alpheus,2,,pre_ja_construido,1.0,1.0
+us-0142,30.20563120800277,-97.70541994579624,Data Foundry - Texas 2,CyrusOne,9,,pre_ja_construido,0.7795,0.6632
+us-0143,39.00810503317679,-77.4505406553832,NTT Ashburn VA7 Data Center,NTT,166,,pre_ja_construido,0.5224,0.9765
+us-0144,37.47901616488604,-121.92450560605414,Hurricane Electric Fremont 2,Hurricane Electric,3,,pre_ja_construido,1.0,1.0
+us-0145,41.43209884736842,-82.71854593157896,,Aligned Data Centers,1,,pre_ja_construido,0.8875,0.6242
+us-0146,30.34284825,-97.69630366666668,Element Critical,,1,,pre_ja_construido,1.0,1.0
+us-0147,40.73683746923077,-74.17363993076923,165 Halsey / Equinix NY1 / Databank EWR1,Tishman,1,,pre_ja_construido,1.0,1.0
+us-0148,34.0365425063973,-84.05920842222223,QTS Suwanee,Quality Technology Services,3,,pre_ja_construido,0.9672,0.944
+us-0149,34.75624281428571,-92.44465018571428,TierPoint Little Rock,,1,,pre_ja_construido,1.0,1.0
+us-0150,33.95482296190477,-84.19862873333334,Flexential Atlanta - Norcross,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0151,47.84183693939394,-122.3014331030303,Centersquare Lynnwood SE1,Centersquare,1,,pre_ja_construido,1.0,1.0
+us-0152,38.98734458186274,-104.78698321691176,SAP COS02,SAP,2,,pre_ja_construido,0.8085,0.9991
+us-0153,41.338343379166666,-96.0282144375,Verizon,,2,,pre_ja_construido,1.0,1.0
+us-0154,34.74095138888889,-86.68248229444444,SimpleHelix,Alabama Supercomputer Authority,2,,sem_leitura_dw,,1.0
+us-0155,33.8507524125,-118.304123425,Equinix,Equinix,1,,pre_ja_construido,0.9619,1.0
+us-0156,41.92849313846154,-87.85923198461539,Digital Realty Chicago ORD12,Digital Realty,1,,pre_ja_construido,1.0,1.0
+us-0157,41.24291896923077,-96.01651846923076,Scott Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0158,41.173002255,-96.08429083,Yahoo,Yahoo,2,,pre_ja_construido,0.8633,0.8297
+us-0159,33.91839631333334,-118.3856385258586,DRT LAX12,Digital Realty,3,,pre_ja_construido,1.0,1.0
+us-0160,39.92247473846154,-104.98348132307692,Google - Thornton,Google,1,,pre_ja_construido,1.0,1.0
+us-0161,34.0477155889832,-118.2561548955092,One Wilshire,,3,,pre_ja_construido,1.0,1.0
+us-0162,37.48343385920492,-77.24405634619916,RIC3 DC4,Quality Technology Services,17,2024.0,datado,0.042,0.6149
+us-0163,29.672566611111108,-82.29992183333333,UF Research Computing Center,University of Florida,1,,pre_ja_construido,1.0,1.0
+us-0164,25.78246777619048,-80.19317587619048,NAP of the Americas,,1,,pre_ja_construido,1.0,1.0
+us-0165,25.79752268,-80.22997702,,,1,,sem_leitura_dw,,
+us-0166,41.54015697416666,-93.82697008027776,Microsoft,Microsoft,4,,pre_ja_construido,0.6358,0.9695
+us-0167,41.669578505401134,-93.51112916738848,Meta,Meta,7,2020.0,datado,0.3042,0.867
+us-0168,37.36050100952381,-77.32820114404763,PowerHouse CTP-02,PowerHouse,3,,pre_ja_construido,0.5196,0.802
+us-0169,33.70558556636364,-117.84712482999998,TPx Colocation Datacenter,TPx Communications,2,,pre_ja_construido,1.0,1.0
+us-0170,33.71694198888889,-117.80592874444444,Lumen Technologies,,1,,pre_ja_construido,1.0,1.0
+us-0171,47.65422108333333,-117.42000936666666,Lumen,Lumen Technologies,1,,pre_ja_construido,1.0,1.0
+us-0172,43.06729974545454,-89.4366415818182,,,1,,sem_leitura_dw,,0.9866
+us-0173,38.45557879565217,-77.97833369565217,Equinix CU2,Equinix,1,,pre_ja_construido,0.7909,0.8047
+us-0174,37.33355344109589,-121.88799112876713,,,1,,pre_ja_construido,1.0,1.0
+us-0175,40.82888520790064,-74.13153348600962,Credit Suisse: Clifton Data Center,Digital Realty,4,,pre_ja_construido,1.0,1.0
+us-0176,40.157083060000005,-74.1016629,Manasquan Cable Landing Station (Apollo),Vodafone,1,,pre_ja_construido,1.0,1.0
+us-0177,40.8436461,-72.88337264615384,Cable & Wireless Cable Landing Station,,1,,pre_ja_construido,1.0,1.0
+us-0178,40.05905948938776,-83.13355342244897,Amazon Web Services,Oppidan,7,,pre_periodo_curto,0.3816,0.8618
+us-0179,45.91586676686869,-119.26750966383838,Amazon Web Services,Amazon Web Services,11,,pre_ja_construido,0.6492,1.0
+us-0180,37.39918774288451,-121.89090103106184,Stack Infrastructure,Stack Infrastructure,4,,pre_ja_construido,1.0,1.0
+us-0181,35.315845075079366,-81.82410965698412,Meta,Meta,4,,pre_ja_construido,1.0,0.9366
+us-0182,47.40531920756867,-120.20685411990688,Microsoft EAT04,Microsoft,13,2019.0,datado,0.356,0.7156
+us-0183,40.53808341967257,-74.54480800328363,Rackspace Belmont NYC2,Digital Realty,8,,pre_ja_construido,0.7352,0.9274
+us-0184,34.199807480000004,-118.34372558,,Centurylink,1,,pre_ja_construido,1.0,1.0
+us-0185,39.5680051890909,-119.54226465515151,,,11,,pre_ja_construido,0.5713,1.0
+us-0186,38.25410086190476,-122.2732402095238,Kaiser Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0187,32.82262202679958,-96.87357657989617,Prime DFW01-01,Prime,7,,pre_ja_construido,1.0,0.8927
+us-0188,33.411907817619046,-112.36399995190476,PHX-14,Microsoft,6,2023.0,datado,0.1665,0.6621
+us-0189,41.078666295,-74.15279646,NYSE Data Center,nyse,1,,pre_ja_construido,1.0,1.0
+us-0190,34.57989721764706,-118.11397017058825,AT&T,,1,,pre_ja_construido,1.0,1.0
+us-0191,38.80275601428571,-104.52199372857142,,,1,,pre_ja_construido,1.0,1.0
+us-0192,45.318714209090906,-122.76579013636363,Siemens EDA - HDC / Data Center,Siemens Digital Industries Software,1,,pre_ja_construido,1.0,1.0
+us-0193,30.018454644444446,-95.8638096,,DXC Technology,1,,nunca_cruza_limiar,0.2703,0.2129
+us-0194,41.506190016666665,-81.68393511666666,H5 Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0195,30.331476700000003,-81.66251528000001,Cologix Jacksonville JAX1,,1,,sem_leitura_dw,1.0,1.0
+us-0196,32.992863836994566,-97.25356055137848,Charles Schwab Data Center,Meta,6,,sem_leitura_dw,0.4172,0.7932
+us-0197,35.14278255833333,-80.91615879999999,Spectrum Charlotte National Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0198,29.416058064635408,-98.7957528782798,Microsoft,Microsoft,15,,nunca_cruza_limiar,0.008,0.132
+us-0199,27.945539377777777,-82.35099956666666,Cyxtera Tampa TP1,Cyxtera,1,,pre_ja_construido,1.0,1.0
+us-0200,35.0315001625,-85.2973373625,DC Blox Chattanooga,,1,,sem_leitura_dw,,1.0
+us-0201,32.896092621674875,-96.98210730381774,QTS Irving - Dallas Data Center Campus,Quality Technology Services,2,,pre_ja_construido,0.725,0.9631
+us-0202,41.802502,-88.09511072000001,Centersquare Lisle ORD4 Data Center,Centersquare,1,,pre_ja_construido,0.5902,0.7229
+us-0203,33.36198746486487,-111.83933397297298,GoDaddy - Gilbert,,1,,pre_ja_construido,1.0,1.0
+us-0204,32.7476846047619,-117.15898786190476,AT&T Center,American Telephone & Telegraph,1,,pre_ja_construido,1.0,1.0
+us-0205,36.14050064,-86.76410687,,,1,,sem_leitura_dw,,1.0
+us-0206,33.76511408571428,-84.38373121428572,CenturyLink,,1,,pre_ja_construido,1.0,1.0
+us-0207,40.42736522,-80.04240924,Expedient Pittsburgh South,Expedient,1,,pre_ja_construido,1.0,1.0
+us-0208,33.42132545714286,-111.8590174,Centersquare: Phoenix - (PHX1 - Mesa),Centersquare,1,,pre_ja_construido,1.0,1.0
+us-0209,29.996188246732025,-95.56395370490196,,DXC Technology,2,,pre_ja_construido,0.9329,0.9817
+us-0210,42.68797839230769,-84.6430871923077,Liquid Web,,1,,pre_ja_construido,1.0,1.0
+us-0211,42.70546936,-84.66618308,"Liquid Web, Inc",,1,,sem_leitura_dw,1.0,1.0
+us-0212,34.0706768625,-84.675858175,,,1,,pre_ja_construido,1.0,1.0
+us-0213,40.104562127140525,-82.80633437952613,STACK New Albany,,4,,pre_ja_construido,0.7931,0.8244
+us-0214,32.99471130625,-96.75251121875,Flexential Dallas - Richardson,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0215,33.17190354,-96.7255101,Experian McKinney Data Center,,1,,pre_ja_construido,0.8071,1.0
+us-0216,40.11580085909091,-83.00196969090909,,,2,,pre_ja_construido,1.0,1.0
+us-0217,38.923442455,-92.288649405,Carfax,,1,,pre_ja_construido,1.0,1.0
+us-0218,32.85046361538461,-97.07020166923076,Amazon Web Services,Amazon Web Services,1,,pre_ja_construido,1.0,1.0
+us-0219,40.096313715430405,-82.74217150225275,Vantage Building 3,Vantage,16,2024.0,datado,0.1252,0.6947
+us-0220,30.42116074,-97.59164534,Thin-nology,,1,,pre_ja_construido,1.0,1.0
+us-0221,41.1129734,-73.38860782857144,,CyrusOne,1,,pre_ja_construido,1.0,1.0
+us-0222,33.74927864170139,-84.58358805520834,Switch Data Center,Switch,4,,pre_ja_construido,0.8525,0.8428
+us-0223,41.91674095185186,-87.91791159629629,Aligned Data Center - Chicago ORD-02,Aligned,3,,pre_ja_construido,0.8966,1.0
+us-0224,38.87215334,-99.3002393,Cloud Storage Corp,,1,,pre_ja_construido,1.0,1.0
+us-0225,29.821745305882352,-95.57078666470588,,,1,,pre_ja_construido,1.0,1.0
+us-0226,42.98214774,-70.95051866,Information Technology Data Center,Phillips Exeter Academy,1,,pre_ja_construido,1.0,1.0
+us-0227,47.82235052857143,-122.28953385714286,Digital Fortress Lynnwood,,1,,pre_ja_construido,1.0,1.0
+us-0228,40.48047937401587,-111.90521926553114,DataBank SLC6,DataBank,5,,pre_ja_construido,0.8714,1.0
+us-0229,32.966050403018414,-96.71283387133316,Digital Realty Dallas DFW16,Digital Realty,8,,pre_ja_construido,0.9299,0.9965
+us-0230,38.93751479875,-94.86252331125,U.S. Bank National Data Process Center,,2,,pre_ja_construido,0.652,1.0
+us-0231,39.83090506,-75.19544144,,,1,,pre_ja_construido,1.0,1.0
+us-0232,41.22032120869565,-96.14777280434782,,Verizon Wireless,1,,pre_ja_construido,1.0,1.0
+us-0233,28.61740028571429,-81.39350322857142,,,1,,sem_leitura_dw,,1.0
+us-0234,33.06368258438334,-80.04164232512309,Google,Google,10,,pre_ja_construido,0.632,0.8203
+us-0235,39.21344725555556,-76.68275761111111,TierPoint Baltimore BWI,,1,,pre_ja_construido,0.9965,1.0
+us-0236,40.45659404285714,-109.5291019142857,Strata Networks,,1,,pre_ja_construido,1.0,1.0
+us-0237,40.5701696,-74.67036068,Goldman Sachs,,1,,pre_ja_construido,1.0,0.996
+us-0238,38.63658760909091,-90.25556963636365,Genome Data Center,Washington University in St. Louis,1,,pre_ja_construido,1.0,1.0
+us-0239,35.934647245486104,-78.88083385694443,,CyrusOne,2,,pre_ja_construido,0.9883,1.0
+us-0240,40.581402784615385,-74.5738876,365 Bridgewater NJ,,1,,pre_ja_construido,1.0,0.9087
+us-0241,31.23191786,-85.45578578,AngelTrax Data Center,AngelTrax Mobile Video Surveillance Solutions,1,,sem_leitura_dw,1.0,1.0
+us-0242,34.828523709306744,-106.78045882883283,Meta,Meta,5,,nunca_cruza_limiar,0.0,0.473
+us-0243,47.159612432988354,-122.27973117838484,Centeris,,3,,pre_periodo_curto,0.5,0.7613
+us-0244,40.1944427,-92.58129575714284,,AT&T,1,,pre_ja_construido,1.0,1.0
+us-0245,32.96491037142857,-80.10119037142859,DartPoints Charleston,DartPoints,1,,pre_ja_construido,1.0,1.0
+us-0246,44.08615372,-121.2831403,US Signal - OR01 Bend,US Signal,1,,pre_ja_construido,1.0,1.0
+us-0247,42.863068936842105,-87.97779475263158,Expedient Milwaukee,,1,,pre_ja_construido,1.0,1.0
+us-0248,43.894996996428574,-69.92342896071429,Oxford Networks,FirstLight,1,,pre_ja_construido,1.0,1.0
+us-0249,40.06009630721796,-82.75849310152626,Google NBY-7,Google,17,2024.0,datado,0.0,0.6954
+us-0250,32.99072453722002,-96.66037612015872,Aligned  DFW-02,Aligned,12,2023.0,datado,0.2112,0.473
+us-0251,29.6582052,-95.44339676923076,Rice Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0252,34.996615222222225,-82.03476766666667,DartPoints Spartanburg,DartPoints,1,,pre_ja_construido,1.0,1.0
+us-0253,33.45314875312501,-111.97684885454548,Iron Mountain AZP-1,Iron Mountain,2,,pre_ja_construido,0.8586,0.8836
+us-0254,45.84968970633801,-119.625152499825,Amazon Web Services,Amazon Web Services,24,2020.0,datado,0.2546,0.893
+us-0255,35.048296926666666,-106.54214325333334,,,1,,pre_ja_construido,1.0,1.0
+us-0256,45.79852562978022,-119.36251677302808,Amazon Web Services,Amazon Web Services,6,2021.0,datado,0.0,0.9882
+us-0257,36.62397941044932,-87.2601157970951,SPC4A,Google,5,2018.0,datado,0.169,0.5385
+us-0258,33.087157107692306,-96.81521987692308,DataBank Plano Data Center,DataBank,1,,pre_periodo_curto,0.2084,0.9689
+us-0259,29.8027991125,-95.7548967,Skybox Houston One,Skybox,1,,pre_ja_construido,0.9518,0.8661
+us-0260,34.91381534148149,-85.74718733481483,Google,Google,3,2021.0,datado,0.03,0.3898
+us-0261,40.57999068636364,-74.51951246363636,PSE&G Delivery Emergency Response Center,PSE&G,1,,pre_periodo_curto,0.0,1.0
+us-0262,35.25067564444444,-81.39460595555555,T5 Charlotte Campus,,1,,pre_ja_construido,0.9972,0.9687
+us-0263,44.070767505,-92.522160145,Epic / Mayo Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0264,33.971671,-96.4029076,Choctaw Nation of Oklahoma Data Center,Choctaw Nation of oklahoma,1,,pre_ja_construido,1.0,1.0
+us-0265,40.58419035882353,-74.24360215294118,,,1,,pre_ja_construido,1.0,1.0
+us-0266,40.7563686,-111.95479144285714,Flexential Salt Lake City - Downtown,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0267,44.92645768,-123.00212508666668,Oregon State Data Center,State of Oregon,1,,pre_ja_construido,1.0,1.0
+us-0268,26.19016734,-80.19337298,Flexential Fort Lauderdale,Flexential,1,,sem_leitura_dw,,1.0
+us-0269,30.1778833,-95.48645435384616,,,1,,pre_ja_construido,1.0,1.0
+us-0270,36.24823088730158,-115.10102953333332,Flexential Las Vegas - North,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0271,33.95346953333333,-98.5249205,,,1,,pre_ja_construido,0.9048,0.9514
+us-0272,44.04742483333334,-121.32854958333331,Fort Rock DC,Fort Rock Data Center,1,,pre_ja_construido,1.0,1.0
+us-0273,42.96871046,-83.77952085333332,,,1,,pre_ja_construido,1.0,1.0
+us-0274,40.59953065128205,-74.70999686923076,Verizon Branchburg NEC Datacenter,Verizon,1,,pre_ja_construido,1.0,1.0
+us-0275,35.76677744,-78.78401724,iGLASS Networks,,1,,pre_ja_construido,1.0,1.0
+us-0276,46.332119160000005,-113.29268792,,,1,,pre_ja_construido,1.0,1.0
+us-0277,40.52809706,-74.68285246,Vital Records,,1,,pre_ja_construido,1.0,1.0
+us-0278,34.05945746,-117.20215664,,,1,,pre_ja_construido,1.0,1.0
+us-0279,44.20458406,-88.34495945999998,,Involta,1,,pre_ja_construido,0.7803,0.7117
+us-0280,39.1827232125,-85.896665775,DartPoints Columbus,DartPoints,1,,sem_leitura_dw,,0.5347
+us-0281,42.23525812,-83.44417412,,US Signal,1,,pre_ja_construido,0.9912,1.0
+us-0282,36.215640990625,-86.78395580243054,Tennessee Processing Center LLC,BNYM,2,,pre_ja_construido,0.6687,0.5718
+us-0283,40.544190324324326,-75.65434881351352,Allentown-TekPark,,1,,pre_ja_construido,1.0,1.0
+us-0284,38.24616836896552,-122.06710390689656,PG&E Datacenter,,1,,pre_ja_construido,1.0,1.0
+us-0285,40.95130584,-73.89795971999999,,,1,,pre_ja_construido,1.0,1.0
+us-0286,40.1608166375,-74.05313033750001,Wall Township Cable Landing Station,Tata,1,,pre_ja_construido,1.0,1.0
+us-0287,42.2139088,-83.1981998,Comcast,Comcast,1,,pre_ja_construido,1.0,1.0
+us-0288,36.03272208333333,-86.63784035277777,HCA Information Technology & Services Data Center,,2,,sem_leitura_dw,,0.6197
+us-0289,35.924439660000004,-86.85595573999998,TierPoint,,1,,sem_leitura_dw,0.9201,0.9986
+us-0290,35.972103358333335,-86.80919448333333,Flexential Brentwood Data Center,,1,,sem_leitura_dw,0.9437,0.9887
+us-0291,36.02283674,-86.79092252000001,,,1,,pre_ja_construido,0.8725,0.7501
+us-0292,33.34259871578947,-111.8410321,StrongMind,,1,,pre_ja_construido,1.0,1.0
+us-0293,35.83938306666667,-78.32821528888888,BB&T Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0294,41.51663542901709,-93.70993667452991,Microsoft,Microsoft,12,2019.0,datado,0.3214,0.7334
+us-0295,41.49683363381818,-93.78779375511688,Microsoft,Microsoft,5,2024.0,datado,0.0,0.6638
+us-0296,43.07488511111112,-78.94478933333333,,Blockfusion,1,,pre_ja_construido,1.0,1.0
+us-0297,43.0829127427922,-79.00342677971861,Blockfusion Niagra Falls,,11,,pre_ja_construido,1.0,1.0
+us-0298,37.062787,-113.544766,Lumen,Lumen Technologies,1,,pre_ja_construido,1.0,1.0
+us-0299,33.40444681818182,-86.91100315454545,Sungard Systems International,,1,2021.0,datado,0.3196,0.8809
+us-0300,33.47547718,-111.71919878,Myndshift Technologies,,1,2019.0,datado,0.0,1.0
+us-0301,41.70402082,-91.58706644,ForceAmp.com,,1,,pre_ja_construido,1.0,1.0
+us-0302,35.176530735,-80.92719966,SEGRA,TierPoint,2,,pre_ja_construido,1.0,1.0
+us-0303,39.01758361428572,-78.29076075714285,Middletown Data Center,,1,,pre_ja_construido,0.9982,1.0
+us-0304,47.86468925714286,-122.28417308571429,Norma Beach Cable Landing Station,Unity Cable System,1,,pre_ja_construido,1.0,1.0
+us-0305,32.09275,-110.78744953999998,,DirecTV,1,,pre_ja_construido,1.0,1.0
+us-0306,36.05754364444444,-115.00861854444446,Google,Google,2,2020.0,datado,0.0,0.9467
+us-0307,32.441769098099,-97.06216809455113,Google,Google,3,2024.0,datado,0.0,0.518
+us-0308,41.12645983113268,-96.14501803508014,Google,Google,10,2022.0,datado,0.0423,0.9646
+us-0309,39.989088908333336,-105.0206949625,JPMorgan Chase,JPMorgan Chase,1,2019.0,datado,0.0,1.0
+us-0310,43.78215386666667,-89.5748644,Marquette-Adams Telephone Coop,,1,,pre_ja_construido,1.0,1.0
+us-0311,32.5428132012963,-96.79688203380952,Compass Data Center,Google,12,,nunca_cruza_limiar,0.0001,0.118
+us-0312,42.745429362500005,-73.75913545,Turnkey Internet,,1,,pre_ja_construido,1.0,1.0
+us-0313,47.5945744,-117.53718616,Iron Mountain,,1,,pre_ja_construido,1.0,1.0
+us-0314,38.463007822222224,-78.85690858888888,DBT Data - Harrisonburg Center,,1,,pre_ja_construido,0.9208,1.0
+us-0315,41.09187608235294,-73.51659052352942,amnet Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0316,38.93080963346628,-94.76466037132953,Data Center Lenexa,TierPoint,3,,pre_ja_construido,1.0,1.0
+us-0317,39.0561675939705,-77.54718006101405,TikTok Data Center,True North Data Solutions,20,2024.0,datado,0.0954,0.6347
+us-0318,38.951465027369245,-77.52644143797622,Digital Realty Northern Virginia IAD44,Digital Realty,28,2021.0,datado,0.0695,0.8633
+us-0319,42.31732512,-111.30425085333331,Family History Center,The Church of Jesus Christ of Latter-day Saints,1,,pre_ja_construido,1.0,1.0
+us-0320,36.32806034,-83.37670518,,,1,2018.0,datado,0.0138,0.0138
+us-0321,45.83711409805555,-119.69172274583332,Amazon Web Services,Amazon Web Services,4,2020.0,datado,0.0,1.0
+us-0322,39.73172447765151,-104.71040496767677,QTS,Quality Technology Services,2,2020.0,datado,0.0,1.0
+us-0323,43.044887056,-78.74919779199999,,,1,,pre_ja_construido,1.0,1.0
+us-0324,42.67428542916667,-87.90766543625,,,2,,nunca_cruza_limiar,0.0741,0.335
+us-0325,41.50506476666667,-81.65778205,Lumen Cleveland,,1,,pre_ja_construido,1.0,1.0
+us-0326,35.17960122857143,-80.57022371428572,,,1,,pre_ja_construido,0.7726,0.7722
+us-0327,43.012117620000005,-76.11590924,SU Green Data Center,Syracuse University,1,,pre_ja_construido,1.0,1.0
+us-0328,35.99337245454546,-86.49566798181819,Tennessee South Data Center,State of Tennessee,1,,sem_leitura_dw,,0.7175
+us-0329,33.153626200000005,-117.23889064,,,1,,pre_ja_construido,1.0,1.0
+us-0330,39.29357245555556,-76.55166311111111,Johns Hopkins Data Center,,1,,pre_ja_construido,1.0,1.0
+us-0331,38.59222567,-121.27729773000002,Edgeconnex Data Center,EdgeConneX,1,,pre_ja_construido,1.0,1.0
+us-0332,33.44333044393939,-112.3755347,Vantage Data Centers,Vantage Data Centers,2,2023.0,datado,0.0,0.912
+us-0333,35.92036381666667,-86.81560874166667,Flexential Nashville - Franklin,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0334,40.59084182,-111.90384294,Verizon,,1,,pre_ja_construido,1.0,1.0
+us-0335,41.55810191333333,-93.52790069787878,,,2,,pre_ja_construido,1.0,1.0
+us-0336,36.081289780000006,-95.85417008,,,1,,pre_ja_construido,1.0,1.0
+us-0337,33.39665146666667,-112.00016935555556,1GServers,,1,,pre_ja_construido,1.0,1.0
+us-0338,32.49810781325188,-84.88353207387217,DLI ONE,DLI ONE,2,,sem_leitura_dw,,0.9606
+us-0339,28.577967855555556,-81.56460299999999,E-Foam,,1,,pre_ja_construido,1.0,1.0
+us-0340,41.47874286,-72.80103227142857,,,1,,pre_ja_construido,1.0,1.0
+us-0341,44.9380585,-123.03374285555554,CenturyLink,CenturyLink,1,,pre_ja_construido,1.0,1.0
+us-0342,40.906475049696965,-74.236253165,,CyrusOne,2,2018.0,datado,0.3814,1.0
+us-0343,42.3324603875,-122.8804122,Date Center West - Eugene,"Data Center West, Inc.",1,,pre_ja_construido,1.0,1.0
+us-0344,37.43339477058823,-122.18077906470587,Northwest Data Center and Communications Hub,,1,,pre_ja_construido,1.0,1.0
+us-0345,41.70749562857143,-87.51999707142856,Digital Crossroad,Digital Crossroad,1,,pre_ja_construido,0.9647,1.0
+us-0346,32.97218665461957,-97.15660166956522,Verizon Wireless Mew Building,,1,,pre_ja_construido,1.0,1.0
+us-0347,38.76018902984105,-77.5281966262461,Amazon Web Services,Amazon Web Services,52,2019.0,datado,0.2459,0.9209
+us-0348,43.05147153571429,-88.21659603571428,Pewaukee Data Center,WE Energies,1,,pre_ja_construido,1.0,1.0
+us-0349,36.18297222,-115.06262694,CenturyLink,,1,,pre_ja_construido,1.0,1.0
+us-0350,33.34725154995544,-111.6233514917576,EdgeConneX PHX02 Data Center,EdgeConneX,7,2024.0,datado,0.1336,0.5791
+us-0351,26.18502872222222,-80.28688347777778,T-Mobile Everglades MSO Data Center,,1,,sem_leitura_dw,,1.0
+us-0352,33.50062097272728,-86.82078519090909,DC Blox Data Center,,1,,sem_leitura_dw,,1.0
+us-0353,35.24924248333333,-91.74094703333331,Searcy Information Technologies,City of Searcy,1,,pre_ja_construido,1.0,1.0
+us-0354,40.26846760743523,-112.01675637825456,Meta,Meta,5,,nunca_cruza_limiar,0.0,0.2743
+us-0355,28.29402534210526,-81.83486049999999,,,1,,sem_leitura_dw,,1.0
+us-0356,36.05982297391304,-115.14720316086958,DataBank Las Vegas LAS1,DataBank,1,,pre_ja_construido,1.0,1.0
+us-0357,31.972694840000003,-110.30478502,,DirecTV,1,,pre_ja_construido,1.0,1.0
+us-0358,33.60007687303114,-83.69979482297009,Meta Stanton Springs Data Center,Meta,4,2021.0,datado,0.0,0.5719
+us-0359,40.68542374444444,-111.88496898888889,Flexential Salt Lake City - Millcreek,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0360,41.17521760182753,-95.80182191111884,Google,Google,16,,nunca_cruza_limiar,0.2367,0.4587
+us-0361,36.68353107305892,-78.37626780771501,,,18,,pre_ja_construido,0.6749,1.0
+us-0362,34.99604457,-90.03465394,xAI Macrohard Colossus 2,xAI,2,,nunca_cruza_limiar,0.0,0.4583
+us-0363,38.7861243117647,-104.7884480117647,T5@Colorado Springs,,1,,pre_periodo_curto,0.0,1.0
+us-0364,28.0738064,-82.36827927272726,Flexential Tampa - North,Flexential,1,,sem_leitura_dw,,0.9506
+us-0365,41.05233596060606,-73.97203474242424,,,1,,pre_ja_construido,0.7916,1.0
+us-0366,40.72631092857143,-99.03839377142856,Compute North,,1,2020.0,datado,0.0,0.9185
+us-0367,33.7307859,-84.61395945000001,Flexential Atlanta - Douglasville 2,Flexential,2,,sem_leitura_dw,,0.9643
+us-0368,43.08209825,-79.030824075,,US Bitcoin,1,,pre_ja_construido,1.0,1.0
+us-0369,39.51142000977778,-119.48236205022222,Tahoe Reno 5,Switch,5,2024.0,datado,0.1971,0.6664
+us-0370,40.76685231111111,-111.92021687777778,Flexential Salt Lake City - Fair Park,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0371,45.903290405,-119.320646135,Amazon Web Services,Amazon Web Services,4,2020.0,datado,0.0,1.0
+us-0372,33.46277583529411,-111.99704978823527,QTS,Quality Technology Services,2,2023.0,datado,0.0,0.6559
+us-0373,40.5114915,-111.88828162,FiberState Datacenter,,1,,pre_ja_construido,1.0,1.0
+us-0374,38.81056446,-89.94869856,,,1,,pre_ja_construido,1.0,1.0
+us-0375,39.13356334444445,-76.85168623333334,,,1,2022.0,datado,0.0,1.0
+us-0376,41.70708341111112,-87.97596503333334,Datacenter (386),UChicago Argonne LLC,1,,pre_ja_construido,1.0,1.0
+us-0377,41.98813491910401,-88.00677872569,NTT Chicago CH4,NTT,4,2021.0,datado,0.0,0.8153
+us-0378,44.87717157142857,-91.91997491428572,,West Wisconsin Telcom,1,,pre_ja_construido,1.0,1.0
+us-0379,34.848032455726496,-86.62699655094018,Meta Huntsville Data center,Meta,5,,sem_leitura_dw,,0.5372
+us-0380,41.53344412,-93.8639144,Microsoft,Microsoft,4,,nunca_cruza_limiar,0.0,0.2256
+us-0381,40.15222215,-75.477317025,Flexential Philadelphia - Collegeville,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0382,39.3224595133987,-94.59645769509804,Meta Data Center,Meta,2,2024.0,datado,0.0,0.7151
+us-0383,40.2084877,-74.11911758,,,1,,pre_ja_construido,0.6732,1.0
+us-0384,40.12957704666667,-74.0427841,Manasquan Cable Landing Station (TAT-14),Sprint,1,,pre_ja_construido,1.0,1.0
+us-0385,40.23925757692307,-74.31943516923077,Verizon Freehold Data Center,Verizon,1,,pre_ja_construido,1.0,1.0
+us-0386,41.14197015,-104.71677781,,,2,2023.0,datado,0.0,0.5
+us-0387,41.667207887908496,-93.45580744346404,Lightedge Des Moines 1,,2,,pre_ja_construido,1.0,1.0
+us-0388,41.041059,-80.63277311111112,Carrier Services Group,,1,,pre_ja_construido,0.97,1.0
+us-0389,35.95106091666667,-86.83339996666666,Flexential Nashville - Cool Springs,Flexential,1,,sem_leitura_dw,1.0,1.0
+us-0390,43.6383354,-89.72141274,,,1,,nunca_cruza_limiar,0.0,0.0
+us-0391,36.409570662803645,-86.36886665642712,Meta Gallatin Data Center,Meta,4,2021.0,datado,0.0,0.4507
+us-0392,30.215645284210524,-97.61908045263158,Cortex supercomputer,,1,2022.0,datado,0.0,0.7302
+us-0393,32.65112849090909,-97.31976920909092,Novartis,,1,,sem_leitura_dw,1.0,1.0
+us-0394,32.30958356363636,-106.72918843636364,,CenturyLink,1,,pre_ja_construido,1.0,1.0
+us-0395,36.22194040909091,-115.1469792090909,Verizon North Las Vegas,Verizon,1,,pre_ja_construido,1.0,1.0
+us-0396,41.36110554615384,-81.63275210769231,Involta Independence,,1,,pre_ja_construido,1.0,1.0
+us-0397,41.036951244444445,-73.98452636296297,Databank LGA3,Databank,3,,pre_ja_construido,0.9964,0.9995
+us-0398,40.04939498353114,-83.17597844926007,Amazon Web Services,Amazon Web Services,5,2024.0,datado,0.0,0.5875
+us-0399,39.85050348333333,-82.99511251190476,"Google Lockbourne, OH",Google,2,,nunca_cruza_limiar,0.0,0.4657
+us-0400,45.92032670672528,-119.22877473101563,Amazon Web Services,Amazon Web Services,5,2022.0,datado,0.0,1.0
+us-0401,39.72422115714286,-82.68986824999999,Google,Google,2,2023.0,datado,0.0,0.915
+us-0402,37.36308513076924,-87.54736521538462,Dynamics Mining,,1,,pre_ja_construido,0.9919,0.9842
+us-0403,41.182608040000005,-104.0685146,Windbreak Cable,,1,,pre_ja_construido,1.0,1.0
+us-0404,41.05730333870968,-81.52209481612904,Involta-Akron,,1,,pre_ja_construido,1.0,1.0
+us-0405,38.80186612857143,-77.62146329047619,Amazon Web Services,Amazon Web Services,3,2023.0,datado,0.0,0.9913
+us-0406,40.11448212837607,-83.20267036728657,Amazon Web Services,Amazon Web Services,13,2023.0,datado,0.1429,0.6695
+us-0407,45.881494630769225,-119.34101595128205,Amazon Web Services,Amazon Web Services,3,2024.0,datado,0.0,1.0
+us-0408,45.81932677346154,-119.63426083935896,Amazon Web Services,Amazon Web Services,4,2024.0,datado,0.0,1.0
+us-0409,34.10366414285714,-84.21498288571429,UPS Data Center,,1,,pre_ja_construido,1.0,0.4662
+us-0410,41.4424110625,-81.80269482067857,T5@Cleveland,T5 Data Centers,2,,pre_ja_construido,1.0,1.0
+us-0411,37.665150454545454,-121.0400459181818,Modesto Junior College West Data Center,Yosemite Community College District,1,,pre_ja_construido,1.0,1.0
+us-0412,29.68641144,-98.46264824,GVTC,GVTC,1,,pre_ja_construido,1.0,1.0
+us-0413,32.34234243666666,-97.73128831666666,MARA Data Center,Marathon Digital Holdings,1,,pre_ja_construido,0.624,0.3148
+us-0414,41.6678382,-86.47308937777777,Amazon AWS Data Center,,1,,nunca_cruza_limiar,0.0,0.1534
+us-0415,46.827438823076925,-92.13057315384616,Ark Duluth Data Center,,1,,sem_leitura_dw,,1.0
+us-0416,35.329662422727274,-80.76569857727272,Flexential Charlotte - North,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0417,29.58026748888889,-98.54117011111111,,HEB,1,,pre_ja_construido,1.0,1.0
+us-0418,41.889370280952384,-88.72657512222223,,Meta,3,2023.0,datado,0.0,0.9845
+us-0419,41.61692822,-93.92481032,Apple,Apple,1,2023.0,datado,0.1328,0.8547
+us-0420,40.22458408285714,-83.04561157142857,,,1,,pre_ja_construido,0.605,0.5722
+us-0421,33.67460683809524,-78.94355761428571,DC BLOX Myrtle Beach Cable Landing Station,,1,2023.0,datado,0.0,1.0
+us-0422,41.08341833515152,-76.14854126242425,Amazon AWS PHL,Amazon Web Services,3,2022.0,datado,0.0,1.0
+us-0423,45.143567735714285,-93.38707566428572,DataBank,,1,2021.0,datado,0.0,1.0
+us-0424,39.38585393333333,-84.56685961111111,CyrusOne Cincinnati-Hamilton CIN4,CyrusOne,1,,pre_ja_construido,0.8055,0.6823
+us-0425,44.77526015384616,-122.61592250769232,PTC,Stayton Cooperative Telephone Company,1,,pre_ja_construido,1.0,1.0
+us-0426,39.74406206,-93.99736606,CenturyLink,,1,,pre_ja_construido,1.0,1.0
+us-0427,33.35361864285714,-111.67801824285714,,,1,2024.0,datado,0.0,0.9086
+us-0428,41.06306587,-104.78384219555556,,,4,,nunca_cruza_limiar,0.0,0.3826
+us-0429,36.16864874,-115.14313538,Flexential Las Vegas - Downtown,Flexential,1,,pre_ja_construido,1.0,1.0
+us-0430,38.73771630769231,-77.82618737472528,,,2,2020.0,datado,0.0,1.0
+us-0431,35.05993547894737,-90.15640507894736,xAI Colossus,xAI,1,,pre_ja_construido,0.5538,0.6195
+us-0432,40.01981661558608,-83.12484785089134,Amazon Web Services,Amazon Web Services,4,,nunca_cruza_limiar,0.0,0.3827
+us-0433,45.81020789128205,-119.2706619251282,Amazon Web Services,Amazon Web Services,5,2024.0,datado,0.0,0.5833
+us-0434,35.56826228,-95.51249984,,,1,2022.0,datado,0.0,0.9998
+us-0435,45.13208556153847,-93.09573267692306,Encompass Minneapolis Facility,Encompass,1,,pre_ja_construido,1.0,0.9982
+us-0436,44.18927922,-105.61042646,,,1,2023.0,datado,0.0,1.0
+us-0437,46.40688302,-105.82075224999998,State of Montana Data Center,State of Montana,1,,pre_ja_construido,1.0,1.0
+us-0438,41.342176071428575,-96.08855075238095,Google,Google,3,2024.0,datado,0.0,0.6667
+us-0439,46.013168882,-98.572995152,,,10,2023.0,datado,0.0,1.0
+us-0440,32.595483258461535,-90.0948074553846,,,5,,nunca_cruza_limiar,0.0,0.0
+us-0441,29.45095185925926,-98.71452157407408,,,3,,nunca_cruza_limiar,0.0271,0.184
+us-0442,32.5498861,-97.07513298,Alinged Data Center DFW-03,"Aligned Data Centers, LLC",1,,nunca_cruza_limiar,0.0,0.0
+us-0443,38.7840440989916,-77.58515116802401,Amazon Web Services,Amazon Web Services,7,2023.0,datado,0.1832,0.9715
+us-0444,44.73503876285714,-93.06351008857143,,,2,,nunca_cruza_limiar,0.0,0.0
+us-0445,43.46352768,-116.27028604,,,2,2024.0,datado,0.0,0.523
+us-0446,37.60016112857143,-82.67879794285714,East Kentucky Network Datacenter,,1,2021.0,datado,0.0,1.0
+us-0447,31.19419938,-94.79665452,,,1,,nunca_cruza_limiar,0.0,0.1915
+us-0448,36.3271121,-88.31997106,Newrays Two LLC Mining,,1,2023.0,datado,0.0,0.9975
+us-0449,29.292933566666665,-98.39157461111112,Amazon AWS SAT - 12807 Donop,Amazon Web Services,1,2023.0,datado,0.0,0.8051
+us-0450,31.13079164273504,-97.37086368119658,,,2,,nunca_cruza_limiar,0.0194,0.0
+us-0451,41.69019667301588,-86.46932403492065,,,7,2024.0,datado,0.0276,1.0
+us-0452,32.500160675784315,-99.78397161215686,,,40,,nunca_cruza_limiar,0.0,0.0002
+us-0453,33.45609047474748,-84.52488218358586,QTS,Quality Technology Services,4,2024.0,datado,0.0,0.581
+us-0454,41.07727653333333,-104.82501176111111,,,2,,nunca_cruza_limiar,0.0,0.0
+us-0455,36.28201283333333,-86.79735926666666,Verizon Wireless,,1,,pre_ja_construido,0.8863,0.9751
+us-0456,33.77721946666667,-100.86896975,Argo Data Center,,1,,nunca_cruza_limiar,0.0,0.1497
+us-0457,30.488282822222217,-97.67263736666666,Switch: The Rock,Switch,1,2024.0,datado,0.0529,0.8594
+us-0458,37.27841618,-98.58846628,,SC,1,,pre_ja_construido,1.0,1.0
+us-0459,31.05757893636364,-97.29843771818182,,,1,2024.0,datado,0.0,0.7442
+us-0460,45.51478964444445,-123.07899145555557,Crane DC - Portland,Crane Data Centers Inc.,1,,nunca_cruza_limiar,0.0,0.0
+us-0461,45.710377505,-119.82396429083336,Percheron DC,Rowan Green Data LLC,4,,nunca_cruza_limiar,0.0,0.0
+us-0462,44.8928702,-74.07259826111111,NYGC Chateaugay,2CRSi,1,,pre_ja_construido,0.6052,0.6435
+us-0463,31.750019314285712,-106.30999605714284,MDC,,1,,pre_ja_construido,1.0,1.0
+us-0464,45.80970091666666,-119.858944175,,amazon web services,1,,nunca_cruza_limiar,0.0,0.0
+us-0465,32.41192874957265,-90.19009982307692,Amazon Web Services,Amazon Web Services,4,,nunca_cruza_limiar,0.0,0.0
+us-0466,31.53304805,-103.803999975,,,4,,nunca_cruza_limiar,0.0,0.0798
+us-0467,32.38041974,-106.48109962,Information Systems Facility,WSMR,1,,pre_ja_construido,1.0,1.0
+us-0468,42.99723374,-77.64583354,"Landmax Data Systems, Inc",,1,,pre_ja_construido,1.0,1.0
+us-0469,29.427999693333334,-98.87705336,Microsoft SAT 82,Microsoft,3,,nunca_cruza_limiar,0.0,0.2023
+us-0470,46.9400122,-67.90563089999999,Datacenter,,1,,pre_ja_construido,1.0,1.0
+us-0471,29.945126028571423,-95.4242379,Data Foundry,,1,,pre_ja_construido,1.0,0.9023
+us-0472,31.51379328,-103.44903831,,,2,,nunca_cruza_limiar,0.0,0.1051
+us-0473,41.271561369875,-79.81340957775,,,32,,sem_leitura_dw,0.0,0.9794
+us-0474,44.9794005375,-93.226410975,Advanced Operations Center,University of Minnesota,1,,pre_ja_construido,1.0,1.0
+us-0475,41.993196925,-86.098765645,,,1,,pre_ja_construido,1.0,1.0
+us-0476,48.14616628571429,-103.77328354285714,Atlas Powr Williston Datacenter,Atlas Power Holdings (ND) LLC,1,2023.0,datado,0.0,0.8373
+us-0477,31.10350864636364,-103.23834537636364,,,2,,nunca_cruza_limiar,0.0,0.2176
+us-0478,40.043962075,-74.28052857499999,,,2,,nunca_cruza_limiar,0.0002,0.004
+us-0479,42.98763122,-72.55175704000001,,The Putney School,1,,nunca_cruza_limiar,0.0,0.0
+us-0480,39.427548952,-75.016916172,DataOne Vineland,Nebius,1,,nunca_cruza_limiar,0.0024,0.0123
+us-0481,32.899167899999995,-97.38867268,,CyrusOne,1,,nunca_cruza_limiar,0.0,0.0
+us-0482,41.59910536153846,-73.88217093076923,,CyrusOne,1,,pre_ja_construido,1.0,1.0
