@@ -3,8 +3,8 @@
   "ano": 2020,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/angonap-fortaleza/2020.tif",
-    "raw_manifest": "data/manifests/landsat_angonap-fortaleza_2020.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/angonap-fortaleza/2020.tif",
+    "raw_manifest": "dados/manifests/landsat_angonap-fortaleza_2020.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.7454,
-  "sha256": "7d406aa4b4c6344466f8ef037150f06b5e4a56dcdcbb68cf21160e9af631dec6",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:46:29.741567+00:00"
+  "pct_pixels_validos": 99.6746,
+  "sha256": "d67b58bbd9246245c2040c7e975b689284170af6188cafbb5596fd50a1dfaac4",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:15:05.594762+00:00"
 }

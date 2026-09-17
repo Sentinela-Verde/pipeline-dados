@@ -1,10 +1,42 @@
 # Pipeline de dados: coletas, armazenamento, modelos e análises
 
 Pipeline de dados do Sentinela Verde: da coleta de data centers e imagens de satélite até a
-análise estatística do impacto ambiental e territorial no entorno deles. Organiza, numa estrutura
-única (**dados / modelos / projetos**), o que antes estava espalhado em **3 repositórios**
-(`data-extraction`, `modelo-imagens-satelite` e o protótipo abandonado
-`datacenter-extracao-modelos`), cada um com sua própria convenção de pastas.
+análise estatística do impacto ambiental e territorial no entorno deles.
+
+## Racional geral
+
+Data centers vêm crescendo rápido no Brasil, em geral perto de áreas urbanas ou periurbanas: cada
+um ocupa terreno, consome dezenas de MW e altera o uso do solo ao seu redor. Não existe hoje uma
+medição sistemática desse impacto — a pergunta de pesquisa deste projeto é: **a chegada de um data
+center muda, de forma mensurável, a cobertura do solo (vegetação, construção, solo exposto) e a
+temperatura de superfície ao seu redor — além do que já mudaria de qualquer forma pela tendência
+regional?**
+
+Responder isso exige separar o que teria acontecido de qualquer jeito (crescimento urbano natural,
+tendência regional) do que é atribuível especificamente ao data center. A estratégia adotada é
+comparar cada área tratada (onde um data center foi construído) com uma área de controle (uma
+região parecida socioeconomicamente que não recebeu data center), medindo as duas antes e depois
+da obra — um desenho de inferência causal observacional (event study / diferença-em-diferenças),
+o cabível quando não é possível randomizar quem recebe o "tratamento".
+
+O pipeline existe para produzir, de ponta a ponta, os dados que alimentam essa comparação:
+
+1. localizar data centers reais e um grupo de controle comparável (coleta + filtro de
+   elegibilidade + pareamento por similaridade socioeconômica);
+2. baixar e classificar imagem de satélite (vegetação densa/rala, solo exposto, área construída,
+   água) de cada área, ano a ano, tanto para o data center quanto para seu controle;
+3. extrair temperatura de superfície e indicadores socioeconômicos da mesma área;
+4. consolidar tudo num painel único (área × ano); e
+5. testar estatisticamente se o efeito líquido (tratamento − controle) é diferente de zero, com o
+   cuidado de corrigir por múltiplas comparações e validar sem misturar linhas do mesmo evento
+   entre treino e teste.
+
+Hoje a amostra é pequena (15 pares tratamento/controle no Brasil) e o resultado honesto, depois da
+correção por múltiplas comparações, é que nenhuma variável mostra efeito estatisticamente
+significativo ainda — embora a direção de algumas (ex.: área construída) aponte para uma possível
+interferência que a amostra atual não tem poder estatístico para confirmar. Esse resultado, suas
+limitações e os próximos passos metodológicos estão documentados em
+[`projetos/09_analise_estatistica_impacto/`](projetos/09_analise_estatistica_impacto/README.md).
 
 > Os pontos marcados como "⚠ decisão em aberto" na seção de decisões, mais abaixo, ainda não têm
 > dono — o resto deste documento já reflete a estrutura em uso.
@@ -158,14 +190,15 @@ flowchart TD
 
 ## Árvore do repositório
 
-❌ = ainda falta migrar (ou não existe código em nenhum repositório hoje):
+❌ = ainda não existe código para essa etapa:
 
 - ❌ 05 · Extração LST
 - ❌ `socioeconomico_us/` (dado + fonte a definir)
-- ❌ Modelo 1 — treino/inferência (código ainda não migrado pra cá)
-- ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código não existe em nenhum repositório hoje)
+- ❌ Modelo 1 — treino (a inferência já existe e é reutilizada por várias etapas; só o
+  retreino do zero ainda não tem script aqui)
+- ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código ainda não escrito)
 - ❌ 07 · Reiteração / expansão da amostra
-- ❌ 08 · Consolidação (código não existe — ver decisões)
+- ❌ 08 · Consolidação (hoje é montado manualmente — ver decisões)
 
 ```
 sentinela_verde/
@@ -191,16 +224,19 @@ sentinela_verde/
 │   ├── gold/                               # pronto pra modelar / analisar
 │   │   ├── dataset_classificacao.parquet   # (AWS S3) — dataset amostrado que alimenta o treino (5a)
 │   │   ├── consolidado_impacto_modelo.csv  # ⚠ hoje montado manualmente — etapa 7 do diagrama
-│   │   └── efeito_liquido/                 # saídas do step1: curvas, event study, CSVs
+│   │   ├── efeito_liquido/                 # saídas do step1/1b/1c: curvas, event study, testes de significância
+│   │   ├── efeito_liquido_32dc/            # análise exploratória à parte — ver nota abaixo
+│   │   └── powerbi_export/                 # tabelas gold pro dashboard Power BI — ver nota abaixo
 │   │
 │   ├── labels_manual/                      # 211 polígonos humanos — é INSUMO versionado, não saída
 │   └── manifests/                          # 1.066 manifests — proveniência (sha256), sempre commitado
 │
 ├── modelos/
-│   ├── modelo_1_classificacao_imagem/      # ❌ falta migrar — código ainda não migrado pra cá
-│   │   ├── treino/                         # sentinela.train — roda 1x, gera o artefato (etapa 5a)
-│   │   ├── inferencia/                     # sentinela.predict — reaplica (etapas 5b e 6b)
+│   ├── modelo_1_classificacao_imagem/
+│   │   ├── treino/                         # ❌ ainda não existe — roda 1x, geraria o artefato (etapa 5a)
+│   │   ├── inferencia/                     # classifica.py — reaplica o .joblib já treinado (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
+│   │   ├── exemplos/                       # 1 par input/output real, pra conferir a inferência sem rodar o pipeline inteiro
 │   │   └── artefatos/                      # (AWS S3) — *.joblib + *.sha256
 │   │
 │   └── modelo_2_grupo_controle/
@@ -221,15 +257,29 @@ sentinela_verde/
 │   └── 09_analise_estatistica_impacto/     # sem o Estágio 2/RF — event study, placebo, DiD, curva efeito líquido
 │
 ├── docs/
-│   ├── decisoes/                           # ADRs (ex.: status de propostas como Dynamic World)
-│   ├── tarefas/                            # 1 tarefa por arquivo
-│   └── guia_estrutura_dados.md
+│   ├── decisoes/                           # ADRs do time
+│   └── tarefas/                            # 1 tarefa por arquivo
 │
 └── proximos_passos/                        # backlog isolado, fora do pipeline ativo
     ├── energia_aneel_mme/                  # aneel_energia_municipio + bigquery_mme_energia_uf — não conectado ao pipeline ativo
     ├── agua_snis/                          # bigquery_snis_agua — sem dado, nunca foi gerado na fonte
     └── ruido/                              # sem fonte de dado ainda
 ```
+
+## Análises exploratórias (fora do estudo principal)
+
+Duas coisas neste repositório são investigações à parte do estudo de 15 pares descrito no
+racional acima — não substituem o resultado principal, apenas o complementam:
+
+- **`dados/gold/efeito_liquido_32dc/`** (gerado por
+  `projetos/09_analise_estatistica_impacto/step_analise_32dc_br_eua.py`) — testa se ampliar a
+  amostra para 31 pares (Brasil + EUA, fonte suplementar) melhora a significância estatística.
+  Os p-valores melhoram, mas nenhuma variável cruza o limiar de significância após a correção por
+  múltiplas comparações — ver seção própria no
+  [README da análise estatística](projetos/09_analise_estatistica_impacto/README.md).
+- **`dados/gold/powerbi_export/`** (gerado por `export_gold_powerbi.py`, na mesma pasta) — exporta
+  o painel dos 15 pares (mais imagens em miniatura) em formato de tabela gold, para alimentar um
+  dashboard Power BI — ver [README da pasta](dados/gold/powerbi_export/README.md).
 
 ## Decisões em aberto (o time de arquitetura precisa bater o martelo)
 
@@ -257,8 +307,8 @@ inferência não pode ficar "presa" dentro do projeto do Modelo 1 sem uma forma 
 `socioeconomico_us/` está na árvore como placeholder — nenhuma extração equivalente ao IBGE para
 municípios/condados americanos foi encontrada no código hoje. Antes de implementar
 `modelos/modelo_2_grupo_controle/` para sites nos EUA, alguém precisa decidir a fonte (Census
-Bureau ACS? BLS? outra?) — isso também é pré-requisito da expansão internacional mencionada no
-ADR-006 do `modelo-imagens-satelite` (hoje proposta, não aprovada).
+Bureau ACS? BLS? outra?) — isso também é pré-requisito de qualquer expansão internacional do
+estudo (proposta, ainda não aprovada).
 
 ### 4 · Onde mora o dado pesado
 

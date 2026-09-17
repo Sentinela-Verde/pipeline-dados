@@ -58,11 +58,3 @@ correspondente. Uma chamada de API por linha — confira o tamanho do CSV de ent
 - **Entrada:** `dados/bronze/datacentermap/datacentermap_datacenters.csv`
 - **Saída:** `dados/silver/datacentermap_enderecos_corrigidos.csv`
 
-## Origem
-
-Esta sub-etapa é uma readaptação de `data-extraction/transform/pega_endereco/` — a lógica de
-reverse geocoding é a mesma, mas lá a entrada é `lista_mestra_campi.csv` (uma lista mais ampla,
-gerada por um script do `modelo-imagens-satelite` que combina candidatos de várias fontes,
-inclusive expansão EUA). Aqui a entrada foi trocada pra ler direto o CSV desta coleta
-(`datacentermap_datacenters.csv`), pra fechar a etapa 1 sem depender do outro repositório — ver
-decisão 7 do README da raiz.

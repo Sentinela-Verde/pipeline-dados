@@ -3,8 +3,8 @@
   "ano": 2017,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-osasco/2017.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-osasco_2017.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-osasco/2017.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-osasco_2017.json"
   },
   "bandas": [
     "blue",
@@ -95,7 +95,7 @@
   "nodata": -9999,
   "fator_escala": 10000,
   "pct_pixels_validos": 99.9964,
-  "sha256": "45f3e33ac20a74879513c1e864fb64df8de83c33d82415e9dc3c1cf03b8cff58",
-  "git_sha": "978e5c9cfe1398377f1d4704eb7abbe723087282",
-  "gerado_em": "2026-09-01T11:46:57.255024+00:00"
+  "sha256": "af17f0d1669ccb3008c2f256bcde78319b7902fcf167d85a96305665bed394fc",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:25:46.970551+00:00"
 }

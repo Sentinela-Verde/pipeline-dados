@@ -2,14 +2,11 @@
 data center no período PRÉ-OBRA, segundo o classificador (modelo 1), não segundo proximidade
 geográfica ou similaridade socioeconômica (isso já decidiu QUEM são os 12 candidatos — steps 1-2).
 
-Critério portado de `modelo-imagens-satelite/modelo-impacto/scripts/impacto_dc_comum.py`
-(`distancia_l1`/`qualidade_l1`) — a mesma distância L1 entre distribuições de classe (proporção de
-vegetação densa/rala, solo exposto, área construída, água) que aquele repositório usa pra parear
-tratamento x controle pelo classificador. Adaptado num ponto: lá a comparação é num ÚNICO
-"ano de referência" (obra-1); aqui, como o usuário pediu uma JANELA pré-obra de 3 anos
-(obra-3..obra-1, não 1 ano só), a distribuição de cada lado (AOI e cada candidato) é a MÉDIA das
-proporções de classe nos 3 anos — mais robusta a um ano atípico (nuvem residual, cena ruim) do que
-um único ano, ao custo de "borrar" uma mudança que só aconteceu num dos 3 anos.
+Critério: distância L1 entre distribuições de classe (proporção de vegetação densa/rala, solo
+exposto, área construída, água) do AOI e de cada candidato. A distribuição de cada lado é a MÉDIA
+das proporções de classe numa JANELA pré-obra de 3 anos (obra-3..obra-1), não um único ano —
+mais robusta a um ano atípico (nuvem residual, cena ruim), ao custo de "borrar" uma mudança que só
+aconteceu num dos 3 anos.
 
 Entrada:
     dados/silver/grupo_controle/percentuais_classificacao_pre_obra.csv (modelo_1, step anterior)
@@ -19,8 +16,7 @@ Entrada:
 Saída:
     dados/silver/grupo_controle/grupo_controle_escolhido.csv — 1 linha por AOI: o candidato
     vencedor (menor L1), sua qualidade (bom/aceitável/ruim) e os 11 outros candidatos avaliados
-    pra auditoria (não descartados — mesmo princípio de SV-24/25 de nunca jogar fora a régua de
-    decisão).
+    para auditoria (não descartados, para não perder a régua de decisão).
 
 Uso:
     python step3_seleciona_melhor_controle.py
@@ -44,7 +40,7 @@ GRUPO_CONTROLE_ESCOLHIDO_CSV = config.GRUPO_CONTROLE_DIR / "grupo_controle_escol
 
 
 def qualidade_l1(l1: float) -> str:
-    """`bom` <= 0.10 · `aceitavel` <= 0.20 · `ruim` acima — mesmos limiares de SV-29/`impacto_dc_comum.py`."""
+    """`bom` <= 0.10 · `aceitavel` <= 0.20 · `ruim` acima."""
     if l1 <= 0.10:
         return "bom"
     if l1 <= 0.20:

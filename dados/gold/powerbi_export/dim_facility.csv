@@ -1,0 +1,31 @@
+﻿site_id,par_id,papel,nome,pais,municipio,uf,lat,lon,buffer_km,ano_inicio_obra,ano_fim_obra,tier,bioma,regiao,qualidade_par,l1_rf,dist_tratamento_controle_km,mw_construido_total,whitespace_construido_sqm_total,sensor,modelo_versao
+angonap-fortaleza,angonap-fortaleza,tratamento,Angonap Fortaleza,BR,Fortaleza,CE,-3.734736,-38.462636,5,2017,2019,1.0,Caatinga,Nordeste,aceitavel,0.157896,16,,,landsat,rf_v1.0-tuned
+ascenty-hortolandia,ascenty-hortolandia,tratamento,Ascenty Hortolandia,BR,Hortolândia,SP,-22.896022,-47.179246,5,2018,2022,1.0,Mata Atlântica,Sudeste,bom,0.036282,16,43.0,29969.0,landsat,rf_v1.0-tuned
+ascenty-jundiai,ascenty-jundiai,tratamento,Ascenty Jundiai,BR,Jundiaí,SP,-23.191744,-46.974604,5,2019,2019,2.0,Mata Atlântica,Sudeste,bom,0.088258,24,13.0,8993.0,landsat,rf_v1.0-tuned
+ascenty-maracanau,ascenty-maracanau,tratamento,Ascenty Maracanau,BR,Maracanaú,CE,-3.830803,-38.611253,5,2014,2015,1.0,Caatinga,Nordeste,ruim,0.854877,36,,,landsat,rf_v1.0-tuned
+ascenty-osasco,ascenty-osasco,tratamento,Ascenty Osasco,BR,Osasco,SP,-23.492259,-46.777232,5,2020,2023,1.0,Mata Atlântica,Sudeste,ruim,0.265934,16,13.0,11492.0,landsat,rf_v1.0-tuned
+ascenty-paulinia,ascenty-paulinia,tratamento,Ascenty Paulinia,BR,Paulínia,SP,-22.7974087,-47.1345476,5,2019,2019,2.0,Mata Atlântica,Sudeste,bom,0.072125,20,13.0,0.0,landsat,rf_v1.0-tuned
+ascenty-sumare,ascenty-sumare,tratamento,Ascenty Sumare,BR,Sumaré,SP,-22.8069862,-47.2200481,5,2017,2019,1.0,Mata Atlântica,Sudeste,ruim,0.411088,28,34.0,0.0,landsat,rf_v1.0-tuned
+ascenty-vinhedo,ascenty-vinhedo,tratamento,Ascenty Vinhedo,BR,Vinhedo,SP,-23.0700044,-47.0118926,5,2019,2020,1.0,Mata Atlântica,Sudeste,aceitavel,0.131596,28,61.0,45978.0,landsat,rf_v1.0-tuned
+clickip-manaus,clickip-manaus,tratamento,Clickip Manaus,BR,Manaus,AM,-3.055564,-59.989801,5,2023,2024,1.0,Amazônia,Norte,ruim,1.369247,32,,,s2,rf_v1.0-tuned
+equinix-santana-parnaiba,equinix-santana-parnaiba,tratamento,Equinix Santana Parnaiba,BR,Santana de Parnaíba,SP,-23.460369,-46.859912,5,2020,2021,1.0,Mata Atlântica,Sudeste,ruim,0.541542,16,14.4,5087.0,landsat,rf_v1.0-tuned
+everest-goiania,everest-goiania,tratamento,Everest Goiania,BR,Goiânia,GO,-16.6915189,-49.2371899,5,2021,2023,1.0,Cerrado,Centro-Oeste,ruim,0.8661,20,,,landsat,rf_v1.0-tuned
+hostdime-joao-pessoa,hostdime-joao-pessoa,tratamento,Hostdime Joao Pessoa,BR,João Pessoa,PB,-7.117382,-34.856902,5,2017,2017,2.0,Mata Atlântica,Nordeste,ruim,0.655163,16,,,landsat,rf_v1.0-tuned
+scala-sgigsm01,scala-sgigsm01,tratamento,Scala Sgigsm01,BR,São João de Meriti,RJ,-22.799883,-43.353842,5,2022,2023,1.0,Mata Atlântica,Sudeste,ruim,0.862406,16,13.2,1467.0,s2,rf_v1.0-tuned
+scala-spoapa01,scala-spoapa01,tratamento,Scala Spoapa01,BR,Porto Alegre,RS,-30.002768,-51.198149,5,2023,2023,1.0,Mata Atlântica,Sul,ruim,0.489003,20,8.4,0.0,s2,rf_v1.0-tuned
+scala-tambore,scala-tambore,tratamento,Scala Tambore,BR,Barueri,SP,-23.4948321,-46.8130769,5,2021,2023,1.0,Mata Atlântica,Sudeste,ruim,1.06251,20,21.0,0.0,landsat,rf_v1.0-tuned
+ctrl-angonap-fortaleza-p01,angonap-fortaleza,controle,Angonap Fortaleza — área controle,BR,Caucaia,CE,-3.697276,-38.601757,5,2017,2019,,,,aceitavel,0.157896,16,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-hortolandia-p01,ascenty-hortolandia,controle,Ascenty Hortolandia — área controle,BR,Campinas,SP,-22.968204,-47.044123,5,2018,2022,,,,bom,0.036282,16,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-jundiai-p01,ascenty-jundiai,controle,Ascenty Jundiai — área controle,BR,Campo Limpo Paulista,SP,-23.24767,-46.74807,5,2019,2019,,,,bom,0.088258,24,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-maracanau-p03,ascenty-maracanau,controle,Ascenty Maracanau — área controle,BR,Caucaia,CE,-3.600568,-38.840375,5,2014,2015,,,,ruim,0.854877,36,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-osasco-p01,ascenty-osasco,controle,Ascenty Osasco — área controle,BR,Itapevi,SP,-23.529577,-46.928574,5,2020,2023,,,,ruim,0.265934,16,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-paulinia-p02,ascenty-paulinia,controle,Ascenty Paulinia — área controle,BR,Americana,SP,-22.707019,-47.303129,5,2019,2019,,,,bom,0.072125,20,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-sumare-p01,ascenty-sumare,controle,Ascenty Sumare — área controle,BR,Indaiatuba,SP,-23.059824,-47.220048,5,2017,2019,,,,ruim,0.411088,28,,,landsat,rf_v1.0-tuned
+ctrl-ascenty-vinhedo-p02,ascenty-vinhedo,controle,Ascenty Vinhedo — área controle,BR,Campinas,SP,-22.817167,-47.011893,5,2019,2020,,,,aceitavel,0.131596,28,,,landsat,rf_v1.0-tuned
+ctrl-clickip-manaus-p01,clickip-manaus,controle,Clickip Manaus — área controle,BR,Iranduba,AM,-3.200229,-60.239135,5,2023,2024,,,,ruim,1.369247,32,,,s2,rf_v1.0-tuned
+ctrl-equinix-santana-parnaiba-p01,equinix-santana-parnaiba,controle,Equinix Santana Parnaiba — área controle,BR,Cajamar,SP,-23.315899,-46.859912,5,2020,2021,,,,ruim,0.541542,16,,,landsat,rf_v1.0-tuned
+ctrl-everest-goiania-p01,everest-goiania,controle,Everest Goiania — área controle,BR,Goiânia,GO,-16.781817,-49.399659,5,2021,2023,,,,ruim,0.8661,20,,,landsat,rf_v1.0-tuned
+ctrl-hostdime-joao-pessoa-p01,hostdime-joao-pessoa,controle,Hostdime Joao Pessoa — área controle,BR,Conde,PB,-7.257127,-34.819403,5,2017,2017,,,,ruim,0.655163,16,,,landsat,rf_v1.0-tuned
+ctrl-scala-sgigsm01-p01,scala-sgigsm01,controle,Scala Sgigsm01 — área controle,BR,Rio de Janeiro,RJ,-22.872066,-43.48887,5,2022,2023,,,,ruim,0.862406,16,,,s2,rf_v1.0-tuned
+ctrl-scala-spoapa01-p01,scala-spoapa01,controle,Scala Spoapa01 — área controle,BR,Sapucaia do Sul,RS,-29.828483,-51.144592,5,2023,2023,,,,ruim,0.489003,20,,,s2,rf_v1.0-tuned
+ctrl-scala-tambore-p01,scala-tambore,controle,Scala Tambore — área controle,BR,Pirapora do Bom Jesus,SP,-23.404447,-46.982529,5,2021,2023,,,,ruim,1.06251,20,,,landsat,rf_v1.0-tuned

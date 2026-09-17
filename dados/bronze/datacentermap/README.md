@@ -19,13 +19,11 @@
 | `fonte_url` | Link da fonte, quando existe |
 | `observacao` | Ressalvas — leia antes de confiar cegamente no número |
 
-**Hoje cobre 9 dos 21 AOIs** (os que já tinham pesquisa feita em
-`modelo-imagens-satelite/config/sites_candidatos.csv`, reaproveitada com citação). Os outros 12
-AOIs não têm linha aqui — `step9_consolida_aoi.py` **projeta** o ano pra esses
-(`ano_operacional_min − config.ANOS_PROJECAO_INICIO_OBRA`), não deixa em branco. Pesquisar esses
-12 de verdade (imprensa, releases, PeeringDB — mesmo método da SV-25 do `modelo-imagens-satelite`)
-é o próximo passo natural pra reduzir quanto do painel final depende de projeção em vez de fonte
-primária.
+**Hoje cobre 9 dos 21 AOIs** (pesquisa feita e citada por fonte primária). Os outros 12 AOIs não
+têm linha aqui — `step9_consolida_aoi.py` **projeta** o ano pra esses (`ano_operacional_min −
+config.ANOS_PROJECAO_INICIO_OBRA`), não deixa em branco. Pesquisar esses 12 de verdade (imprensa,
+releases, PeeringDB) é o próximo passo natural pra reduzir quanto do painel final depende de
+projeção em vez de fonte primária.
 
 **AOIs sem pesquisa ainda** (usam projeção): ODATA (São João de Meriti), ODATA (Hortolândia —
 existe como AOI conhecida em `sites_candidatos.csv`, mas sem ano documentado nem lá), ASAP

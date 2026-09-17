@@ -1,0 +1,101 @@
+{
+  "site_id": "ctrl-scala-sgigsm01-p01",
+  "ano": 2019,
+  "sensor": "sentinel2",
+  "origem": {
+    "raw_tif": "dados/bronze/imagens_satelite/sentinel2/ctrl-scala-sgigsm01-p01/2019.tif",
+    "raw_manifest": "dados/manifests/s2_ctrl-scala-sgigsm01-p01_2019.json"
+  },
+  "bandas": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "bandas_entrada": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2"
+  ],
+  "indices": [
+    "ndvi",
+    "evi",
+    "ndwi",
+    "mndwi",
+    "ndbi",
+    "bsi",
+    "ndmi"
+  ],
+  "formulas": {
+    "ndvi": "(nir - red) / (nir + red)",
+    "evi": "2.5 * (nir - red) / (nir + 6*red - 7.5*blue + 1)",
+    "ndwi": "(green - nir) / (green + nir)",
+    "mndwi": "(green - swir1) / (green + swir1)",
+    "ndbi": "(swir1 - nir) / (swir1 + nir)",
+    "bsi": "((swir1 + red) - (nir + blue)) / ((swir1 + red) + (nir + blue))",
+    "ndmi": "(nir - swir1) / (nir + swir1)"
+  },
+  "clip": {
+    "ndvi": [
+      -1.0,
+      1.0
+    ],
+    "evi": [
+      -1.0,
+      2.5
+    ],
+    "ndwi": [
+      -1.0,
+      1.0
+    ],
+    "mndwi": [
+      -1.0,
+      1.0
+    ],
+    "ndbi": [
+      -1.0,
+      1.0
+    ],
+    "bsi": [
+      -1.0,
+      1.0
+    ],
+    "ndmi": [
+      -1.0,
+      1.0
+    ]
+  },
+  "crs": "EPSG:31983",
+  "transform": [
+    10.0,
+    0.0,
+    650010.0,
+    0.0,
+    -10.0,
+    7474860.0
+  ],
+  "shape": {
+    "width": 1002,
+    "height": 1002,
+    "bandas": 13
+  },
+  "resolucao_m": 10,
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 100.0,
+  "sha256": "bee5321acced1c2d97962d4e4075d954e686b211d325d5cf02378c7470703321",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:04:39.030788+00:00"
+}

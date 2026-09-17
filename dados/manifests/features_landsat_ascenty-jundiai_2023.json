@@ -3,8 +3,8 @@
   "ano": 2023,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/ascenty-jundiai/2023.tif",
-    "raw_manifest": "data/manifests/landsat_ascenty-jundiai_2023.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/ascenty-jundiai/2023.tif",
+    "raw_manifest": "dados/manifests/landsat_ascenty-jundiai_2023.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.9023,
-  "sha256": "068d296a0f50bb58951b3c9d511b6397107280d9b2eaa5c531b07d87c9b11151",
-  "git_sha": "7d07b4b66a0d8232987fce20fdb3fd704496e41f",
-  "gerado_em": "2026-09-10T20:29:51.120171+00:00"
+  "pct_pixels_validos": 99.9032,
+  "sha256": "1a5d4850e5e5e014eceec86a3680c3c740a85a4b9bc61fb11ac31761fdbe3f06",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:21:36.806807+00:00"
 }

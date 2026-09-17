@@ -36,9 +36,9 @@ artefato final** — várias facilities do mesmo operador podem ser o mesmo camp
 ## step9 — consolidação por AOI
 
 Facilities do **mesmo operador** a até **`config.RAIO_MESMO_AOI_M` (600 m)** de distância viram
-**1 AOI só** — mesma ideia da SV-24 do `modelo-imagens-satelite` (lá com 5 km, pensado pra área de
-imagem de satélite; aqui 600 m, só pra identificar "é o mesmo campus"). Exemplo real: `Ascenty -
-Hortolandia HTL2/3/4/5` são 4 facilities do scraping, 1 AOI só (mesmo campus).
+**1 AOI só** (600 m identifica "é o mesmo campus"; a extração de imagem de satélite, mais adiante,
+usa um raio maior em torno do AOI já consolidado). Exemplo real: `Ascenty - Hortolandia
+HTL2/3/4/5` são 4 facilities do scraping, 1 AOI só (mesmo campus).
 
 ### `ano_inicio_obra` por AOI
 
@@ -80,17 +80,11 @@ python step9_consolida_aoi.py
 - `projetos/02_extracao_imagem/` — usa `aoi_id`/`latitude`/`longitude` como lista de pontos a
   extrair do Google Earth Engine.
 
-⚠️ **Mudança de schema em relação à versão anterior**: a chave passou de `nome_datacenter`
-(1 por facility) pra `aoi_id` (1 por campus) — quem já consumia `datacenter_filtrado.csv` no
-formato antigo (facility-level) precisa se adaptar, ou ler `datacenter_filtrado_facilities.csv`
-em vez do arquivo final.
+Nota de schema: a chave de `datacenter_filtrado.csv` é `aoi_id` (1 por campus), diferente de
+`datacenter_filtrado_facilities.csv`, que é 1 linha por facility (`nome_datacenter`) — use o
+arquivo certo conforme a granularidade que precisar.
 
-## Origem
-
-`step8` é readaptação de `data-extraction/transform/filtra_datacenter/` (mesmos critérios,
-`operadora` adicionada ao schema). `step9` é lógica nova, inspirada na dedup por AOI da SV-24 e na
-pesquisa de `ano_inicio_obra` por fonte primária da SV-25, ambas do `modelo-imagens-satelite` —
-ver `dados/bronze/datacentermap/README.md` pra como a pesquisa de construção foi reaproveitada.
+Ver `dados/bronze/datacentermap/README.md` para como a pesquisa de `ano_inicio_obra` foi feita.
 
 ## Por que ainda sem `estado` no schema de facilities
 

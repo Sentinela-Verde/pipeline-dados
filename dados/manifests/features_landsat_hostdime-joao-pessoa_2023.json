@@ -3,8 +3,8 @@
   "ano": 2023,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/hostdime-joao-pessoa/2023.tif",
-    "raw_manifest": "data/manifests/landsat_hostdime-joao-pessoa_2023.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/hostdime-joao-pessoa/2023.tif",
+    "raw_manifest": "dados/manifests/landsat_hostdime-joao-pessoa_2023.json"
   },
   "bandas": [
     "blue",
@@ -94,8 +94,8 @@
   "resolucao_m": 30,
   "nodata": -9999,
   "fator_escala": 10000,
-  "pct_pixels_validos": 99.8118,
-  "sha256": "5747d503308c0caa914f1bd84d45ebc0e63d880d5e4be2a0f25e489f494fb059",
-  "git_sha": "dfb3a829ac4ae45bb8544e0e3cc5ddcd1e417451",
-  "gerado_em": "2026-09-10T20:35:31.973226+00:00"
+  "pct_pixels_validos": 42.8825,
+  "sha256": "31c3a481f8d8c1d9be46288f9de4c828c667e41a485b5121d796792dc22c9b7c",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:40:59.901008+00:00"
 }

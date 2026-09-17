@@ -3,8 +3,8 @@
   "ano": 2020,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/scala-tambore/2020.tif",
-    "raw_manifest": "data/manifests/landsat_scala-tambore_2020.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/scala-tambore/2020.tif",
+    "raw_manifest": "dados/manifests/landsat_scala-tambore_2020.json"
   },
   "bandas": [
     "blue",
@@ -92,9 +92,10 @@
     "bandas": 13
   },
   "resolucao_m": 30,
-  "nodata": -9999.0,
-  "pct_pixels_validos": 99.9866,
-  "sha256": "247f42f20eaf378e05891a160ec711dc143d3f5b7417522c1adef849b7a2686b",
-  "git_sha": "f5454bfd2950874fb65411e5242db23773c87472",
-  "gerado_em": "2026-08-27T20:23:35.498560+00:00"
+  "nodata": -9999,
+  "fator_escala": 10000,
+  "pct_pixels_validos": 99.9884,
+  "sha256": "dd466886267da239fef6a24991848b93a4d421749ea4e1c7124db39b5a52d7f9",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:43:05.765762+00:00"
 }

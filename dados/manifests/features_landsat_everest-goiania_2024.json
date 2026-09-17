@@ -3,8 +3,8 @@
   "ano": 2024,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/everest-goiania/2024.tif",
-    "raw_manifest": "data/manifests/landsat_everest-goiania_2024.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/everest-goiania/2024.tif",
+    "raw_manifest": "dados/manifests/landsat_everest-goiania_2024.json"
   },
   "bandas": [
     "blue",
@@ -95,7 +95,7 @@
   "nodata": -9999,
   "fator_escala": 10000,
   "pct_pixels_validos": 100.0,
-  "sha256": "b2c7fdaf4e45e8e1f15e8a9dfceeb2e3f5adf60f7e40a9ade1746a69705111fd",
-  "git_sha": "0f2fb36971c76a3f2b218db9032a8abe5ca6e7aa",
-  "gerado_em": "2026-09-05T22:00:11.346439+00:00"
+  "sha256": "d7d95131cdadfecd377b3e735a84e34ac2b392a9a930c2634e9b3cac23684b52",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:39:13.033878+00:00"
 }

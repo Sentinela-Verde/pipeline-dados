@@ -2,9 +2,8 @@
 
 Extração do consumo de energia elétrica na rede, por **UF, mês e classe de
 consumo**, via BigQuery, usando a [Base dos Dados](https://basedosdados.org/).
-É uma das coletas dentro de `data-extraction/extract/` — ver o
-[README da raiz](../../README.md) pra entender como as coletas se encaixam
-(pasta `data/raw/` compartilhada).
+Faz parte do backlog isolado de `proximos_passos/` (ainda não conectado ao pipeline ativo) —
+ver o [README da raiz](../../../README.md).
 
 ## ⚠️ Granularidade: só existe por UF, não por município
 
@@ -19,7 +18,7 @@ todo município de uma UF herda o mesmo valor estadual — não captura variaç�
 municipal real. É útil como aproximação rápida ou como controle de nível
 estadual, mas não substitui um dado municipal de verdade.
 
-Pra chegar mais perto do município, ver `extract/aneel_energia_municipio/`
+Pra chegar mais perto do município, ver `../aneel_energia_municipio/`
 — rateia o consumo do SAMP (ANEEL) por distribuidora entre os municípios da
 área de concessão dela, proporcional à população (também uma estimativa, não
 uma medição real, mas mais fina que o dado por UF).
@@ -54,14 +53,14 @@ Mesmo esquema das outras coletas — duas coisas diferentes, não confundir:
 ## Como rodar
 
 ```bash
-cd data-extraction/extract/bigquery_mme_energia_uf
+cd proximos_passos/energia_aneel_mme/bigquery_mme_energia_uf
 pip install -r requirements.txt
 python step0a_extract_dados_mme_energia_uf.py
 ```
 
 ## Saída
 
-- `../../data/raw/outputs_extraction/mme_energia_uf.csv` — uma linha por
+- `../mme_energia_uf.csv` — uma linha por
   UF x ano x mês x tipo_consumo, `utf-8-sig`. Colunas: `ano`, `mes`, `uf`,
   `nome_uf`, `regiao`, `tipo_consumo`, `consumo` (MWh), `numero_consumidores`.
 
@@ -69,6 +68,6 @@ Pra agregar num total anual por UF (somando os meses e classes):
 
 ```python
 import pandas as pd
-df = pd.read_csv("../../data/raw/outputs_extraction/mme_energia_uf.csv")
+df = pd.read_csv("../mme_energia_uf.csv")
 anual_uf = df.groupby(["uf", "ano"], as_index=False)["consumo"].sum()
 ```

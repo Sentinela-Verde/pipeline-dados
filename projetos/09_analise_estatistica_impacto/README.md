@@ -28,14 +28,13 @@ center ao qual está pareada). Colunas principais:
 ### ⚠️ Lacuna conhecida: não existe (ainda) um step que gere esse CSV
 
 Diferente do resto do pipeline, **nenhum script deste repositório produz o
-`consolidado_impacto_modelo.csv`** — ele hoje é um insumo pronto (um painel já montado
-fora daqui, unindo a saída de
-[`modeling/modelo_classifica_imagem`](../modelo_classifica_imagem/README.md) com dados de
-LST, o pareamento de
-[`modeling/modelo_grupo_controle`](../modelo_grupo_controle/README.md) e o socioeconômico
-de [`extract/bigquery_ibge`](../../extract/bigquery_ibge/README.md)). Reconstruir esse join
-como um `step0_monta_painel.py` é o próximo passo natural pra fechar o pipeline
-ponta-a-ponta — hoje ele é o único elo que ainda depende de um processo manual.
+`consolidado_impacto_modelo.csv`** — ele hoje é montado manualmente, unindo a saída do
+[Modelo 1](../../modelos/modelo_1_classificacao_imagem/) (classificação de cobertura do solo)
+com dados de LST, o pareamento do
+[Modelo 2](../../modelos/modelo_2_grupo_controle/selecao_candidatos/README.md) e o
+socioeconômico de [`06_extracao_socioeconomico/ibge`](../06_extracao_socioeconomico/ibge/README.md).
+Reconstruir esse join como um `step0_monta_painel.py` é o próximo passo natural pra fechar o
+pipeline ponta-a-ponta — hoje ele é o único elo que ainda depende de um processo manual.
 
 ## Pipeline
 
@@ -199,8 +198,34 @@ próximo degrau, em ordem de prioridade dado o tamanho de amostra atual:
   regional.
 - **Lacuna do painel consolidado** — ver seção acima.
 - **`step2_estagio2_modelo_efeito.py` ainda não existe** neste repositório (só documentado
-  aqui e no guia) — o que existe hoje, além do step1, é o `step1b_analise_consequencias.py`.
-- **Caminhos de `config.py` estavam desatualizados** — apontavam pra `data/silver/...` e
-  `data/gold/modelo_impacto/` (nomenclatura em inglês de um repo anterior); corrigido pra
-  `dados/gold/consolidado_impacto_modelo.csv` e `dados/gold/efeito_liquido/`, que é onde os
-  artefatos deste repo realmente vivem. Com o caminho antigo, nenhum dos steps rodava.
+  aqui e no guia) — o que existe hoje, além do step1, é o `step1b_analise_consequencias.py`
+  e o `step1c_analise_por_fase.py`.
+
+## Análise exploratória à parte: amostra estendida (32 pares BR+EUA)
+
+`step_analise_32dc_br_eua.py` é uma investigação **à parte do estudo oficial de 15 pares**
+acima — não o substitui. Testa se ampliar a amostra para 31 pares (Brasil + uma fonte
+suplementar de data centers nos EUA) melhora a significância estatística do efeito líquido.
+Usa as mesmas funções de `comum.py` (sem alterá-las) e corrige, isoladamente neste script, um
+problema de dado encontrado só na base estendida (linhas de tratamento dos EUA sem
+`pareado_com` preenchido).
+
+```bash
+python step_analise_32dc_br_eua.py
+```
+
+Saídas em `dados/gold/efeito_liquido_32dc/`:
+- `resumo_significancia_32dc.csv` — mesmo formato de `consequencias_terreno_resumo.csv`, mas
+  para os 31 pares.
+- `comparacao_15_vs_31_pares.csv` — p-valor e p-valor FDR lado a lado, 15 vs. 31 pares.
+
+**Resultado:** os p-valores melhoram com a amostra maior (ex.: área construída, p_fdr
+0,94 → 0,19), mas nenhuma variável cruza o limiar de significância (α=0,05) após a correção —
+mesma conclusão qualitativa do estudo de 15 pares, com mais evidência de que o problema é
+tamanho de amostra, não ausência de sinal.
+
+## Exportação para o dashboard Power BI
+
+`export_gold_powerbi.py` gera as tabelas gold que alimentam o dashboard (aba "efeito líquido" +
+aba "por data center", com imagens raw e classificadas por ano) — ver
+[`dados/gold/powerbi_export/README.md`](../../dados/gold/powerbi_export/README.md).

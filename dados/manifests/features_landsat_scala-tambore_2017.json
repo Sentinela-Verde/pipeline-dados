@@ -3,8 +3,8 @@
   "ano": 2017,
   "sensor": "landsat",
   "origem": {
-    "raw_tif": "data/raw/landsat/scala-tambore/2017.tif",
-    "raw_manifest": "data/manifests/landsat_scala-tambore_2017.json"
+    "raw_tif": "dados/bronze/imagens_satelite/landsat/scala-tambore/2017.tif",
+    "raw_manifest": "dados/manifests/landsat_scala-tambore_2017.json"
   },
   "bandas": [
     "blue",
@@ -92,9 +92,10 @@
     "bandas": 13
   },
   "resolucao_m": 30,
-  "nodata": -9999.0,
+  "nodata": -9999,
+  "fator_escala": 10000,
   "pct_pixels_validos": 99.9946,
-  "sha256": "20cb93a6ef255601baeff8d2d061065996fb29b5e123735b1e8810da33779e2b",
-  "git_sha": "f5454bfd2950874fb65411e5242db23773c87472",
-  "gerado_em": "2026-08-27T20:23:34.944971+00:00"
+  "sha256": "b46d2c1536b773d3148a141613d100ea1dee548ea738958530dd7886e351a24d",
+  "git_sha": "f7cfca2800c84c1873dc6a1b3d62774bd7152cd2",
+  "gerado_em": "2026-09-17T01:42:17.879197+00:00"
 }

@@ -43,7 +43,7 @@ Duas coisas diferentes, não confundir:
 ## Como rodar
 
 ```bash
-cd data-extraction/extract/bigquery_ibge
+cd projetos/06_extracao_socioeconomico/ibge
 pip install -r requirements.txt
 python step0a_extract_dados_ibge.py
 ```
