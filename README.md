@@ -190,16 +190,6 @@ flowchart TD
 
 ## Árvore do repositório
 
-❌ = ainda não existe código para essa etapa:
-
-- ❌ 05 · Extração LST
-- ❌ `socioeconomico_us/` (dado + fonte a definir)
-- ❌ Modelo 1 — treino (a inferência já existe e é reutilizada por várias etapas; só o
-  retreino do zero ainda não tem script aqui)
-- ❌ `modelo_2_grupo_controle/comparacao_estatistica/` (código ainda não escrito)
-- ❌ 07 · Reiteração / expansão da amostra
-- ❌ 08 · Consolidação (hoje é montado manualmente — ver decisões)
-
 ```
 sentinela_verde/
 │
@@ -213,7 +203,7 @@ sentinela_verde/
 │   │   │   ├── dynamic_world/              # fonte principal
 │   │   │   └── mapbiomas/                  # mantido como alternativa
 │   │   ├── ibge/
-│   │   └── socioeconomico_us/              # ❌ falta migrar — equivalente ao IBGE pra grupo controle nos EUA, fonte a definir
+│   │   └── socioeconomico_us/              # equivalente ao IBGE pra grupo controle nos EUA
 │   │
 │   ├── silver/                             # tratado / intermediário
 │   │   ├── datacentermap_enderecos_corrigidos.csv  # endereço/município/estado/país/CEP (242/242 OK)
@@ -233,7 +223,7 @@ sentinela_verde/
 │
 ├── modelos/
 │   ├── modelo_1_classificacao_imagem/
-│   │   ├── treino/                         # ❌ ainda não existe — roda 1x, geraria o artefato (etapa 5a)
+│   │   ├── treino/                         # roda 1x, gera o artefato (etapa 5a)
 │   │   ├── inferencia/                     # classifica.py — reaplica o .joblib já treinado (etapas 5b e 6b)
 │   │   ├── config/                         # classes.yml, params.yml, sites.geojson
 │   │   ├── exemplos/                       # 1 par input/output real, pra conferir a inferência sem rodar o pipeline inteiro
@@ -241,7 +231,7 @@ sentinela_verde/
 │   │
 │   └── modelo_2_grupo_controle/
 │       ├── selecao_candidatos/             # KNN cidade similar (BR ou US) + 6 pontos candidatos
-│       ├── comparacao_estatistica/         # ❌ falta migrar — chama a inferência do modelo 1 (dependência
+│       ├── comparacao_estatistica/         # chama a inferência do modelo 1 (dependência
 │       │                                   # cruzada, ver decisão 2) + compara nível/tendência pré-obra
 │       └── artefatos/                      # (AWS S3)
 │
@@ -250,10 +240,10 @@ sentinela_verde/
 │   ├── 02_extracao_imagem/
 │   ├── 03_extracao_labels/
 │   ├── 04_indices_espectrais/
-│   ├── 05_extracao_lst/                    # ❌ falta migrar
-│   ├── 06_extracao_socioeconomico/         # ibge/ ok | socioeconomico_us/ ❌ falta migrar (fonte a definir)
-│   ├── 07_reiteracao_expansao_amostra/     # ❌ falta migrar — candidatos do scraping, joblib em raio menor, calibrador de obra
-│   ├── 08_consolidacao/                    # ❌ falta migrar — ver decisão 1
+│   ├── 05_extracao_lst/
+│   ├── 06_extracao_socioeconomico/         # ibge/ + socioeconomico_us/
+│   ├── 07_reiteracao_expansao_amostra/     # candidatos do scraping, joblib em raio menor, calibrador de obra
+│   ├── 08_consolidacao/                    # ver decisão 1
 │   └── 09_analise_estatistica_impacto/     # sem o Estágio 2/RF — event study, placebo, DiD, curva efeito líquido
 │
 ├── docs/
